@@ -1,7 +1,31 @@
-header {
+header nav {
     background-color: aqua;
     color:#fff;
     padding: 10px 0;
-    text-align: center;
+    text-align: left;
     width: 100%;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    padding: 10px 20px;
+    color: #fff;
+}
+section.student-photo {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 1rem auto 1rem auto;
+    border: 2px solid #f8f9fa;
+    transition: transform 0.5s ease;
+}
+section.student-photo:hover {
+    transform: scale(1.05);
+}
+
+
 }
