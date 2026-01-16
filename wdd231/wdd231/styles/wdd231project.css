@@ -114,12 +114,7 @@ p {
 
 }
 
-.filter-buttons {
-    display: flex;
-    gap: 1.1rem;
-    margin-bottom: 1.5rem;
 
-}
 
 .filter-button-section {
     display: flex;
