@@ -1,8 +1,9 @@
 header nav {
-    background-color: aqua;
+    background-color: blue;
     color: #fff;
     padding: 10px 0;
     text-align: left;
+
     
 }
 head,body,footer {
@@ -10,7 +11,7 @@ head,body,footer {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    width: 880px;
+    width: 900px;
 }
 
 header div {
@@ -18,7 +19,7 @@ header div {
     justify-content: space-between;
     align-items: center;
     background-color: blue;
-    padding: 10px 20px;
+    padding: 11px 20px;
     color: #fff;
 
 }
@@ -28,7 +29,7 @@ header div {
     padding: 10px;
     border-radius: 10px;
     color: #000;
-    width: 880px;
+    width: 900px;
     height: 800px;
     text-align: start;
 
@@ -42,7 +43,7 @@ h2 {
     font-weight:bold;
     text-align: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 21px 0;
 
     
     
@@ -50,14 +51,14 @@ h2 {
 }
 
 img:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
 
 }
 
 .student-photo-section,.about-section {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 1rem;
+    gap: 1.1rem;
     grid-column: 2rem;
     grid-row: 2;
     background-color: azure;
@@ -66,7 +67,7 @@ img:hover {
 section.courses-section {
     grid-column: 1/-1;
     padding: 1.5rem;
-    border-radius: 1rem;
+    border-radius: 1.1rem;
     margin-bottom: 2rem;
 }
 
@@ -79,7 +80,7 @@ section.student-photo-section {
     margin:1rem auto 1rem auto;
     position: absolute;
     bottom:70px;
-    left:600px;
+    left:601px;
     
         
 }
@@ -90,14 +91,14 @@ img {
     left:30px;
     bottom:30px;
     width:200px;
-    transition: transform 0.7s ease;
+    transition: transform 0.6s ease;
     padding: 1rem;
     
 }
 
 section.about-section{
     width: 540px;
-    padding-left: 1rem;
+    padding-left: 1.1rem;
     
 }
     
@@ -106,14 +107,14 @@ h2.about-section {
     font-weight: bold;
     text-align: center;
     padding: 0rem 2rem;
-    bottom:200px;
+    bottom:201px;
     
     
 }
 h2.course-section {
     text-align: center;
     padding: 0rem 2rem;
-    bottom:200px;
+    bottom:201px;
     padding-left:1.5rem;
     
     
@@ -124,20 +125,20 @@ p {
     width: 540px;
     height: 250px;
     padding-left: 2rem;
-    border: 1rem;    
+    border: 1.1rem;    
 
 }
 
 .filter-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 1.1rem;
     margin-bottom: 1.5rem;
 
 }
 
 .filter-button-section {
     display: flex;
-    padding: 0.75rem;
+    padding: 0.76rem;
     border-radius: 1rem;
     border: none;
     background-color: violet;
@@ -147,7 +148,7 @@ p {
 }
 .course-item {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
     gap:1.5rem;
     background-color: white;
     
@@ -160,7 +161,7 @@ p {
     text-align: center;
     font-weight: 600;
     border-radius: 0.75rem;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
 }
 
 
