@@ -69,6 +69,8 @@ section.courses-section {
     padding: 1.5rem;
     border-radius: 1.1rem;
     margin-bottom: 2rem;
+    max-width: 880px;
+    margin: auto;
 }
 
 section.student-photo-section {
