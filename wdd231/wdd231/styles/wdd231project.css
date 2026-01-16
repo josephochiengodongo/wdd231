@@ -136,7 +136,7 @@ p {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.course-item {
+.course-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
     gap:1.5rem;
@@ -162,7 +162,7 @@ p {
     margin: 2rem 0;
 }
    
-.filters-buttons {
+.filter-buttons {
    padding: 0.8; 
    border-radius: 12px;
    border: none;
