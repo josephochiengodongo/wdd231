@@ -146,8 +146,8 @@ p {
     padding: 1.5rem;
     text-align: center;
     font-weight: 1.1rem;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px red
 }
 
 
