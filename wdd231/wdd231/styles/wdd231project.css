@@ -167,7 +167,7 @@ p {
    padding: 0.8; 
    border-radius: 12px;
    border: none;
-   background: azure
+   background: azure;
    font-size: 1.1;
    cursor: pointer;
 }
