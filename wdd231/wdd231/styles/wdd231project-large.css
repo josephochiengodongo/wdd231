@@ -1,8 +1,0 @@
-@media (max-width:1300px) {
-    header,body,main {
-        width:880px;
-    }
-    .courses {
-        max-width: 1300px;
-    }
-}
