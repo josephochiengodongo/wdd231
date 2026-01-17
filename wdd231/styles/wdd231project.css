@@ -1,3 +1,24 @@
+@media (max-width:760px) {
+    .filters-button{
+        grid-template-columns: 1fr;
+    }
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+    
+}
+    
+body {
+    font-family: "Roboto",Arial, sans-serif;
+    font-optical-sizing: auto;
+
+
+}
+
+
+
+
+
 header nav {
     background-color: blue;
     color: #fff;
@@ -9,7 +30,7 @@ header nav {
 head,body,footer {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #f4f4f4;
     width: 900px;
 }
@@ -33,7 +54,6 @@ header div {
     height: 800px;
     text-align: start;
 
-
 }
 
 h2 {
@@ -44,10 +64,6 @@ h2 {
     text-align: center;
     width: 100%;
     padding: 21px 0;
-
-    
-    
-
 }
 
 img:hover {
@@ -69,8 +85,6 @@ section.courses-section {
     padding: 1.5rem;
     border-radius: 1.1rem;
     margin-bottom: 2rem;
-    max-width: 880px;
-    margin: auto;
 }
 
 section.student-photo-section {
@@ -81,7 +95,7 @@ section.student-photo-section {
     width:275px;
     margin:1rem auto 1rem auto;
     position: absolute;
-    bottom:70px;
+    bottom:40px;
     left:601px;
     
         
@@ -110,18 +124,8 @@ h2.about-section {
     text-align: center;
     padding: 0rem 2rem;
     bottom:201px;
-    
-    
-}
-h2.course-section {
-    text-align: center;
-    padding: 0rem 2rem;
-    bottom:201px;
-    padding-left:1.5rem;
-    
-    
-}   
-    
+      
+}    
 
 p {
     width: 540px;
@@ -131,41 +135,117 @@ p {
 
 }
 
-.filter-buttons {
-    display: flex;
-    gap: 1.1rem;
-    margin-bottom: 1.5rem;
 
-}
 
-.filter-button-section {
-    display: flex;
-    padding: 0.76rem;
-    border-radius: 1rem;
-    border: none;
-    background-color: violet;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 .course-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    background: green;
+    color:black;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 220px;
+    height:  80px;
+    box-shadow: forestgreen;
+}
+
+.course-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    border-color: #667eea;
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.course-item:active {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    
+}
+
+.course-item h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.course-item p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.95;
+}
+.course-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
     gap:1.5rem;
-    background-color: white;
-    
-    
+    background-color: azure;
+    color: #000;
+        
 }
 
 .course {
     background: #fff;
     padding: 1.5rem;
     text-align: center;
-    font-weight: 600;
-    border-radius: 0.75rem;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+    font-weight: 1.1rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px red
 }
 
 
+.filters-button-section {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+   
+.filter-button {
+   padding: 0.8rem 1.2rem;
+   border-radius: 8px;
+   border: 2px solid #667eea;
+   background: #fff;
+   color: #667eea;
+   font-size: 1rem;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
 
+.filter-button:hover {
+    background-color: #667eea;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
+}
+
+.filter-button:active {
+    transform: scale(0.98);
+}
+
+.filter-button-active {
+    background-color: #667eea;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.5);
+}
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    background-color:azure;
+    width: 880px;
+    position:absolute;
+    top:1150px;
+    size: 65px;
     
+}
+.footer-span {
+    display: flex;
+    justify-content: center;
+    background-color:blue;
+    align-items: flex-start;
+    height: 100px;
+}
