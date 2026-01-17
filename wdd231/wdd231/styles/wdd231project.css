@@ -1,3 +1,25 @@
+@media (max-width:760px) {
+    .filters-button{
+        grid-template-columns: 1fr;
+    }
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+    
+}
+    
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+}
+
+
+
+
+
 header nav {
     background-color: blue;
     color: #fff;
@@ -74,7 +96,7 @@ section.student-photo-section {
     width:275px;
     margin:1rem auto 1rem auto;
     position: absolute;
-    bottom:70px;
+    bottom:40px;
     left:601px;
     
         
@@ -116,21 +138,53 @@ p {
 
 
 
-.filter-button-section {
+.course-item {
     display: flex;
-    padding: 0.76rem;
-    border-radius: 1rem;
-    border: none;
-    background-color: violet;
-    font-weight: 600;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    background: green;
+    color:black;
+    font-weight: bolder;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    width: 220px;
+    height:  80px;
+    box-shadow: forestgreen;
+}
+
+.course-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    border-color: #667eea;
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.course-item:active {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    
+}
+
+.course-item h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.course-item p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.95;
 }
 .course-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
     gap:1.5rem;
     background-color: azure;
+    color: #000;
         
 }
 
@@ -151,16 +205,31 @@ p {
     margin: 2rem 0;
 }
    
-.filter-buttons {
-   padding: 0.8; 
-   border-radius: 12px;
-   border: none;
-   background: azure;
-   font-size: 1.1;
+.filter-button {
+   padding: 0.8rem 1.2rem;
+   border-radius: 8px;
+   border: 2px solid #667eea;
+   background: #fff;
+   color: #667eea;
+   font-size: 1rem;
+   font-weight: bold;
    cursor: pointer;
+   transition: all 0.3s ease;
 }
-.filter-button-active {
-    background-color: aqua;
-    color: #fff;
 
+.filter-button:hover {
+    background-color: #667eea;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
+}
+
+.filter-button:active {
+    transform: scale(0.98);
+}
+
+.filter-button-active {
+    background-color: #667eea;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.5);
 }
