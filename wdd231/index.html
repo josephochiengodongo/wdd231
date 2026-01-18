@@ -7,8 +7,9 @@
     <meta name="description" content="This is my wdd-dynamic Web foundermental">
     <meta name="author" content="Joseph Ochieng Odongo">
     <link rel="stylesheet" href="styles/wdd231project.css">
+    <script src="scripts/wdd231.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-</head>
+</head>j
 <body>
     <header>
         <div class="humerger-menu">
@@ -39,38 +40,38 @@
                 <img src="images/myphoto.jpg" alt="my photo">
         </section>
         <section class="courses-section">
-                <h2>WEB CERTIFICATE COURS</h2>
+                <h2>WEB CERTIFICATE COURSES</h2>
             <div class="filter-button-section">
-                <button class="filter-button" data-filter="all">All</button>
-                <button class="filter-button" data-filter="ces">CES</button>
-                <button class="filter-button" data-filter="wdd">WDD</button>
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="CSE">CSE</button>
+                <button class="filter-button" data-filter="WDD">WDD</button>
             </div>
-            <div class="course-item">
+            <div id="courses-item">
                 <div class="course-item" data-category="ces">
                     <h3>CES-111</h3>
-                    <p>Programming With Functions</p>
+                    <p>Programming with functions</p>
                 </div>
                 <div class="course-item" data-category="wdd">
                     <h3>WDD-231</h3>
-                    <p>Web Frontend Development</p>
+                    <p>Web fronted</p>
                 </div>
                 <div class="course-item" data-category="ces">
-                    <h3>CES-1104</h3>
+                    <h3>ces-110</h3>
                     <p>Introduction to Programming</p>
-                </div>
-                <div class="course-item" data-category="wdd">
-                    <h3>WDD-130</h3>
-                    <p>Web Foundermental</p>
-                </div> 
-                <div class="course-item" data-category="wdd">
-                    <h3>WDD-131</h3>
-                    <P>Web Design Foundermental</P>
                 </div>
                 <div class="course-item" data-category="ces">
                     <h3>CES-210</h3>
-                    <p>Class With Functions</p>
+                    <p>Class with function</p>
                 </div>
-                <p class="credits">The total credits for ALL 12</p>
+                <div clas="course-item" data-category="wdd">
+                    <h3>WDD-130</h3>
+                    <p>Web fundamentals</p>
+                </div>
+                <div class="course-item" data-category="wdd">
+                    <h3>WDD-131</h3>
+                    <p>Web design fundamentals</p>
+                </div>
+            <p class="credits">Total Credits: <span id="total-credits">12</span></p>
         </section>
     </main>
     <footer>
