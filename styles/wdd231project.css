@@ -6,6 +6,11 @@ header nav {
 
     
 }
+body {
+  font-family: "Roboto",  Arial, sans-serif
+  
+}
+
 head,body,footer {
     margin: 0;
     padding: 0;
@@ -129,60 +134,86 @@ p {
 
 }
 
-.filter-buttons {
-    display: flex;
-    gap: 1.1rem;
-    margin-bottom: 1.5rem;
+.filter-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
+.filter-button:hover {
+    background-color: yellow;
+    transform: translateY(-5px);/*lift effct*/
+
+}
+
+.filter-button.active {
+    background-color: violet;
+    color: white;
+    border-color: violet;
 }
 
 .filter-button-section {
     display: flex;
-    padding: 0.76rem;
-    border-radius: 1rem;
-    border: none;
-    background-color: violet;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
 }
-.course-item {
+.courses-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
     border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    color: #333;
+    border: 1px solid greenyellow;
+    background-color: green;
+    color:red;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    min-height: 120px;
     text-align: center;
 }
 
-.course-item:hover {
+.rcourses-container:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #f0f0f0;
+    background-color: blue;
+}
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 5px;
+    height: 80px;
+    background-color: green;
+    align-items: center;
+
+
+}
+.ycourse-item {
+    width: 240px;
+    height: 80px;
+    background-color: blue;
+    
+
 }
 
-.course {
-    background: #fff;
+
+
+
+
+.courses-container {
+    background:red;
     padding: 1.5rem;
     text-align: center;
     font-weight: 600;
     border-radius: 0.75rem;
     box-shadow: 0 8px 20px rgba(0,0,0,0.07);
-
+    transition: all 0.3s ease;
 }
 
-.courses-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    width: 100%;
-}
 
 
 

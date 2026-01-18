@@ -9,13 +9,18 @@
     <meta name="author" content="Joseph Odongo">
     <link rel="stylesheet" href="styles/wdd231project.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/wdd231.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <div class="humerger-menu">
             <span class="logo">Joseph Odongo</span>
-            <button class="menu-toggle" arial-label="Toggle menu">
+            <button class="Toggle menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -52,14 +57,14 @@
                 <button class="filter-button" data-filter="CSE">CSE</button>
                 <button class="filter-button" data-filter="WDD">WDD</button>
             </div>
-            <div id="courses-item">
+            <div id="courses-container">
                 <div class="course-item" data-category="ces">
                     <h3>CES-111</h3>
-                    <p>Programming with functions</p>
+                    <p>Programming With Functions</p>
                 </div>
                 <div class="course-item" data-category="wdd">
                     <h3>WDD-231</h3>
-                    <p>Web fronted</p>
+                    <p>Fronted Web Development</p>
                 </div>
                 <div class="course-item" data-category="ces">
                     <h3>CES-110</h3>
@@ -67,7 +72,7 @@
                 </div>
                 <div class="course-item" data-category="ces">
                     <h3>CES-210</h3>
-                    <p>Class with function</p>
+                    <p>Programming with Classes</p>
                 </div>
                 <div class="course-item" data-category="wdd">
                     <h3>WDD-130</h3>
@@ -75,8 +80,9 @@
                 </div>
                 <div class="course-item" data-category="wdd">
                     <h3>WDD-131</h3>
-                    <p>Web design fundamentals</p>
+                    <p>Dynamic Web fundamentals</p>
                 </div>
+            </div>
             <p class="credits">Total Credits: <span id="total-credits">12</span></p>
         </section>
     </main>
