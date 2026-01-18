@@ -212,8 +212,8 @@ p.credit {
     padding: 100px 0;
     size-adjust: inherit;
 }
-.footer.div {
-    background-color: blue;
+footer.p {
+    background-color:blue;
     display: flex;
     justify-items: center;
 }
