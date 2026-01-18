@@ -77,4 +77,56 @@ const courses = [
         ],
         completed: false
     }
-]
+];
+
+// Display all courses on page load
+document.addEventListener('DOMContentLoaded', () => {
+    renderCourses(courses);
+    setupFilterButtons();
+    updateCreditsTotal(courses);
+});
+
+function renderCourses(filteredCourses) {
+    const container = document.getElementById('courses-container');
+    container.innerHTML = '';
+    
+    filteredCourses.forEach(course => {
+        const courseDiv = document.createElement('div');
+        courseDiv.className = 'course-item';
+        courseDiv.setAttribute('data-category', course.subject);
+        courseDiv.innerHTML = `
+            <h3>${course.subject}-${course.number}</h3>
+            <p>${course.title}</p>
+            <p class="course-credits">Credits: ${course.credits}</p>
+        `;
+        container.appendChild(courseDiv);
+    });
+}
+
+function setupFilterButtons() {
+    const buttons = document.querySelectorAll('.filter-button');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            buttons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+            
+            const filter = button.getAttribute('data-filter');
+            const filtered = filter === 'all' 
+                ? courses 
+                : courses.filter(course => course.subject === filter);
+            
+            renderCourses(filtered);
+            updateCreditsTotal(filtered);
+        });
+    });
+}
+
+function updateCreditsTotal(filteredCourses) {
+    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+    const creditsSpan = document.getElementById('total-credits');
+    if (creditsSpan) {
+        creditsSpan.textContent = totalCredits;
+    }
+}
