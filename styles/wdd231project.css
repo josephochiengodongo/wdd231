@@ -267,14 +267,14 @@ p.credit {
 }
 div.p {
     display: grid;
-    grid-template-columns: repeat(1fr,1fr);
+    grid-template-columns: repeat(2,1fr);
     background-color: blue;
     color: white;
+    width: 900px;
+    height: 150px;
 
 
-}
-div.span {
-    width: 50%;
+
 }
 
 
