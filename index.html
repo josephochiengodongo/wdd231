@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/wdd231project.css">
     <link rel="stylesheet" href="styles/wdd231project-large.css">
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/byuscript.js" defer></script>
+    <script src="scripts/wdd231.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth@0,75..100;1,75..100&display=swap" rel="stylesheet">
@@ -51,12 +51,12 @@
         </section>
         <section class="courses-section">
             <h2>WEB CERTIFICATE COURSES</h2>
-            <div class="filter-button-section">
-                <button class="filter-button active" data-filter="all">All</button>
+            <div class="filters">
+                 <button class="filter-button active" data-filter="all">All</button>
                 <button class="filter-button" data-filter="CSE">CSE</button>
                 <button class="filter-button" data-filter="WDD">WDD</button>
             </div>
-            <div id="courseList">
+            <div id="courses-container">
                 <div class="course-item" data-category="ces">
                     <h3>CES-111</h3>
                     <p>Programming With Functions</p>
@@ -81,8 +81,7 @@
                     <h3>WDD-131</h3>
                     <p>Dynamic Web fundamentals</p>
                 </div>
-            </div>
-            <p class="credits">Total Credits: <span id="total-credits">12</span></p>
+            <p class="credits">Total Credits: <span id="total-credits">0</span></p>
         </section>
     </main>
     <footer>

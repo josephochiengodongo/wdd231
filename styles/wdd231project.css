@@ -119,12 +119,13 @@ h2.about-section {
 h2.course-section {
     align-items: center;
     padding: 0rem 2rem;
-    bottom:201px;
+    bottom:240px;
+    height: 80px;
     padding-left:1.5rem;
-    
+    background-color: aqua;
+    gap:2rem;    
     
 }   
-    
 
 p {
     width: 540px;
@@ -134,7 +135,48 @@ p {
 
 }
 
-.filter-button {
+.filter-buttons_section {
+    display: flex;
+    gap: 1.1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    border:none;
+    background-color: #f9f9f9;
+    font-weight: 600;
+    cursor: pointer;
+    transition:backgroun 0.3s ease;
+}
+
+.filter-buttons {
+    display: flex;
+    gap:1.1rem;
+    margin-bottom: 1.5rem;
+
+}
+.filter-button:hover {
+    background-color: orange;
+    transform: translateY(-0.6px);
+}
+
+.filter-button.active {
+    background-color: violet;
+    color: white; 
+    border-color: pink;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+.filter-button{
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     border: 2px solid #ccc;
@@ -144,63 +186,70 @@ p {
     transition: all 0.3s ease;
 }
 
-.filter-button:hover {
+.course-grid:hover {
     background-color: green;
     transform: translateY(-5px);/*lift effct*/
 
 }
+.filter-section:hover {
+    display: flex;
+    padding: 0.76rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: white;
+    font-weight: 600px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
-.filter-button.active {
+}
+.filter:hover {
+    background-color: orange;
+    transform: translateY(-0.6);
+}
+.filter.active {
     background-color: violet;
-    color: white;
+    color: white; 
     border-color: pink;
 }
 
-.filter-button-section {
+.filter-item {
     display: flex;
     justify-content: space-around;
     gap: 30px;
     padding: 1rem;
     margin-bottom: 1.5rem;
 }
-.rcourses-item {
+.course-item{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid green;
-    background-color:green;
+    border-radius: 1rem;
+    border: 2px solid green;
+    background-color: green;
     color: white;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    text-align: center;
-}
-
-
-
-.coursesList {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(240,1fr));
-    gap: 1.5rem;
-    background-color: white;
-
-
-
-}
-.courseList {
-    background-color: green;
-    padding: 1.5rem;
-    text-align: center;
-    font-weight: 600;
-    border-radius: 0.75;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    width: 230px;
     height: 80px;
-    
-
+    width: 240px;
+    text-align: center;
+    gap: 0.5rem;
 }
+
+
+
+#courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    background-color: aqua;
+    padding: 1.5rem;
+} 
+
+
+
 p.credit {
     text-align: center;
     font-weight: bold;
@@ -208,14 +257,24 @@ p.credit {
 }
 
 .socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color:azure;
     padding: 100px 0;
     size-adjust: inherit;
+    align-items: center;
 }
-footer.p {
-    background-color:blue;
-    display: flex;
-    justify-items: center;
+div.p {
+    display: grid;
+    grid-template-columns: repeat(1fr,1fr);
+    background-color: blue;
+    color: white;
+
+
+}
+div.span {
+    width: 50%;
 }
 
 
