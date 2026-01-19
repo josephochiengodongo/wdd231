@@ -160,8 +160,8 @@ p {
 }
 
 .filter-button.active {
-    background-color: violet;
-    color: white; 
+    background-color: peru;
+    color: blue; 
     border-color: pink;
 }
 
