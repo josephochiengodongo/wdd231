@@ -1,8 +1,9 @@
 header nav {
-    background-color: blue;
-    color: #fff;
+    background-color: darkgreen;
+    color:white;
     padding: 10px 0;
     text-align: left;
+    font-size: xx-large;
 
     
 }
@@ -25,7 +26,7 @@ header div {
     align-items: center;
     background-color: blue;
     padding: 11px 20px;
-    color: #fff;
+    color:white
 
 }
 
@@ -84,7 +85,7 @@ section.student-photo-section {
     width:275px;
     margin:1rem auto 1rem auto;
     position: absolute;
-    bottom:70px;
+    bottom:50px;
     left:601px;
     
         
@@ -112,7 +113,7 @@ h2.about-section {
     font-weight: bold;
     text-align: center;
     padding: 0rem 2rem;
-    bottom:201px;
+    bottom: 200px;
     
     
 }
@@ -121,9 +122,10 @@ h2.course-section {
     padding: 0rem 2rem;
     bottom:240px;
     height: 80px;
-    padding-left:1.5rem;
+    padding-left:3rem;
     background-color: aqua;
-    gap:2rem;    
+    gap:2rem; 
+    width: 100%;   
     
 }   
 
@@ -135,8 +137,10 @@ p {
 
 }
 
-.filter-buttons_section {
+.filters {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     gap: 1.1rem;
     margin-bottom: 1.5rem;
     padding: 0.75rem 1.5rem;
@@ -145,7 +149,7 @@ p {
     background-color: #f9f9f9;
     font-weight: 600;
     cursor: pointer;
-    transition:backgroun 0.3s ease;
+    transition:background-color 0.3s ease;
 }
 
 .filter-buttons {
@@ -167,10 +171,11 @@ p {
 
 .filters {
     display: flex;
-    justify-content: space-around;
-    gap: 30px;
+    align-items: center;
+    gap: 50px;
     padding: 1rem;
     margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 
