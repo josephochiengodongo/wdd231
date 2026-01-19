@@ -161,7 +161,7 @@ p {
 
 .filter-button.active {
     background-color: peru;
-    color: blue; 
+    color: black; 
     border-color: pink;
 }
 
