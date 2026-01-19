@@ -4,18 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231-Web Fronted Development-Joseph Odongo</title>
-    <meta name="description" content="This is my wdd-dynamic Web fundamentals">
+    <title>WDD2317-Web Fronted Development-Joseph Odongo</title>
+    <meta name="description" content="This is my wdd-dynamic Web fundamentals,it is the last subject for wdd, in certficate course knowned as web and computer programming.">
     <meta name="author" content="Joseph Odongo">
     <link rel="stylesheet" href="styles/wdd231project.css">
+    <link rel="stylesheet" href="styles/wdd231project-large.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/wdd231.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth@0,75..100;1,75..100&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <div class="humerger-menu">
             <span class="logo">Joseph Odongo</span>
-            <button class="menu-toggle" arial-label="Toggle menu">
+            <button class="Toggle menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -38,28 +42,27 @@
                     reading
                     tech blogs, experimenting with new coding languages, and working on personal projects to enhance my
                     skills.</p>
-            </div>
+                </div>
         </section>
         <section class="student-photo-section">
-            <div class="student-photo-img"></div>
             <h2>STUDENT PHOTO</h2>
+            <div class="student-photo-section"></div>
             <img src="images/myphoto.jpg" alt="my photo">
         </section>
         <section class="courses-section">
             <h2>WEB CERTIFICATE COURSES</h2>
-            <div class="filter-button-section">
-                <button class="filter-button active" data-filter="all">All</button>
+            <div class="filters"></div>
+                 <button class="filter-button active" data-filter="all">All</button>
                 <button class="filter-button" data-filter="CSE">CSE</button>
                 <button class="filter-button" data-filter="WDD">WDD</button>
-            </div>
-            <div id="courses-item">
+            <div id="courses-container">
                 <div class="course-item" data-category="ces">
                     <h3>CES-111</h3>
-                    <p>Programming with functions</p>
+                    <p>Programming With Functions</p>
                 </div>
                 <div class="course-item" data-category="wdd">
                     <h3>WDD-231</h3>
-                    <p>Web fronted</p>
+                    <p>Fronted Web Development</p>
                 </div>
                 <div class="course-item" data-category="ces">
                     <h3>CES-110</h3>
@@ -67,7 +70,7 @@
                 </div>
                 <div class="course-item" data-category="ces">
                     <h3>CES-210</h3>
-                    <p>Class with function</p>
+                    <p>Programming with Classes</p>
                 </div>
                 <div class="course-item" data-category="wdd">
                     <h3>WDD-130</h3>
@@ -75,9 +78,10 @@
                 </div>
                 <div class="course-item" data-category="wdd">
                     <h3>WDD-131</h3>
-                    <p>Web design fundamentals</p>
+                    <p>Dynamic Web fundamentals</p>
                 </div>
-            <p class="credits">Total Credits: <span id="total-credits">12</span></p>
+            </div>
+            <p class="credits">Total Credits:<span id="total-credits">12</span></p>
         </section>
     </main>
     <footer>
@@ -88,12 +92,14 @@
             <a href="https://github.com/josephochiengodongo/wdd231">
                 <img src="images/github.jpg" alt="github Icon">
             </a>
-            <a href="htttps://linkedin.com">
+            <a href="https://linkedin.com/in/joseph-odongo-oa37691">
                 <img src="images/linkedin.jpg" alt="Linkedin Icon">
             </a>
         </nav>
-        <p><span id="currentyear">&copy; 2026 Joseph  Odongo</span></p>
-        <p>LastModified:<span id="LastModified">13/1/2026 8:45</span></p>
+        <div class="p">
+            <p><span id="currentyear">&copy; 2026 Joseph  Odongo</span></p>
+            <p>LastModified:<span id="LastModified">13/1/2026 8:45:45</span></p>
+        </div>
     </footer>
 </body>
 

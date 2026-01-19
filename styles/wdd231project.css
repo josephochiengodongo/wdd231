@@ -1,11 +1,17 @@
 header nav {
-    background-color: blue;
-    color: #fff;
+    background-color: darkgreen;
+    color:white;
     padding: 10px 0;
     text-align: left;
+    font-size: xx-large;
 
     
 }
+body {
+  font-family: "Roboto",  Arial, sans-serif
+  
+}
+
 head,body,footer {
     margin: 0;
     padding: 0;
@@ -20,7 +26,7 @@ header div {
     align-items: center;
     background-color: blue;
     padding: 11px 20px;
-    color: #fff;
+    color:white
 
 }
 
@@ -59,7 +65,7 @@ img:hover {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1.1rem;
-    grid-column: 2rem;
+    grid-column: inherit;
     grid-row: 2;
     background-color: azure;
 
@@ -79,7 +85,7 @@ section.student-photo-section {
     width:275px;
     margin:1rem auto 1rem auto;
     position: absolute;
-    bottom:70px;
+    bottom:50px;
     left:601px;
     
         
@@ -107,19 +113,21 @@ h2.about-section {
     font-weight: bold;
     text-align: center;
     padding: 0rem 2rem;
-    bottom:201px;
+    bottom: 200px;
     
     
 }
 h2.course-section {
-    text-align: center;
+    align-items: center;
     padding: 0rem 2rem;
-    bottom:201px;
-    padding-left:1.5rem;
-    
+    bottom:240px;
+    height: 80px;
+    padding-left:3rem;
+    background-color: aqua;
+    gap:2rem; 
+    width: 100%;   
     
 }   
-    
 
 p {
     width: 540px;
@@ -129,60 +137,152 @@ p {
 
 }
 
+.filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    border:none;
+    background-color: #f9f9f9;
+    font-weight: 600;
+    cursor: pointer;
+    transition:background-color 0.3s ease;
+}
+
 .filter-buttons {
     display: flex;
-    gap: 1.1rem;
+    gap:1.1rem;
     margin-bottom: 1.5rem;
 
 }
+.filter-button:hover {
+    background-color: orange;
+    transform: translateY(-0.6px);
+}
 
-.filter-button-section {
+.filter-button.active {
+    background-color: peru;
+    color: black; 
+    border-color: pink;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+
+
+
+.filter-button{
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.course-grid:hover {
+    background-color: green;
+    transform: translateY(-5px);/*lift effct*/
+
+}
+.filter-section:hover {
     display: flex;
     padding: 0.76rem;
     border-radius: 1rem;
     border: none;
-    background-color: violet;
+    background-color: white;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
 }
-.course-item {
+.filter:hover {
+    background-color: orange;
+    transform: translateY(-0.6px);
+}
+.filter.active {
+    background-color: violet;
+    color: white; 
+    border-color: pink;
+}
+
+.filter-item {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 30px;
     padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    color: #333;
+    margin-bottom: 1.5rem;
+}
+.course-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid green;
+    background-color: green;
+    color: white;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    min-height: 120px;
+    height: 80px;
+    width: 240px;
     text-align: center;
+    gap: 0.5rem;
 }
 
-.course-item:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #f0f0f0;
-}
 
-.course {
-    background: #fff;
-    padding: 1.5rem;
-    text-align: center;
-    font-weight: 600;
-    border-radius: 0.75rem;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
 
-}
-
-.courses-container {
+#courses-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    width: 100%;
+    background-color: aqua;
+    padding: 1.5rem;
+} 
+
+
+
+p.credit {
+    text-align: center;
+    font-weight: bold;
+    padding: 2rem;
 }
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:azure;
+    padding: 100px 0;
+    align-items: center;
+}
+div.p {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: blue;
+    color: white;
+    width: 900px;
+    height: 150px;
+
+
+
+}
+
+
+
 
 
 
