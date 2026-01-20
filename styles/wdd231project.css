@@ -169,14 +169,6 @@ p {
     border-color: pink;
 }
 
-.filters {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
-}
 
 
 
