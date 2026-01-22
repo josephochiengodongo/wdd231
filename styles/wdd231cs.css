@@ -194,14 +194,6 @@ p {
     color: #000;
 }
 
-.course {
-    background: #fff;
-    padding: 1.5rem;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px red;
-}
-
 .filters-button-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
