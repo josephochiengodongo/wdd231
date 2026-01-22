@@ -1,4 +1,4 @@
-
+cont
 const courses = [
     {
         subject: 'CSE',
@@ -10,7 +10,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: true
+        completed: false
     },
     {
         subject: 'WDD',
@@ -23,7 +23,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: true
+        completed: false
     },
     {
         subject: 'CSE',
@@ -35,7 +35,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: true
+        completed: false
     },
     {
         subject: 'CSE',
@@ -61,7 +61,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: true
+        completed: false
     },
     {
         subject: 'WDD',
@@ -77,5 +77,5 @@ const courses = [
         ],
         completed: false
     }
-];
+]
 

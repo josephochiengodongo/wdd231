@@ -147,7 +147,7 @@ h2.about-section {
 
 }
 
-h2.gcourse-section {
+h2.course-section {
     display: flex;
     justify-content: space-around;
     padding: 0rem 2rem;
@@ -247,7 +247,7 @@ p {
     transform: scale(0.98);
 }
 
-.hjcourses_section:hover {
+.courses_section {
     background-color: yellowgreen;
     transform: translateY(-8px);
     height: 60px;
