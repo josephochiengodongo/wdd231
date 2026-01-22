@@ -174,14 +174,14 @@ p {
 .course-item:hover {
     transform: translateY(-8px) scale(1.05);
     background-color: orange;
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 2);
     background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 
 }
 
 .course-item:active {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 2);
 }
 
 .course-item h3 {
@@ -206,7 +206,7 @@ p {
 .course {
     background: #fff;
     padding: 1.5rem;
-    text-align: 1.1rem;
+    text-align: center;
     border-radius: 20px;
     box-shadow: 0 8px 20px red;
 }
@@ -272,7 +272,7 @@ p {
     width: 220px;
     text-align: center;
     gap: 0.5rem;
-    box-sizing: forestgreen;
+    box-sizing: border-box;
 }
 
 
