@@ -1,3 +1,15 @@
+@media (max-width:500px) {
+    .filter-button{
+        grid-template-columns: auto;
+    }
+}   .course-grid {
+    grid-template-columns: auto;
+
+}
+
+
+
+
 header nav {
     background-color: darkgreen;
     color:white;
@@ -139,19 +151,47 @@ p {
 
 
 .course-item:hover {
+    transform: translateY(-8px) scale(1.05);
     background-color: orange;
-    transform: translateY(-5px);/*lift effect */
+    box-shadow:0 12px 20px rgba(0,0,0,0.2);
+    border-color: #667eea;
 
 }
 
-.filter-button:hover {
+.course-item:active {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.0.2);
+}
+.course-item h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.course-item p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.95;
+}
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap:1.5rem;
+    background-color: azure;
+    color: #000;
+}
+
+
+
+
+
+.tfilter-button:hover {
     background-color: yellowgreen;
     transform: translateY(-8px);
     height: 60px;
     border-radius: 1rem;
     color: beige;
 }
-.course-item{
+.tcourse-item{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +211,7 @@ p {
 }
 
 
-#courses-container {
+#tcourses-container {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
     gap: 1.5rem;
@@ -181,7 +221,7 @@ p {
 
     
 } 
-#filter-buttons {
+#tfilter-buttons {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
     gap: 3rem;
@@ -194,7 +234,7 @@ p {
 }
 
 
-p.credit {
+p.tcredit {
     text-align: center;
     font-weight: bold;
     padding: 2rem;
