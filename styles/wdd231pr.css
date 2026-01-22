@@ -238,7 +238,7 @@ p {
     transform: scale(0.98);
 }
 
-.hcourses_section:hover {
+.hjcourses_section:hover {
     background-color: yellowgreen;
     transform: translateY(-8px);
     height: 60px;
