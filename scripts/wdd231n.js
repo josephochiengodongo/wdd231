@@ -95,5 +95,8 @@ function setupFilterButtons() {
             
             renderCourses(filtered);
             updateCreditsTotal(filtered);
+
+
         });
     });
+}
