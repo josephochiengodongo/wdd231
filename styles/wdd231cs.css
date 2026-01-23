@@ -138,7 +138,7 @@ h2.about-section {
 
 }
 
-h2.subject-section {
+h2.courses-section {
     display: flex;
     justify-content: space-around;
     padding: 0rem 2rem;
@@ -159,7 +159,15 @@ p {
 
 
 }
+.course {
+    background: #fff;
+    padding: 1.5;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px orange;
 
+}
 
 
 .course-item:hover {
@@ -196,10 +204,10 @@ p {
 
 .filters-button-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-template-columns: repeat(3,1fr);
     gap: 1rem;
-    margin: 2rem;
-    height: 50px;
+    margin: 2rem 0;
+    
 
 }
 
@@ -223,19 +231,10 @@ p {
     box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
 }
 
-.filter-button.active {
+.filters-button-active {
     background-color: #667eea;
     color: #fff;
-    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.5);
-    transform: scale(0.98);
-}
-
-.subject_section {
-    background-color: yellowgreen;
-    transform: translateY(-8px);
-    height: 60px;
-    border-radius: 1rem;
-    color: beige;
+    box-shadow: 0 6px 12px rgb(102,126,234,0.5);
 }
 
 .course-item {

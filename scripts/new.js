@@ -1,4 +1,3 @@
-cont
 const courses = [
     {
         subject: 'CSE',
@@ -10,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -23,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -35,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -78,26 +77,3 @@ const courses = [
         completed: false
     }
 ]
-  
-
-
-
-const buttons = document.querySelectorAll('.filters button');
-const courseItems = document.querySelectorAll('.course');
-    buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      // Set active button
-      buttons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
-
-      const filter = button.dataset.filter;
-
-      courses.forEach(course => {
-        if (filter === 'all' || course.classList.contains(filter)) {
-          course.classList.remove('hide');
-        } else {
-          course.classList.add('hide');
-        }
-      });
-    });
-  });

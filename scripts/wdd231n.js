@@ -79,3 +79,21 @@ const courses = [
     }
 ];
 
+function setupFilterButtons() {
+    const buttons = document.querySelectorAll('.filter-button');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            buttons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+            
+            const filter = button.getAttribute('data-filter');
+            const filtered = filter === 'all' 
+                ? courses 
+                : courses.filter(course => course.subject === filter);
+            
+            renderCourses(filtered);
+            updateCreditsTotal(filtered);
+        });
+    });
