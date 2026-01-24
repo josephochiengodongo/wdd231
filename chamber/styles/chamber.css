@@ -1,0 +1,17 @@
+header nav {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 0;
+    text-align: left;
+    font-size: xx-large;
+}
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-optical-sizing: auto;
+}header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: white
+}
