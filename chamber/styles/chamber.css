@@ -1,7 +1,7 @@
 :root {
-    --primary-color:green
-    --secondary-color: 
-    --background-color:
+    --primary-color:green;
+    --secondary-color:orange; 
+    --background-color:azure;
     --text-color: white;
     --font-family: "Roboto", sans-serif;
 
