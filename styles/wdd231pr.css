@@ -131,8 +131,8 @@ h2.about-section {
 
 
 
-p {
-    width: 540px;
+.home.event {
+    width: 400px;
     height: 250px;
     padding-left: 2rem;
     border: 1.1rem;
