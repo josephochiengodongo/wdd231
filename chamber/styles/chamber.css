@@ -40,7 +40,9 @@ nav  {
   font-size: 1.5rem;
   cursor: pointer;
 }
-
+body,main,footer {
+  width: 900px;
+}
 
 .hero h1 {
   font-size: 2rem;
@@ -64,13 +66,70 @@ nav  {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+section.events-section {
+  background-color: aqua;
+  width: 390px;
+  height: 300px;
+  grid-column: 1/-1;
 
-
-
+}
+section.current-weather-section {
+  background-color: aqua;
+  width: 255px;
+  height:300px;
+  grid-column: 1/-1;
+  position: absolute;
+  left: 401px;
+  top:500px;
+}
+section.weather-forecast-section{
+  background-color: aqua;
+  width: 255px;
+  height: 300px;
+  grid-column: 1/-1;
+  position: absolute;
+  left: 660px;
+  top:500px
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
 h3 {
-  padding: 2rem 0;
+  background-color: black;
+  color: white;
+}
+.members-article {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: aqua;
+  gap: 1rem;
+}
+article.business-one {
+  background-color: bisque;
+  width: 290px;
+  height: 250px;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  margin: 2rem  0;
+}
+article.business-two {
+  background-color: bisque;
+  width: 290px;
+  height: 250px;
+  border-radius: 0.5rem;
+  box-sizing: border-box; 
+  margin-top: 2rem;
+}
+h4 {
+  background-color: aquamarine;
+  margin-top: .1rem;
+  box-sizing: border-box;
 }
 
+
+    
 
 .business-three {
   background:white;
@@ -85,7 +144,7 @@ h3 {
   color:white;
   height: 400px;
   padding: 2rem;
-  background-color: green;
+  background-color:orangered;
   border-radius: 0.5rem;
 
 }
