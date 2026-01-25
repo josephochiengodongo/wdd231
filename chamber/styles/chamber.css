@@ -120,14 +120,29 @@ article.business-two {
   height: 250px;
   border-radius: 0.5rem;
   box-sizing: border-box; 
-  margin-top: 2rem;
+  margin: 2rem 0;
+  position: 
+  left: 305px;
+  top: 794px;
 }
-h4 {
+article.business-three {
+  background-color: bisque;
+  width: 290px;
+  height: 250px;
+  border-radius:0.5; 
+  margin: 2rem 0;
+  box-sizing: border-box;
+}
+h4 { 
   background-color: aquamarine;
-  margin-top: .1rem;
+  margin-top: .01rem;
   box-sizing: border-box;
 }
 
+.members-article {
+  display: flex;
+  flex-direction: row;
+}
 
     
 
