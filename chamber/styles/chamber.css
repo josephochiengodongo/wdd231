@@ -33,7 +33,6 @@ nav  {
   padding: 0.5rem 0;
   display: block;
   background-color: green;
-  display: flex;
   flex-direction: row;
   gap:1.5rem;
   align-items: center;
