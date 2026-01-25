@@ -71,6 +71,9 @@ section.events-section {
   width: 390px;
   height: 300px;
   grid-column: 1/-1;
+  margin: .01rem;
+  padding: .1rem 0;
+  
 
 }
 section.current-weather-section {
@@ -100,11 +103,10 @@ h3 {
   color: white;
 }
 .members-article {
-  display:flex;
+  display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  background-color: aqua;
-  gap: 1rem;
+  justify-content: space-between;
+
 }
 article.business-one {
   background-color: bisque;
@@ -121,7 +123,7 @@ article.business-two {
   border-radius: 0.5rem;
   box-sizing: border-box; 
   margin: 2rem 0;
-  position: 
+  position:absolute;
   left: 305px;
   top: 794px;
 }
@@ -132,6 +134,9 @@ article.business-three {
   border-radius:0.5; 
   margin: 2rem 0;
   box-sizing: border-box;
+  position: absolute;
+  left:604px;
+  top: 800px;
 }
 h4 { 
   background-color: aquamarine;
@@ -142,6 +147,7 @@ h4 {
 .members-article {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
     
@@ -150,7 +156,7 @@ h4 {
   background:white;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-sizing: border-box;
 
 
 }
@@ -171,3 +177,7 @@ footer {
   color: white;
 
 }
+h3 {
+  padding: 10px;
+}
+
