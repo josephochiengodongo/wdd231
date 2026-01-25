@@ -1,12 +1,5 @@
 :root {
-    --primary-color:green;
-    --secondary-color:orange; 
-    --background-color:azure;
-    --text-color: white;
-    --font-family: "Roboto", sans-serif;
-
-
-    --font-family: "Roboto", sans-serif;
+  --font-family: "Roboto", sans-serif;
     --font-optical-sizing: auto;
     --font-weight: <weight>;
     --font-style: normal;
@@ -60,18 +53,7 @@ nav  {
 .hero p {
   max-width: 600px;
   margin: 1rem auto;
-}
-section.event {
-  background-color:redgreen;
-  color:white;
-  padding: 2.5; 
-  margin: 2rem auto;                                                                                                                                              
-  width: 400px;
-  height: 400px;
-  padding: 1rem;
-  border-radius: 8px;
 
-  
 
 }
 
