@@ -75,49 +75,32 @@ section.event {
 
 }
 
-.cards {
+.business-one {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
-.card {
+.business-two {
   background: white;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.card h3 {
-  color: var(--primary-color);
-}
+
+
 h3 {
   padding: 2rem 0;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
 
-.card {
-  background: white;
+.business-three {
+  background:white;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
 
-.card h3 {
-  color: var(--primary-color);
-}
-.card  {
-  width: 300px;
-  height: 400px;
-  background-color: aqua;
-  padding: 2rem;
-  display: block;
-  border-radius: 0.rem;
 
 }
 .h3.weather-forecast {
