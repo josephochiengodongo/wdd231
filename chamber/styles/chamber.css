@@ -95,16 +95,12 @@ h3 {
   position: relative;
   bottom: 50px;
 }
-.members-article {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 
-}
 article.business-one {
   background-color: bisque;
   width: 290px;
-  height: 250px;
+  height: 220px;
+  object-fit: cover;
   grid-column: 1/-1;
   margin: 1rem 0;
   padding: .1rem 0;
@@ -117,7 +113,7 @@ article.business-one {
 article.business-two {
   background-color: bisque;
   width: 290px;
-  height: 250px;
+  height: 220px;
   grid-column: 1/-1;
   position: absolute;
   left: 308px;
@@ -131,6 +127,8 @@ h4 {
   position: relative;
   bottom: 48px;
   
+  
+  
 
 }
 
@@ -140,10 +138,12 @@ h4 {
   background-color: bisque;
   width: 290px;
   grid-column: 1/-1;
-  height: 250px;
+  height: 220px;
   position: absolute;
   left: 620px;
   top:850px;
+
+  
 
 
 }
@@ -162,5 +162,7 @@ footer {
   justify-content: center;
   background-color: green;
   color: white;
+  position: absolute;
+  top:1100px;
 }
 
