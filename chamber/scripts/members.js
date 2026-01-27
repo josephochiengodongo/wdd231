@@ -1,5 +1,5 @@
-{
-   companies = [
+
+const companies = [
   {
     name: "Expert Holdings",
     industry: "Retail",
@@ -80,4 +80,4 @@ const fetchData = async () => {
   } catch (error) {
     console.error("Error fetching data:", error); // Handle any errors
   }
-};}
+};
