@@ -72,7 +72,7 @@ section.events {
   height: 300px;
   grid-column: 1/-1;
   margin: 0;
-  padding: 1rem o;
+  padding: 1rem 0;
   position:relative; 
   top:19px;
 
