@@ -1,4 +1,4 @@
-cont
+
 const courses = [
     {
         subject: 'CSE',
