@@ -1,0 +1,12 @@
+@media (min-width: 900px) {
+  section.home {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  section.home {
+    padding: 1.5rem;
+  }
+}
