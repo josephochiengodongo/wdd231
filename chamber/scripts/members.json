@@ -1,0 +1,66 @@
+
+{
+  "members":[
+    {
+        "name": "Expert Holdings",
+        "industry": "Retail",
+        "location": "Industry",
+        "phone": "+223 70 123 456",
+        "email": "info@expertraders.com",
+        "adress":"P.O.Box 54 Nairobi",
+        "membership":"ncc342",
+        "level":"member"
+    },
+    {
+        "name": "Reaal Tech Solutions",
+        "industry": "IT Services",
+        "location": "Nairobi",
+        "phone": "+223 76 987 654",
+        "email": "contact@realeserttech.com",
+        "adress": "P.O.Box 67 Nairibi",
+        "membership":"Gold"
+    },
+    {
+        "name": "Savana Logistics",
+        "industry": "Transportation",
+        "location": "Nairobi",
+        "phone": "+223 71 555 888",
+        "email": "support@savanalogistics.com",
+        "adress":"P.O.Box 6578 Naivasha",
+        "membership": "silver"
+    },
+    {
+        "name":"Bount Baker",
+        "industry":"baakery",
+        "location": "Nairobi",
+        "phone": "073564877",
+        "email":"bony@bytbonty",
+        "adress":"box 234 Nairobi",
+        "membership": "siver"
+    },
+    {
+        "name": "Top printers",
+        "industry": "printing",
+        "location": "Nairobi",
+        "phone": "0727812455",
+        "email": "top@topprinter",
+        "adress":"Box 34576 Nairobi",
+        "member":"Silver"
+    },
+    {
+        "name":"Kebsali Taders",
+        "indusrty":"sales",
+        "location": "Nairobi",
+        "phone":"07654321",
+        "email": "keb@jotrde",
+        "adress":"jihgt564hy"
+    },
+    {
+        "name":"Gmaks Travellers",
+        "indusustry":"Travelling",
+        "location":"Nairobi",
+        "phone": "0786543432",
+        "email": "gmark@travelas"
+    }
+]
+}
