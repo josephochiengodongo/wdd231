@@ -184,7 +184,8 @@ article.business-one {
   margin: 1rem 0;
   padding: .1rem 0;
   position: relative;
-  top: 50px;  
+  top: 50px;
+  border-radius: 1rem;  
   
 }
 article.article-two {
@@ -212,6 +213,8 @@ article.business-two {
   position: absolute;
   left: 308px;
   top:850px;
+  border-radius: 1rem
+  
   
   
 }
@@ -220,7 +223,9 @@ h4 {
   height: 70px;
   position: relative;
   bottom: 48px;
-  
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  text-align: center;
   
   
 
@@ -236,6 +241,7 @@ h4 {
   position: absolute;
   left: 620px;
   top:850px;
+  border-radius: 1rem;
 
   
 
