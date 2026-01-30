@@ -53,8 +53,9 @@ body,main,footer {
   margin: 1rem auto;
 
 }
-section.events-section {
-  background-color: aqua;
+section.events-section{
+  background-color: black;
+  color: white;
   width: 390px;
   height: 300px;
   grid-column: 1/-1;
@@ -67,8 +68,9 @@ section.events-section {
 
 }
 section.current-weather-section {
-  background-color: aqua;
+  background-color: black;
   width: 255px;
+  color: white;
   height:300px;
   grid-column: 1/-1;
   position: absolute;
@@ -152,7 +154,7 @@ h4 {
   color:white;
   height: 400px;
   padding: 2rem;
-  background-color:orangered;
+  background-color:green;
   border-radius: 0.5rem;
 
 }
