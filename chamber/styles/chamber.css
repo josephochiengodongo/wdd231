@@ -31,12 +31,12 @@ nav  {
   color:white;
   text-decoration: none;
   padding: 1rem 0;
-  background-color: green;
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
   gap:1rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  font-size: large;
 }
 
 .menu-toggle {
@@ -89,6 +89,7 @@ section.current-weather{
   grid-column: 1/-1;
   position: absolute;
   left: 401px;
+  top:1147px;
   
 
 }
@@ -156,18 +157,20 @@ section.weather-forecast-section{
   grid-column: 1/-1;
   position: absolute;
   left: 660px;
-  top:600px;
+  top:601px;
   text-align: center;
 }
 
 section.weather-forecast{
-  background-color: red;
+  background-color:orangered;
   width: 255px;
   height: 300px;
   grid-column: 1/-1;
   position: absolute;
-  left: 660px;
-  top:760px;
+  left: 672px;
+  top:1151px;
+  text-align: center;
+  color:black;
 }
 
 
@@ -195,7 +198,8 @@ article.business-one {
   padding: .1rem 0;
   position: relative;
   top: 130px;
-  border-radius: 1rem;  
+  border-radius: 1rem; 
+  text-align: center; 
   
 }
 article.article-two {
@@ -221,21 +225,26 @@ article.business-two {
   height: 220px;
   grid-column: 1/-1;
   position: absolute;
-  left: 308px;
+  left: 311px;
   top:970px;
-  border-radius: 1rem
+  border-radius: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
   
   
   
 }
 h4 { 
-  background-color:aliceblue;
+  background-color:green;
   height: 70px;
   position: relative;
   bottom: 48px;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   text-align: center;
+  color: white;
+  
+  
   
   
 
@@ -250,8 +259,9 @@ h4 {
   height: 220px;
   position: absolute;
   left: 620px;
-  top:962px;
+  top:968px;
   border-radius: 1rem;
+  text-align: center;
 
   
 
