@@ -71,37 +71,43 @@ section.events-section {
 
 }
 section.events {
-  background-color:aquamarine;
+  background-color:violet;
   width:390px;
   height: 300px;
   grid-column: 1/-1;
-  margin: 0;
-  padding: 1rem 0;
   position:relative; 
-  top:130px;
+  top:123px;
+  margin: 0 ;
+  padding: .1rem 0;
+  border-radius: 1rem;
+  
+  
 
   
 }
-section.current-weather{
-  background-color: aqua;
+section.current-weather {
+  background-color:violet;
   width: 255px;
   height:300px;
   grid-column: 1/-1;
   position: absolute;
-  left: 401px;
+  left: 403px;
   top:1147px;
+  text-align: center;
+
   
 
 }
 
 article.article-three {
-  background-color: red;
+  background-color:bisque;
   width: 290px;
   grid-column: 1/-1;
   height: 220px;
   position: absolute;
   left: 620px;
-  top:1350px;
+  top:1650px;
+  border-radius: 1rem;
 }
 article.article-one {
   background-color: bisque;
@@ -110,10 +116,14 @@ article.article-one {
   object-fit: cover;
   grid-column: 1/-1;
   margin: 1rem 0;
-  padding: .1rem 0;
   position: relative;
-  top: 50px;  
+  top:280px;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1rem 0;
+
 }
+
 
 
 
@@ -162,13 +172,13 @@ section.weather-forecast-section{
 }
 
 section.weather-forecast{
-  background-color:orangered;
+  background-color:violet;
   width: 255px;
   height: 300px;
   grid-column: 1/-1;
   position: absolute;
-  left: 672px;
-  top:1151px;
+  left: 666px;
+  top:1148px;
   text-align: center;
   color:black;
 }
@@ -192,14 +202,14 @@ article.business-one {
   background-color: bisque;
   width: 290px;
   height: 220px;
-  object-fit: cover;
   grid-column: 1/-1;
-  margin: 1rem 0;
-  padding: .1rem 0;
   position: relative;
   top: 130px;
-  border-radius: 1rem; 
-  text-align: center; 
+  text-align: center;
+  margin: 0;
+  padding: 1rem 0;
+  border-radius: 1rem;
+
   
 }
 article.article-two {
@@ -209,7 +219,10 @@ article.article-two {
   grid-column: 1/-1;
   position: absolute;
   left: 308px;
-  top:px;
+  top:1650px;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 0;
 }
 
 
@@ -238,7 +251,7 @@ h4 {
   background-color:green;
   height: 70px;
   position: relative;
-  bottom: 48px;
+  bottom:70px;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   text-align: center;
@@ -285,14 +298,14 @@ footer {
   position: absolute;
   top:1300px;
 }
-section.information {
+section.information{
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: green;
   color: white;
   position: absolute;
-  top:500px;
+  top:1100px;
 
 
   
