@@ -102,7 +102,7 @@ article.article-three {
   background-color:bisque;
   width: 290px;
   grid-column: 1/-1;
-  height: 220px;
+  height: 250px;
   position: absolute;
   left: 620px;
   top:1650px;
@@ -111,7 +111,7 @@ article.article-three {
 article.article-one {
   background-color: bisque;
   width: 290px;
-  height: 220px;
+  height: 250px;
   object-fit: cover;
   grid-column: 1/-1;
   margin: 1rem 0;
@@ -200,7 +200,7 @@ h3 {
 article.business-one {
   background-color: bisque;
   width: 290px;
-  height: 220px;
+  height: 250px;
   grid-column: 1/-1;
   position: relative;
   top: 276px;
@@ -214,7 +214,7 @@ article.business-one {
 article.article-two {
   background-color: bisque;
   width: 290px;
-  height: 220px;
+  height: 250px;
   grid-column: 1/-1;
   position: absolute;
   left: 313px;
@@ -234,7 +234,7 @@ article.article-two {
 article.business-two {
   background-color: bisque;
   width: 290px;
-  height: 220px;
+  height: 250px;
   grid-column: 1/-1;
   position: absolute;
   left: 311px;
@@ -268,7 +268,7 @@ h4 {
   background-color: bisque;
   width: 290px;
   grid-column: 1/-1;
-  height: 220px;
+  height: 250px;
   position: absolute;
   left: 620px;
   top:1098px;
