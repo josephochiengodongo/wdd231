@@ -8,14 +8,14 @@ const companies = [
     email: "info@expertraders.com",
     adress:"P.O.Box 54 Nairobi",
     membership:"ncc342",
-    level:"member"
+    level:"silver"
   },
   {
     name: "Reaal Tech Solutions",
     industry: "IT Services",
     location: "Nairobi",
     phone: "+223 76 987 654",
-    email: "contact@realeserttech.com",
+    email: "info@realeserttech.com",
     adress: "P.O.Box 67 Nairibi",
     membership:"Gold"
   },
@@ -24,7 +24,7 @@ const companies = [
     industry: "Transportation",
     location: "Nairobi",
     phone: "+223 71 555 888",
-    email: "support@savanalogistics.com",
+    email: "info@savanalogistics.com",
     adress:"P.O.Box 6578 Naivasha",
     membership: "silver"
   },

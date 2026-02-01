@@ -203,7 +203,7 @@ article.business-one {
   height: 220px;
   grid-column: 1/-1;
   position: relative;
-  top: 146px;
+  top: 276px;
   text-align: center;
   margin: 0;
   padding: .1rem 0;
@@ -238,7 +238,7 @@ article.business-two {
   grid-column: 1/-1;
   position: absolute;
   left: 311px;
-  top:970px;
+  top:1100px;
   border-radius: 1rem;
   text-align: center;
   transition: transform 0.3s ease;
@@ -271,7 +271,7 @@ h4 {
   height: 220px;
   position: absolute;
   left: 620px;
-  top:968px;
+  top:1098px;
   border-radius: 1rem;
   text-align: center;
 
@@ -288,7 +288,7 @@ h4 {
   border-radius: 0.5rem;
 
 }
-footer {
+footer.chamber-information.social-media.p-div {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -303,12 +303,21 @@ section.information{
   justify-content: center;
   background-color: green;
   color: white;
-  position: absolute;
-  top:1100px;
+  position: relative;
+  top:2000px;
 
-
-  
-  
-
-  
 }
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color:green;
+  color: white;
+  position: relative;
+  top:400px;
+  height: 230px;
+
+
+}
+
+
