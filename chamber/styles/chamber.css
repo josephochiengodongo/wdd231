@@ -76,10 +76,9 @@ section.events {
   height: 300px;
   grid-column: 1/-1;
   position:relative; 
-  top:123px;
+  top:118px;
   margin: 0 ;
   padding: .1rem 0;
-  border-radius: 1rem;
   
   
 
@@ -117,10 +116,10 @@ article.article-one {
   grid-column: 1/-1;
   margin: 1rem 0;
   position: relative;
-  top:280px;
+  top:295px;
   text-align: center;
   border-radius: 1rem;
-  padding: 1rem 0;
+  padding: .1rem 0;
 
 }
 
@@ -204,10 +203,10 @@ article.business-one {
   height: 220px;
   grid-column: 1/-1;
   position: relative;
-  top: 130px;
+  top: 146px;
   text-align: center;
   margin: 0;
-  padding: 1rem 0;
+  padding: .1rem 0;
   border-radius: 1rem;
 
   
@@ -218,7 +217,7 @@ article.article-two {
   height: 220px;
   grid-column: 1/-1;
   position: absolute;
-  left: 308px;
+  left: 313px;
   top:1650px;
   text-align: center;
   border-radius: 1rem;
