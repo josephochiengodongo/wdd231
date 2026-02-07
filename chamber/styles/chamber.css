@@ -366,19 +366,7 @@ form {
     input:focus {border-left-color: black; outline:none;}
     input:required:valid{border-left-color: green;}
   
-    input[type=submit] {
-      border: none;
-      text-align: center;
-      background-color: #3D405B;
-      color: white;
-      border-radius: 1rem;
-      padding: .75rem 1.5rem;
-      margin: 2rem 0;
-      font-size: 1.2rem;
-      -webkit-appearance: none;
-      appearance: none;
-    }
-  }
+}
   
   
   
