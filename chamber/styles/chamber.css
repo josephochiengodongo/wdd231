@@ -321,10 +321,9 @@ footer {
 }
 
  *{box-sizing: border-box;}
-html {
-  -webkit-text-size-adjust: 100%; 
-  -ms-text-size-adjust: 100%;
-}
+
+  
+
 
 h1 {
   color: #3D405B;
@@ -380,9 +379,8 @@ form {
       appearance: none;
     }
   }
-  input:-webkit-autofill{
-    -webkit-text-fill-color: #3D405B;
-  }
+  
+  
   
   #results {
     background-color: #F4F1DE;
