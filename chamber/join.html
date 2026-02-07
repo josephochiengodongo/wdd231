@@ -42,14 +42,17 @@
         <input name="Organizational_title" id="Organizational_title" type="text" title="enter your Organizational_title with your organization name"
         autocomplete="organization-title"pattern="[A-Za-z\-]{7,}" reqired/>
         <label for="email">Email:</label>
-        <input name="email" id="email"type=text title="enyer your email adress"autocomplete="email"placeholder="example@domain.com"required/>
+        <input name="email" id="email"type="ëmail"title="enter your email adress"autocomplete="email"placeholder="example@domain.com"required/>
         <label for="phone_number">Phone Number</label>
-        <input name="phone_number"id="phone_number"type="text"title="enteryour phone number"autocomplete="tell"placeholder="+254727812410 required"/>
+        <input name="phone"id="phone"type="tel"title="enter your phone number"autocomplete="tel"placeholder="+254727812410"required/>
         <label for="membership">Membersip Level</label>
-        <input name="membership" id="membership" title="select a membership level"autocomplete="organization"required/>
-         <option value="">--select membership_level--</option>
-         <option value="np">NP members(NP)</option>
-         <option value="bronze">bronze</option>
+        <select name="membership" id="membership" title="select a membership level"autocomplete="organization"required/>
+        <option value="">--select membership_level--</option>
+        <option value="np">NP members(NP)</option>
+        <option value="bronze">Bronze</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+    </select>
         
     
         <button type="submit">Submit</button>
