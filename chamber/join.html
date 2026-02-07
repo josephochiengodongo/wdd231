@@ -38,18 +38,18 @@
             <label for="first_name">First Name</label>
             <input name="first_name" id="first_name" type="text" title="enter your firstname" autocomplete="given-name" required readonly/>
             <label for="last_name">Last Name</label>
-            <input name="last_name" id="last_name" type="text" title="enter your last name" autocomplete="family-name"required readonly/>
+            <input name="last_name" id="last_name" type="text" title="enter your last name" autocomplete="family-name" required readonly/>
             <label for="0rganizational_title">Organizational Title</label>
             <input name="Organizational_title" id="Organizational_title" type="text" title="enter your Organizational_title with your organization name"
             autocomplete="organization-title" pattern="[A-Za-z\-]{7,}" required/>
             <label for="email">Email</label>
             <input name="email" id="email" type="email" title="enter your email adress" autocomplete="email" placeholder="josephodongo99@gmail.com" required/>
             <label for="organization">Organizational Name</label>
-            <input name="organization" id="organization" type="text" title="enter the organization name"placeholder="your organization" autocomplete="organization"required/>
-            <label for="phone_number">Phone Number</label>
-            <input name="phone" id="phone" type="tel" title="enter your phone number" autocomplete="tel"placeholder="+254727812410" required/>
+            <input name="organization" id="organization" type="text" title="enter the organization name" placeholder="your organization" autocomplete="organization" required/>
+            <label for="phone">Phone Number</label>
+            <input name="phone" id="phone" type="tel" title="enter your phone number" autocomplete="tel" placeholder="+254727812410" required/>
             <label for="description">Organizational Description</label>
-            <textarea name="descrition" id="description" title="describe your organization" placeholder="brief description of your organization" row="4" required></textarea>
+            <textarea name="descrition" id="description" title="describe your organization" placeholder="brief description of your organization" required></textarea>
             <input name="timestump" id="timestump" type="hidden" value=""/>
             <label for="membership">Membersip Level</label>
             <select name="membership" id="membership" title="select a membership level" autocomplete="organization" required>
@@ -58,7 +58,8 @@
             <option value="bronze">Bronze</option>
             <option value="silver">Silver</option>
             <option value="gold">Gold</option>
-            <button type="submit">Submit</button></select>
+            <button type="submit">Submit</button>
+        </select>
         </form>
     </main>
     <footer>
