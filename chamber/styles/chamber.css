@@ -359,20 +359,13 @@ form {
       border-left-color:#555;
       font-size: 1rem;
       color: #3D405B;
-      width: 250px;
+      width: 400px;
     }
   
-    input:required {border-left-color: #d70000;}
-    input:focus {border-left-color: black; outline:none;}
-    input:required:valid{border-left-color: green;}
+    
   
 }
   
   
   
-  #results {
-    background-color: #F4F1DE;
-    padding: 0 1rem;
-    border: 1px solid #E07A5F;
-    border-radius: 6px;
-  }
+  
