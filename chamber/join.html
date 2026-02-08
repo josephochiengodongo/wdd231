@@ -34,6 +34,7 @@
 		</div>
     </header>
     <main>
+    
         <form method="get" action="thankyou.html">
             <label for="first_name">First Name</label>
             <input name="first_name" id="first_name" type="text" title="enter your firstname" autocomplete="given-name" required readonly/>
@@ -51,20 +52,17 @@
             <label for="description">Organizational Description</label>
             <textarea name="descrition" id="description" title="describe your organization" placeholder="brief description of your organization" required></textarea>
             <input name="timestump" id="timestump" type="hidden" value=""/>
-            <label for="membership">Membership Level</label></form>
-            <select 
-            id="membership"
-            name="membership"
-            title="membership level selection"
-            required>
-            <option value="">--Membership Level Section--</option>
-            <option value="np">NP</option>
-            <option value="bronze">Bronze</option>
-            <option value="silver">Silver</option>
-            <option value="gold">Gold</option>
+            <label for="membership">Membership Level</label>
+            <select id="membership" name="membership" title="membership level selection" required>
+                <option value="">--Membership Level Section--</option>
+                <option value="np">NP</option>
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
             </select>
             
             <button type="submit" class="btm-submit">Submit</button>
+        </form>
     </main>
     <footer>
         <section class="information-section">
