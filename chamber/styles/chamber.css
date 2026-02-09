@@ -188,13 +188,13 @@ section.weather-forecast{
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
-h3 {
+h6 {
   background-color: green;
   color: white;
   height: 50px;
   position: relative;
   bottom: 50px;
-  text-align: center;
+  text-align: central
 }
 
 article.business-one {
@@ -245,16 +245,7 @@ article.business-two {
   
   
   
-}
-h4 { 
-  background-color:green;
-  height: 70px;
-  position: relative;
-  bottom:70px;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  text-align: center;
-  color: white;
+
   
   
   
@@ -329,20 +320,10 @@ h2  {
   margin: 0;
   
 }
-h4 {
-  position: relative;
-  top: .5px;
-  font-size: large;
-  background-color: green;
-  gap: .1rem;
-  color:white;
-  width: 250px;
-  height: 100px;
-  border-radius: 0 1rem 0 1rem;
-  margin: 1rem;
+
 
   
-}
+
 
     
 .membership_levels {
