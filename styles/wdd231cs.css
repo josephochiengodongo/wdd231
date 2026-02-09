@@ -5,7 +5,7 @@
     }
 
     .filters-button-section {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr;
     }
 }
 

@@ -319,20 +319,60 @@ footer {
 
 
 }
+  
+
+h5  {
+  display:grid;
+  font-size: x-large;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  
+}
+h6 {
+  font-size: large;
+  background-color: green;
+  gap: .1rem;
+  color: white;
+  width: 250px;
+  height: 150px;
+  border-radius: 0 1rem 0 1rem;
+}
+
+    
+.membership_levels {
+   display: grid;
+   gap: .1px;
+   align-items: baseline;
+}
+    
+    
+a {
+  position: relative;
+  bottom:100px;
+  color: #000;
+
+      
+}
 form {
     margin: 1rem 2%;
-}
   
     label {
       display: block;
       font-size: .8rem;
       color: purple;
       padding-top: .2rem;
-  
+    }
+    h3 {
+      font-size: .9rem;
+      color: #E07A5F;
+      margin: 1.5rem 0 .2rem 0;
+      border-bottom: 1px solid #eee;
     }
   
     input[type=text],
     input[type=tel],
+    input[type=date],
     input[type=email],
     select {
       display: block;
@@ -360,6 +400,9 @@ form {
       padding: .75rem 1.5rem;
       margin: 2rem 0;
       font-size: 1.2rem;
-    
-    
+      -webkit-appearance: none;
+      appearance: none;
     }
+  
+  }
+  
