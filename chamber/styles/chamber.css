@@ -335,8 +335,10 @@ h6 {
   gap: .1rem;
   color: white;
   width: 250px;
-  height: 150px;
+  height: 100px;
   border-radius: 0 1rem 0 1rem;
+  margin: 1rem;
+  
 }
 
     
@@ -350,6 +352,7 @@ h6 {
 a {
   position: relative;
   bottom:100px;
+  left: 40px;
   color: #000;
 
       
