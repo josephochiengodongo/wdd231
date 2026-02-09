@@ -188,14 +188,7 @@ section.weather-forecast{
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
-h6 {
-  background-color: green;
-  color: white;
-  height: 50px;
-  position: relative;
-  bottom: 50px;
-  text-align: central
-}
+
 
 article.business-one {
   background-color: bisque;
