@@ -328,12 +328,7 @@ form {
       font-size: .8rem;
       color: purple;
       padding-top: .2rem;
-    }
-    h3 {
-      font-size: .9rem;
-      color: #E07A5F;
-      margin: 1.5rem 0 .2rem 0;
-      border-bottom: 1px solid #eee;
+  
     }
   
     input[type=text],
