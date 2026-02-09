@@ -333,7 +333,7 @@ h6 {
   font-size: large;
   background-color: green;
   gap: .1rem;
-  color: white;
+  color:yellow;
   width: 250px;
   height: 100px;
   border-radius: 0 1rem 0 1rem;
@@ -355,8 +355,6 @@ a {
   bottom:100px;
   left: 40px;
   color: white
-
-      
 }
 form {
     margin: 1rem 2%;
@@ -366,11 +364,11 @@ form {
       font-size: .8rem;
       color: purple;
       padding-top: .2rem;
-  
     }
   
     input[type=text],
     input[type=tel],
+    input[type=date],
     input[type=email],
     select {
       display: block;
@@ -385,8 +383,24 @@ form {
       width: 250px;
     }
   
-    input:required {border-left-color: #d70000;}
-    input:required:valid{border-left-color: green;}
+    
+
+  
+    input[type=submit] {
+      border: none;
+      text-align: center;
+      background-color: #3D405B;
+      color: white;
+      border-radius: 1rem;
+      padding: .75rem 1.5rem;
+      margin: 2rem 0;
+      font-size: 1.2rem;
+      -webkit-appearance: none;
+      appearance: none;
+    }
   
   }
   
+  
+
+      
