@@ -355,16 +355,15 @@ a {
 form {
     margin: 1rem 2%;
   
-    label {
-      display: block;
-      font-size: .8rem;
-      color: purple;
-      padding-top: .2rem;
-    }
+ label {
+  display: block;
+  font-size: .8rem;
+  color: purple;
+  padding-top: .2rem;
+}
   
     input[type=text],
     input[type=tel],
-    input[type=date],
     input[type=email],
     select {
       display: block;
@@ -377,23 +376,23 @@ form {
       font-size: 1rem;
       color: #3D405B;
       width: 250px;
-    }
+}
   
     
 
   
-    input[type=submit] {
-      border: none;
-      text-align: center;
-      background-color: #3D405B;
-      color: white;
-      border-radius: 1rem;
-      padding: .75rem 1.5rem;
-      margin: 2rem 0;
-      font-size: 1.2rem;
-      -webkit-appearance: none;
-      appearance: none;
-    }
+input[type=submit] {
+  border: none;
+  text-align: center;
+  background-color: #3D405B;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+      
+
+}
   
   }
   h4 {
