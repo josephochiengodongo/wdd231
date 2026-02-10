@@ -337,7 +337,8 @@ h3 {
   top: 20px;
   background-color:white;
   color: black;
-  font-size: x-large;
+  font-size: large;
+  border: 1rem;
 }
 h3.membership_levels {
   transition: all;
@@ -353,48 +354,48 @@ a {
   
 }
 form {
-    margin: 1rem 2%;
-  
- label {
   display: block;
-  font-size: .8rem;
-  color: purple;
-  padding-top: .2rem;
-}
+  width: 250px;
+  margin: .1rem 0 1rem 0;
+  border: 1px solid #999;
+  padding: 1rem;
+  border-radius: 4px;
+  border-left-width: 5px;
+  border-left-color:#555;
+  font-size: 1rem;
   
-    input[type=text],
-    input[type=tel],
-    input[type=email],
-    select {
-      display: block;
-      margin: .1rem 0 1rem 0 ;
-      padding: .3rem;
-      border: 1px solid #999;
-      border-radius: 4px;
-      border-left-width: 5px;
-      border-left-color:#555;
-      font-size: 1rem;
-      color: #3D405B;
-      width: 250px;
 }
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=phone],
+input[type=hidden],
+select,
+textarea {
+  background-color:honeydew;
+  padding: .75rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  max-width: 250px;
+  
+
+} 
+button {
+  background-color: pink;
+  width:200px;
+  border-bottom-color:green;
+  height: 54px;
+  transition: all;
+  transition-duration: 10s;
+  border-radius: 3rem 1rem 3rem 0;
+  margin: .5rem;
+
+}
+
   
     
-
   
-input[type=submit] {
-  border: none;
-  text-align: center;
-  background-color: #3D405B;
-  color: white;
-  border-radius: 1rem;
-  padding: .75rem 1.5rem;
-  margin: 2rem 0;
-  font-size: 1.2rem;
-      
-
-}
   
-  }
   h4 {
     background-color: green;
     width: 250px;
@@ -406,4 +407,3 @@ input[type=submit] {
     transition: linear;
     transition-duration: 10s;
   }
-
