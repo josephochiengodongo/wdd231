@@ -20,14 +20,15 @@ header div {
   display:flex;
   color: white;
   background-color: green;
-  justify-content: space-between;
-  height:120px;
+  justify-content: flex-start;
+  height:150px;
   font-size: small;
-  font-weight: 300;
+  font-weight: 500;
 
 }
 
 nav  {
+  
   color:white;
   text-decoration: none;
   padding: 1rem 0;
