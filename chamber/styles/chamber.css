@@ -339,7 +339,12 @@ h3 {
   color: black;
   font-size: x-large;
 }
-    
+h3.membership_levels {
+  transition: all;
+  transition-duration: 10s;
+  transition-property: all;
+
+}
     
 a {
   position: relative;
@@ -399,5 +404,7 @@ form {
     margin: .1rem;
     color: white;
     font-size: larger;
+    transition: linear;
+    transition-duration: 10s;
   }
 
