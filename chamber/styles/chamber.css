@@ -272,19 +272,25 @@ article.business-two {
   border-radius: 0.5rem;
 
 }
-footer.chamber-information.social-media.p-div {
+footer.chamber-information.p-div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   background-color: green;
   color: white;
   position: absolute;
   top:1300px;
+
+}
+.social-media {
+  position: relative;
+  bottom: -60px;
+  left: -70px;
 }
 section.information{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: green;
   color: white;
   position: relative;
@@ -394,4 +400,4 @@ form {
     color: white;
     font-size: larger;
   }
-  
+
