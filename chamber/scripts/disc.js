@@ -1,2 +1,2 @@
 import {places} from '../Data/places.mjs'
-console.log()        
+console.log(places)        
