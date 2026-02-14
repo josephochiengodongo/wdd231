@@ -1,0 +1,94 @@
+
+:root {
+    --font-family: "Roboto", sans-serif;
+    --primary-color: forestgreen;
+  
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  
+}
+
+
+header.logo {
+  background: green;
+  color: white
+
+
+}
+header div {
+  display:flex;
+  color: white;
+  background-color: green;
+  justify-content: flex-start;
+  height:150px;
+  font-size: small;
+  font-weight: 500;
+
+}
+
+nav  {
+  
+  color:white;
+  text-decoration: none;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction:row;
+  gap:1rem;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: large;
+}
+body,main,footer {
+    width: 960px;
+}
+
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color:green;
+  color: white;
+  position: relative;
+  top:400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: green;
+  color: white;
+  position: absolute;
+  top:1300px;
+
+}
+.social-media {
+  position: relative;
+  bottom: -60px;
+  left: -70px;
+}
+section.information{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: green;
+  color: white;
+  position: relative;
+  top:2000px;
+
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color:green;
+  color: white;
+  position: relative;
+  top:400px;
+  height: 230px;
+
+  height: 230px;
+
+
+}
