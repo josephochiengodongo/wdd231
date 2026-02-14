@@ -48,7 +48,6 @@ header div {
 }
 
 nav  {
-  
   color:white;
   text-decoration: none;
   padding: 1rem 0;
@@ -65,23 +64,8 @@ body,main,footer {
 
 
 
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color:green;
-  color: white;
-  position: relative;
-  top:400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: green;
-  color: white;
-  position: absolute;
-  top:1300px;
 
-}
+
 .social-media {
   position: relative;
   bottom: -60px;
@@ -106,11 +90,8 @@ footer {
   position: relative;
   top:400px;
   height: 230px;
-
-  height: 230px;
-
-
-}body {
+}
+body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
