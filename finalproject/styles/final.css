@@ -4,11 +4,11 @@
         --accent: #E36414;
         
 }
-body,head,footer {
-        width:960px;
-}
+
+
 body {
     margin: 0;
+    width:960px;
     font-family: 'Roboto', sans-serif;
     background-color: var(--secondary);
     color: var(--primary);
@@ -37,14 +37,6 @@ p {
 }
 
 
-
-
-body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    margin: 0;
-
-}
 
 header,main,footer {
     max-width: 960px;
