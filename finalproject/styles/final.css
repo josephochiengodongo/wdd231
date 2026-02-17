@@ -207,3 +207,9 @@ h2 {
     flex-direction: row;
     padding: 2rem;
 }
+.hamburger::before {
+  content: "\2630";
+}
+.hamburger.show::before {
+  content: "\00D7";
+}
