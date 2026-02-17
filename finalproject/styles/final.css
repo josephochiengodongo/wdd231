@@ -19,6 +19,7 @@ body {
 }
 p {
     width:300px;
+    align-items: baseline;
 }
 
     
