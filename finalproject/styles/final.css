@@ -12,6 +12,10 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--secondary);
     color: var(--primary);
+    font-style: italic;
+    background-color: #fff;
+
+  
 }
 
     
