@@ -17,6 +17,9 @@ body {
 
   
 }
+p {
+    width:300px;
+}
 
     
 
@@ -133,7 +136,7 @@ nav a:hover {
 }
 .grid-containerg {
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     grid-gap:10px;
     place-items:center;
 
@@ -192,9 +195,13 @@ article {
     top:20px;
 }
      
-p {
-    width:  28%;
-}  
+.container.p {
+    width:  300px;
+} 
+
+.grid-container.card {
+    gap:1rem;
+}
 h2 {
     display: flex;
     flex-direction:row ;
