@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 | Real Travelers</title>
+    <meta name="description" content="my name is joseph ochieng odongo currently taking a course in wdd231">
+    <meta name="author" content="joseph odongo">
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="icon" href="wdd231/finalproject/site.html/images/logo.ico">
+    <meta property="og:title" content="wdd-Web Fronted Development-joseph odongo">
+    <meta property="og:description" content="This is my wdd-dynamic Web fundamentals,it is the last subject for wdd, in certficate course knowned as web and computer programming.">
+    <meta property="og:url" content="https://www.github.com/josephochieng.github.io/wdd231">
+    <meta property="og:image" content="https://josephochiengodongo.github.io/wdd231/finalproject/site.html/images/og-image.jpg">
+    
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Real Travelers</div>
+            <img src="images/logo.webp" alt="logo">
+            <button class="hamburger" aria-label="Open navigation menu">
+                ☰
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="site.html">Site</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-info">
+            <h1>Real Travelers Company</h1>
+            <address>
+                432 River Road Streat<br>
+                Nairobi,Riverside 90210<br>
+                Nairobi South West<br>
+            </address>
+            <a href="tel:+25499999999">2549 999 9999</a>
+            <a href="focet:info@tourstride.com">info@tourstride.company</a>
+        
+        </div>
+        <section class="trip-table">
+            <h2>Real Travelers Summary</h2>
+            <table>
+                <tr>
+                    <th colspan="3" scope="colgroup">Real Travelers Summary</th>
+                </tr>
+                    <th scope="col">Tour Name</th>
+                    <th scope="col">Tour  Price</th>
+                    <th scope="col">Tour Location</th>
+                </tr>
+                <tr>
+                    <td>1/2 day class 1</td>
+                    <td>$300</td>
+                    <td>Maasai Mara</td>
+                </tr>
+                <tr>
+                    <td>1/2 day class 2</td>
+                    <td>$500</td>
+                    <td>Tsavo National Parck</td>
+                </tr>
+                <tr>
+                    <td>1 day class 1</td>
+                    <td>$600</td>
+                    <td>Nyali Beach</td>
+                </tr>
+                <tr>
+                    <td>1 day class 2</td>
+                    <td>$700</td>
+                    <td>Hell's Gate</td>
+                </tr>
+                <tr>
+                    <td>2 day class 3</td>
+                    <td>$1200</td>
+                    <td>Amboseli National Park</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.783279243308!2d36.858445073585955!3d-1.382486935735941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0fbbde36bc45%3A0x6f9671d1966870ec!2sNairobi%20National%20Park!5e1!3m2!1sen!2ske!4v1765047718229!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="#" class="contact-form">
+                <div class="full-w"></div>
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="Joseph Ochieng Odongo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="josephodongo99@gmail.com">
+                <div class="purpose">
+                    <p>Message Purpose:</p>
+                    <fieldset>
+                        <label for="inquiry">General Inquiry</label>
+                        <input id="inquiry" type="radio" name="purpose" value="inquiry" required>
+                        <label for="reservation">Reservation Question</label>
+                        <input id="reservation" type="radio" name="purpose" value="reservation" required>
+                        <label for="feedback">Website Suggestion</label>
+                        <input id="feedback" type="radio" name="purpose" value="feedback" required>
+                    </fieldset>
+                </div>
+                <fieldset>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="Message" rows="2" required placeholder=""></textarea>
+                    <div class="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                        <label for="subscribe">Subscribe to our newsletter</label>
+                    </div>
+                </fieldset>
+                <button type="submit" class="btm btm-submit">Get in Touch</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <nav class="socialmedia">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.jpg" alt="facebook Icon">
+                </a>
+                <a href="https://github.com/josephochiengodongo/wdd231">
+                    <img src="images/github.jpg" alt="github Icon">
+                </a>
+                <a href="https://linkedin.com/in/joseph-odongo-oa37691">
+                    <img src="images/linkedin.png" alt="Linkedin Icon">
+                </a>
+            </nav></div>
+        <div class="p-div">
+                <p><span id="currentyear">&copy; 2026 Joseph Odongo</span></p>
+                <p>LastModified:<span id="lastModified">8/2/2026 1:45:45</span></p>
+           </div>
+    </footer>
+    <script src="scripts/final.js" type="module"></script>
+</body>
+</html>

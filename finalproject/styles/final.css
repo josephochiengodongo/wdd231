@@ -13,13 +13,14 @@ body {
     background-color: var(--secondary);
     color: var(--primary);
     font-style: italic;
+    padding: 1rem;
 
 
   
 }
 p {
-    width:300px;
-    align-items: baseline;
+    width:250px;
+    align-items: first baseline;
 }
 
     
@@ -52,15 +53,23 @@ footer {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-
-    
-   
+    padding: 20px 1px  1px 1px;
+    height: 200px;  
 }    
 
+
+.socialmedia {
+    position: relative;
+    bottom: 70px;
+    align-items: center;
+}
 header {
     display: flex;
     flex-direction: row;
     background-color: blue;
+    padding: .1rem;
+    padding-bottom: 5px;
+    margin: 0;
     
     
 }
@@ -94,7 +103,7 @@ main {
  
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
 
 
@@ -116,7 +125,7 @@ nav a {
 nav a:hover {
     background-color:red;
     color: var(--accent2-color);
-    font-size: xx-large;
+    font-size: x-large;
     box-sizing: border-box;
 
 
@@ -124,19 +133,9 @@ nav a:hover {
 .grid-container {
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    grid-gap:10px;
+    grid-gap:12px;
     place-items:center;
 
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 350px);
-    gap: 1rem;
-    justify-content: center;
-    align-items: start;
-    padding: 1rem;
-    margin: 0 auto;
-    width:300px; 
 
     
 }
@@ -147,7 +146,7 @@ nav a:hover {
 
 h1 {
     position:relative;
-    top: 20px;
+    top: 10px;
     color: #fff;
     font-size: xx-large;
     font-weight: bolder;
@@ -157,6 +156,7 @@ h1 {
     padding: 2px;
 
 }
+
         
 
 article {
@@ -185,6 +185,34 @@ h2 {
     left:400px;
 
 }
+.trip-table h2{
+    position: absolute;
+    top: 280px;
+    left:300px;
+
+}
+article h1 {
+    position: absolute;
+    top:90px;
+    color: black;
+    background-color: white;
+    padding: 1rem;
+
+
+}
+.contact-info h1 {
+    position: relative;
+    top:5px;
+    background-color: red;
+}  
+.p-div  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    bottom: 140px;
+    font-weight: bold;
+}
     
 
 
@@ -198,8 +226,188 @@ h2 {
 }
 .hamburger.show::before {
   content: "\00D7";
+
 }
-article h1 {
+.contact-info {
+    font-size: x-large;
+    text-align: center;
+}
+table {
+    position: relative;
+    font-size: xx-large;
+    width: 960px;
+    padding-top: 50px;
+}
+ th {
+    background-color: red;
+ }       
+  td:nth-child(3n+1){
+    background-color: orange;
+  }
+ td:nth-child(3n+3) {
+    background-color: orange;
+ } 
+
+td:nth-child(3n+2){
+    background-color: yellow;
+
+}
+form {
+    width: 400px;
     position: absolute;
-    top:90px;
+    left:550px;
+    bottom: -750px;
+    padding-bottom: 100px;
+    border-radius: 2rem;
+
+
 }
+
+iframe {
+    width: 450px;
+    padding-bottom: 100px;
+}   
+        
+  label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 400px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+
+    
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+.btm-submit {
+    background-color: blue;
+    color: var(--secondary-color);
+    max-width: 400px;
+    border-radius: .6px;
+    padding: .8rem;
+
+} 
+
+
+
+
+
+.btm-submit:hover {
+    opacity: 0.95;
+}      
+    
+.cta-trips {
+    background-color:white ;
+    padding: 0;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);        
+
+}
+
+.cta-trips h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    position: absolute;
+    top:3px;
+
+}
+
+.cta-trips p {
+    font-size: 1rem;
+    line-height: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top:1px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 4rem;
+    font-weight: 900;
+    transition: all 0.3s ease;
+    border: 2px solid var(--secondary-color);
+    position: absolute;
+    bottom: 500px;
+    width: 250px;
+}
+
+.cta-button:hover {
+    background: orange;
+    color: var(--primary-color);
+    transform: scale(1.5);
+    
+}
+
+.cta-button:active {
+    transform: scale(0.98);
+}
+.btm.hover.button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 900;
+    width: 400px;
+}
+
+.btm-submit {
+    background-color: blue;
+    color: var(--secondary-color);
+    max-width: 400px;
+    border-radius: 6px;
+    padding: .8rem;
+
+} 
+.form-checkbox {
+    width:400px ;
+    align-items: center;
+    margin: 1rem;
+    
+
+}
+.trip-table {
+    width: 650px;
+    font-size: x-large;
+    background-color:var(--secondary-color);
+    color: var(--accent2-color);
+
+
+}
+
+
+.h1.p {
+    background-color: green;
+}
+
+th {
+    background-color: red;
+}
+
+
+td:nth-child(3n+1){
+    background-color: orange;
+
+}
+
