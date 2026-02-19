@@ -110,6 +110,7 @@ nav {
 
 }
 
+
 nav a {
     color: white;
     text-decoration: none;
@@ -121,10 +122,10 @@ nav a {
 }
 
 nav a:hover {
-    background-color:red;
+    background-color:orange;
     color: var(--accent2-color);
-    font-size: x-large;
-    box-sizing: border-box;
+    font-size: xx-large;
+
 
 
 }
@@ -186,24 +187,13 @@ header {
 
 
 }
-.purposei h2{
-    position: relative;
-    top:760px;
-    font-size: xx-large;
-    background-color: green;
-    
 
 
-
-    
-
-
-    
-}
 .trip-table h2{
     position: absolute;
-    top: 280px;
+    top: 330px;
     left:300px;
+    color: green;
 
 }
 article h1 {
@@ -218,7 +208,7 @@ article h1 {
 .contact-info h1 {
     position: relative;
     top:5px;
-    background-color: red;
+    background-color:green;
 }
 .grid-container h1 {
     position: absolute;
@@ -244,11 +234,10 @@ article h1 {
     background-color: green;
     color: white;
     padding-left: 3rem;
-    
-
-    
-    
+        
 }
+
+
 .purpose img {
     padding-right: 1rem;
     padding-bottom: 1rem;
@@ -269,26 +258,29 @@ table {
     font-size: xx-large;
     width: 960px;
     padding-top: 50px;
+    padding-left: .1rem;
+    border-radius: 5px;
 }
  th {
-    background-color: red;
+    background-color:blue;
  }       
   td:nth-child(3n+1){
-    background-color: orange;
+    background-color: green;
   }
  td:nth-child(3n+3) {
-    background-color: orange;
+    background-color: green;
+    color: white;
  } 
 
 td:nth-child(3n+2){
-    background-color: yellow;
+    background-color:blue yellow;
 
 }
 form {
     width: 400px;
     position: absolute;
     left:550px;
-    bottom: -750px;
+    bottom: -605px;
     padding-bottom: 100px;
     border-radius: 2rem;
 
@@ -431,17 +423,17 @@ iframe {
 }
 
 
-.h1.p {
-    background-color: green;
-}
+
 
 th {
-    background-color: red;
+    background-color:green;
+    color:white
 }
 
 
 td:nth-child(3n+1){
-    background-color: orange;
+    background-color:green;
+    color: white;
 
 }
 
