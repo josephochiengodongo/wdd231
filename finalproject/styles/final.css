@@ -1,3 +1,10 @@
+@media (max-width:320px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
 :root {
         --primary:blue;
         --secondary:white;
@@ -384,7 +391,9 @@ iframe {
     border: 2px solid var(--secondary-color);
     position: absolute;
     bottom: 400px;
-    width: 250px;
+    left:100px;
+    width: 150px;
+    font-size: x-large;
 }
 
 .cta-button:hover {
