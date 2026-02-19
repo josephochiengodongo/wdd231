@@ -273,7 +273,7 @@ form {
     width: 400px;
     position: absolute;
     left:550px;
-    top:750px;
+    top:740px;
     padding-bottom: 100px;
     border-radius: 2rem;
 
@@ -355,7 +355,7 @@ iframe {
     display: inline-block;
     padding: 0.75rem 2rem;
     background: white;
-    color:white;
+    color:black;
     text-decoration: none;
     border-radius: 4rem;
     font-weight: 900;
