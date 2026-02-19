@@ -2,7 +2,7 @@
     .grid-container {
         display:grid;
         grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-        grid-gap:12px 8px    6px 6px;
+        grid-gap:12px;
         place-items:center;
         padding-top: 60px;
         text-align: center;
