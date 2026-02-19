@@ -70,18 +70,7 @@ footer {
     bottom: 70px;
     align-items: center;
 }
-headere {
-    display: flex;
-    flex-direction: row;
-    background-color: red;
-    padding: .1rem;
-    padding-bottom: 8px;
-    margin: 0;
-    height: 110px;
-    padding-right: 4rem;
-    
-    
-}
+
 
 main {
     display:grid;
