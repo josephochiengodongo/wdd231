@@ -5,12 +5,10 @@
     
 }
 
-:root {
-        --primary:blue;
-        --secondary:white;
-        --accent: #E36414;
+
+
         
-}
+
 
 
 body {
@@ -44,12 +42,6 @@ p {
     display: none;
 }
 }
-
-
-
-nav {
-    color: white;
-} 
 
 
 
@@ -103,6 +95,7 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    color: white;
 
 
     
@@ -261,9 +254,8 @@ table {
     padding-left: .1rem;
     border-radius: 5px;
 }
- th {
-    background-color:blue;
- }       
+ 
+       
   td:nth-child(3n+1){
     background-color: green;
   }
@@ -272,10 +264,9 @@ table {
     color: white;
  } 
 
-td:nth-child(3n+2){
-    background-color:blue yellow;
 
-}
+
+
 form {
     width: 400px;
     position: absolute;
