@@ -20,7 +20,6 @@ body {
     width:960px;
     font-family: 'Roboto', sans-serif;
     background-color: var(--secondary);
-
     font-style: italic;
     padding: 1rem;
 
@@ -130,7 +129,6 @@ nav a:hover {
 h1 {
     position:absolute;
     top: 200px;
-    color: #fff;
     font-size: xx-large;
     font-weight: bolder;
     text-align: center;
@@ -322,9 +320,7 @@ iframe {
 
 
 
-.btm-submit:hover {
-    opacity: 0.95;
-}      
+     
     
 .cta-trips {
     background-color:white ;
@@ -376,6 +372,7 @@ iframe {
     background: orange;
     color: var(--primary-color);
     transform: scale(1.5);
+    opacity: 0.95;
     
 }
 
