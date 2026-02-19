@@ -1,5 +1,5 @@
 :root {
-        --primary: blue;
+        --primary:blue;
         --secondary:white;
         --accent: #E36414;
         
@@ -48,7 +48,7 @@ nav {
 
 footer {
     max-width: 960px;
-    background-color:blue;
+    background-color:red;
     color:white;
     display: flex;
     flex-direction: column;
@@ -63,13 +63,15 @@ footer {
     bottom: 70px;
     align-items: center;
 }
-header {
+headere {
     display: flex;
     flex-direction: row;
-    background-color: blue;
+    background-color: red;
     padding: .1rem;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     margin: 0;
+    height: 110px;
+    padding-right: 4rem;
     
     
 }
@@ -135,6 +137,8 @@ nav a:hover {
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     grid-gap:12px;
     place-items:center;
+    padding-top: 60px;
+    text-align: center;
 
 
     
@@ -145,15 +149,16 @@ nav a:hover {
 
 
 h1 {
-    position:relative;
-    top: 10px;
+    position:absolute;
+    top: 200px;
     color: #fff;
     font-size: xx-large;
     font-weight: bolder;
-    background-color: green;
     text-align: center;
+    background-color: green;
     opacity: .7;
     padding: 2px;
+    width: 950px;
 
 }
 
@@ -176,14 +181,43 @@ article {
 
 .grid-container.card {
     gap:1rem;
+
 }
-h2 {
+.purpose h2 {
     display: flex;
     flex-direction:row ;
     position: absolute;
-    top:820px;
-    left:400px;
+    top:760px;
+    left: 400px;
+    color:white;
+    font-size: xx-large;
 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    text-align: left;
+    background-color: red;
+
+
+
+}
+.purposei h2{
+    position: relative;
+    top:760px;
+    font-size: xx-large;
+    background-color: green;
+    
+
+
+
+    
+
+
+    
 }
 .trip-table h2{
     position: absolute;
@@ -204,7 +238,14 @@ article h1 {
     position: relative;
     top:5px;
     background-color: red;
-}  
+}
+.grid-container h1 {
+    position: absolute;
+    top:120px;
+    width: 930px;
+    background-color: green;
+    
+} 
 .p-div  {
     display: flex;
     flex-direction: row;
@@ -212,14 +253,24 @@ article h1 {
     position: relative;
     bottom: 140px;
     font-weight: bold;
-}
-    
 
+}
 
 .purpose {
     display: flex;
     flex-direction: row;
-    padding: 2rem;
+    padding-top: 3rem;
+    background-color: green;
+    color: white;
+    padding-left: 3rem;
+    
+
+    
+    
+}
+.purpose img {
+    padding-right: 1rem;
+    padding-bottom: 1rem;
 }
 .hamburger::before {
   content: "\2630";
@@ -347,7 +398,7 @@ iframe {
     transition: all 0.3s ease;
     border: 2px solid var(--secondary-color);
     position: absolute;
-    bottom: 500px;
+    bottom: 400px;
     width: 250px;
 }
 
@@ -410,4 +461,6 @@ td:nth-child(3n+1){
     background-color: orange;
 
 }
+
+
 
