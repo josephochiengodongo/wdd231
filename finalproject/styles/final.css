@@ -257,9 +257,7 @@ table {
 }
  
        
-  td:nth-child(3n+1){
-    background-color: green;
-  }
+
  td:nth-child(3n+3) {
     background-color: green;
     color: white;
@@ -415,11 +413,8 @@ th {
 }
 
 
-td:nth-child(3n+1){
-    background-color:green;
-    color: white;
 
-}
+
 
 
 
