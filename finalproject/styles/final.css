@@ -182,9 +182,9 @@ header {
 
 .trip-table h2{
     position: absolute;
-    top: 330px;
+    top: 310px;
     left:300px;
-    color: green;
+    color: black
 
 }
 article h1 {
@@ -251,26 +251,19 @@ table {
     width: 960px;
     padding-top: 50px;
     padding-left: .1rem;
-    border-radius: 5px;
 }
+
  
-       
-
- td:nth-child(3n+3) {
-    background-color: green;
-    color: white;
- } 
-
-
 
 
 form {
-    width: 400px;
+    width: 250px;
     position: absolute;
     left:550px;
     top:740px;
     padding-bottom: 100px;
     border-radius: 2rem;
+    color: blue;
 
 
 }
@@ -401,13 +394,27 @@ iframe {
 
 
 }
-
-
-
-
-th {
+table {
+    position: relative;
+    font-size: xx-large;
+    width: 960px;
+}
+ th {
+    background-color: green;
+    color:white
+ }       
+  td:nth-child(3n+1){
     background-color:green;
     color:white
+  }
+ td:nth-child(3n+3) {
+    background-color: green;
+    color:white
+ } 
+
+td:nth-child(3n+2){
+    background-color: green;
+    color:white;
 }
 
 
