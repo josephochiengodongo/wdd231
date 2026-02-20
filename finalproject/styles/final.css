@@ -19,9 +19,7 @@ body {
     margin: 0;
     width:960px;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--secondary);
-    font-style: italic;
-    padding: 1rem;
+
 
 
   
@@ -132,8 +130,7 @@ h1 {
     font-size: xx-large;
     font-weight: bolder;
     text-align: center;
-    background-color: green;
-    color: white;
+    background;
     opacity: .7;
     padding: 2px;
     width: 950px;
