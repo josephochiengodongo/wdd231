@@ -36,7 +36,15 @@ p {
 
 
         
-
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        
+    }
+    .hamburger {
+    display: none;
+}
+}
 
 
 
@@ -125,7 +133,6 @@ h1 {
     font-weight: bolder;
     text-align: center;
     background-color: green;
-    color: white;
     opacity: .7;
     padding: 2px;
     width: 950px;
@@ -251,7 +258,9 @@ table {
 }
  
        
-  
+  td:nth-child(3n+1){
+    background-color: green;
+  }
  td:nth-child(3n+3) {
     background-color: green;
     color: white;
