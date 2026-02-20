@@ -36,15 +36,7 @@ p {
 
 
         
-@media (min-width: 768px) {
-    .nav-links {
-        display: flex;
-        
-    }
-    .hamburger {
-    display: none;
-}
-}
+
 
 
 
