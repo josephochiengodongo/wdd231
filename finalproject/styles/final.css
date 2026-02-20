@@ -174,6 +174,7 @@ header {
     text-align: left;
     background-color: red;
     color: black;
+    padding-left: 2rem;
 
 
 
@@ -259,8 +260,8 @@ table {
 form {
     width: 250px;
     position: absolute;
-    left:550px;
-    top:740px;
+    left:530px;
+    top:710px;
     padding-bottom: 100px;
     border-radius: 2rem;
     color: blue;
@@ -394,11 +395,8 @@ iframe {
 
 
 }
-table {
-    position: relative;
-    font-size: xx-large;
-    width: 960px;
-}
+
+
  th {
     background-color: green;
     color:white
