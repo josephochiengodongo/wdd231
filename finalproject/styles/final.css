@@ -1,15 +1,12 @@
 @media (max-width:310px) {
     .grid-container {
         grid-template-columns: 1fr;
-    }
-    
-}
-:root {
+    }:root {
         --primary: blue;
         --secondary:white;
         --accent: #E36414;
 }
-
+}
 
         
 
