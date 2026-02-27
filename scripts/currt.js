@@ -1,4 +1,3 @@
-
 const courses = [
     {
         subject: 'CSE',
@@ -77,8 +76,7 @@ const courses = [
         ],
         completed: false
     }
-];
-
+]
 const container = document.getElementById("courseContainer");
 const totalCreditsElement = document.getElementById("totalCredits");
 
@@ -105,4 +103,29 @@ function displayCourses(courseList) {
     // Calculate total credits using reduce()
     const total = courseList.reduce((sum, course) => sum + course.credits, 0);
     totalCreditsElement.textContent = total;
-}
+}document.getElementById("all").addEventListener("click", () => {
+  displayCourses(courses);
+});
+
+document.getElementById("wdd").addEventListener("click", () => {
+  const wddCourses = courses.filter(course => course.code.startsWith("WDD"));
+  displayCourses(wddCourses);
+});
+
+document.getElementById("cse").addEventListener("click", () => {
+  const cseCourses = courses.filter(course => course.code.startsWith("CSE"));
+  displayCourses(cseCourses);
+});
+
+// Display all courses initially
+displayCourses(courses);element.addEventListener("click", () => {
+  target.classList.toggle("className");
+});const modal = document.querySelector('#myModal');
+const closeModal = document.querySelector('#closeModal');
+modal.showModal(); // display the modal dialog right away.
+// Usually you will want to wait for a user action to show the modal dialog
+closeModal.addEventListener('click', () => {
+  modal.close();
+});
+
+

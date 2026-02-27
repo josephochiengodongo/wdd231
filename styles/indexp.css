@@ -97,7 +97,7 @@ section.student-photo-section {
     position: absolute;
     bottom: 15px;
     left: 601px;
-
+;
 
 
 }
@@ -142,7 +142,7 @@ h2.about-section {
 
 
 
-.course:hover {
+.course-item:hover {
     transform: translateY(-8px) scale(1.05);
     background-color: orange;
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
@@ -150,17 +150,17 @@ h2.about-section {
 
 }
 
-.course:active {
+.course-item:active {
     transform: translateY(-4px) scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.0.15);
 }
 
-.course h3 {
+.course-item h3 {
     margin: 0 0 0.5rem 0;
     font-size: 1.2rem;
 }
 
-.course p {
+.course-item p {
     margin: 0;
     font-size: 1rem;
     opacity: 0.95;
@@ -223,7 +223,7 @@ h2.about-section {
 }
 
 
-.course {
+.course-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,3 +268,21 @@ h2.about-section {
     align-items: center;
     width: 900px;
  }
+.course-item {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #e5e5e5;
+  transition: 0.3s ease;
+}
+
+/* Active courses (dark blue like your screenshot) */
+.course-item.active-course {
+  background-color: #1f3a60;
+  color: white;
+}
+
+/* Hidden when filtering */
+.course-item.hide {
+  display: none;
+}
