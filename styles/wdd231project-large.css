@@ -1,6 +1,8 @@
 @media (max-width:1300px) {
-    header,body,main {
-        width:880px;
+    header, body, main {
+        max-width: 880px;
+        width: 100%;
+        margin: 0 auto;
     }
     .courses {
         max-width: 1300px;

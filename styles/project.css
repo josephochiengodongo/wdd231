@@ -1,0 +1,226 @@
+@media (max-width: 360px) {
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filters-button-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+header nav {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 0;
+    text-align: left;
+    font-size: xx-large;
+
+
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-optical-sizing: auto;
+}
+
+head,
+body,
+footer {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    width: 900px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    padding: 11px 20px;
+    color: white
+}body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 1rem;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background: #222;
+    padding: 0;
+}
+
+nav li {
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.about-me,
+.student-photo {
+    border: 1px solid #ccc;
+}
+
+h2 {
+    background: #222;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.photo-box {
+    width: 150px;
+    height: 150px;
+    background: #ccc;
+    margin: 2rem auto;
+}
+
+.buttons,
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+img:hover {
+    transform: scale(1.04);
+
+}
+
+
+section.courses-section {
+    grid-column: 1/-1;
+    padding: 1.5rem;
+    border-radius: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+
+img {
+    border-radius: 2rem;
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+    width: 200px;
+    transition: transform 0.6s ease;
+    padding: 1rem;
+
+}
+
+section.about-section {
+    width: 540px;
+    padding-left: 1.1rem;
+
+}
+
+
+
+
+
+
+
+.courses-section {
+    width: 90%;
+    margin: auto;
+    background: #f2f2f2;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.courses-section h2 {
+    background: #15396b;
+    color: orange;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.filter-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.filter-buttons button:hover {
+    background: #bbb;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.course {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    background: #eee;
+    border-left: 5px solid #15396b;
+}
+
+.completed {
+    background: #15396b;
+    color: white;
+}
+.course:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}

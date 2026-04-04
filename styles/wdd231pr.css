@@ -188,9 +188,10 @@ h2.about-section {
     gap: 100px;
     height: 50px;
 
+}
 
-    
-
+.courses-section input[type="radio"] {
+    display: none;
 }
 
 .filter-button {
@@ -202,7 +203,14 @@ h2.about-section {
     font-weight: bold;
     transition: all 0.3s ease;
     cursor: pointer;
+    display: inline-block;
+    margin: 0 0.5rem;
+}
 
+.courses-section input[type="radio"]:checked + .filter-button {
+    background-color: #667eea;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.5);
 }
 
 .filter-button:hover {
@@ -212,14 +220,28 @@ h2.about-section {
     box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
 }
 
-.filter-button-active {
-    background-color: #667eea;
-    color: #fff;
-    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.5);
-    
+.filter-button:active {
+    transform: scale(0.98);
 }
-.filter-button:active  {
-    transform: scale(0,98);
+
+.course-item.hide {
+    display: none;
+}
+
+.course-item {
+    display: none;
+}
+
+#all:checked ~ .course-grid .course-item {
+    display: flex;
+}
+
+#ces:checked ~ .course-grid .course-item[data-category="ces"] {
+    display: flex;
+}
+
+#wdd:checked ~ .course-grid .course-item[data-category="wdd"] {
+    display: flex;
 }
 
 

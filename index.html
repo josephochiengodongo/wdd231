@@ -8,10 +8,10 @@
     <meta name="description"
         content="This is my wdd-dynamic Web fundamentals,it is the last subject for wdd, in certficate course knowned as web and computer programming.">
     <meta name="author" content="Joseph Odongo">
-    <link rel="stylesheet" href="styles/wdd231pr.css">
+    <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/wdd231project-large.css">
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/wdd231n.js" defer></script>
+    <script src="scripts/new.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth@0,75..100;1,75..100&display=swap"
@@ -36,8 +36,8 @@
     </header>
     <main>
         <h1>Home</h1>
-        <section class="about-section">
-            <div class="About">
+        <section class="main-grid">
+            <article class="about-section">
                 <h2>ABOUT ME</h2>
                 <p>Hello my name is called Joseph Odongo, I am 56 years old, I am from Kenya, I have a passion
                     for web development and I love coding. I am currently pursuing a degree in computer science and I am
@@ -45,50 +45,31 @@
                     reading
                     tech blogs, experimenting with new coding languages, and working on personal projects to enhance my
                     skills.</p>
-            </div>
-        </section>
-        <section class="student-photo-section">
-            <h2>STUDENT PHOTO</h2>
-            <div class="student-photo-section"></div>
-            <img src="images/phostudent.jpg" alt="photo image">
+            </article>
+            <article class="student-photo-section">
+                <h2>STUDENT PHOTO</h2>
+                <img src="images/phostudent.jpg" alt="photo image">
+                
+            </article>
         </section>
         <section class="courses-section">
-            <h2 class="section-title">WEB CERTIFICATE COURSES</h2>
-            <div class="filters-button-section">
-                <button class="filter-button" data-filter="all">All</button>
-                <button class="filter-button" data-filter="ces">CSE</button>
-                <button class="filter-button" data-filter="wdd">WDD</button>
+            <h2>WEB CERTIFICATE COURSES</h2>
+            <div class="filter-buttons">
+                <button onclick="filterCourses('all')">All</button>
+                <button onclick="filterCourses('cse')">CSE</button>
+                <button onclick="filterCourses('wdd')">WDD</button>
             </div>
-            <div class="course-grid">
-                <div class="course-item" data-category="cse">
-                    <h3>CSE-111</h3>
-                    <p>Programming With Functions</p>
-                </div>
-                <div class="course-item" data-category="wdd">
-                    <h3>WDD-231</h3>
-                    <p>Frontend Web Development</p>
-                </div>
-                <div class="course-item" data-category="cse">
-                    <h3>CSE-110</h3>
-                    <p>Introduction to Programming</p>
-                </div>
-                <div class="course-item" data-category="cse">
-                    <h3>CSE-210</h3>
-                    <p>Programming with Classes</p>
-                </div>
-                <div class="course-item" data-category="wdd">
-                    <h3>WDD-130</h3>
-                    <p>Web Fundamentals</p>
-                </div>
-                <div class="course-item" data-category="wdd">
-                    <h3>WDD-131</h3>
-                    <p>Dynamic Web Fundamentals</p>
-                </div>
-            </div>
-            <p class="credits">Total Credits for ALL 12</p>
-        </section>
-    </main>
-    <footer>
+            <div class="courses-grid">
+            <div class="course cse completed">CSE110</div>
+            <div class="course wdd completed">WDD130</div>
+            <div class="course cse">CSE111</div>
+            <div class="course cse">CSE210</div>
+            <div class="course wdd completed">WDD131</div>
+            <div class="course wdd">WDD231</div>
+        </div>
+    </section>
+</main>
+<footer>
         <nav class="socialmedia">
             <a href="https://facebook.com">
                 <img src="images/facebook.jpg" alt="Facebook Icon">
@@ -97,12 +78,12 @@
                 <img src="images/github.jpg" alt="github Icon">
             </a>
             <a href="https://linkedin.com/in/joseph-odongo-oa37691">
-                <img src="images/linkedin.jpg" alt="Linkedin Icon">
+                <img src="images/linkedin.png" alt="Linkedin Icon">
             </a>
         </nav>
         <div class="p-div">
-            8:45:45</span><span id="currentyear">&copy; 2026 Joseph Odongo</span></p>
-            <p>LastModified:<span id="lastModified">14/2/2o26</span>
+            9:45:45</span><span id="currentyear">&copy; 2026 Joseph Odongo</span></p>
+            <p>LastModified:<span id="lastModified">4/4/26</span>
                 <p>Back so soon! Awesome!</p>
         </div>
     </footer>

@@ -1,4 +1,4 @@
-const courses = [
+const courseData = [
     {
         subject: 'CSE',
         number: 110,
@@ -78,7 +78,7 @@ const courses = [
     }
 ]
 const filterButtons = document.querySelectorAll(".filter-button");
-const courses = document.querySelectorAll(".course-item");
+const courseCards = document.querySelectorAll(".course-item");
 
 filterButtons.forEach(button => {
   button.addEventListener("click", () => {
@@ -88,7 +88,7 @@ filterButtons.forEach(button => {
 
     const filterValue = button.dataset.filter;
 
-    courses.forEach(course => {
+    courseCards.forEach(course => {
       if (filterValue === "all" || course.dataset.category === filterValue) {
         course.classList.remove("hide");
       } else {
