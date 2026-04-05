@@ -204,29 +204,19 @@ section.about-section {
     margin-top: 2rem;
 }
 
+* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 .socials {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.socials a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-footer p {
-    margin: 0.5rem 0;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-    .socials {
-        flex-direction: column;
-    }
+.socials span {
+    margin: 0 0.5rem;
 }
 
 }
