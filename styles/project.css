@@ -26,10 +26,8 @@ body,footer {
     width: 900px;
 }
 footer {
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    width: 900px;
+    text-align: center;
+
 }
 
 header div {
