@@ -77,7 +77,7 @@ const courses = [
         completed: false
     }
 ]
-function filterCourses(category) {
+function courses(category) {
     const courses = document.querySelectorAll('.course');
 
     courses.forEach(course => {

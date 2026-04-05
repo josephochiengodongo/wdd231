@@ -168,51 +168,42 @@ section.about-section {
 .courses-section {
     width: 90%;
     margin: auto;
-    background: #f2f2f2;
     padding: 2rem;
-    border-radius: 15px;
 }
 
 .courses-section h2 {
     background: #15396b;
-    color: orange;
+    color: white;
     text-align: center;
     padding: 1rem;
-    border-radius: 10px;
-    margin-bottom: 2rem;
+    border-radius: 8px;
 }
 
 .filter-buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin: 1.5rem 0;
 }
 
 .filter-buttons button {
     padding: 1rem;
-    font-size: 1.2rem;
     border: none;
-    border-radius: 10px;
     background: #ddd;
+    border-radius: 6px;
     cursor: pointer;
 }
 
-.filter-buttons button:hover {
-    background: #bbb;
-}
-
-.courses-grid {
+#courses-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
-.course {
-    padding: 2rem;
+.course-card {
+    padding: 1.5rem;
     text-align: center;
-    border-radius: 12px;
-    font-size: 1.3rem;
+    border-radius: 8px;
     background: #eee;
     border-left: 5px solid #15396b;
 }
@@ -221,7 +212,20 @@ section.about-section {
     background: #15396b;
     color: white;
 }
-.course:hover {
-    transform: scale(1.03);
-    transition: 0.3s;
+
+#credits {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    #courses-container {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-buttons {
+        grid-template-columns: 1fr;
+    }
 }
