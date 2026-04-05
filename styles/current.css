@@ -170,47 +170,14 @@ section p {
 }
 
 /* FOOTER */
+
+
 footer {
-  background: #111;
-  color: white;
-  padding: 20px;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.footer-left,
-.footer-center,
-.footer-right {
-  flex: 1;
-  min-width: 250px;
-}
-
-.footer-center {
-  text-align: center;
-}
-
-.footer-right {
-  text-align: right;
-}
-
-.social-icons a {
-  color: white;
-  margin: 0 10px;
-  font-size: 22px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  color: #00bcd4;
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #15396b;
+    color: white;
+    margin-top: 2rem;
 }
 
 /* Responsive */
