@@ -5,8 +5,6 @@
 
     .filter-buttons {
         grid-template-columns: 1fr;
-    }.main-grid {
-        grid-template-columns: 1fr;
     }
 
 }
