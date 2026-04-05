@@ -172,6 +172,7 @@ section p {
 /* FOOTER */
 
 
+
 footer {
     text-align: center;
     padding: 2rem 1rem;
@@ -179,6 +180,32 @@ footer {
     color: white;
     margin-top: 2rem;
 }
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .socials {
+        flex-direction: column;
+    }
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
