@@ -1,3 +1,14 @@
+@media (max-width: 768px) {
+    #courses-container {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-buttons {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 header nav {
     background-color: darkgreen;
     color: white;
@@ -79,7 +90,7 @@ nav a {
 }
 
 h2 {
-    background: #222;
+    background:darkgreen;
     color: white;
     text-align: center;
     margin: 0;
@@ -199,13 +210,3 @@ section.about-section {
     font-weight: bold;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-    #courses-container {
-        grid-template-columns: 1fr;
-    }
-
-    .filter-buttons {
-        grid-template-columns: 1fr;
-    }
-}
