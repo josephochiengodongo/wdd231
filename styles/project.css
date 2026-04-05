@@ -1,17 +1,3 @@
-@media (max-width: 768px) {
-    #courses-container {
-        grid-template-columns: 1fr;
-    }
-
-    .filter-buttons {
-        grid-template-columns: 1fr;
-    }.main-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
 header nav {
     background-color: darkgreen;
     color: white;
@@ -213,7 +199,17 @@ section.about-section {
     font-weight: bold;
 }
 /*Mobile */
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
     #courses-container {
         grid-template-columns: 1fr;
     }
@@ -221,6 +217,5 @@ section.about-section {
     .filter-buttons {
         grid-template-columns: 1fr;
     }
-    
 }
 
