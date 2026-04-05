@@ -1,0 +1,156 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+/* NAVIGATION */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #222;
+    flex-wrap: wrap;
+}
+
+nav li {
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* MAIN GRID */
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* SECTION STYLING */
+section {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+section h2 {
+    background: #15396b;
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+}
+
+section p {
+    padding: 1rem;
+}
+
+/* PHOTO */
+.photo-box {
+    width: 150px;
+    height: 150px;
+    background: #ccc;
+    margin: 2rem auto;
+}
+
+/* COURSES */
+.courses-section {
+    margin-top: 1rem;
+}
+
+.filter-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.filter-buttons button {
+    padding: 1rem;
+    border: none;
+    background: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* COURSE GRID */
+#courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.course-card {
+    background: #eee;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.completed {
+    background: #15396b;
+    color: white;
+}
+
+/* CREDITS */
+#credits {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.socials {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.socials span {
+    margin: 0 0.5rem;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #courses-container {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-buttons {
+        grid-template-columns: 1fr;
+    }
+}
