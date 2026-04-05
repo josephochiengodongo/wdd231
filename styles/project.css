@@ -5,6 +5,8 @@
 
     .filter-buttons {
         grid-template-columns: 1fr;
+    }.main-grid {
+        grid-template-columns: 1fr;
     }
 
 }
@@ -79,7 +81,7 @@ nav a {
     text-decoration: none;
 }
 
-.main-grid {
+.main-gridt {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
@@ -210,4 +212,13 @@ section.about-section {
     margin-top: 1rem;
     font-weight: bold;
 }
+/*Mobile */
+@media (max-width: 768px) {
+    #courses-container {
+        grid-template-columns: 1fr;
+    }
 
+    .filter-buttons {
+        grid-template-columns: 1fr;
+    }
+}
