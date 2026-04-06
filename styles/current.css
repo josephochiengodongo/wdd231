@@ -1,4 +1,5 @@
-/* BODY */header nav {
+
+header nav {
     background-color: darkgreen;
     color: white;
     padding: 10px 0;
@@ -25,13 +26,10 @@ header div {
 }
 body {
     font-family: "Roboto",Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    
+    
 }
 
-header {
-    padding: 1rem;
-}
 
 .logo-title {
     display: flex;
@@ -48,13 +46,7 @@ header {
     align-items: center;
 
 }
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 1rem;
-}
 
-/* HEADER */
 header {
     text-align: center;
     margin-bottom: 1rem;
