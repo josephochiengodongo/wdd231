@@ -101,11 +101,34 @@ section p {
 
 /* PHOTO */
 .photo-box {
-    width: 150px;
-    height: 150px;
     background: #ccc;
     margin: 2rem auto;
+    width: auto;
+    height: 150px;
+    width: 150px;
+    
+
 }
+
+img:hover {
+    transform: scale(1.04);
+    transition: transform 0.6s ease;
+}
+img {
+    border-radius: 2rem;
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+    width: 200px;
+    transition: transform 0.6s ease;
+    padding: 1rem;
+
+}
+
+
+
+
+
 
 /* COURSES */
 .courses-section {
