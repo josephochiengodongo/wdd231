@@ -111,8 +111,9 @@ section p {
 }
 
 img:hover {
-    transform: scale(1.04);
-    transition: transform 0.6s ease;
+    transform: translateY(-6px) scale(1.1);
+
+
 }
 img {
     border-radius: 2rem;
