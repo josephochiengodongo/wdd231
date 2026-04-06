@@ -222,18 +222,7 @@ section.about-section {
 
 
 
-.filter-button:hover {
-    background-color: #667eea;
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
-}
 
-.filter-button-active {
-    background-color: #667eea;
-    color: #fff;
-    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.5);
-}
 .filter-button:active {
     transform: scale(0.98);
 }
