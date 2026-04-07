@@ -124,7 +124,7 @@ nav a:hover {
 
 /* Sections */
 .events-section {
-    background-color:darkorange;
+    background-color: #003366;
     padding: 0.8rem;
     border-radius: 8px;
     width: 350px;
@@ -134,8 +134,8 @@ nav a:hover {
     right: 450px;
 }
 .current-weather-section {
-  background-color: darkorange;
-  color: black;
+  background-color: #003366;
+  color: white;
   padding: 0.8rem;
   width: 200px;
   height: 300px;
@@ -147,8 +147,8 @@ nav a:hover {
 
 }
 .weather-forecast-section {
-  background-color: darkorange;
-  color: black;
+  background-color: #003366;
+  color: white;
   padding: 0.8rem;
   width: 200px;
   height: 300px;
