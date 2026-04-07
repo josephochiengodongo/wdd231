@@ -1,67 +1,67 @@
-
 {
-    "members":[
+  "members": [
     {
-        "name": "Expert Holdings",
-        "industry": "Retail",
-        "location": "Industry",
-        "phone": "+223 70 123 456",
-        "email": "info@expertraders.com",
-        "adress":"P.O.Box 54 Nairobi",
-        "membership":"ncc342",
-        "level":"member"
+      "name": "Expert Holdings",
+      "industry": "Retail",
+      "location": "Nairobi",
+      "phone": "+223 70 123 456",
+      "email": "info@expertraders.com",
+      "address": "P.O.Box 54 Nairobi",
+      "membership": "Member"
     },
     {
-        "name": "Reaal Tech Solutions",
-        "industry": "IT Services",
-        "location": "Nairobi",
-        "phone": "+223 76 987 654",
-        "email": "contact@realeserttech.com",
-        "adress": "P.O.Box 67 Nairibi",
-        "membership":"Gold"
+      "name": "Reaal Tech Solutions",
+      "industry": "IT Services",
+      "location": "Nairobi",
+      "phone": "+223 76 987 654",
+      "email": "contact@realeserttech.com",
+      "address": "P.O.Box 67 Nairobi",
+      "membership": "Gold"
     },
     {
-        "name": "Savana Logistics",
-        "industry": "Transportation",
-        "location": "Nairobi",
-        "phone": "+223 71 555 888",
-        "email": "support@savanalogistics.com",
-        "adress":"P.O.Box 6578 Naivasha",
-        "membership": "silver"
+      "name": "Savana Logistics",
+      "industry": "Transportation",
+      "location": "Nairobi",
+      "phone": "+223 71 555 888",
+      "email": "support@savanalogistics.com",
+      "address": "P.O.Box 6578 Naivasha",
+      "membership": "Silver"
     },
     {
-        "name":"Bount Baker",
-        "industry":"baakery",
-        "location": "Nairobi",
-        "phone": "073564877",
-        "email":"bony@bytbonty",
-        "adress":"box 234 Nairobi",
-        "membership": "siver"
+      "name": "Bount Baker",
+      "industry": "Bakery",
+      "location": "Nairobi",
+      "phone": "073564877",
+      "email": "bony@bytbonty",
+      "address": "P.O.Box 234 Nairobi",
+      "membership": "Silver"
     },
     {
-        "name": "Top printers",
-        "industry": "printing",
-        "location": "Nairobi",
-        "phone": "0727812455",
-        "email": "top@topprinter",
-        "adress":"Box 34576 Nairobi",
-        "member":"Silver"
+      "name": "Top Printers",
+      "industry": "Printing",
+      "location": "Nairobi",
+      "phone": "0727812455",
+      "email": "top@topprinter",
+      "address": "P.O.Box 34576 Nairobi",
+      "membership": "Silver"
     },
     {
-        "name":"Kebsali Taders",
-        "indusrty":"sales",
-        "location": "Nairobi",
-        "phone":"07654321",
-        "email": "keb@jotrde",
-        "adress":"jihgt564hy"
+      "name": "Kebsali Traders",
+      "industry": "Sales",
+      "location": "Nairobi",
+      "phone": "07654321",
+      "email": "keb@jotrde",
+      "address": "P.O.Box 355 Nairobi",
+      "membership": "Gold"
     },
     {
-        "name":"Gmaks Travellers",
-        "indusustry":"Travelling",
-        "location":"Nairobi",
-        "phone": "0786543432",
-        "email": "gmark@travelas"
+      "name": "Gmaks Travellers",
+      "industry": "Traveling",
+      "location": "Nairobi",
+      "phone": "0786543432",
+      "email": "gmark@travelas",
+      "address": "P.O.Box 345 Nairobi",
+      "membership": "Silver"
     }
-]
+  ]
 }
-

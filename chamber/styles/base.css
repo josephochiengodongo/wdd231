@@ -1,0 +1,220 @@
+
+body {
+  font-family: Open Sans, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: Open Sans, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  background-color: #1E3A5F;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #D4A017;
+  border-radius: 5px;
+}
+
+nav.open {
+  display: flex;
+}
+
+#menuBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  display: block;
+  margin: auto;
+}
+
+/* =========================
+   MAIN
+========================= */
+main {
+  padding: 1rem;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  background-color: #D4A017;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  margin-bottom: 1rem;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #1E3A5F;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+button {
+  background-color: #1E3A5F;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #D4A017;
+}
+
+/* =========================
+   GRID / LIST DIRECTORY
+========================= */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.list {
+  display: block;
+}
+
+/* =========================
+   CARDS
+========================= */
+.company-card,
+.spotlight-card,
+#discoverCards div {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   SPOTLIGHT GRID
+========================= */
+.spotlight-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* =========================
+   FORM
+========================= */
+form {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background-color: #1E3A5F;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* =========================
+   MEMBERSHIP COLORS
+========================= */
+.gold {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+.silver {
+  color: gray;
+  font-weight: bold;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+.dark-mode {
+  background-color: #222;
+  color: white;
+}
+
+.dark-mode .company-card,
+.dark-mode .spotlight-card {
+  background-color: #333;
+}
+
+
+

@@ -34,7 +34,7 @@ const companies = [
     location: "Nairobi",
     phone: "073564877",
     email:"bony@bytbonty",
-    adress:"box 234 Nairobi",
+    adress:"P.O.Box 234 Nairobi",
     membership: "siver"
   },
   {
@@ -43,7 +43,7 @@ const companies = [
      location: "Nairobi",
      phone: "0727812455",
      email: "top@topprinter",
-     adress:"Box 34576 Nairobi",
+     adress:"P.O.Box 34576 Nairobi",
      member:"Silver"
   },
   {
@@ -53,7 +53,8 @@ const companies = [
     location: "Nairobi",
     phone:"07654321",
     email: "keb@jotrde",
-    adrees:"jihgt564hy,",
+    adress:"P.O.Box 355 Nairobi",
+    membership:"Gold"
   },
   {
     name:"Gmaks Travellers",
@@ -61,6 +62,8 @@ const companies = [
     location:"Nairobi",
     phone: "0786543432",
     email: "gmark@travelas",
+    adress:"P.O.Box 345 Nairobi",
+    membership:"Silver"
     }
     
 ];function showLastModified() {
