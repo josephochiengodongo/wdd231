@@ -139,13 +139,12 @@ nav a:hover {
 /* Sections */
 .events-section {
     background-color:darkorange;
-    color: white;
     padding: 1rem;
     border-radius: 8px;
     width: 350px;
     height: 300px;
     position: relative;
-    top: 90px;
+    top: 70px;
     right: 450px;
 }
 .current-weather-section {
@@ -156,7 +155,7 @@ nav a:hover {
   height: 300px;
   position: absolute;
   left:445px;
-  top: 895px;
+  top: 870px;
 
 
 }
@@ -168,7 +167,7 @@ nav a:hover {
   height: 300px;
   position: absolute;
   left:700px;
-  top:890px;
+  top:870px;
 
 }
 
