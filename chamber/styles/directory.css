@@ -160,9 +160,9 @@ nav a:hover {
 }
 
 /* Members */
-.members-grid {
+#directory-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 2rem;
 }
@@ -183,4 +183,31 @@ footer {
 
 .socialmedia a {
     text-decoration: none;
+}.company-card {
+  background: white;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
+
+#directory.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+#directory.list {
+  display: block;
+}
+
+.gold {
+  color: gold;
+  font-weight: bold;
+}
+
+.silver {
+  color: silver;
+  font-weight: bold;
+}
+
