@@ -149,7 +149,7 @@ nav a:hover {
 }
 .current-weather-section {
   background-color: darkorange;
-  color: white;
+  color: black;
   position: relative;
   width: 200px;
   height: 300px;
@@ -161,7 +161,7 @@ nav a:hover {
 }
 .weather-forecast-section {
   background-color: darkorange;
-  color: white;
+  color: black;
   position: relative;
   width: 200px;
   height: 300px;
