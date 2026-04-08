@@ -126,6 +126,7 @@ nav a:hover {
 /* Sections */
 .events-section {
     background-color: #003366;
+    color: white;
     padding: 0.8rem;
     border-radius: 8px;
     width: 350px;
