@@ -4,13 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>wdd-231 | chamber-directory</title>
+	<title>WDD-231 | Chamber-Directory</title>
 	<meta name="description" content="my nane is joseph ochieng odongo,currenly taking a course in wdd231-web fronted developement">
 	<meta name="author" content="joseph odongo">
 	<link rel="stylesheet" href="styles/chamber.css">
 	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="styles/large.css">
-	<script src="scripts/members.js" defer></script>
 	<script src="scripts/directory.js" defer></script>
 	<meta property="og:title" content="wdd-web fronted development-joseph odongo">
 	<meta property="og:description" content="this is my wdd-dynamic web fundamentals,it is the last subject for wdd, in certficate course knowned as web and computer programming.">
@@ -25,10 +24,10 @@
 	<header>
 		<div class="containercontent">
 			<img src="images/logo.jpg" alt="logo">
-			<h1>nairobi chamber of commerce</h1>
+			<h1>Nairobi Chamber of Commerce</h1>
 			<span class="menu-toggle"></span>
 			<nav>
-				<a href="home.html">home</a>
+				<a href="index.html">home</a>
 				<a href="event.html">events</a>
 				<a href="directory.html">directory</a>
 				<a href="membership.html">membership</a>
@@ -37,45 +36,47 @@
 	</header>
 	<main>
 		<section class="hero">
-			<h2>chamber of commerce building</h2>
+			<h2>Chamber of Commerce Building</h2>
 			<img src="images/cham.jpg" alt="chamber of commerce building">
 			<a class="cta" href="#">keynote ticket</a>
 		</section>
 		<section class="home-grid">
-			<h2>home</h2>
+			<h2>Home</h2>
 			<section class="events-section">
-				<h3>events</h3>
+				<h3>Events</h3>
 			</section>
 			<section class="current-weather-section">
-				<h3>current weather</h3>
+				<h3>Current Weather</h3>
                 <img src="images/weather.jpg" alt="weather icon">
                 <p>75 &deg;f - partly cloudy</p>
                 <p>humidity: 35%</p>
                 <p>wind: 6 mph</p>
             </section>
 			<section class="weather-forecast-section">
-                <h3>weather forecast</h3>
-                <p>today: 86 &deg;f</p>
-                <p>tuesday: 90 &deg;f</p>
-                <p>wednesday: 70 &deg;f</p>
-                <p>thursday: 86 &deg;f</p>
+                <h3>Weather Forecast</h3>
+                <p>Today: 86 &deg;F</p>
+                <p>Tuesday: 90 &deg;F</p>
+                <p>Wednesday: 70 &deg;F</p>
+                <p>Thursday: 86 &deg;F</p>
             </section>	
 		</section>
 		<div class="view-buttons">
 			<button id="gridBtn">Grid View</button>
 			<button id="listBtn">List View</button>
         </div>
+		<h2>Members Directory</h2>
 		<section id="members" class="grid">
-			<h3>members</h3>
-			 <!-- members from json appear here -->
+		
+
+
 		</section>
 	</main>
 	<footer>
 		<div class="chamber-information">
-			<p>nairobi chamber of commerce,
-			phone number +254 234123,
-			email: info@nairobi,
-			url:mybusiness.com</p>
+			<p>Nairobi Chamber of Commerce</p>
+            <p>Phone: +254 234123</p>
+            <p>Email: info@nairobi.com</p>
+            <p>Website: mybusiness.com</p>
 	    </div>
 		<div class="social-media">
 			<nav class="socialmedia">
@@ -88,10 +89,15 @@
 			<a href="https://linkedin.com/in/joseph-odongo-oa37691">
 				<img src="images/linkedin.jpg" alt="linkedin icon">
 			</a></nav>
-		</div><div class="p-div">
-			<p><span id="currentyear">&copy; 2026 joseph odongo</span></p>
-			<p>lastmodified:<span id="lastmodified">7/4/2026 1:45:45</span></p>
+		</div>
+		<div class="p-div">
+			<p><span id="currentyear">&copy; 2026 Joseph Odongo</span></p>
+			<p>Last Modified: <span id="lastmodified"></span></p>
+			<p>Back so soon! Awesome!</p>
 		</div>
 	</footer>
+	<script>
+	    document.getElementById("lastmodified").textContent = document.lastModified;
+	</script>	
 </body>
 </html>
