@@ -39,6 +39,7 @@ h2 {
   height: auto;
 
 
+
 }
 
 
@@ -171,9 +172,12 @@ nav a:hover {
 footer {
     background-color: #003366;
     color: white;
-    padding: 2rem;
     text-align: center;
-    height: 232px;
+    height: 300px;
+
+  
+  
+  
 }
 
 .socialmedia img {
