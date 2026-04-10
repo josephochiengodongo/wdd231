@@ -1,171 +1,102 @@
-// URL to your local JSON file
-const dataUrl = 'data/places.json';
+// URL to your local JSON file (ensure this path is correct relative to your HTML)
+const jsonUrl = 'data/places.json';
 
-// 1. Asynchronous Function with Try/Catch (Requirement)
-async function getPlaces() {
+// Select DOM Elements
+const placesContainer = document.querySelector('#places-container');
+const modal = document.querySelector('#place-details');
+const modalBody = document.querySelector('#modal-body');
+const closeModalBtn = document.querySelector('#close-modal');
+
+// --- Initialization ---
+document.addEventListener('DOMContentLoaded', () => {
+    initPage();
+});
+
+async function initPage() {
+    updateFooter();
+    handleVisitCounter();
+    await fetchAndRenderPlaces();
+}
+
+// 1. Data Fetching with try...catch (Requirement)
+async function fetchAndRenderPlaces() {
     try {
-        const response = await fetch(dataUrl);
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
+        const response = await fetch(jsonUrl);
+        if (!response.ok) throw new Error('Could not fetch destinations');
         
-        // 2. Use Array Method (Requirement)
-        displayPlaces(data);
+        const places = await response.json();
+        
+        // 2. Array Method: Use forEach or map to process data (Requirement)
+        renderCards(places);
         
     } catch (error) {
-        console.error('There was an error fetching the data:', error);
-        document.getElementById('places-container').innerHTML = `<p>Error loading data.</p>`;
+        console.error('Fetch Error:', error);
+        placesContainer.innerHTML = `<p class="error">Error loading data: ${error.message}</p>`;
     }
 }
 
 // 3. Dynamic Content Generation using Template Literals (Requirement)
-function displayPlaces(places) {
-    const container = document.querySelector('#places-container');
-    container.innerHTML = ""; // Clear existing content
+function renderCards(places) {
+    placesContainer.innerHTML = ''; // Clear the "Loading" message
 
     places.forEach(place => {
         const card = document.createElement('section');
-        card.classList.add('place-card');
+        card.className = 'place-card';
 
-        // Note: loading="lazy" (Requirement)
+        // Displaying 4+ distinct properties: name, location, image, description
         card.innerHTML = `
             <img src="${place.image_url}" alt="${place.name}" loading="lazy">
-            <div class="card-details">
+            <div class="card-content">
                 <h3>${place.name}</h3>
                 <p><strong>Location:</strong> ${place.location}</p>
-                <p><strong>Contact:</strong> ${place.contact}</p>
-                <button class="view-details">Learn More</button>
+                <p>${place.description.substring(0, 60)}...</p>
+                <button class="details-btn">View Details</button>
             </div>
         `;
-        
+
         // 4. Event Listener for Modal (Requirement)
-        card.querySelector('.view-details').addEventListener('click', () => {
-            showModal(place);
+        card.querySelector('.details-btn').addEventListener('click', () => {
+            openDetailsModal(place);
         });
 
-        container.appendChild(card);
+        placesContainer.appendChild(card);
     });
 }
 
-// 5. Modal Interaction (Requirement)
-function showModal(place) {
-    // Create modal elements dynamically or select existing one
-    const modal = document.createElement('dialog');
-    modal.innerHTML = `
-        <div class="modal-content">
-            <h2>${place.name}</h2>
-            <p>${place.description}</p>
-            <p>Email: ${place.email}</p>
-            <button id="closeModal">Close</button>
-        </div>
+// 5. Modal Functionality (Requirement)
+function openDetailsModal(place) {
+    modalBody.innerHTML = `
+        <h2>${place.name}</h2>
+        <img src="${place.image_url}" alt="${place.name}" class="modal-img">
+        <p><strong>Address:</strong> ${place.address || place.location}</p>
+        <p><strong>Contact:</strong> ${place.contact || 'N/A'}</p>
+        <p><strong>Email:</strong> ${place.email || 'N/A'}</p>
+        <p><strong>Description:</strong> ${place.description}</p>
+        ${place.url ? `<p><a href="${place.url}" target="_blank">Visit Official Site</a></p>` : ''}
     `;
-    document.body.appendChild(modal);
-    modal.showModal();
-
-    modal.querySelector('#closeModal').addEventListener('click', () => {
-        modal.close();
-        modal.remove();
-    });
+    modal.showModal(); // Opens the <dialog> element
 }
 
-// 6. Local Storage Example (Requirement)
-function trackVisit() {
-    const lastVisit = localStorage.getItem('last-visit');
-    const now = Date.now();
-    localStorage.setItem('last-visit', now);
+// Close Modal Event
+closeModalBtn.addEventListener('click', () => {
+    modal.close();
+});
+
+// 6. Local Storage Usage (Requirement)
+function handleVisitCounter() {
+    let visitCount = Number(window.localStorage.getItem('visit-count')) || 0;
+    visitCount++;
+    window.localStorage.setItem('visit-count', visitCount);
     
-    if (lastVisit) {
-        console.log(`Welcome back! Last visit: ${new Date(parseInt(lastVisit)).toLocaleDateString()}`);
-    }
+    // Optional: Log to console for your video demo
+    console.log(`Total site visits tracked in LocalStorage: ${visitCount}`);
 }
 
-// Initialize
-trackVisit();
-getPlaces();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import React from 'react';
-import { places } from './places.mjs'; // Path to your data file
-
-const PlacesGallery = () => {
-  return (
-    <div style={{ display: 'grid', gap: '20px', padding: '20px' }}>
-      {places.map((place, index) => (
-        <div key={index} className="place-card" style={cardStyle}>
-          {/* Lazy Loading the Image */}
-          <img 
-            src={place.image_url} 
-            alt={place.name} 
-            loading="lazy" 
-            style={imageStyle} 
-          />
-          
-          <div style={{ padding: '15px' }}>
-            <h3>{place.name}</h3>
-            <p><strong>Location:</strong> {place.location}</p>
-            <p><strong>Address:</strong> {place.address}</p>
-            <p><strong>Contact:</strong> {place.contact}</p>
-            <a href={`mailto:${place.email}`}>{place.email}</a>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-};
-
-// Simple Styles
-const cardStyle = {
-  border: '1px solid #ddd',
-  borderRadius: '8px',
-  overflow: 'hidden',
-  boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
-};
-
-const imageStyle = {
-  width: '100%',
-  height: '250px',
-  objectFit: 'cover',
-  display: 'block'
-};
-
-export default PlacesGallery;
+// Helper to update standard footer info
+function updateFooter() {
+    const year = document.querySelector('#currentyear');
+    const modified = document.querySelector('#lastModified');
+    
+    if (year) year.textContent = new Date().getFullYear();
+    if (modified) modified.textContent = document.lastModified;
+}

@@ -55,91 +55,91 @@ export const places=[
   },
   {
     name: "Amboseli National Park",
-    county: "Kajiado",
+    location: "Kajiado",
     type: "National Park",
     url: "https://www.kws.go.ke/amboseli-national-park"
   },
   {
     name: "Tsavo East National Park",
-    county: "Taita-Taveta",
+    location: "Taita-Taveta",
     type: "National Park",
     url: "https://www.kws.go.ke/tsavo-east-national-park"
   },
   {
     name: "Tsavo West National Park",
-    county: "Taita-Taveta",
+    location: "Taita-Taveta",
     type: "National Park",
     url: "https://www.kws.go.ke/tsavo-west-national-park"
   },
   {
     name: "Lake Nakuru National Park",
-    county: "Nakuru",
+    location: "Nakuru",
     type: "National Park",
     url: "https://www.kws.go.ke/lake-nakuru-national-park"
   },
   {
     name: "Mount Kenya National Park",
-    county: "Kirinyaga",
+    location: "Kirinyaga",
     type: "National Park",
     url: "https://www.kws.go.ke/mount-kenya-national-park"
   },
   {
     name: "Diani Beach",
-    county: "Kwale",
+    location: "Kwale",
     type: "Beach",
     url: "https://www.magicalkenya.com/destinations/diani/"
   },
   {
     name: "Lamu Old Town",
-    county: "Lamu",
+    location: "Lamu",
     type: "Historic Town",
     url: "https://whc.unesco.org/en/list/1055/"
   },
   {
     name: "Samburu National Reserve",
-    county: "Samburu",
+    location: "Samburu",
     type: "National Reserve",
     url: "https://www.samburu.go.ke/tourism/"
   },
   {
     name: "Lake Naivasha",
-    county: "Nakuru",
+    location: "Nakuru",
     type: "Freshwater Lake",
     url: "https://www.magicalkenya.com/destinations/lake-naivasha/"
   },
   {
     name: "Watamu Marine National Park",
-    county: "Kilifi",
+    location: "Kilifi",
     type: "Marine Park",
     url: "https://www.kws.go.ke/watamu-marine-national-park"
   },
   {
     name: "Aberdare National Park",
-    county: "Nyeri",
+    location: "Nyeri",
     type: "National Park",
     url: "https://www.kws.go.ke/aberdare-national-park"
   },
   {
     name: "Lake Turkana",
-    county: "Marsabit",
+    location: "Marsabit",
     type: "Desert Lake",
     url: "https://whc.unesco.org/en/list/801/"
   },
   {
     name: "Shimba Hills National Reserve",
-    county: "Kwale",
+    location: "Kwale",
     type: "National Reserve",
     url: "https://www.kws.go.ke/shimba-hills-national-reserve"
   },
   {
     name: "Ol Pejeta Conservancy",
-    county: "Laikipia",
+    location: "Laikipia",
     type: "Wildlife Conservancy",
     url: "https://www.olpejetaconservancy.org/"
   },
   {
     name: "Karura Forest",
-    county: "Nairobi",
+    location: "Nairobi",
     type: "Urban Forest",
     url: "https://www.friendsofkarura.org/"
   }
