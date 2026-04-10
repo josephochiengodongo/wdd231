@@ -7,17 +7,20 @@
     <meta name="description" content="my name is joseph ochieng odongo currently taking a course in wdd231 in byu">
     <meta name="author" content="joseph odongo">
     <link rel="stylesheet" href="styles/final.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/final-large.css">
-    <link rel="icon" href="wdd231/finalproject/site.html/images/logo.ico">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="icon" href="wdd231/finalproject/index.html/images/logo.ico">
     <meta property="og:title" content="wdd-Web Fronted Development-joseph odongo">
     <meta property="og:description" content="This is my wdd-dynamic Web fundamentals,it is the last subject for wdd, in certficate course knowned as web and computer programming.">
     <meta property="og:url" content="https://www.github.com/josephochieng.github.io/wdd231">
-    <meta property="og:image" content="https://josephochiengodongo.github.io/wdd231/finalproject/site.html/images/og-image.jpg">
+    <meta property="og:image" content="https://josephochiengodongo.github.io/wdd231/finalproject/index.html/images/og-image.jpg">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    
+    
+    
 </head>
 <body>
     <header>
@@ -26,55 +29,29 @@
             <img src="images/logo.webp" alt="logo">
             <button id="menu-btn">☰</button>
             <nav id="nav-menu">
+                <a href="index.html" class="active">Home</a>
                 <a href="site.html">Site</a>
-                <a href="about.html" class="active">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
-
-        
     </header>
     <main>
-        <article class="grid-container">
-            <h1>Tours Sites</h1>
-            <figure class="card2">
-                <img src="images/impala.webp" alt="">
-                <figcaption>Ring Road,Milimani</figcaption>    
-            </figure>
-            <figure class="card3">
-                <img src="images/kitmikayi.webp" alt="">
-                <figcaption>Seme Constituency</figcaption>    
-                </figure>
-            <figure class="card3">
-                <img src="images/maasaimara.webp" alt="">
-                <figcaption>Maasai Mara,Narok </figcaption>   
-            </figure>
-            <figure class="card4">
-                <img src="images/nairobi.webp" alt="">
-                <figcaption>Along Langata road</figcaption>    
-            </figure>
-            <figure class="card5">
-                <img src="images/ruma.webp" alt="">
-                <figcaption>Ruma in south Nyanza</figcaption>
-            </figure>
-            <figure class="card6">
-                <img src="images/kenyw.webp" alt="">
-                <figcaption>In coastal area,Kilifi,Kenya</figcaption>
-            </figure>
-            <figure class="card7">
-                <img src="images/amboseli.webp" alt="">
-                <figcaption>Amboseli region</figcaption>    
-            </figure>
-            <figure class="card8">
-                <img src="images/hippo.webp" alt="">
-                <figcaption>Hippo center in Kisuf</figcaption>
-            </figure>
-            <figure class="card9">
-                <img src="images/giraffe.webp" alt="">
-                <figcaption>Giraffe center in Nairobi</figcaption>
-            </figure>
-        </article>
-        <div class="cta-contact">
-            <p>><a href="contact.html" class="cta-button">Contact Us</a></p>
+        <div>
+        <section class="hero">
+            <h1>Seven Wonders Of The World</h1>
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width:320px)">
+                <source srcset="images/7wounders1.webp" media="(max-width:1200px)">
+                <img src="images/7wounders.jpg" alt="Tours center"  width="960" height="631">
+             </picture>
+        </section>
+        <section class="purpose">
+            <h2>Site's Purpose</h2>
+            <p>Real Travel provides destination guides, travel tips, itinerary suggestions, and accommodation recommendations for travelers exploring Kenya. The site serves as a planning hub where users can discover attractions, outdoor adventures, and cultural highlights while accessing helpful resources to prepare for their trips.</p>
+            <img src="images/purpose.webp" alt="">
+            <p>Real Travel provides destination guides, travel tips, itinerary suggestions, and accommodation recommendations for travelers exploring Kenya. The site serves as a planning hub where users can discover attractions, outdoor adventures, and cultural highlights while accessing helpful resources to prepare for their trips.</p>
+        </section>
+        <div class="cta-site">
+          <a href="site.html" class="cta-button">Visit Our Site</a>
         </div>
     </main>
     <footer>
@@ -94,8 +71,8 @@
                 <p><span id="currentyear">&copy; 2026 Joseph Odongo</span></p>
                 <p>LastModified:<span id="lastModified">8/2/2026 1:45:45</span></p>
            </div>
-    
+          <video src="images/vidio.mp4" alt="vidio for project3                                                       "></video> 
     </footer>
-    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/" type="module"></script>
 </body>
 </html>
