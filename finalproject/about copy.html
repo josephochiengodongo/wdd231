@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Real Travelers</title>
+    <meta name="description" content="Explore the diverse wildlife sanctuaries and national parks of Kenya with Real Travelers.">
+    <meta name="author" content="Joseph Odongo">
+    
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/final-large.css">
+    
+    <link rel="icon" href="images/logo.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.webp" alt="Real Travelers Logo" class="logo-img">
+            <h1>Real Travelers</h1>
+            <button id="menu-btn" aria-label="Toggle Menu">☰</button>
+            <nav id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Explore Destinations</h2>
+            <p>Discover the beauty of Kenya's National Parks and Sanctuaries.</p>
+        </section>
+
+        <div id="places-container" class="places-grid">
+            <p class="loading-msg">Loading destinations...</p>
+        </div>
+
+        <dialog id="place-details">
+            <div id="modal-body"></div>
+            <button id="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <nav class="socialmedia">
+                <a href="https://facebook.com"><img src="images/facebook.jpg" alt="Facebook"></a>
+                <a href="https://github.com/josephochiengodongo/wdd231"><img src="images/github.jpg" alt="GitHub"></a>
+                <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </nav>
+            <div class="p-div">
+                <p>&copy; <span id="currentyear"></span> Joseph Odongo | Kenya</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+                <p><a href="attributions.html">Attributions</a> | <a href="video-demo.html">Project Video Demo</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.mjs" type="module"></script>
+</body>
+</html>

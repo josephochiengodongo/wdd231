@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Travelers | Home</title>
+    <title>WDD231 | Real Travelers</title>
     <meta name="description" content="my name is joseph ochieng odongo currently taking a course in wdd231 in byu">
     <meta name="author" content="joseph odongo">
-    <link rel="stylesheet" href="styles/real.css">
+    <link rel="stylesheet" href="styles/final.css">
     <link rel="stylesheet" href="styles/final-large.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="icon" href="wdd231/finalproject/index.html/images/logo.ico">
@@ -17,24 +17,62 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet"><!DOCTYPE html>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    
+    
+    
 </head>
 <body>
     <header>
-        <h1>Explore Kenya</h1>
-        <button id="menu-btn">☰</button>
-        <nav id="nav-menu">
-            <a href="index.html" class="active">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <h1>Real Travelers</h1>
+            <div class="logo">Real Travelers</div>
+            <img src="images/logo.webp" alt="logo">
+            <button id="menu-btn">☰</button>
+            <nav id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
     </header>
     <main>
-        <section class="hero">
-            <h2>Welcome to Kenya Tourism</h2>
-            <p>Discover parks, beaches, wildlife, and heritage.</p>
-        </section>
-        <section id="visit-message"></section>
+        <div class="places-container">
+  <article class="place-card">
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Kisumu_Impala_Sanctuary.jpg" 
+      alt="Kisumu Impala Sanctuary" 
+      loading="lazy" 
+      class="place-image"
+    >
+    <div class="place-content">
+      <h2>Kisumu Impala Sanctuary</h2>
+      <p class="location"><strong>Location:</strong> Lake Victoria near Kisumu, Kenya</p>
+      <p><strong>Address:</strong> 3 km from Kisumu City near Hippo Point</p>
+      <div class="contact-info">
+        <p>📞 +254 777 305 916</p>
+        <p>📧 <a href="mailto:customerservice@kws.go.ke">customerservice@kws.go.ke</a></p>
+      </div>
+    </div>
+  </article>
+
+  <article class="place-card">
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/0/04/Maasai_Mara_Lion_Pride.jpg" 
+      alt="Maasai Mara National Reserve" 
+      loading="lazy" 
+      class="place-image"
+    >
+    <div class="place-content">
+      <h2>Maasai Mara National Reserve</h2>
+      <p class="location"><strong>Location:</strong> Narok County, Kenya</p>
+      <p><strong>Address:</strong> Maasai Mara, Narok County, Kenya</p>
+      <div class="contact-info">
+        <p>📞 +256 772 000 467</p>
+        <p>📧 <a href="mailto:safari@www.masaimaraparkkenya.com">safari@www.masaimaraparkkenya.com</a></p>
+      </div>
+    </div>
+  </article>
+</div>
+        
     </main>
     <footer>
         <div class="social-media">
@@ -55,19 +93,6 @@
            </div>
           <video src="images/vidio.mp4" alt="vidio for project3                                                       "></video> 
     </footer>
-    <script src="scripts/realf.js" type="module"></script>
-</body>
-</html>
-        
-
-
-
-
-
-
-
-
-    </footer>
-    <script src="main.js" type="module"></script>
+    <script src="scripts/script.js" type="module"></script>
 </body>
 </html>
