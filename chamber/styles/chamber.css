@@ -13,7 +13,11 @@ h3 {
 
 
 }
-
+h2{
+    color: blue;
+    padding-left: 10px;
+    font-size: x-large
+}
   
 
   
@@ -23,7 +27,7 @@ h4{
   color:white;
   width: 100%;
   height: 40px;
-  background-color: black;
+  background-color: blue;
   position: relative;
   top: 40px;
   border-radius: 10px 10px 0 0;
@@ -33,13 +37,20 @@ h4{
 
 
 
-h2 {
-  color: #0055aa;
+h2.home-grid {
   width: 100%;
   height: auto;
+  font-size: xx-large;
+  background-color: azure;
+  padding-left: 10px;
+  font-weight: bold;
 
 
 
+
+}
+h2.members-grid {
+    
 }
 
 
@@ -120,8 +131,16 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    background-color: chartreuse;
+    background-color: azure;
+    padding-bottom: 150px;
+    color: blue
+    
+
+
+
 }
+
+
 
 /* Sections */
 .events-section {
@@ -144,7 +163,7 @@ nav a:hover {
   border-radius: 8px;
   position: absolute;
   left:445px;
-  top: 865px;
+  top: 851px;
 
 
 }
@@ -157,7 +176,7 @@ nav a:hover {
   border-radius: 8px;
   position: absolute;
   left:700px;
-  top:865px;
+  top:851px;
 
 }
 
@@ -168,6 +187,8 @@ nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 2rem;
+  
+  
 }
 /* Footer */
 footer {
@@ -184,7 +205,7 @@ footer {
 }
 
 .socialmedia img {
-    width: 35px;
+    width: 50px;
     margin: 10px;
 }
 
@@ -205,7 +226,8 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 2rem;
-  background-color: #ffcc00;
+  background-color: azure;
+  color: blue;
 }
 
 #directory.list {
@@ -233,10 +255,12 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+    background-color: azure
 }
 
 #members.list {
     display: block;
+    background-color: azure;
 }
 
 #members.list .member-card {
@@ -246,18 +270,23 @@ footer {
 .member-card {
     border: 1px solid #ccc;
     padding: 1rem;
-    background: white;
+    background:violet;
     border-radius: 8px;
 }
 
 .view-buttons {
     margin: 1rem 0;
+    background-color: azure;
+    padding: 20px;
+    
 }
 
 .view-buttons button {
     padding: 0.5rem 1rem;
     margin-right: 10px;
     cursor: pointer;
+    background-color: #003366;
+    color:white;
 }
 
 
@@ -285,12 +314,6 @@ section {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-section h2 {
-    color: #004466;
-    
-    
-
-}
 
 #spotlight-container {
     display: grid;
@@ -303,13 +326,14 @@ section h2 {
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
-    background-color: #ffcc00;
+    background-color:white;
 }
 
 .spotlight-card img {
     width: 100px;
     height: auto;
     margin-bottom: 0.5rem;
+    
 }
 
 @media (min-width: 768px) {
@@ -319,7 +343,7 @@ section h2 {
 }
 #h2.spotlight-card{
     color: white;
-    background-color: black;
+    background-color:blue;
     width: 100%;
     border-radius: 10px 10px 0 0;
     text-align: center;

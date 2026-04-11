@@ -6,17 +6,17 @@ const companies = [
     location: "Industry",
     phone: "+223 70 123 456",
     email: "info@expertraders.com",
-    adress:"P.O.Box 54 Nairobi",
+    address:"P.O.Box 54 Nairobi",
     membership:"ncc342",
     level:"silver"
   },
   {
-    name: "Reaal Tech Solutions",
+    name: "Real Tech Solutions",
     industry: "IT Services",
     location: "Nairobi",
     phone: "+223 76 987 654",
     email: "info@realeserttech.com",
-    adress: "P.O.Box 67 Nairibi",
+    address: "P.O.Box 67 Nairobi",
     membership:"Gold"
   },
   {
@@ -25,16 +25,16 @@ const companies = [
     location: "Nairobi",
     phone: "+223 71 555 888",
     email: "info@savanalogistics.com",
-    adress:"P.O.Box 6578 Naivasha",
+    address:"P.O.Box 6578 Naivasha",
     membership: "silver"
   },
   {
     name:"Bount Baker",
-    industry:"baakery",
+    industry:"bakery",
     location: "Nairobi",
     phone: "073564877",
     email:"bony@bytbonty",
-    adress:"P.O.Box 234 Nairobi",
+    address:"P.O.Box 234 Nairobi",
     membership: "siver"
   },
   {
@@ -43,26 +43,26 @@ const companies = [
      location: "Nairobi",
      phone: "0727812455",
      email: "top@topprinter",
-     adress:"P.O.Box 34576 Nairobi",
+     address:"P.O.Box 34576 Nairobi",
      member:"Silver"
   },
   {
 
     name:"Kebsali Taders",
-    indusrty:'sales',
+    industry:'sales',
     location: "Nairobi",
     phone:"07654321",
     email: "keb@jotrde",
-    adress:"P.O.Box 355 Nairobi",
+    address:"P.O.Box 355 Nairobi",
     membership:"Gold"
   },
   {
     name:"Gmaks Travellers",
-    indusustry:"Travelling",
+    industry:"Travelling",
     location:"Nairobi",
     phone: "0786543432",
     email: "gmark@travelas",
-    adress:"P.O.Box 345 Nairobi",
+    address:"P.O.Box 345 Nairobi",
     membership:"Silver"
     }
     

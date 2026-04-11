@@ -1,6 +1,6 @@
 const weatherData = document.getElementById('weather-data');
 
-const apiKey = 'YOUR_API_KEY'; // 🔑 replace this
+const apiKey = 'a6e409f07328528be70f230d13f2a5a8'; // 🔑 replace this
 const city = 'Nairobi';
 
 const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
@@ -38,4 +38,5 @@ async function getWeather() {
   }
 }
 
+// ✅ CALL FUNCTION
 getWeather();
