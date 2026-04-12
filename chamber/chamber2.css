@@ -45,6 +45,9 @@ h2.home-grid {
   padding-left: 10px;
   font-weight: bold;
 
+
+
+
 }
 
 
@@ -87,7 +90,6 @@ nav a {
     text-decoration: none;
     margin-left: 15px;
     font-weight: bold;
-  
 }
 
 nav a:hover {
@@ -173,14 +175,28 @@ nav a:hover {
   left:700px;
   top:851px;
 
-} 
+}
 
+/* Members */
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+  
+  
+}
 /* Footer */
 footer {
     background-color: #003366;
     color: white;
     text-align: center;
-    height: 300px;  
+    height: 300px;
+    
+
+
+  
   
   
 }
@@ -194,9 +210,8 @@ footer {
     text-decoration: none;
 }
 
-
 .company-card {
-  background:white;
+  background: white;
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 10px;
@@ -226,6 +241,13 @@ footer {
   font-weight: bold;
 }
 
+
+
+
+
+
+
+
 #members.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -251,7 +273,7 @@ footer {
 
 .view-buttons {
     margin: 1rem 0;
-    background-color:azure;
+    background-color: azure;
     padding: 20px;
     
 }
@@ -276,13 +298,13 @@ footer {
    }
 
 
-/* end of discovery  */
 
 
 
 
 
-.spotlightg-card {
+
+.spotlight-card {
     border: 1px solid #ddd;
     padding: 1rem;
     border-radius: 8px;
@@ -290,7 +312,7 @@ footer {
     background-color:white;
 }
 
-.spotlightg-card img {
+.spotlight-card img {
     width: 100px;
     height: auto;
     margin-bottom: 0.5rem;
@@ -299,7 +321,7 @@ footer {
 
 
 
-#h2g.spotlight-card{
+#h2.spotlight-card{
     color: white;
     background-color:blue;
     width: 100%;
@@ -311,45 +333,45 @@ footer {
 
 
 
-navg a {
+nav a {
   color: white;
   text-decoration: none;
 }
 
 /* HERO */
-.herog {
+.hero {
   position: relative;
   text-align: center;
 }
 
-.herog img {
+.hero img {
   width: 100%;
   height: auto;
 }
 
-.ctag {
+.cta {
   padding: 1rem;
 }
 
-.cta-buttong {
+.cta-button {
   background: orange;
   padding: 10px;
   color: white;
   text-decoration: none;
   border-radius: 5px;
 }
-.top-sectiong {
+.top-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding: 20px;
 }
 
-.spotlightg-sectiong {
+.spotlight-section {
   padding: 20px;
 }
 
-.spotlightg {
+.spotlight {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -368,7 +390,7 @@ navg a {
     max-width: 1200px;
     margin: 0 auto;
 }
-.top-gridg {
+.top-grid {
   display: flex;
   justify-items: stretch;
   flex-direction: row;
@@ -376,7 +398,7 @@ navg a {
 }
 
 /* Section Styling */
-.top-grid sectiong,.weather-boxg {
+.top-grid section,.weather-box {
     background-color: #ffffff;
     border: 1px solid #ddd;
     padding: 1.5rem;
@@ -386,7 +408,7 @@ navg a {
   
 }
 
-.top-gridg {
+.top-grid {
     margin-top: 0;
     color: #003366; /* Deep blue for professional feel */
     border-bottom: 2px solid #e7e7e7;
@@ -394,6 +416,15 @@ navg a {
     padding:10px;
     width: 250px;
 }
+    
+
+  
+
+
+
+
+
+/* Tablet & Desktop Layout */
 
 
 
@@ -408,14 +439,14 @@ navg a {
     
 }
 
-.weatherg-info img {
+.weather-info img {
     width: 60px;
     background-color: #eee;
     border-radius: 50%;
 }
 
 /* Forecast List */
-#forecastg-display {
+#forecast-display {
     margin-top: 15px;
     flex-direction: column;
     justify-content: space-around;
@@ -465,13 +496,13 @@ navg a {
 
 /* RESET */
 
-bodyg {
+body {
   line-height: 1.6;
   background: #f5f5f5;
 }
 
 /* HEADER */
-headerg {
+header {
   background: #003366;
   color: white;
   padding: 1rem;
@@ -487,8 +518,12 @@ header img {
   width: 50px;
 }
 
+nav {
+  display: none;
+  flex-direction: column;
+}
 
-navg ag {
+nav a {
   color: white;
   text-decoration: none;
   padding: 0.5rem;
@@ -576,27 +611,27 @@ nav a:hover {
     gap: 20px;
 }
 
-.spotlight-cardg {
+.spotlight-card {
   background: white;
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
 }
 
-.spotlight-card imgg {
+.spotlight-card img {
   max-width: 100px;
   margin: 10px 0;
 }
 
 /* FOOTER */
-footerg {
+footer {
   background: #003366;
   color: white;
   text-align: center;
   padding: 1rem;
 }
 
-.socialmedia imgg {
+.socialmedia img {
   width: 30px;
   margin: 5px;
 }

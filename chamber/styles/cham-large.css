@@ -9,4 +9,27 @@
   section.home {
     padding: 1.5rem;
   }
+
+}/* ===== LARGE SCREEN ===== */
+@media (min-width: 768px) {
+
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+ 
+
+  /* Spotlight cards side by side */
+  #spotlight-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  }
+}@media (min-width: 768px) {
+    .top-grid {
+        grid-template-columns:1fr,1fr,1fr;
+
+    }
 }
+
+

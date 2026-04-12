@@ -2,80 +2,59 @@
   "members": [
     {
       "name": "Expert Holdings",
-      "industry": "Retail",
-      "location": "Nairobi",
-      "phone": "+25470123456",
-      "email": "info@expertholdings.com",
-      "address": "P.O. Box 54 Nairobi",
-      "membership": "Silver",
-      "website": "https://expertholdings.com",
-      "logo": "images/expert.png"
+      "phone": "+254 701 234 567",
+      "address": "P.O. Box 54, Nairobi",
+      "website": "https://www.expertholdings.co.ke",
+      "image": "images/expert.png",
+      "membership": "Silver"
     },
     {
       "name": "Real Tech Solutions",
-      "industry": "IT Services",
-      "location": "Nairobi",
-      "phone": "+25476987654",
-      "email": "info@realtechsolutions.com",
-      "address": "P.O. Box 67 Nairobi",
-      "membership": "Gold",
-      "website": "https://realtechsolutions.com",
-      "logo": "images/realtech.png"
+      "phone": "+254 769 876 543",
+      "address": "P.O. Box 67, Nairobi",
+      "website": "https://www.realtech.co.ke",
+      "image": "images/realtech.png",
+      "membership": "Gold"
     },
     {
-      "name": "Savana Logistics",
-      "industry": "Transportation",
-      "location": "Naivasha",
-      "phone": "+25471555888",
-      "email": "info@savanalogistics.com",
-      "address": "P.O. Box 6578 Naivasha",
-      "membership": "Member",
-      "website": "https://savanalogistics.com",
-      "logo": "images/savana.png"
-    },
-    {
-      "name": "Bount Baker",
-      "industry": "Bakery",
-      "location": "Nairobi",
-      "phone": "+25473564877",
-      "email": "bony@bountbaker.com",
-      "address": "P.O. Box 234 Nairobi",
-      "membership": "Silver",
-      "website": "https://bountbaker.com",
-      "logo": "images/baker.png"
-    },
-    {
-      "name": "Top Printers",
-      "industry": "Printing",
-      "location": "Nairobi",
-      "phone": "+254727812455",
-      "email": "top@topprinters.com",
-      "address": "P.O. Box 34576 Nairobi",
-      "membership": "Silver",
-      "website": "https://topprinters.com",
-      "logo": "images/printers.png"
+      "name": "Savanna Logistics",
+      "phone": "+254 715 558 888",
+      "address": "P.O. Box 6578, Naivasha",
+      "website": "https://www.savannalogistics.co.ke",
+      "image": "images/savanna.png",
+      "membership": "Silver"
     },
     {
       "name": "Kebsali Traders",
-      "industry": "Sales",
-      "location": "Nairobi",
-      "phone": "+2547654321",
-      "email": "keb@kebsalitraders.com",
-      "address": "P.O. Box 355 Nairobi",
-      "membership": "Gold",
-      "website": "https://kebsalitraders.com",
-      "logo": "images/kebsali.png"
+      "phone": "+254 765 432 100",
+      "address": "P.O. Box 355, Nairobi",
+      "website": "https://www.kebsali.co.ke",
+      "image": "images/kebsali.png",
+      "membership": "Gold"
     },
     {
       "name": "Gmaks Travellers",
-      "industry": "Travel",
-      "location": "Nairobi",
-      "phone": "+254786543432",
-      "email": "gmark@gmakstravellers.com",
-      "address": "P.O. Box 345 Nairobi",
-      "membership": "Silver",
-      "website": "https://gmakstravellers.com",
-      "logo": "images/gmaks.png"
+      "phone": "+254 786 543 432",
+      "address": "P.O. Box 345, Nairobi",
+      "website": "https://www.gmakstravellers.co.ke",
+      "image": "images/gmaks.png",
+      "membership": "Silver"
+    },
+    {
+      "name": "Top Printers",
+      "phone": "+254 727 812 455",
+      "address": "P.O. Box 34576, Nairobi",
+      "website": "https://www.topprinters.co.ke",
+      "image": "images/printers.png",
+      "membership": "Silver"
+    },
+    {
+      "name": "Bount Baker",
+      "phone": "+254 735 648 770",
+      "address": "P.O. Box 234, Nairobi",
+      "website": "https://www.bountbaker.co.ke",
+      "image": "images/baker.png",
+      "membership": "Silver"
     }
   ]
 }

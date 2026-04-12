@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="icon" href="wdd231/chamber/images/favicon.ico">(orPNG/SVG).
     <link rel="stylesheet" href="styles/chamber-large.css">
-    <script src="scripts/getdates.mjs" defer></script>
+    <script src="scripts/getdates.js" defer></script>
     <script src="scripts/directory.js" defer></script>
     <meta property="og:title" content="wdd-Web Fronted Development-joseph odongo">
     <meta property="og:description" content="This is my wdd-dynamic Web fundamentals,it is the last subject for wdd, in certficate course knowned as web and computer programming.">
@@ -36,31 +36,38 @@
     <main>
         <section class="hero">
             <h2>Chamber Of Commerce Building</h2>
-            <img src="images/hero.jpg" alt="chamber of commerce building">
+            <img src="images/hero.jpg" alt="Chamber of Commerce Building">
             <div class="cta">
                 <h1>Grow Your Business with Us</h1>
                 <a href="join.html" class="cta-button">Join the Chamber</a>
-            </div>
+                    </div>
         </section>
-        <div class="main-grid">
+        <div class="top-grid">
             <section id="events">
                 <h2>Current Events</h2>
                 <p>Annual Gala - Nov 15th</p>
                 <p>Morning Mingle - Next Tuesday</p>
             </section>
-
-            <section id="weather">
-                <h2>Local Weather</h2>
-                <div id="weather-data">
-                    </div>
+            <section class="weather-box">
+                <h2>Weather in Nairobi</h2>
+                <div id="current-weather">
+                    <p>Loading weather...</p>
+                </div>
             </section>
-
-            <section id="spotlights">
-                <h2>Member Spotlights</h2>
-                <div id="spotlight-container">
-                    </div>
+            <section class="forecast-display">
+                
+                <h3>3-Day Forecast</h3>
+                <div id="forecast-display"></div>
             </section>
+            
         </div>
+
+    <!-- SPOTLIGHTS -->
+    <section id="spotlights">
+        <h2>Member Spotlights</h2>
+        <div id="spotlight-container"></div>
+    </section>
+    </div>      
     </main>
     <footer>
         <section class="information-section">
@@ -83,7 +90,7 @@
                 </nav>
                 <div class="p-div">
                     <p><span id="currentyear">&copy; 2026 Joseph Odongo</span></p>
-                    <p>LastModified:<span id="lastModified"></span></p>
+                    <p>LastModified:<span id="lastModified">4/12/2025 6:22</span></p>
                 </div>
             </div>
         </section>
