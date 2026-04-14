@@ -3,94 +3,149 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD-231 | Chamber-Join</title>
-    <meta name="description" content="my nane is joseph ochieng odongo,currenly takingacourse in wdd231-web fronted developement">
+    <title>WDD-231 | Chamber-Home</title>
+    <meta name="description" content="my name is joseph ochieng odongo,currently taking a course in wdd231-web fronted development">
     <meta name="author" content="joseph odongo">
     <link rel="stylesheet" href="styles/chamber.css">
-    <script src="scripts/members.js" defer></script>
-    <link rel="icon" href="wdd231/chamber/images/favicon.ico">
-    <link rel="stylesheet" href="styles/cham-large.css">
+    <link rel="icon" href="wdd231/chamber/images/favicon.ico">(orPNG/SVG).
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/" defer></script>
     <meta property="og:title" content="wdd-Web Fronted Development-joseph odongo">
     <meta property="og:description" content="This is my wdd-dynamic Web fundamentals,it is the last subject for wdd, in certficate course knowned as web and computer programming.">
     <meta property="og:url" content="https://www.github.com/josephochieng.github.io/wdd231">
-    <meta property="og:image" content="https://josephochiengodongo.github.io/wdd231/chamber/join.html/images/og-image.jpg">
+    <meta property="og:image" content="https://josephochiengodongo.github.op/wddd231/chamber/index.html/images/og-image.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-		<div class="containercontent">
-			<img src="images/logo.jpg" alt="logo">
-			<h1>nairobi chamber of commerce</h1>
-			<span class="menu-toggle"></span>
-			<nav>
-				<a href="home.html">home</a>
-				<a href="event.html">events</a>
-				<a href="directory.html">directory</a>
-				<a href="membership.html">membership</a>
-			</nav>
-		</div>
+        <div class="containercontent">
+            <img src="images/logo.jpg" alt="logo">
+            <h1>Nairobi Chamber of Commerce</h1>
+            <span class="menu-toggle"></span>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="event.html">Events</a>
+                <a href="directory.html">Directory</a>
+                <a href="membership.html">Membership</a>
+            </nav>
+        </div>
     </header>
-    <main><section class="membership application form">
-        <h2>Membership Application Form</h2>
-        <form method="get" action="thankyou.html">
-            <label for="first_name">First Name</label>
-            <input name="first_name" id="first_name" type="text" title="enter your firstname" autocomplete="given-name" required readonly/>
-            <label for="last_name">Last Name</label>
-            <input name="last_name" id="last_name" type="text" title="enter your last name" autocomplete="family-name" required readonly/>
-            <label for="organizational_title">Organizational Title</label>
-            <input name="organization" id="organizational_title" type="text" title="enter your Organizational_title with your organization name"
-            autocomplete="organization-title" pattern="[A-Za-z\-]{7,}" required/>
-            <label for="email">Email</label>
-            <input name="email" id="email" type="email" title="enter your email adress" autocomplete="email" placeholder="josephodongo99@gmail.com" required/>
-            <label for="organization">Organizational Name</label>
-            <input name="organization" id="organization" type="text" title="enter the organization name" placeholder="your organization" autocomplete="organization" required/>
-            <label for="phone">Phone Number</label>
-            <input name="phone" id="phone" type="tel" title="enter your phone number" autocomplete="tel" placeholder="+254727812410" required/>
-            <label for="description">Organizational Description</label>
-            <textarea name="description" id="description" title="describe your organization" placeholder="brief description of your organization" required></textarea>
-            <input name="timestump" id="timestump" type="hidden" value=""/>
-            <label for="membership">Membership Level</label>
-            <select id="membership" name="membership" title="membership level selection" required>
-                <option value="">--Membership Level Section--</option>
-                <option value="np">NP Membership</option>
-                <option value="bronze">Bronze Membership</option>
-                <option value="silver">Silver Membership</option>
-                <option value="gold">Gold Membership</option>
-            </select>
-            
-            <button type="submit" class="btm-submit">Submit</button>
+    <main class="join-container">
+        <form method="get" action="thankyou.html" id="joinForm">
+            <label title="Enter your first name">
+                First Name:
+                <input type="text" name="fname" required autocomplete="given-name">
+            </label>
+            <label title="Enter your last name">
+                Last Name:
+                <input type="text" name="lname" required autocomplete="family-name">
+            </label>
+            <label title="Your role in organization">
+                Organization Title:
+                <input type="text" name="org-title" autocomplete="organization-title"
+                pattern="[A-Za-z\\-\\s]{7,}">
+            </label>
+
+            <label title="Enter email address">
+                Email:
+                <input type="email" name="email" required autocomplete="email"
+                placeholder="example@email.com">
+            </label>
+
+            <label title="Enter phone number">
+                Mobile Phone:
+                <input type="tel" name="phone" required autocomplete="tel">
+            </label>
+
+            <label title="Business name">
+                Business Name:
+                <input type="text" name="business" required autocomplete="organization">
+            </label>
+
+            <label title="Select membership level">
+                Membership Level:
+                <select name="membership" required>
+                    <option value="">Select...</option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
+
+            <label title="Describe your business">
+                Business Description:
+                <textarea name="description"></textarea>
+            </label>
+
+    <!-- Hidden timestamp -->
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" value="Join the Chamber">
         </form>
-    </section>
-    <section class="membership_card">
-        <h3>Membership Levels</h3>
-        <article class="np_membership level">
-            <h4>NP membership Level</h4>
-            <a href="#">Learn more</a>
-        </article>
-        <article class="bronze membership">
-            <h4>Bronze Membership Level</h4>
-            <a href="#">Learn more</a>
-        </article>
-        <article class="silver">
-            <h4>Silver Membership Level</h4>
-            <a href="#">Learn more</a>
-        </article>
-        <article class="gold">
-            <h4>Gold Membership Level</h4>
-            <a href="#">Learn more</a>
-        </article>
-    </section>
-    </main>
-    <footer>
-            <div class="chamber-informations">
-                    <p>Nairobi chamber of commerce,<br>
-			        phone: +254 234123,
-			        email: info@nairobi,
-			        url:mybusiness.com</p>
+        <section class="cards">
+            <div class="card">
+                <h3>NP Membership</h3>
+                <button onclick="openModal('npModal')">Learn More</button>
             </div>
-            <div class="social-media">
+            <div class="card">
+                <h3>Bronze</h3>
+                <button onclick="openModal('bronzeModal')">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Silver</h3>
+                <button onclick="openModal('silverModal')">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Gold</h3>
+                <button onclick="openModal('goldModal')">Learn More</button>
+            </div>
+        </section>
+    </main>
+
+<!-- MODALS -->
+<div id="npModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('npModal')">&times;</span>
+    <h2>NP Membership</h2>
+    <p>Free membership for nonprofits. Includes basic networking.</p>
+  </div>
+</div>
+
+<div id="bronzeModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('bronzeModal')">&times;</span>
+    <h2>Bronze Membership</h2>
+    <p>Basic advertising and event access.</p>
+  </div>
+</div>
+
+<div id="silverModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('silverModal')">&times;</span>
+    <h2>Silver Membership</h2>
+    <p>Includes training and discounts.</p>
+  </div>
+</div>
+
+<div id="goldModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('goldModal')">&times;</span>
+    <h2>Gold Membership</h2>
+    <p>Premium advertising and spotlight features.</p>
+  </div>
+</div><footer>
+        <section class="information-section">
+            <div class="chamber-informations"></div>
+            <p>Nairobi Chamber of Commerce,
+            phone number +254 234123,
+            mail info@nairobi,
+            URL:mybusiness.com</p>
+            <div class=social-media>
                 <nav class="socialmedia">
                     <a href="https://facebook.com">
                         <img src="images/facebook.jpg" alt="facebook Icon">
@@ -102,11 +157,30 @@
                         <img src="images/linkedin.png" alt="Linkedin Icon">
                     </a>
                 </nav>
+                <div class="p-div">
+                    <p><span id="currentyear">&copy; 2026 Joseph Odongo</span></p>
+                    <p>LastModified:<span id="lastModified">4/12/2025 6:22</span></p>
+                </div>
             </div>
-            <div class="p-div">
-                <p><span id="currentyear">&copy; 2026 Joseph Odongo</span></p>
-                <p>LastModified:<span id="lastModified">8/2/2026 1:45:45</span></p>
-            </div>
+        </section>
     </footer>
+    <script src="scripts/.js" type="module"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

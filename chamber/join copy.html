@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD-231 | Chamber-Join</title>
+    <meta name="description" content="my nane is joseph ochieng odongo,currenly takingacourse in wdd231-web fronted developement">
+    <meta name="author" content="joseph odongo">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script src="scripts/members.js" defer></script>
+    <link rel="icon" href="wdd231/chamber/images/favicon.ico">
+    <link rel="stylesheet" href="styles/cham-large.css">
+    <meta property="og:title" content="wdd-Web Fronted Development-joseph odongo">
+    <meta property="og:description" content="This is my wdd-dynamic Web fundamentals,it is the last subject for wdd, in certficate course knowned as web and computer programming.">
+    <meta property="og:url" content="https://www.github.com/josephochieng.github.io/wdd231">
+    <meta property="og:image" content="https://josephochiengodongo.github.io/wdd231/chamber/join.html/images/og-image.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+		<div class="containercontent">
+			<img src="images/logo.jpg" alt="logo">
+			<h1>nairobi chamber of commerce</h1>
+			<span class="menu-toggle"></span>
+			<nav>
+				<a href="home.html">home</a>
+				<a href="event.html">events</a>
+				<a href="directory.html">directory</a>
+				<a href="membership.html">membership</a>
+			</nav>
+		</div>
+    </header>
+
+  <form method="get" action="thankyou.html" id="membership-form">
+  <label title="First Name">
+    First Name
+    <input type="text" name="fname" required autocomplete="given-name">
+  </label>
+
+  <label title="Last Name">
+    Last Name
+    <input type="text" name="lname" required autocomplete="family-name">
+  </label>
+
+  <label title="Organizational Title">
+    Organizational Title
+    <input type="text" name="org-title" autocomplete="organization-title" 
+           pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters, alpha, hyphens, and spaces only.">
+  </label>
+
+  <label title="Email">
+    Email
+    <input type="email" name="email" required autocomplete="email" placeholder="name@example.com">
+  </label>
+
+  <label title="Mobile Phone">
+    Mobile Phone
+    <input type="tel" name="phone" required autocomplete="tel">
+  </label>
+
+  <label title="Business Name">
+    Business Name
+    <input type="text" name="business" required autocomplete="organization">
+  </label>
+
+  <label title="Membership Level">
+    Membership Level
+    <select name="membership" required>
+      <option value="" disabled selected>Select a level...</option>
+      <option value="np">NP Membership (Non-Profit)</option>
+      <option value="bronze">Bronze Membership</option>
+      <option value="silver">Silver Membership</option>
+      <option value="gold">Gold Membership</option>
+    </select>
+  </label>
+
+  <label title="Business Description">
+    Business Description
+    <textarea name="description"></textarea>
+  </label>
+
+  <input type="hidden" name="timestamp" id="timestamp">
+  <input type="submit" value="Join the Chamber">
+</form> --><main>
+  <h1>Thank You for Joining!</h1>
+  <div id="results"></div>
+</main>
+
+<script>
+  const resultsElement = document.querySelector('#results');
+  const urlParams = new URLSearchParams(window.location.search);
+
+  // Array of keys to display
+  const fields = ['fname', 'lname', 'email', 'phone', 'business', 'timestamp'];
+  
+  fields.forEach(field => {
+    if (urlParams.has(field)) {
+      const p = document.createElement('p');
+      // Format the timestamp if it's the date field
+      let value = urlParams.get(field);
+      if (field === 'timestamp') value = new Date(value).toLocaleString();
+      
+      p.innerHTML = `<strong>${field.replace('fname', 'First Name').replace('lname', 'Last Name')}:</strong> ${value}`;
+      resultsElement.appendChild(p);
+    }
+  });
+</script>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Chamber</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Chamber of Commerce</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="join-container">
+
+  <!-- FORM SECTION -->
+  <section>
+    <h2>Membership Application</h2>
+
+    <form method="get" action="thankyou.html">
+
+      <label title="Enter your first name">
+        First Name:
+        <input type="text" name="fname" required autocomplete="given-name">
+      </label>
+
+      <label title="Enter your last name">
+        Last Name:
+        <input type="text" name="lname" required autocomplete="family-name">
+      </label>
+
+      <label title="Your organizational title">
+        Organizational Title:
+        <input type="text" name="orgtitle"
+          autocomplete="organization-title"
+          pattern="[A-Za-z\\-\\s]{7,}">
+      </label>
+
+      <label title="Enter your email address">
+        Email:
+        <input type="email" name="email" required
+          autocomplete="email"
+          placeholder="example@email.com">
+      </label>
+
+      <label title="Enter your mobile phone number">
+        Mobile Phone:
+        <input type="tel" name="phone" required autocomplete="tel">
+      </label>
+
+      <label title="Enter your business name">
+        Business Name:
+        <input type="text" name="business" required autocomplete="organization">
+      </label>
+
+      <fieldset>
+        <legend>Membership Level</legend>
+
+        <label>
+          <input type="radio" name="membership" value="np" required>
+          NP Membership (Free)
+        </label>
+
+        <label>
+          <input type="radio" name="membership" value="bronze">
+          Bronze Membership
+        </label>
+
+        <label>
+          <input type="radio" name="membership" value="silver">
+          Silver Membership
+        </label>
+
+        <label>
+          <input type="radio" name="membership" value="gold">
+          Gold Membership
+        </label>
+
+      </fieldset>
+
+      <label title="Describe your business or organization">
+        Business Description:
+        <textarea name="description"></textarea>
+      </label>
+
+      <!-- Hidden Timestamp -->
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <input type="submit" value="Submit Application">
+
+    </form>
+  </section>
+
+  <!-- MEMBERSHIP CARDS -->
+  <aside class="cards">
+
+    <div class="card">
+      <h3>NP Membership</h3>
+      <a href="#" onclick="openModal('npModal')">View Benefits</a>
+    </div>
+
+    <div class="card">
+      <h3>Bronze Membership</h3>
+      <a href="#" onclick="openModal('bronzeModal')">View Benefits</a>
+    </div>
+
+    <div class="card">
+      <h3>Silver Membership</h3>
+      <a href="#" onclick="openModal('silverModal')">View Benefits</a>
+    </div>
+
+    <div class="card">
+      <h3>Gold Membership</h3>
+      <a href="#" onclick="openModal('goldModal')">View Benefits</a>
+    </div>
+
+  </aside>
+
+</main>
+
+<!-- MODALS -->
+
+<div id="npModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('npModal')">&times;</span>
+    <h2>NP Membership</h2>
+    <p>Free membership for non-profits. Includes networking opportunities.</p>
+  </div>
+</div>
+
+<div id="bronzeModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('bronzeModal')">&times;</span>
+    <h2>Bronze Membership</h2>
+    <p>Basic advertising and access to events.</p>
+  </div>
+</div>
+
+<div id="silverModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('silverModal')">&times;</span>
+    <h2>Silver Membership</h2>
+    <p>Includes training sessions, discounts, and promotions.</p>
+  </div>
+</div>
+
+<div id="goldModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('goldModal')">&times;</span>
+    <h2>Gold Membership</h2>
+    <p>Premium benefits including homepage spotlight and exclusive events.</p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Chamber of Commerce</p>
+</footer>
+
+<script>
+  // Set timestamp
+  document.getElementById("timestamp").value = new Date().toISOString();
+
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+</body>
+</html>
+```
+
+
+
