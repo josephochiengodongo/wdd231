@@ -6,12 +6,11 @@
     <title>WDD-231 | Chamber-Home</title>
     <meta name="description" content="my name is joseph ochieng odongo,currently taking a course in wdd231-web fronted development">
     <meta name="author" content="joseph odongo">
-    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chambera.css">
     <link rel="icon" href="wdd231/chamber/images/favicon.ico">(orPNG/SVG).
     <link rel="stylesheet" href="styles/chamber-large.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/directory.js" defer></script>
-    <script src="scripts/" defer></script>
     <meta property="og:title" content="wdd-Web Fronted Development-joseph odongo">
     <meta property="og:description" content="This is my wdd-dynamic Web fundamentals,it is the last subject for wdd, in certficate course knowned as web and computer programming.">
     <meta property="og:url" content="https://www.github.com/josephochieng.github.io/wdd231">
@@ -35,158 +34,104 @@
         </div>
     </header>
     <main class="join-container">
-        <section class="form-section">
+        <section class="form">
             <h1>Membership Application Form</h1>
-            <form method="get" action="thankyou.html" id="membership-form">
-                <label>
-                    First Name:
-                    <input type="text" name="fname" required autocomplete="given-name">
-                </label>
+   
 
-                <label>
-                    Last Name:
-                    <input type="text" name="lname" required autocomplete="family-name">
-                </label>
+<!-- FORM -->
+<form method="get" action="thankyou.html">
 
-                <label>
-                    Organizational Title:
-                    <input type="text" name="org-title" autocomplete="organization-title" 
-                           pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters, letters, spaces, and hyphens only.">
-                </label>
+  <label>
+    First Name:
+    <input type="text" name="fname" required autocomplete="given-name" title="Enter first name">
+  </label>
 
-                <label>
-                    Email:
-                    <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com">
-                </label>
+  <label>
+    Last Name:
+    <input type="text" name="lname" required autocomplete="family-name">
+  </label>
 
-                <label>
-                    Mobile Phone:
-                    <input type="tel" name="phone" required autocomplete="tel">
-                </label>
+  <label>
+    Organization Title:
+    <input type="text" name="orgtitle"
+      pattern="[A-Za-z\\-\\s]{7,}"
+      autocomplete="organization-title"
+      title="Minimum 7 characters, letters only">
+  </label>
 
-                <label>
-                    Business/Organization Name:
-                    <input type="text" name="business" required autocomplete="organization">
-                </label>
+  <label>
+    Email:
+    <input type="email" name="email" required placeholder="example@email.com" autocomplete="email">
+  </label>
 
-                <label>
-                    Membership Level:
-                    <select name="membership" required>
-                        <option value="" disabled selected>Select Level...</option>
-                        <option value="np">NP Membership (Non-Profit)</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                    </select>
-                </label>
+  <label>
+    Phone:
+    <input type="tel" name="phone" required autocomplete="tel">
+  </label>
 
-                <label>
-                    Business Description:
-                    <textarea name="description"></textarea>
-                </label>
+  <label>
+    Business Name:
+    <input type="text" name="business" required autocomplete="organization">
+  </label>
 
-                <input type="hidden" name="timestamp" id="timestamp">
-                <button type="submit">Submit Membership Application</button>
-            </form>
-        </section>
+  <label>
+    Membership Level:
+    <select name="membership" required>
+      <option value="">Select</option>
+      <option value="np">NP Membership</option>
+      <option value="bronze">Bronze</option>
+      <option value="silver">Silver</option>
+      <option value="gold">Gold</option>
+    </select>
+  </label>
 
-        <section class="cards-section">
-            <h2>Membership Levels</h2>
-            <div class="cards-container">
-                <div class="card card-np">
-                    <h3>NP Membership</h3>
-                    <p class="card-price">Free</p>
-                    <a href="#npModal" class="card-link">View Benefits</a>
-                </div>
+  <label>
+    Description:
+    <textarea name="description"></textarea>
+  </label>
 
-                <div class="card card-bronze">
-                    <h3>Bronze Membership</h3>
-                    <p class="card-price">$99/year</p>
-                    <a href="#bronzeModal" class="card-link">View Benefits</a>
-                </div>
+  <input type="hidden" id="timestamp" name="timestamp">
 
-                <div class="card card-silver">
-                    <h3>Silver Membership</h3>
-                    <p class="card-price">$199/year</p>
-                    <a href="#silverModal" class="card-link">View Benefits</a>
-                </div>
+  <input type="submit" value="Join Now">
 
-                <div class="card card-gold">
-                    <h3>Gold Membership</h3>
-                    <p class="card-price">$499/year</p>
-                    <a href="#goldModal" class="card-link">View Benefits</a>
-                </div>
-            </div>
-        </section>
-    </main>
+</form>
+</section>
+<section class="cards">
+    <h2>Membership Level</h2>
 
-    <div id="npModal" class="modal">
-        <div class="modal-content">
-            <a href="#" class="modal-close">&times;</a>
-            <h2>NP Membership - Free</h2>
-            <h3>Benefits Include:</h3>
-            <ul>
-                <li>Basic networking opportunities</li>
-                <li>Access to chamber directory</li>
-                <li>Monthly chamber events</li>
-                <li>Community support</li>
-            </ul>
-            <p><strong>Perfect for:</strong> Non-profit organizations seeking community connections.</p>
-        </div>
-    </div>
+<!-- MEMBERSHIP CARDS -->
+<div class="cards">
 
-    <div id="bronzeModal" class="modal">
-        <div class="modal-content">
-            <a href="#" class="modal-close">&times;</a>
-            <h2>Bronze Membership - $99/year</h2>
-            <h3>Benefits Include:</h3>
-            <ul>
-                <li>All NP benefits</li>
-                <li>Basic advertising placement</li>
-                <li>Event discounts (10%)</li>
-                <li>Monthly networking mixers</li>
-                <li>Newsletter listings</li>
-            </ul>
-            <p><strong>Perfect for:</strong> Small businesses looking to build their local presence.</p>
-        </div>
-    </div>
+  <div class="card">
+    <h3>NP Membership</h3>
+    <a href="#" data-modal="npModal">View Benefits</a>
+  </div>
 
-    <div id="silverModal" class="modal">
-        <div class="modal-content">
-            <a href="#" class="modal-close">&times;</a>
-            <h2>Silver Membership - $199/year</h2>
-            <h3>Benefits Include:</h3>
-            <ul>
-                <li>All Bronze benefits</li>
-                <li>Featured advertising</li>
-                <li>Event discounts (20%)</li>
-                <li>Exclusive training sessions</li>
-                <li>Business card directory listing</li>
-                <li>Social media promotion</li>
-            </ul>
-            <p><strong>Perfect for:</strong> Growing businesses seeking visibility and professional development.</p>
-        </div>
-    </div>
+  <div class="card">
+    <h3>Bronze</h3>
+    <a href="#" data-modal="bronzeModal">View Benefits</a>
+  </div>
 
-    <div id="goldModal" class="modal">
-        <div class="modal-content">
-            <a href="#" class="modal-close">&times;</a>
-            <h2>Gold Membership - $499/year</h2>
-            <h3>Benefits Include:</h3>
-            <ul>
-                <li>All Silver benefits</li>
-                <li>Premium spotlight advertising</li>
-                <li>Event discounts (30%)</li>
-                <li>Priority event scheduling</li>
-                <li>Custom business showcase</li>
-                <li>Executive networking events</li>
-                <li>Annual magazine feature</li>
-                <li>Premium website placement</li>
-            </ul>
-            <p><strong>Perfect for:</strong> Established businesses seeking maximum visibility and premium benefits.</p>
-        </div>
-    </div>
+  <div class="card">
+    <h3>Silver</h3>
+    <a href="#" data-modal="silverModal">View Benefits</a>
+  </div>
 
+  <div class="card">
+    <h3>Gold</h3>
+    <a href="#" data-modal="goldModal">View Benefits</a>
+  </div>
+
+</div>
+</section>
+
+<!-- MODALS -->
+<div id="npModal" class="modal"><p>Free membership for nonprofits</p></div>
+<div id="bronzeModal" class="modal"><p>Basic advertising benefits</p></div>
+<div id="silverModal" class="modal"><p>Event discounts + promotions</p></div>
+<div id="goldModal" class="modal"><p>Top spotlight + premium ads</p></div>
+
+</main>
     <footer>
         <section class="information-section">
             <div class="chamber-informations"></div>
@@ -213,52 +158,10 @@
             </div>
         </section>
     </footer>
-    <script src="scripts/discover.js" type="module"></script>
-    <script>
-        // Set timestamp hidden field
-        document.addEventListener('DOMContentLoaded', function() {
-            const timestampField = document.getElementById('timestamp');
-            if (timestampField) {
-                timestampField.value = new Date().toISOString();
-            }
-        });
-
-        // Modal accessibility: close modal when clicking outside content or pressing Escape
-        document.addEventListener('click', function(event) {
-            if (event.target.classList.contains('modal')) {
-                window.location.hash = '';
-            }
-        });
-
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                window.location.hash = '';
-            }
-        });
-
-        // Close modal when clicking close button
-        document.querySelectorAll('.modal-close').forEach(closeBtn => {
-            closeBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                window.location.hash = '';
-            });
-        });
-    </script>
+    <script src="scripts/thankyou.js" type="module"></script>
+    <script src="scripts/joinb.js" type="module"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,4 +1,43 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 768px) {
+    .form-membership-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+    }
 
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
 
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form {
+        grid-column: 1 / 2;
+    }
+
+    .membership-cards {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .modal-content {
+        max-width: 600px;
+    }
+
+    label {
+        font-size: 1.05em;
+    }
+
+    input, select, textarea {
+        font-size: 1.05em;
+    }
+
+    button[type="submit"] {
+        font-size: 1.15em;
+        padding: 15px 40px;
+    }
 } /*end media query*/
