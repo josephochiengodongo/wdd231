@@ -40,48 +40,31 @@
 
 <!-- FORM -->
 <form method="get" action="thankyou.html">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter first name">
 
-  <label>
-    First Name:
-    <input type="text" name="fname" required autocomplete="given-name" title="Enter first name">
-  </label>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
 
-  <label>
-    Last Name:
-    <input type="text" name="lname" required autocomplete="family-name">
-  </label>
+    <label>Organization Title:<input type="text" name="orgtitle" pattern="[A-Za-z\\-\\s]{7,}" autocomplete="organization-title" title="Minimum 7 characters, letters only"></label>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="example@email.com" autocomplete="email">
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required autocomplete="tel">
+    
+    <label for="businessName">Business Level</label>
+    <input type="text" id="business" name="business" required autocomplete="organization">
 
-  <label>
-    Organization Title:
-    <input type="text" name="orgtitle"
-      pattern="[A-Za-z\\-\\s]{7,}"
-      autocomplete="organization-title"
-      title="Minimum 7 characters, letters only">
-  </label>
-
-  <label>
-    Email:
-    <input type="email" name="email" required placeholder="example@email.com" autocomplete="email">
-  </label>
-
-  <label>
-    Phone:
-    <input type="tel" name="phone" required autocomplete="tel">
-  </label>
-
-  <label>
-    Business Name:
-    <input type="text" name="business" required autocomplete="organization">
-  </label>
-
-  <label>
-    Membership Level:
-    <select name="membership" required>
-      <option value="">Select</option>
-      <option value="np">NP Membership</option>
+    <label>
+       Membership Level:
+       <select id="membershipp" name="membership" required>
+        <option value="">Select</option>
+        <option value="np">NP Membership</option>
       <option value="bronze">Bronze</option>
       <option value="silver">Silver</option>
-      <option value="gold">Gold</option>
+        <option value="gold">Gold</option>
     </select>
   </label>
 
@@ -162,7 +145,3 @@
     <script src="scripts/joinb.js" type="module"></script>
 </body>
 </html>
-
-
-
-    
