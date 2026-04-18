@@ -1,3 +1,3 @@
 const currentYear = new Date().getFullYear();
-document.getElementById("currentyear").innerHTML = currentYear;
+document.getElementById("currentYear").innerHTML = currentYear;
 document.getElementById("lastModified").innerHTML = document.lastModified;// Get current year
