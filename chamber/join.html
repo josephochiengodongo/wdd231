@@ -36,80 +36,72 @@
     <main class="join-container">
         <section class="form">
             <h1>Membership Application Form</h1>
-   
+            <form method="get" action="thankyou.html">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter first name">
 
-<!-- FORM -->
-<form method="get" action="thankyou.html">
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter first name">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter last name">
 
-    <label for="lastName">Last Name</label>
-    <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter last name">
-
-    <label>Organization Title:<input type="text" name="org-title" pattern="[A-Za-z\\-\\s]{7,}" autocomplete="organization-title" title="Minimum 7 characters, letters only"></label>
+                <label>Organization Title:<input type="text" name="org-title" pattern="[A-Za-z\\-\\s]{7,}" autocomplete="organization-title" title="Minimum 7 characters, letters only"></label>
     
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required placeholder="example@email.com" autocomplete="email" title="Enter a valid email address">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com" autocomplete="email" title="Enter a valid email address">
     
-    <label for="phone">Phone:</label>
-    <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your  phone number">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your  phone number">
     
-    <label for="businessName">Business Level</label>
-    <input type="text" id="business" name="business" required autocomplete="organization" title="Enter your business name">
+                <label for="businessName">Business Level</label>
+                <input type="text" id="business" name="business" required autocomplete="business" title="Enter your business name">
 
-    <label>
-       Membership Level:
-       <select id="membership" name="membership" title="Enter membership level" required >
-        <option value="">Select</option>
-        <option value="np">NP Membership</option>
-      <option value="bronze">Bronze</option>
-      <option value="silver">Silver</option>
-        <option value="gold">Gold</option>
-    </select>
-  </label>
+                <label>
+                    Membership Level:
+                    <select id="membership" name="membership" title="Enter membership level" required >
+                        <option value="">Select</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </label>
 
-  <label>
-    Organization Description:
-    <textarea name="description" title="Describe your organization"></textarea>
-  </label>
+                <label>
+                    Organization Description:
+                    <textarea name="description" title="Describe your organization"></textarea>
+                </label>
 
-  <input type="hidden" id="timestamp" name="timestamp">
+                <input type="hidden" id="timestamp" name="timestamp">
 
-  <input type="submit" value="Join Now">
+                <input type="submit" value="Join Now">
+            </form>
+        </section>
+        <section class="join-cards">
+            <h2>Membership Level</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>NP Membership</h3>
+                    <a href="#" data-modal="npModal">Learn More</a>
+                </div>
 
-</form>
-</section>
-<section class="cards">
-    <h2>Membership Level</h2>
+            <div class="card">
+                <h3>Bronze</h3>
+                <a href="#" data-modal="bronzeModal">Learn More</a>
+            </div>
 
-<!-- MEMBERSHIP CARDS -->
-<div class="cards">
+            <div class="card">
+                <h3>Silver</h3>
+                <a href="#" data-modal="silverModal">Learn More</a>
+            </div>
 
-  <div class="card">
-    <h3>NP Membership</h3>
-    <a href="#" data-modal="npModal">View Benefits</a>
-  </div>
-
-  <div class="card">
-    <h3>Bronze</h3>
-    <a href="#" data-modal="bronzeModal">View Benefits</a>
-  </div>
-
-  <div class="card">
-    <h3>Silver</h3>
-    <a href="#" data-modal="silverModal">View Benefits</a>
-  </div>
-
-  <div class="card">
-    <h3>Gold</h3>
-    <a href="#" data-modal="goldModal">View Benefits</a>
-  </div>
-
-</div>
-</section>
+            <div class="card">
+                <h3>Gold</h3>
+                <a href="#" data-modal="goldModal">learn More</a>
+            </div>
+        </div>
+    </section>
 
 <!-- MODALS -->
-<div id="npModal" class="modal"><p>Free membership for nonprofits</p></div>
+<div id="npModal" class="modal"><p>Free membership for nonprofits<br>Networking opportunity</p></div>
 <div id="bronzeModal" class="modal"><p>Basic advertising benefits</p></div>
 <div id="silverModal" class="modal"><p>Event discounts + promotions</p></div>
 <div id="goldModal" class="modal"><p>Top spotlight + premium ads</p></div>
