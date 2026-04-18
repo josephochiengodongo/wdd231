@@ -309,12 +309,6 @@ footer {
 }/* ===== BASE (MOBILE FIRST) ===== */
 
 
-
-
-.cta {
-  padding: 1rem;
-}
-
 .cta-button {
   background: orange;
   padding: 10px;
@@ -344,14 +338,8 @@ footer {
 
 
 /* Mobile First - Stacks sections by default */
-.top-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
+
 .top-grid {
   display: flex;
   justify-items: stretch;
