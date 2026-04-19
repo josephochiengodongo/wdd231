@@ -99,7 +99,6 @@ nav a:hover {
     text-align: center;
     padding: 2rem;
     background-color: white;
-    position: relative;
 }
 
 .hero img {
@@ -116,11 +115,6 @@ nav a:hover {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    
-  
-
-
-
 }
 
 .cta:hover {
@@ -285,6 +279,25 @@ footer {
 /* end of discovery  */
 
 
+
+
+.spotlight-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    background-color:white;
+}
+
+.spotlight-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+    
+}
+
+
+
 #h2.spotlight-card{
     color: white;
     background-color:blue;
@@ -297,6 +310,18 @@ footer {
 
 
 
+
+.cta {
+  padding: 1rem;
+}
+
+.cta-button {
+  background: orange;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
 .top-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -319,8 +344,14 @@ footer {
 
 
 /* Mobile First - Stacks sections by default */
-
-
+.top-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .top-grid {
   display: flex;
   justify-items: stretch;
@@ -378,7 +409,12 @@ footer {
 }
 
 
-
+.spotlight {
+    background-color: #003366;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
 
 #spotlight-container {
     display: grid;
@@ -388,7 +424,13 @@ footer {
     
 }
 
-
+.spotlight-card {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
 
 .spotlight-card img {
     max-width: 150px;
@@ -397,6 +439,12 @@ footer {
 }
 
 
+.containercontent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
 
 header img {
   width: 50px;
@@ -411,8 +459,22 @@ header img {
 }
 
 /* HERO */
+.hero {
+  position: relative;
+}
 
+.hero img {
+  width: 100%;
+  height: auto;
+}
 
+.cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 .cta h2 {
   color: white;
@@ -438,7 +500,9 @@ header img {
 }
 
 /* WEATHER */
-
+.weather-info {
+  text-align: center;
+}
 
 .forecast-item {
   border-top: 1px solid #ccc;
@@ -446,16 +510,31 @@ header img {
 }
 
 /* SPOTLIGHT */
+#spotlights {
+  padding: 1rem;
+}
 
 
 
+.spotlight-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
 
+}
 
-
+.spotlight-card img {
+  max-width: 100px;
+  margin: 10px 0;
+}
 
 /* FOOTER */
 
-
+.socialmedia img {
+  width: 30px;
+  margin: 5px;
+}
 /* join*/
 .join-container {
   display: flex;
