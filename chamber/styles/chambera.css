@@ -18,10 +18,7 @@ h2{
     padding-left: 10px;
     font-size: x-large
 }
-  
-
-  
-  
+    
   
 h4{
   color:white;
@@ -103,8 +100,10 @@ nav a:hover {
 
 .hero img {
     width: 100%;
+    height: auto;
     max-width: 600px;
     border-radius: 10px;
+    position: relative;
 }
 
 .cta {
@@ -131,11 +130,7 @@ nav a:hover {
     color: blue
     
 
-
-
 }
-
-
 
 /* Sections */
 .events-section {
@@ -276,19 +271,6 @@ footer {
    }
 
 
-/* end of discovery  */
-
-
-
-
-.spotlight-card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    background-color:white;
-}
-
 .spotlight-card img {
     width: 100px;
     height: auto;
@@ -308,12 +290,6 @@ footer {
     padding: 13px;
 }/* ===== BASE (MOBILE FIRST) ===== */
 
-
-
-
-.cta {
-  padding: 1rem;
-}
 
 .cta-button {
   background: orange;
@@ -338,10 +314,6 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
-
-
-
-
 
 /* Mobile First - Stacks sections by default */
 .top-grid {
@@ -424,27 +396,12 @@ footer {
     
 }
 
-.spotlight-card {
-    background: white;
-    color: #333;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
 .spotlight-card img {
     max-width: 150px;
     height: auto;
     margin-bottom: 15px;
 }
 
-
-.containercontent {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
 
 header img {
   width: 50px;
@@ -458,23 +415,7 @@ header img {
   color: white;
 }
 
-/* HERO */
-.hero {
-  position: relative;
-}
 
-.hero img {
-  width: 100%;
-  height: auto;
-}
-
-.cta {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
 .cta h2 {
   color: white;
@@ -515,25 +456,9 @@ header img {
 }
 
 
-
-.spotlight-card {
-  background-color: white;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-
-}
-
 .spotlight-card img {
   max-width: 100px;
   margin: 10px 0;
-}
-
-/* FOOTER */
-
-.socialmedia img {
-  width: 30px;
-  margin: 5px;
 }
 /* join*/
 .join-container {
