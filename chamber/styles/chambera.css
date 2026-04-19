@@ -387,10 +387,6 @@ footer {
 }
 
 
-header img {
-  width: 50px;
-}
-
 /* HAMBURGER */
 .menu-toggle {
   background: none;
@@ -449,10 +445,7 @@ label {
 }
 
 
-.card:nth-child(1) { animation-delay: 0.2s; }
-.card:nth-child(2) { animation-delay: 0.4s; }
-.card:nth-child(3) { animation-delay: 0.6s; }
-.card:nth-child(4) { animation-delay: 0.8s; }
+
 
 /* MODAL */
 .modal {
@@ -628,8 +621,4 @@ label {
   background-color: darkblue;
   color: white;
 }
-#h2.join-cards {
-  background-color: greenyellow;
-}
-
 
