@@ -194,12 +194,12 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
-    background-color: azure
+    background-color: white;
 }
 
 #members.list {
     display: block;
-    background-color: azure;
+    background-color: white;
 }
 
 #members.list .member-card {
@@ -215,7 +215,7 @@ footer {
 
 .view-buttons {
     margin: 1rem 0;
-    background-color:azure;
+    background-color:white;
     padding: 20px;
     
 }
@@ -341,7 +341,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
-    background-color: azure;
+    background-color: white;
     
 }
 
