@@ -207,9 +207,9 @@ footer {
 }
 
 .member-card {
-    border: 1px solid #ccc;
+    border: 1px solid orange;
     padding: 1rem;
-    background:violet;
+    background: white;
     border-radius: 8px;
 }
 
@@ -289,8 +289,8 @@ footer {
 
 /* Section Styling */
 .top-grid section,.weather-box {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+    background-color: white;
+    border: 1px solid orange;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
