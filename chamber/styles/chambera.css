@@ -145,8 +145,8 @@ nav a:hover {
     right: 450px;
 }
 .current-weather-section {
-  background-color: #003366;
-  color: white;
+  background-color: white;
+  color:black;
   padding: 0.8rem;
   width: 200px;
   height: 300px;
@@ -158,8 +158,8 @@ nav a:hover {
 
 }
 .weather-forecast-section {
-  background-color: #003366;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 0.8rem;
   width: 200px;
   height: 300px;
@@ -224,7 +224,7 @@ footer {
     padding: 0.5rem 1rem;
     margin-right: 10px;
     cursor: pointer;
-    background-color: #003366;
+    background-color: black;
     color:white;
 }
 
