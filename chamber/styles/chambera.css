@@ -38,7 +38,7 @@ h2.home-grid {
   width: 100%;
   height: auto;
   font-size: xx-large;
-  background-color: azure;
+  background-color: white;
   padding-left: 10px;
   font-weight: bold;
 
@@ -88,7 +88,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffcc00;
+    color: orange
 }
 
 /* Hero Section */
