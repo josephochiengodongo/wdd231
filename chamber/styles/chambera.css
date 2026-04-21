@@ -180,7 +180,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background-color: #003366;
+    background-color:darkblue;
     color: white;
     text-align: center;
     height: 300px;  
@@ -319,11 +319,8 @@ footer {
     
 }
 
-.wweather-info img {
-    width: 60px;
-    background-color: #eee;
-    border-radius: 50%;
-}
+
+
 
 
 #spotlight-container {
@@ -505,7 +502,7 @@ label {
 }
 
 /* CARD STYLING */
-.membership-card {
+.mmembership-card {
   background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
   border: 2px solid darkblue;
   border-radius: 8px;
