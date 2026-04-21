@@ -319,29 +319,31 @@ footer {
     
 }
 
-.weather-info img {
+.wweather-info img {
     width: 60px;
     background-color: #eee;
     border-radius: 50%;
 }
 
 /* Forecast List */
-#forecast-display {
+#fforecast-display {
     margin-top: 15px;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.forecast-item {
+.fforecast-item {
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
     border-bottom: 1px dashed #ccc;
+    max-width: 250px;
     
 }
 
-.forecast-item:last-child {
+.fforecast-item:last-child {
     border-bottom: none;
+    width: 200px;
 }
 
 
@@ -353,7 +355,7 @@ footer {
     
 }
 
-.spotlight-card img {
+.sspotlight-card img {
     max-width: 150px;
     height: auto;
     margin-bottom: 15px;
@@ -380,9 +382,10 @@ footer {
 
 #events,.weather-box {
   background: azure;
-  padding: 1rem;
+  padding: 2px;
   border-radius: 8px;
   color: black;
+  margin-left: 4px;
 }
 
 
