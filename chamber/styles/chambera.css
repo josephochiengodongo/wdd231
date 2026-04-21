@@ -90,7 +90,7 @@ nav a {
 }
 
 nav a:hover {
-    color: orange
+    color: azure;
 }
 
 /* Hero Section */
@@ -215,7 +215,7 @@ footer {
 }
 
 .member-card {
-    border: 1px solid orange;
+    border: 1px solid blue;
     padding: 1rem;
     background: azure;
     border-radius: 8px;
