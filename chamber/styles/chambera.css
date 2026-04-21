@@ -325,27 +325,6 @@ footer {
     border-radius: 50%;
 }
 
-/* Forecast List */
-#fforecast-display {
-    margin-top: 15px;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.fforecast-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
-    border-bottom: 1px dashed #ccc;
-    max-width: 250px;
-    
-}
-
-.fforecast-item:last-child {
-    border-bottom: none;
-    width: 200px;
-}
-
 
 #spotlight-container {
     display: grid;
@@ -353,12 +332,6 @@ footer {
     gap: 40px;
     background-color: white;
     
-}
-
-.sspotlight-card img {
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 15px;
 }
 
 
@@ -382,7 +355,6 @@ footer {
 
 #events,.weather-box {
   background: azure;
-  padding: 2px;
   border-radius: 8px;
   color: black;
   margin-left: 4px;
