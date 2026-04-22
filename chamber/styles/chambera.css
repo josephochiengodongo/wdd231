@@ -114,15 +114,15 @@ nav a:hover {
 .cta {
     display: inline-block;
     margin-top: 1rem;
-    background-color: #003366;
+    background-color: darkblue;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.cta:hover {
-    background-color: #0055aa;
+.cta:hover{
+    background-color: azure;
 }
 
 /* Home Grid */
