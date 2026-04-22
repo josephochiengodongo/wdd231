@@ -13,6 +13,8 @@ h3 {
 
 
 }
+
+
 h2{
     color: blue;
     padding-left: 10px;
@@ -149,7 +151,7 @@ nav a:hover {
     width: 350px;
     height: 300px;
     position: relative;
-    top: 105px;
+    top: 117px;
     right: 450px;
 }
 .current-weather-section {
@@ -339,7 +341,9 @@ footer {
   font-size: 1.5rem;
   color: white;
 }
-
+span{
+  font-size: x-large;
+}
 
 
 .cta h2 {
