@@ -1,26 +1,19 @@
-// join.js
+const links = document.querySelectorAll("[data-modal]");
+const modals = document.querySelectorAll(".modal");
 
-// 1. Set the hidden timestamp
-const timestampElement = document.getElementById('timestamp');
-if (timestampElement) {
-    timestampElement.value = new Date().toISOString();
-}
+links.forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
 
-// 2. Modal Logic (No inline onclick)
-const openButtons = document.querySelectorAll('.open-modal');
-const closeButtons = document.querySelectorAll('.close-modal');
+    const modalId = link.getAttribute("data-modal");
+    const modal = document.getElementById(modalId);
 
-openButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const modalId = button.getAttribute('data-target');
-        const modal = document.getElementById(modalId);
-        modal.showModal();
-    });
+    modal.style.display = "block";
+  });
 });
 
-closeButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        button.parentElement.close();
-    });
+modals.forEach(modal => {
+  modal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
 });
-
