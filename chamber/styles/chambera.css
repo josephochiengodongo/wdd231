@@ -395,7 +395,7 @@ label {
 .cards {
   display: grid;
   gap: 1rem;
-  min-width: 450px;
+  width: 450px;
   
 }
 
@@ -499,12 +499,6 @@ label {
   
 }
 
-/* Title */
-
-
-
-/* MAIN LAYOUT */
-
 
 
 /* FORM SECTION */
@@ -516,6 +510,8 @@ label {
 .form form {
   display: flex;
   flex-direction: column;
+  width: 250px;
+
 }
 
 .form input,
@@ -568,12 +564,13 @@ label {
 }
 
 
+
 /* join */
 .card-level {
 background-color:white;
 }
 .card-level h3 {
-  border-radius: 1px 60px 1px 60px;
+  border-radius: 1px 30px 1px 30px;
   background-color:blue;
   padding-bottom: 25px;
   margin-top: 45px;
