@@ -1,0 +1,18 @@
+/* ===== TABLET ===== */
+@media (min-width: 641px) {
+  .grid-container {
+    grid-template-areas:
+      "c1 c2"
+      "c3 c4"
+      "c5 c6"
+      "c7 c8";
+  }
+
+  /* Hover effect (ONLY tablet & up) */
+  .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    transition: 0.3s ease;
+  }
+}
+

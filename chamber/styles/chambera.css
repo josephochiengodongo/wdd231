@@ -583,5 +583,122 @@ background-color:white;
 
 }
 }
+/* ===== GENERAL ===== */
+main {
+  padding: 1rem;
+}
 
+body {
+  background: #f5f7fa;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== VISIT MESSAGE ===== */
+.visit-message {
+  background: #e6f2ff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #0077cc;
+}
+
+/* ===== INTRO ===== */
+.intro {
+  margin-bottom: 1.5rem;
+}
+
+.intro h2 {
+  color: #0077cc;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== GRID (MOBILE FIRST) ===== */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "c1"
+    "c2"
+    "c3"
+    "c4"
+    "c5"
+    "c6"
+    "c7"
+    "c8";
+  gap: 1rem;
+}
+
+/* Map cards to grid areas */
+.grid-container div:nth-child(1) { grid-area: c1; }
+.grid-container div:nth-child(2) { grid-area: c2; }
+.grid-container div:nth-child(3) { grid-area: c3; }
+.grid-container div:nth-child(4) { grid-area: c4; }
+.grid-container div:nth-child(5) { grid-area: c5; }
+.grid-container div:nth-child(6) { grid-area: c6; }
+.grid-container div:nth-child(7) { grid-area: c7; }
+.grid-container div:nth-child(8) { grid-area: c8; }
+
+/* ===== CARD DESIGN ===== */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 1rem;
+}
+
+.card figure {
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card address {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.5rem 1rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin: 0.5rem 1rem 1rem;
+  flex-grow: 1;
+}
+
+.card button {
+  margin: 0 1rem 1rem;
+  padding: 0.5rem;
+  border: none;
+  background: #0077cc;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 641px) {
+  .grid-container {
+    grid-template-areas:
+      "c1 c2"
+      "c3 c4"
+      "c5 c6"
+      "c7 c8";
+  }
+
+  /* Hover effect (ONLY tablet & up) */
+  .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    transition: 0.3s ease;
+  }
+}
 

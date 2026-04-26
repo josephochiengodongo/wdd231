@@ -66,6 +66,30 @@
         grid-template-columns:1fr 1fr 1fr;
 
     }
+}@media (min-width: 1025px) {
+  .grid-container {
+    grid-template-areas:
+      "c1 c1 c2 c3"
+      "c4 c5 c6 c6"
+      "c7 c8 c8 c8";
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+  }
+
+  .card button:hover {
+    background: #005fa3;
+  }
 }
+
+
+
+
+
+
+    
+
 
 
