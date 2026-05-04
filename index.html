@@ -1,11 +1,87 @@
+<!DOCTYPE html>HTML tags are case sensitive. For example, <Main> is different than <main>.
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD231-Web Fronted Development-Joseph Odongo</title>
+    <meta name="description"
+        content="This is my wdd-dynamic Web fundamentals,it is the last subject for wdd, in certficate course knowned as web and computer programming.">
+    <meta name="author" content="Joseph Odongo">
+    <link rel="stylesheet" href="styles/current.css">
+    <link rel="stylesheet" href="styles/wdd231project-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/byuscript.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth@0,75..100;1,75..100&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <div class="humerger-menu">
+            <span class="logo">Joseph Odongo</span>
+            <button class="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <nav>
+            <a href="site.html" class="active">Site</a>
+            <a href="chamber.html">Chamber Project</a>
+            <a href="finalproject.html">Finalproject Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>HOME</h1>
+        <article class="main-grid">
+            <section class="about-section">
+                <h2>ABOUT ME</h2>
+                <p>Hello my name is called Joseph Odongo, I am 56 years old, I am from Kenya, I have a passion
+                    for web development and I love coding. I am currently pursuing a degree in computer science and I am
+                    very excited to learn more about web development through this course. In my free time, I enjoy
+                    reading
+                    tech blogs, experimenting with new coding languages, and working on personal projects to enhance my
+                    skills.</p>
+                </section>
+                <section class="student-photo-section">
+                    <h2>STUDENT PHOTO</h2>
+                    <img src="images/phostudent.jpg" alt="photo image">
+                </section>
+        </article>>
+        <section class="courses-section">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="courses-container"></div>
+            <p id="credits"></p>
+        </section>
+
+    </main>
+    <footer>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.jpg" alt="Facebook Icon">
+            </a>
+            <a href="https://github.com/josephochiengodongo/wdd231">
+                <img src="images/github.jpg" alt="github Icon">
+            </a>
+            <a href="https://linkedin.com/in/joseph-odongo-oa37691">
+                <img src="images/linkedin.jpg" alt="Linkedin Icon">
+            </a>
+        </nav>
+        <div class="p-div">
+            <p><span id="currentyear">&copy;2026🌳Joseph Ochieng Odongo🌳Kenya</span></p>
+             <p>lastModified:<span id="lastModified"></span></p>
+             <p>Back so soon! Awesome!</p>
+        </div>
+    </footer>
 </body>
+
 </html>
