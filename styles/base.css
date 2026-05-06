@@ -156,6 +156,11 @@ img {
     border-radius: 5px;
     cursor: pointer;
 }
+.filter-buttons button:hover {
+    background: darkblue;
+    color: white;
+    transform: translateY(-3px)
+}
 
 /* COURSE GRID */
 #courses-container {
@@ -166,7 +171,7 @@ img {
 }
 
 .course-card {
-    background: #eee;
+    background: grey;
     padding: 1rem;
     text-align: center;
     border-radius: 6px;
