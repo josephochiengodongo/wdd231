@@ -137,7 +137,7 @@ nav a {
     height: 300px;
     position: relative;
     top: 115px;
-    right: 450px;
+    right: 440px;
 }
 .current-weather-section {
   background-color: darkblue;
@@ -147,8 +147,8 @@ nav a {
   height: 300px;
   border-radius: 8px;
   position: absolute;
-  left:445px;
-  top: 1100px;
+  left:600px;
+  top: 1065px;
 
 
 }
@@ -160,8 +160,8 @@ nav a {
   height: 300px;
   border-radius: 8px;
   position: absolute;
-  left:700px;
-  top:1100px;
+  left:830px;
+  top:1065px;
 
 } 
 
