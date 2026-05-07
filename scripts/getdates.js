@@ -1,7 +1,9 @@
-const currentYear = new Date().getFullYear();
+const currentYear = document.querySelector("#currentyear");
 
-// Output current year in footer first paragraph
-document.getElementById("currentyear").innerHTML = currentYear;
+const lastModified = document.querySelector("#lastModified");
 
-// Output last modified date in footer second paragraph
-document.getElementById("lastModified").innerHTML = document.lastModified;// Get current year
+const today = new Date();
+
+currentYear.innerHTML = `&copy;${today.getFullYear()} 🌳Joseph Ochieng Odongo🌳 Kenya`;
+
+lastModified.textContent = document.lastModified;

@@ -1,0 +1,582 @@
+h3 {
+  color:white;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  padding: 13px;
+  position: relative;
+  top: -40px;
+  left: -12px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+
+
+
+}
+
+
+h2{
+    color: blue;
+    padding-left: 10px;
+    font-size: x-large;
+    height: 40px;
+}
+
+    
+
+
+h2.home-grid {
+  width: 100%;
+  height: auto;
+  font-size: xx-large;
+  background-color: white;
+  padding-left: 10px;
+  font-weight: bold;
+
+}
+
+
+
+/* General reset */
+header,body,footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 960px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+}
+
+/* Header */
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 1rem;
+    margin-left: 3px;
+    font-size: x-large;
+}
+
+.containercontent {
+    display: flex;
+    align-items: center;
+}
+
+.containercontent img {
+    width: 60px;
+    height: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+  
+}
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 0 0 10px 10px;
+    margin-left: 3px;
+  
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta:hover{
+    background-color: azure;
+}
+
+/* Home Grid */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: white;
+    padding-bottom: 150px;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin: 3px;
+ 
+
+}
+
+/* Sections */
+.events-section {
+    background-color: darkblue;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 8px;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    top: 115px;
+    right: 450px;
+}
+.current-weather-section {
+  background-color: darkblue;
+  color: white;
+  padding: 0.8rem;
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  position: absolute;
+  left:445px;
+  top: 1100px;
+
+
+}
+.weather-forecast-section {
+  background-color: darkblue;
+  color: white;
+  padding: 0.8rem;
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  position: absolute;
+  left:700px;
+  top:1100px;
+
+} 
+
+/* Footer */
+footer {
+    background-color:darkblue;
+    color: white;
+    font-size: 0.9rem;
+    padding: 20px;
+  
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.chamber-information {
+  max-width: 300px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.socialmedia img {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+
+
+.p-div {
+  text-align: right;
+  max-width: 300px;
+}
+
+
+#members.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    background-color: white;
+}
+
+#members.list {
+    display: block;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+
+.member-card {
+    border: 1px solid blue;
+    padding: 1rem;
+    background: azure;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.view-buttons {
+    margin: 1rem 0;
+    background-color: white;
+    padding: 20px;
+    
+}
+
+.view-buttons button {
+    padding: 0.5rem 1rem;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: black;
+    color:white;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+    #members.grid {
+        grid-template-columns: 1fr;
+        
+    }
+   
+
+   }
+
+
+
+
+
+
+
+
+/* ===== BASE (MOBILE FIRST) ===== */
+
+
+.cta-button {
+  background: azure;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  
+  
+}
+
+
+.spotlight-section {
+  padding: 20px;
+}
+
+.spotlight {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 1rem;
+}
+
+/* Mobile First - Stacks sections by default */
+
+
+.top-grid {
+  display: flex;
+  justify-items: stretch;
+  flex-direction: row;
+  gap: 20px;
+  
+}
+
+
+
+
+
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    background-color: white;
+    
+}
+
+
+/* HAMBURGER */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+.cta h2 {
+  color:white;
+  background-color: blue;
+  
+
+}
+
+
+
+/* GRID */
+
+#events,.weather-box,.forecast-display {
+  background: azure;
+  border: 1px solid blue;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  color: black;
+  margin-left: 4px;
+  width: 290px;
+  margin-top: 10px;
+  text-align: center;
+  
+}
+
+
+
+
+/* join*/
+.join-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+  height: 100px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  gap: 1rem;
+  width: 450px;
+  
+}
+
+
+
+
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  background: white;
+  padding: 20px;
+  border: 2px solid black;
+  
+}
+
+/* DESKTOP */
+.card a:hover {
+  background:azure;
+}
+
+/* Card Style */
+.card {
+  background: white;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0.75rem;
+  margin-left: 4px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s forwards;
+  flex-direction: column;
+  
+}
+
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  
+}
+
+
+
+/* FORM SECTION */
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+
+}
+
+
+
+.form input[type="submit"] {
+  background:darkblue;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* MEMBERSHIP CARDS SECTION */
+.join-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+/* RESPONSIVE (mobile) */
+@media (max-width: 768px) {
+  .join-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* join */
+.card-level {
+background-color:white;
+}
+.card-level h3 {
+  border-radius: 1px 30px 1px 30px;
+  background-color:blue;
+  padding-bottom: 25px;
+  margin-top: 45px;
+}
+.card-level a {
+  background: white;
+  position: relative;
+  left:180px;
+  bottom:90px;
+  color: black;
+
+}
+
+/* ===== GENERAL ===== */
+main {
+  padding: 1rem;
+}
+
+
+
+/* ===== VISIT MESSAGE ===== */
+.visit-message {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid blue;
+}
+
+/* ===== INTRO ===== */
+.intro {
+  margin-bottom: 1.5rem;
+}
+
+.intro h2 {
+  color: blue;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== GRID (MOBILE FIRST) ===== */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "c1"
+    "c2"
+    "c3"
+    "c4"
+    "c5"
+    "c6"
+    "c7"
+    "c8";
+  gap: 1rem;
+}
+
+/* Map cards to grid areas */
+
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 1rem;
+}
+
+.card figure {
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card address {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: black;
+  margin: 0.5rem 1rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin: 0.5rem 1rem 1rem;
+  flex-grow: 1;
+}
+
+.card button {
+  margin: 0 1rem 1rem;
+  padding: 0.5rem;
+  border: none;
+  background:white;
+  color: blue;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 641px) {
+  .grid-container {
+    grid-template-areas:
+      "c1 c2"
+      "c3 c4"
+      "c5 c6"
+      "c7 c8";
+  }
+
+  /* Hover effect (ONLY tablet & up) */
+  .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    transition: 0.3s ease;
+  }
+}
+
+
+
