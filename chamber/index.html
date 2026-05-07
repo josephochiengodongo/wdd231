@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD-231 | Chamber of Commerce-Home</title>
+    <meta name="description" content="my name is joseph ochieng odongo,currently taking a course in wdd231-web fronted development">
+    <meta name="author" content="joseph odongo">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="wdd231/chamber/images/favicon.ico">
+    <link rel="stylesheet" href="styles/cham-large.css">
+    <meta property="og:title" content="wdd-Web Fronted Development-joseph odongo">
+    <meta property="og:description" content="This is my wdd-dynamic Web fundamentals,it is the last subject for wdd, in certficate course knowned as web and computer programming.">
+    <meta property="og:url" content="https://www.github.com/josephochieng.github.io/wdd231">
+    <meta property="og:image" content="https://josephochiengodongo.github.io/wdd231/chamber/images/og-image.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/spotlight.mjs" type="module"></script>
+    <script src="scripts/weather.mjs" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="containercontent">
+            <img src="images/logo.jpg" alt="logo">
+            <span>Nairobi Chamber of Commerce</span>
+            <span class="menu-toggle"></span>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Chamber Of Commerce Building</h1>
+            <img src="images/hero.jpg" alt="Chamber of Commerce Building">
+            <div class="cta">
+                <h2>Grow Your Business with Us</h2>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+        <div class="top-grid">
+            <section id="events">
+                <h2>Current Events</h2>
+                <p>Annual Gala - Nov 15th</p>
+                <p>Morning Mingle - Next Tuesday</p>
+            </section>
+            <section class="weather-box">
+                <h2>Weather in Nairobi</h2>
+                <div id="current-weather">
+                    <p>Loading weather...</p>
+                </div>
+            </section>
+            <section class="forecast-display">
+                
+                <h2>3-Day Forecast</h2>
+                <div id="forecast-display"></div>
+            </section>
+            
+        </div>
+
+    <!-- SPOTLIGHTS -->
+        <section id="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container"></div>
+        </section>
+         
+    </main>
+    <footer>
+		<div class="footer-container">
+			<div class="chamber-information">
+				<p>Nairobi Chamber of Commerce</p>
+				<p>Phone: +254 234123</p>
+			    <p> Email: info@nairobi.com,
+				<p> Website: mybusiness.com</p>
+	        </div>
+		    <div class="social-media">
+				<nav class="socialmedia">
+					<a href="https://facebook.com">
+						<img src="images/facebook.jpg" alt="facebook icon">
+			        </a>
+                    <a href="https://github.com/josephochiengodongo/wdd231">
+                        <img src="images/github.jpg" alt="github icon">
+			        </a>
+			        <a href="https://linkedin.com/in/joseph-odongo-oa37691">
+				        <img src="images/linkedin.jpg" alt="linkedin icon">
+			        </a>
+                </nav>
+            </div>
+		    <div class="p-div">
+				<p><span id="currentyear">&copy;2026 </span></p>
+                <p>lastModified:<span id="lastModified"></span></p>
+                <p>Back so soon! Awesome!</p>
+		    </div>
+		</div>
+    </footer>
+</body>
+</html>
