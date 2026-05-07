@@ -26,22 +26,22 @@ const displayProphets = (prophets) => {
 
         let portrait = document.createElement('img');
 
-        fullName.textContent = `${prophet.name} ${prophet.lastName}`;
+        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
 
         birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
 
         birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
 
-        portrait.setAttribute('src', prophet.imageUrl);
+        portrait.setAttribute('src', prophet.imageurl);
 
         portrait.setAttribute(
             'alt',
-            `Portrait of ${prophet.name} ${prophet.lastName}`
+            `Portrait of ${prophet.name} ${prophet.lastname}`
         );
 
         portrait.setAttribute('loading', 'lazy');
 
-        portrait.setAttribute('width', '340');  
+        portrait.setAttribute('width', '340');
 
         portrait.setAttribute('height', '440');
 
