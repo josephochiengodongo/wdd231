@@ -446,19 +446,12 @@ label {
   flex-direction: column;
 }
 
-
-
-
-
-
 /* RESPONSIVE (mobile) */
 @media (max-width: 768px) {
   .join-cards {
     grid-template-columns: 1fr;
   }
 }
-
-
 
 /* join */
 .card-level {
