@@ -186,19 +186,19 @@ footer {
 
 .chamber-information {
   line-height: 1.5;
-  text-align: center;
+  text-align: top;;
 }
 
 .socialmedia img {
-    width: 120px;
-    height: 120px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 
 
 
 .p-div {
-  text-align: center;
+  text-align: bottom;;
 
 }
 
@@ -252,8 +252,8 @@ footer {
   }
 
   .socialmedia a imgs {
-    width: auto;
-    height: auto;
+    width: 30px;
+    height: 30px;
 
   }
   .footer-container {
