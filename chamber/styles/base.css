@@ -169,6 +169,8 @@ nav a {
 footer {
     background-color:darkblue;
     color: white;
+    align-items: center;
+    flex-wrap: wrap;
     font-size: 0.9rem;
     padding: 20px;
   
@@ -177,8 +179,8 @@ footer {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -189,8 +191,8 @@ footer {
 }
 
 .socialmedia img {
-    width: 120px;
-    height: 120px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -245,7 +247,24 @@ footer {
     #members.grid {
         grid-template-columns: 1fr;
         
-    }
+    }.socialmedias {
+    gap: 15px;
+    padding: 1rem 0;
+  }
+
+  .socialmedia a imgs {
+    width: 30px;
+    height: 30px;
+
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
    
 
    }
@@ -570,6 +589,4 @@ main {
     transition: 0.3s ease;
   }
 }
-
-
-
+}
