@@ -185,9 +185,8 @@ footer {
 }
 
 .chamber-information {
-  max-width: 300px;
   line-height: 1.5;
-  text-align: left;
+  text-align: center;
 }
 
 .socialmedia img {
@@ -199,8 +198,8 @@ footer {
 
 
 .p-div {
-  text-align: right;
-  max-width: 300px;
+  text-align: center;
+  max-width: 
 }
 
 
