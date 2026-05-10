@@ -240,17 +240,27 @@ footer {
 }
 
 
-/* Mobile */
+
 @media (max-width: 768px) {
-    #members.grid {
-        grid-template-columns: 1fr;
-        
-    }
-   
+  .socialmedias {
+    gap: 15px;
+    padding: 1rem 0;
+  }
 
-   }
+  .socialmedia a imgs {
+    width: 30px;
+    height: 30px;
 
+  }
 
+  .p-divs {
+    padding: 1rem 0.5rem;
+    font-size: 0.85rem;
+  }
+  #members.grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
