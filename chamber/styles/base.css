@@ -42,7 +42,7 @@ header,body,footer{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 960px;
+    width: 100%;
 }
 
 body {
@@ -54,31 +54,38 @@ body {
 
 /* Header */
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: darkblue;
-    color: white;
-    padding: 1rem;
-    margin-left: 3px;
-    font-size: x-large;
+    width: 880px;
 }
 
 .containercontent {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .containercontent img {
     width: 60px;
-    height: 60px;;
+    height: auto;
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     margin-left: 15px;
     font-weight: bold;
+    background-color: white;
   
 }
+nav a:hover {
+    background-color: azure;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 
 
 /* Hero Section */
@@ -86,9 +93,10 @@ nav a {
     text-align: center;
     padding: 2rem;
     background-color: white;
-    border: 1px solid blue;
+    borderr: 1px solid blue;
     border-radius: 0 0 10px 10px;
     margin-left: 3px;
+    margin-top: 1rem;
   
 }
 
@@ -138,7 +146,7 @@ nav a {
     height: 300px;
     position: relative;
     top: 115px;
-    right: 440px;
+    right: 450px;
 }
 .current-weather-section {
   background-color: darkblue;
@@ -148,8 +156,8 @@ nav a {
   height: 300px;
   border-radius: 8px;
   position: absolute;
-  left:600px;
-  top: 1065px;
+  left:445px;
+  top: 1100px;
 
 
 }
@@ -161,8 +169,8 @@ nav a {
   height: 300px;
   border-radius: 8px;
   position: absolute;
-  left:830px;
-  top:1065px;
+  left:700px;
+  top:1100px;
 
 } 
 
@@ -170,37 +178,36 @@ nav a {
 footer {
     background-color:darkblue;
     color: white;
-    align-items: center;
-    flex-wrap: wrap;
     font-size: 0.9rem;
-    padding: 20px;
+    paddingg: 20px;
   
   
 }
 
 .footer-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
 .chamber-information {
+  max-width: 300px;
   line-height: 1.5;
-  text-align: top;;
+  text-align: left;
 }
 
 .socialmedia img {
-    width: 40px;
-    height: 40px;
+    width: 120px;
+    height: 120px;
     cursor: pointer;
 }
 
 
 
 .p-div {
-  text-align: bottom;;
-
+  text-align: right;
+  max-width: 300px;
 }
 
 
@@ -247,24 +254,7 @@ footer {
     #members.grid {
         grid-template-columns: 1fr;
         
-    }.socialmedias {
-    gap: 15px;
-    padding: 1rem 0;
-  }
-
-  .socialmedia a imgs {
-    width: 30px;
-    height: 30px;
-
-  }
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-
+    }
    
 
    }
@@ -465,12 +455,19 @@ label {
   flex-direction: column;
 }
 
+
+
+
+
+
 /* RESPONSIVE (mobile) */
 @media (max-width: 768px) {
   .join-cards {
     grid-template-columns: 1fr;
   }
 }
+
+
 
 /* join */
 .card-level {
@@ -589,4 +586,4 @@ main {
     transition: 0.3s ease;
   }
 }
-}
+

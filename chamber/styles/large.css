@@ -1,10 +1,41 @@
  @media (max-width:1300px) {
     header, body, main {
         max-width: 880px;
-        width: 100%;
         margin: 0 auto;
     }
     .courses {
         max-width: 1300px;
     }
-}  
+} @media only screen and (min-width: 768px) {
+
+    /* HIDE MENU BUTTON */
+
+    #menu {
+        display: none;
+    }
+
+    /* SHOW NAVIGATION */
+
+    nav {
+        display: flex;
+
+        flex-direction: row;
+
+        width: auto;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+    }
+
+    /* FOOTER */
+
+    footer {
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+    }
+}
+
