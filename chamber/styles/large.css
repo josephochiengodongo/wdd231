@@ -24,18 +24,6 @@
         width: auto;
     }
 
-    nav a {
-        padding: 1rem 2rem;
-    }
-
-    /* FOOTER */
-
-    footer {
-        display: flex;
-
-        justify-content: space-between;
-
-        align-items: center;
-    }
 }
+    /* RESET */
 
