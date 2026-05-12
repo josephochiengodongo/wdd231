@@ -172,7 +172,7 @@ nav {
 
     }
 
-    .footerr-container {
+    .footer-container {
         flex-direction: row;
         gap: 1rem;
     }
@@ -218,7 +218,6 @@ footer {
     color: white;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
