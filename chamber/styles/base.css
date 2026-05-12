@@ -209,10 +209,12 @@ footer {
     background-color: white;
 }
 
-#members.list {
-    display: block;
-    background-color: white;
-    margin-bottom: 1rem;
+.member-card {
+    color: white;
+    background-color:violet;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
 }
 
 
