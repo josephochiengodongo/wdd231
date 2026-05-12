@@ -8,7 +8,7 @@
     <meta name="author" content="joseph odongo">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" href="wdd231/chamber/images/favicon.ico">
-    <link rel="stylesheet" href="styles/cham-large.css">
+    <link rel="stylesheet" href="styles/large.css">
     <meta property="og:title" content="wdd-Web Fronted Development-joseph odongo">
     <meta property="og:description" content="This is my wdd-dynamic Web fundamentals,it is the last subject for wdd, in certficate course knowned as web and computer programming.">
     <meta property="og:url" content="https://www.github.com/josephochieng.github.io/wdd231">
@@ -21,19 +21,23 @@
     <script src="scripts/weather.mjs" type="module"></script>
 </head>
 <body>
-    <header>
-        <div class="containercontent">
-            <img src="images/logo.jpg" alt="logo">
-            <span>Nairobi Chamber of Commerce</span>
-            <span class="menu-toggle"></span>
-            <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="discover.html">Discover</a>
-                <a href="directory.html">Directory</a>
-                <a href="join.html">Join</a>
-            </nav>
-        </div>
-    </header>
+    <header class="containercontent">
+				<img src="images/logo.jpg" alt="logo">
+				<span class="logo">Nairobi Chamber Of Commerce</span>
+				<button class="toggle-menu" aria-label="Open Navigation Menu">
+					<span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+				</button>
+            
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="discover.html">Discover</a>
+				<a href="directory.html" class="active">Directory</a>
+				<a href="join.html">Join</a>
+			</nav>
+		
+	</header>
     <main>
         <section class="hero">
             <h1>Chamber Of Commerce Building</h1>
@@ -75,7 +79,7 @@
 			<div class="chamber-information">
 				<p>Nairobi Chamber of Commerce</p>
 				<p>Phone: +254 234123</p>
-			    <p> Email: info@nairobi.com,
+			    <p> Email: info@nairobi.com</p>
 				<p> Website: mybusiness.com</p>
 	        </div>
 		    <div class="social-media">
@@ -92,7 +96,7 @@
                 </nav>
             </div>
 		    <div class="p-div">
-				<p><span id="currentyear">&copy;2026 </span></p>
+				<p><span id="currentyear">&copy;</span></p>
                 <p>lastModified:<span id="lastModified"></span></p>
                 <p>Back so soon! Awesome!</p>
 		    </div>
@@ -100,3 +104,4 @@
     </footer>
 </body>
 </html>
+	
