@@ -217,7 +217,6 @@ footer {
     background-color: darkblue;
     color: white;
     display: flex;
-    justify-content: center;
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
@@ -238,6 +237,7 @@ footer {
 
 .socialmedia {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
