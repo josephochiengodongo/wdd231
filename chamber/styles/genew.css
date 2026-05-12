@@ -212,7 +212,7 @@ nav {
         text-align: center;
     }
 }
-footerr {
+footer {
     background-color: darkblue;
     color: white;
     text-align: center;
@@ -224,11 +224,8 @@ footerr {
 
 .footerr-container {
     display: flex;
-
     flex-direction: row;
-
     gap: 2rem;
-
     text-align: center;
 }
 .p-div p {
