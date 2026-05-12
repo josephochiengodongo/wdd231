@@ -212,11 +212,13 @@ nav {
         text-align: center;
     }
 }
-.footer {
+footer {
     background-color: darkblue;
     color: white;
+    text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
+    width: 100%;
 
 }
 
