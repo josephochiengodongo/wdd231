@@ -155,7 +155,7 @@ nav {
     .events-section, 
     .current-weather-section, 
     .weather-forecast-section {
-        background-color: blue; /* Light grey background like wireframe */
+        background-color:darkblue; /* Light grey background like wireframe */
         padding: 15px;
         border-radius: 5px;
     }
