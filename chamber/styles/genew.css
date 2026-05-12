@@ -158,6 +158,7 @@ nav {
         background-color:darkblue; /* Light grey background like wireframe */
         padding: 15px;
         border-radius: 5px;
+        color: white;
     }
 
     /* Optional: Header styling within the boxes */
