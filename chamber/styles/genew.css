@@ -71,7 +71,11 @@ nav {
     text-align: center;
 }
 
-
+@media (max-width: 768px) {
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* styles/large.css or inside a Media Query */
 @media (min-width: 768px) {
@@ -165,3 +169,9 @@ nav {
         text-align: center;
     }
 }
+
+
+
+
+
+
