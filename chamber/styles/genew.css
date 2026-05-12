@@ -108,6 +108,7 @@ nav {
     .home-grid {
         grid-template-columns: 2fr 1fr 1fr;
         align-items: start;
+        justify-content: center;
     }
 
     /* Member Cards: Grid view for desktop directory */
@@ -171,8 +172,8 @@ nav {
 
     }
 
-    .footer-container {
-        flex-direction: column;
+    .footerr-container {
+        flex-direction: row;
         gap: 1rem;
     }
     
@@ -215,6 +216,8 @@ nav {
 footer {
     background-color: darkblue;
     color: white;
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
@@ -222,13 +225,13 @@ footer {
 
 }
 
-.footerr-container {
+.footer-container {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     text-align: center;
 }
-.p-div p {
+.p-div pp {
     margin: 0.5rem 0;
 }
 /* SOCIAL MEDIA */
@@ -281,11 +284,3 @@ footer {
     }
     
 }
-
-
-
-
-
-
-
-
