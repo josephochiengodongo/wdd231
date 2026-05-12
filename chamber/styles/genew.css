@@ -212,7 +212,7 @@ nav {
         text-align: center;
     }
 }
-footer {
+footerr {
     background-color: darkblue;
     color: white;
     text-align: center;
@@ -222,7 +222,7 @@ footer {
 
 }
 
-.footer-container {
+.footerr-container {
     display: flex;
 
     flex-direction: row;
@@ -238,9 +238,7 @@ footer {
 
 .socialmedia {
     display: flex;
-
-    justify-content: space-between;
-
+    justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
 }
