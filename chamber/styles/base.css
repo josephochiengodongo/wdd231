@@ -312,7 +312,7 @@ footer {
 .top-grid {
   display: flex;
   justify-items: stretch;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
   
 }
@@ -480,6 +480,9 @@ label {
 @media (max-width: 768px) {
   .join-cards {
     grid-template-columns: 1fr;
+  }
+  .top-grid {
+    flex-direction: column;
   }
 
 
