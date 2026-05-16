@@ -481,6 +481,9 @@ label {
   .join-cards {
     grid-template-columns: 1fr;
   }
+  .top-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 
