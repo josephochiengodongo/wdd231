@@ -29,8 +29,7 @@
       "phone": "+254 765 432 100",
       "address": "P.O. Box 355, Nairobi",
       "website": "https://www.kebsali.co.ke",
-      "image": "images/kebsali.png",
-      "logo": "🌳",
+      "logo": "images/kebsali.png",
       "membership": "Gold"
     },
     {
@@ -46,7 +45,7 @@
       "phone": "+254 727 812 455",
       "address": "P.O. Box 34576, Nairobi",
       "website": "https://www.topprinters.co.ke",
-      "image": "images/printers.png",
+      "logo": "images/printers.png",
       "membership": "Silver"
     },
     {
