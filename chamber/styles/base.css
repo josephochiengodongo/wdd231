@@ -437,6 +437,9 @@ label {
   flex-direction: column;
   
 }
+.grid-container .card {
+  background-color: white;
+}
 
 
 /* Hover effect */
