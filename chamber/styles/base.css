@@ -301,17 +301,10 @@ footer {
 }
 
 
-.spotlight-section {
-  padding: 20px;
 
-}
 
-.spotlight {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 1rem;
-}
+  
+
 
 /* Mobile First - Stacks sections by default */
 
@@ -333,7 +326,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
-    background-color: white;
+    background-color:white;
     
 }
 
@@ -430,8 +423,9 @@ label {
 
 /* Card Style */
 .card {
-  background: white;
+  background:violet;
   display: flex;
+  max-height: 450px;;
   border: 1px solid black;
   border-radius: 12px;
   overflow: hidden;

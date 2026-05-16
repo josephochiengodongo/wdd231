@@ -1,7 +1,7 @@
 const currentContainer = document.querySelector('#current-weather');
 const forecastContainer = document.querySelector('#forecast-display');
 
-const apiKey = 'a6e409f07328528be70f230d13f2a5a8';
+const apiKey = '08b506337344ccf8375790e9cde393ac';
 const city = 'Nairobi';
 
 const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
@@ -21,7 +21,7 @@ async function fetchWeather() {
 
   } catch (error) {
     console.error(error);
-    currentContainer.innerHTML = "<p>⚠️ Unable to load weather</p>";
+    currentContainer.innerHTML = "";
     forecastContainer.innerHTML = "";
   }
 }

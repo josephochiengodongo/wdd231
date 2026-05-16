@@ -5,7 +5,7 @@
       "phone": "+254 701 234 567",
       "address": "P.O. Box 54, Nairobi",
       "website": "https://www.expertholdings.co.ke",
-      "image": "images/expert.png",
+      "logo": "images/expert.png",
       "membership": "Silver"
     },
     {
@@ -13,7 +13,7 @@
       "phone": "+254 769 876 543",
       "address": "P.O. Box 67, Nairobi",
       "website": "https://www.realtech.co.ke",
-      "image": "images/realtech.png",
+      "logo": "images/realtech.png",
       "membership": "Gold"
     },
     {
@@ -21,7 +21,7 @@
       "phone": "+254 715 558 888",
       "address": "P.O. Box 6578, Naivasha",
       "website": "https://www.savannalogistics.co.ke",
-      "image": "images/savanna.png",
+      "logo": "images/savanna.png",
       "membership": "Silver"
     },
     {
@@ -30,6 +30,7 @@
       "address": "P.O. Box 355, Nairobi",
       "website": "https://www.kebsali.co.ke",
       "image": "images/kebsali.png",
+      "logo": "🌳",
       "membership": "Gold"
     },
     {
@@ -37,7 +38,7 @@
       "phone": "+254 786 543 432",
       "address": "P.O. Box 345, Nairobi",
       "website": "https://www.gmakstravellers.co.ke",
-      "image": "images/gmaks.png",
+      "logo": "images/gmaks.png",
       "membership": "Silver"
     },
     {
@@ -53,7 +54,7 @@
       "phone": "+254 735 648 770",
       "address": "P.O. Box 234, Nairobi",
       "website": "https://www.bountbaker.co.ke",
-      "image": "images/baker.png",
+      "logo": "images/baker.png",
       "membership": "Silver"
     }
   ]

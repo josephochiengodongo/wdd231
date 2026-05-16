@@ -1,6 +1,6 @@
 const weatherData = document.getElementById('weather-data');
 
-const apiKey = 'YOUR_API_KEY'; // 🔑 replace this
+const apiKey = '08b506337344ccf8375790e9cde393ac'; 
 const city = 'Nairobi';
 
 const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
@@ -34,7 +34,7 @@ async function getWeather() {
 
   } catch (error) {
     console.error("Weather error:", error);
-    weatherData.innerHTML = "<p>Unable to load weather data</p>";
+    weatherData.innerHTML = "";
   }
 }
 
