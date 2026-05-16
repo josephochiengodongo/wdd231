@@ -482,7 +482,7 @@ label {
     grid-template-columns: 1fr;
   }
   .top-grid {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
