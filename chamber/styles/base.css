@@ -83,7 +83,7 @@ nav {
     .events-section,.current-weather-section,.weather-forecast-section {
       background-color: darkblue;
       color: white;
-      padding: 1px;
+      padding-left: 8px;
       border-radius: 5px;
       align-items: center;
       max-height: 250px;
