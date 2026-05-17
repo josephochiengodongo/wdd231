@@ -110,12 +110,9 @@ navv {
       align-items: center;
       height: 300px;
     }
-    .member-card {
-      background-color: violet;
+    .member-card h3 {
+      background-color: black;
       color: white;
-      padding: 10px;
-      border-radius: 10px 10px 0 0;
-      text-align: center;
     }
 }
 
