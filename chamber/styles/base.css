@@ -115,7 +115,7 @@ navv {
       color: white;
       position: relative;
       bottom: 25px;
-      height: 60px;
+      margin: 0;
       border-radius: 8px 8px 0 0;
     }
 }
