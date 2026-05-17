@@ -289,7 +289,7 @@ footer {
     }
     .home-grid {
         flex-direction: row;
-        background-color: blue;
+        background-colorr: blue;
         color: white;
     }
 }
