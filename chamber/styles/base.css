@@ -113,7 +113,7 @@ navv {
     .member-card h3 {
       background-color: black;
       color: white;
-      height: 80px;
+      padding: 20px;
     }
 }
 
