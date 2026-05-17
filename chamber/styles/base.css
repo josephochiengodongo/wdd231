@@ -75,7 +75,7 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .home-gridd {
+    .home-grid {
         grid-template-columns: 1fr;
     }
 }
@@ -287,12 +287,7 @@ footer {
         flex-direction: column;
         gap: 1rem;
     }
-    .home-grid {
-        flex-direction: row; /* Single column for mobile */
-        gap:2px;
-        margin: 1px;
-        align-items: stretch;
-    }
+    
 }
 
     
