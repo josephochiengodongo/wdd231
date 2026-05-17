@@ -291,6 +291,7 @@ footer {
         flex-direction: row; /* Single column for mobile */
         gap:2px;
         margin: 1px;
+        align-items: stretch;
     }
 }
 
