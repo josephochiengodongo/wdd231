@@ -289,6 +289,8 @@ footer {
     }
     .home-grid {
         grid-template-columns: 1fr;
+        background-color: blue;
+        color: white;
     }
 }
 
