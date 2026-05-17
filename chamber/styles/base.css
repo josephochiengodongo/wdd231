@@ -289,7 +289,6 @@ footer {
     }
     .home-grid {
         flex-direction: row; /* Single column for mobile */
-        align-items: stretch;
         background-color: blue;
         gap:2px;
         margin: 1px;
