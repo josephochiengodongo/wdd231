@@ -292,6 +292,7 @@ footer {
         background-color: blue;
         color: white;
         gap:2px;
+        margin: 1px;
     }
 }
 
