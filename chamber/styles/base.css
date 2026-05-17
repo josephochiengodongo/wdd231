@@ -52,11 +52,12 @@ nav {
 }
 
 /* Home Grid: Stacked for mobile */
-.home-gridd {
+.home-grid {
     display: grid;
     grid-template-columns: 1fr; /* Single column */
     gap: 1rem;
     padding: 1rem;
+    background-color: blue;
 }
 
 /* Member Cards in Directory */
