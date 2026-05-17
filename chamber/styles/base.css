@@ -288,7 +288,7 @@ footer {
         gap: 1rem;
     }
     .home-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         background-color: blue;
         color: white;
     }
