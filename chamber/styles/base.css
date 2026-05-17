@@ -288,7 +288,8 @@ footer {
         gap: 1rem;
     }
     .home-grid {
-        flex-direction: row;
+        grid-template-columns: 1fr; /* Single column for mobile */
+        align-items: stretch;
         gap:2px;
         margin: 1px;
     }
