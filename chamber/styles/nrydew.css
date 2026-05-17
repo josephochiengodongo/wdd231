@@ -1,0 +1,57 @@
+/* ---------- HEADER ---------- */
+header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-heading h1 {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* ---------- NAVIGATION ---------- */
+.navigation {
+    background: #163845;
+}
+
+.navigation ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    color: white;
+    padding: 1rem 1.5rem;
+    display: block;
+    transition: background 0.3s;
+}
+
+.navigation a:hover,
+.navigation .current {
+    background: var(--accent-color);
+    color: black;
+}

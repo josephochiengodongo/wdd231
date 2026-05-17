@@ -75,7 +75,7 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .home-grid {
+    .home-gridd {
         grid-template-columns: 1fr;
     }
 }
