@@ -86,7 +86,7 @@ nav {
       padding-left: 8px;
       border-radius: 5px;
       align-items: center;
-      max-height: 280px;
+      min-height: 260px;
     }
 }
 
