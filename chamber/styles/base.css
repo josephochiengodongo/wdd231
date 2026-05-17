@@ -287,6 +287,9 @@ footer {
         flex-direction: column;
         gap: 1rem;
     }
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
     
@@ -437,7 +440,7 @@ label {
   flex-direction: column;
   
 }
-.grid-container .card {
+.grid-containerr .ccard {
   background-color: white;
 }
 
