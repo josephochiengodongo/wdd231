@@ -39,11 +39,12 @@ body {
     padding: 0.8rem 1rem;
     text-decoration: none;
     border-radius: 5px;
-}nav ul {
+}
+nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    background: #222;
+    background: black;
     flex-wrap: wrap;
 }
 
@@ -129,7 +130,7 @@ navv {
      
     }
     nav a:hover {
-        background-color: blue;
+        background-color:blue;
     }
 
     .toggle-menu {
