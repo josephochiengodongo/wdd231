@@ -7,7 +7,7 @@ img {
 header {
     background-color: darkblue;
     color: white;
-    padding: 1rem;
+    padding: 1px 1px 10px 1px;
     margin-left: 6px;
     font-size: x-large;
 }
