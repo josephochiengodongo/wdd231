@@ -118,9 +118,7 @@ navv {
       margin: -10px -10px 10px -10px;
       border-radius: 8px 8px 0 0;
     }
-    .member-card {
-      gap: 100px;
-    }
+    
     
 }
 
@@ -470,6 +468,7 @@ label {
 .card {
   background:violet;
   display: flex;
+  gap: 80px;
   max-height: 450px;;
   border: 1px solid black;
   border-radius: 12px;
