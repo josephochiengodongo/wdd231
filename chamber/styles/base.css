@@ -118,9 +118,11 @@ navv {
       margin: -10px -10px 10px -10px;
       border-radius: 8px 8px 0 0;
     }
-    .member-card p {
-      margin: 0 10px 10px 10px;
-    }
+    #member-card {
+      gap: 50px;
+    } 
+      
+    
     
     
 }
