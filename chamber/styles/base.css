@@ -118,6 +118,12 @@ navv {
       margin: -10px -10px 10px -10px;
       border-radius: 8px 8px 0 0;
     }
+    header {
+        background-color: darkblue;
+        color: white;
+        padding-right: 10px;
+        text-align: center;
+    }
     
 }
 
@@ -467,7 +473,6 @@ label {
 .card {
   background:violet;
   display: flex;
-  gap: 50px;
   max-height: 450px;;
   border: 1px solid black;
   border-radius: 12px;
