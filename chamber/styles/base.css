@@ -119,6 +119,7 @@ navv {
     }
     .member-card  {
       gap: 100px;
+      padding: -10px;
     }
 }
 
