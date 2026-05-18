@@ -121,7 +121,7 @@ navv {
     header {
         background-color: darkblue;
         color: white;
-        padding-right: 30px;
+        align-items: center;
         text-align: center;
     }
     
