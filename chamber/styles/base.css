@@ -114,9 +114,8 @@ navv {
       background-color: black;
       color: white;
       position: relative;
-      bottom: 40px;
+      bottom: 20px;
       margin: -10px -10px 10px -10px;
-      paddingg: 10px;
       border-radius: 8px 8px 0 0;
     }
     
@@ -468,6 +467,7 @@ label {
 .card {
   background:violet;
   display: flex;
+  gap: 50px;
   max-height: 450px;;
   border: 1px solid black;
   border-radius: 12px;
