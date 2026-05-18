@@ -115,12 +115,10 @@ navv {
       color: white;
       position: relative;
       bottom: 10px;
+      margin: -10px -10px 10px -10px;
       border-radius: 8px 8px 0 0;
     }
-    .member-card  {
-      gap: 100px;
-      padding: -10px;
-    }
+    
 }
 
 /* styles/large.css or inside a Media Query */
