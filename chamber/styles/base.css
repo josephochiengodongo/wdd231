@@ -114,8 +114,7 @@ navv {
       background-color: black;
       color: white;
       position: relative;
-      bottom: 20px;
-      margin: -10px -10px 10px -10px;
+      bottom: 10px;
       border-radius: 8px 8px 0 0;
     }
 }
