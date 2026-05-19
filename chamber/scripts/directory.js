@@ -16,6 +16,7 @@ function displayMembers(members) {
 
         card.innerHTML = `
             <h3>${member.name}</h3>
+            <img src="${member.logo}" alt="${member.name} Logo" class="member-logo">
             <p><strong>Phone:</strong> ${member.phone}</p>
             <p><strong>Email:</strong> ${member.email}</p>
             <p><strong>Address:</strong> ${member.address}</p>
