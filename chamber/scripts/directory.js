@@ -16,8 +16,6 @@ function displayMembers(members) {
 
         card.innerHTML = `
             <h3>${member.name}</h3>
-            <p><strong>Industry:</strong> ${member.industry}</p>
-            <p><strong>Location:</strong> ${member.location}</p>
             <p><strong>Phone:</strong> ${member.phone}</p>
             <p><strong>Email:</strong> ${member.email}</p>
             <p><strong>Address:</strong> ${member.address}</p>
