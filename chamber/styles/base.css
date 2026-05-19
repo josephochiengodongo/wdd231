@@ -760,23 +760,16 @@ h2{
     outline: 2px solid orange;
     outline-offset: 3px;
 }
-
-nav {
-    display: none;
-}
-
-nav.open {
-    display: flex;
-    flex-direction: column;
-}/* HEADER */
+/* HEADER */
 .containercontent {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
     background-color: #004080;
-    color: white;
+    padding: 1rem;
     position: relative;
+    color: white;
+    flex-wrap: wrap;
 }
 
 /* LOGO IMAGE */
@@ -786,23 +779,45 @@ nav.open {
 
 /* TITLE */
 .containercontent span.logo {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
+    margin-left: 0.5rem;
     flex: 1;
-    margin-left: 0.8rem;
 }
 
-/* NAVIGATION */
+/* TOGGLE BUTTON */
+.toggle-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* HAMBURGER BARS */
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* MOBILE NAVIGATION */
 nav {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
     width: 100%;
     background-color: #004080;
+    margin-top: 1rem;
 }
 
+/* SHOW MENU WHEN OPEN */
+nav.open {
+    display: flex;
+}
+
+/* NAV LINKS */
 nav a {
     color: white;
     text-decoration: none;
@@ -810,32 +825,9 @@ nav a {
     border-top: 1px solid rgba(255,255,255,0.2);
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     background-color: #0066cc;
-}
-
-/* SHOW NAV WHEN OPEN */
-nav.open {
-    display: flex;
-}
-
-/* HAMBURGER BUTTON */
-.toggle-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-/* HAMBURGER LINES */
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    border-radius: 5px;
 }
 
 /* DESKTOP VIEW */
@@ -848,26 +840,14 @@ nav.open {
     nav {
         display: flex;
         flex-direction: row;
-        position: static;
+        justify-content: flex-end;
+        align-items: center;
         width: auto;
-        background: none;
+        margin-top: 0;
     }
 
     nav a {
         border: none;
-    }
-
-    .containercontent {
-        gap: 1rem;
+        padding: 0.5rem 1rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
