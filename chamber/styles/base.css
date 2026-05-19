@@ -147,6 +147,9 @@ navv {
 .view-buttons button:active {
     transform: scale(0.98);
 }
+.list img {
+  display: none;
+}
 
 .view-buttons button:focus {
     outline: 2px solid orangered;
@@ -725,7 +728,7 @@ h2{
     gap: 0.5rem;
   
 }
-.list image {
+.list img {
   display: none;
 }
 
