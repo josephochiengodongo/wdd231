@@ -761,6 +761,18 @@ h2{
     outline-offset: 3px;
 }
 
+nav {
+    display: none;
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
 
 
 
