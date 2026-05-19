@@ -50,6 +50,13 @@ function openModal(id) {
 function closeModal(id) {
   document.getElementById(id).style.display = "none";
 }
+const menuBtn = document.querySelector(".toggle-menu");
+const nav = document.querySelector("nav");
+
+menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("open");
+});
+
 
  
 
