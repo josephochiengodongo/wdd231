@@ -468,7 +468,7 @@ label {
 }
 
 /* Card Style */
-.card {
+.cardd {
   background:violet;
   display: flex;
   max-height: 450px;;
