@@ -4,6 +4,7 @@
       "name": "Expert Holdings",
       "phone": "+254 701 234 567",
       "address": "P.O. Box 54, Nairobi",
+      "email": "expart67@gail.com",
       "website": "https://www.expertholdings.co.ke",
       "logo": "images/expert.png",
       "membership": "Silver"
@@ -12,6 +13,7 @@
       "name": "Real Tech Solutions",
       "phone": "+254 769 876 543",
       "address": "P.O. Box 67, Nairobi",
+      "email": "real34@gamil.com",
       "website": "https://www.realtech.co.ke",
       "logo": "images/realtech.png",
       "membership": "Gold"
@@ -20,6 +22,7 @@
       "name": "Savanna Logistics",
       "phone": "+254 715 558 888",
       "address": "P.O. Box 6578, Naivasha",
+      "email": "savanna@gail.com",
       "website": "https://www.savannalogistics.co.ke",
       "logo": "images/savanna.png",
       "membership": "Silver"
@@ -28,6 +31,7 @@
       "name": "Kebsali Traders",
       "phone": "+254 765 432 100",
       "address": "P.O. Box 355, Nairobi",
+      "email": "kebsali@gmail.com",
       "website": "https://www.kebsali.co.ke",
       "logo": "images/kebsali.png",
       "membership": "Gold"
@@ -36,6 +40,7 @@
       "name": "Gmaks Travellers",
       "phone": "+254 786 543 432",
       "address": "P.O. Box 345, Nairobi",
+      "email": "gmak@gmail.com",
       "website": "https://www.gmakstravellers.co.ke",
       "logo": "images/gmaks.png",
       "membership": "Silver"
@@ -44,6 +49,7 @@
       "name": "Top Printers",
       "phone": "+254 727 812 455",
       "address": "P.O. Box 34576, Nairobi",
+      "email": "top@gmail.com",
       "website": "https://www.topprinters.co.ke",
       "logo": "images/printers.png",
       "membership": "Silver"
@@ -52,6 +58,7 @@
       "name": "Bount Baker",
       "phone": "+254 735 648 770",
       "address": "P.O. Box 234, Nairobi",
+      "email": "bount@gamil.com",
       "website": "https://www.bountbaker.co.ke",
       "logo": "images/baker.png",
       "membership": "Silver"
