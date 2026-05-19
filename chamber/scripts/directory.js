@@ -18,6 +18,7 @@ function displayMembers(members) {
             <h3>${member.name}</h3>
             <img src="${member.logo}" alt="${member.name} Logo" class="member-logo">
             <p><strong>Phone:</strong> ${member.phone}</p>
+            <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
             <p><strong>Email:</strong> ${member.email}</p>
             <p><strong>Address:</strong> ${member.address}</p>
             <p><strong>Membership:</strong> ${member.membership}</p>
