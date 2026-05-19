@@ -103,6 +103,13 @@ navv {
       grid-template-columns: 1fr;
       
     }
+    .home-grid h3 {
+      background-color: black;
+      color: white;
+      margin: -15px -15px 15px -15px;
+      padding: 10px;
+      text-align: center;
+    }
     .events-section,.current-weather-section,.weather-forecast-section {
       background-color: darkblue;
       color: white;
