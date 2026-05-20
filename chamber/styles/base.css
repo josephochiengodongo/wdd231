@@ -182,6 +182,18 @@ header.containercontent {
     justify-content: space-between;
     position: relative; /* Essential for relative positioning of mobile menu drop-down */
 }
+header img.logo {
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+header span.logo {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-left: 0.75rem;
+    margin-right: auto; /* Pushes the menu toggle button completely to the right flank */
+    letter-spacing: 0.5px;
+}
 
 
 .view-buttons button:focus {
