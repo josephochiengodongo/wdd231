@@ -4,6 +4,14 @@ img {
     height: auto;
     display: block;
 }
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
 header {
     background-color: darkblue;
     color: white;
