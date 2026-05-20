@@ -127,7 +127,7 @@ navv {
       color: white;
       margin: -10px 0 10px -10px;
       padding: 10px 60px 10px 10px;
-      border-radius: 8px 8px 8px 8px;
+      border-radius: 8px 8px 0 0;
     }
 
      .view-buttons {
@@ -224,14 +224,14 @@ navv {
         color: white;
         margin: -10px -10px 10px -10px;
         padding: 10px;
-        border-radius: 8px 8px 8px 8px;
+        border-radius: 8px 8px 0 0;
     }
     #members.list h3 {
         background-color: black;
         color: white;
         margin: -10px -10px 10px -10px;
         padding: 10px;
-        border-radius: 8px 8px 8px 8px;
+        border-radius: 8px 8px 0 0;
 
     }
 
