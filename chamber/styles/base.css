@@ -790,3 +790,101 @@ h2{
     outline-offset: 3px;
 }
 
+
+
+
+
+
+
+/* Base Reset Helper */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Container Structure */
+header.containercontent {
+    background-color: #0f172a; /* Deep elegant dark blue slate */
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Essential for relative positioning of mobile menu drop-down */
+}
+
+/* Logo Alignment */
+header img.logo {
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+header span.logo {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-left: 0.75rem;
+    margin-right: auto; /* Pushes the menu toggle button completely to the right flank */
+    letter-spacing: 0.5px;
+}
+
+/* Hamburger Button Styling */
+.toggle-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+}
+
+.toggle-menu .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease; /* Smooth visual animations for interactive actions */
+}
+
+/* Mobile-First Navigation Layout */
+nav[aria-label="Main Navigation"] {
+    display: none; /* Keeps menu closed by default on initial mobile screen views */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Positions drop-down directly beneath the bottom edge of header line */
+    left: 0;
+    width: 100%;
+    background-color: #1e293b; /* Slightly lighter accent shade than header slate */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    z-index: 99;
+}
+
+/* Open State Triggered via JavaScript Class Toggle */
+nav[aria-label="Main Navigation"].open {
+    display: flex;
+}
+
+/* Navigation Links Style rules */
+nav[aria-label="Main Navigation"] a {
+    color: #f1f5f9;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    border-bottom: 1px solid #334155;
+    transition: background-color 0.2s ease;
+}
+
+nav[aria-label="Main Navigation"] a:last-child {
+    border-bottom: none;
+}
+
+/* Interactive States and Active Wayfinding Markers */
+nav[aria-label="Main Navigation"] a:hover,
+nav[aria-label="Main Navigation"] a.active {
+    background-color: #38bdf8; /* Bright energetic sky-blue accent highlight color */
+    color: #0f172a; /* Dark text for passing strict accessibility color contrast tests */
+}
