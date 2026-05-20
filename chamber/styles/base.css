@@ -135,17 +135,19 @@ navv {
     .member-card h3{
       background-color: black;
       color: white;
-      margin: -15px -15px 10px -15px;
+      margin: -15px -10px 10px -10px;
       padding: 10px;
       border-radius: 8px 8px 0 0;
       text-align: center;
+    }
 
      .view-buttons {
       display: flex;
       justify-content: center;
       gap: 1rem;
       margin: 1.5rem 0;
-}
+     }
+
 
 .view-buttons button {
     padding: 0.8rem 1.5rem;
@@ -786,4 +788,4 @@ h2{
     outline: 2px solid orange;
     outline-offset: 3px;
 }
-}
+
