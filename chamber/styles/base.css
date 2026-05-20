@@ -122,17 +122,15 @@ navv {
       border-radius: 5px;
       align-items: center;
       height: 300px;
-    }
-    .member-card h3 {
-      background-color: black;
-      color: white;
-      margin: -10px -10px 10px -10px;
-      padding: 10px 30px 10px 10px;
-      border-radius: 8px 8px 0 0;
+    
     }
     .member-grid h3 {
-      margin: -10px -15px 10px -15px;
+      background-color: black;
+      color: white;
+      margin: -15px -15px 10px -15px;
       padding: 10px;
+      border-radius: 8px 8px 0 0;
+      align-items: center;
     }
 
      .view-buttons {
