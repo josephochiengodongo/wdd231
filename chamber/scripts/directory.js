@@ -54,8 +54,23 @@ const toggleMenu = document.querySelector(".toggle-menu");
 const nav = document.querySelector("nav");
 
 toggleMenu.addEventListener("click", () => {
-    nav.classList.toggle("open");
+    ndocument.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.querySelector(".toggle-menu");
+    const navMenu = document.querySelector('nav[aria-label="Main Navigation"]');
+
+    if (menuButton && navMenu) {
+        menuButton.addEventListener("click", () => {
+            navMenu.classList.toggle("open");
+            
+            // Optional: Accessibility state update for screen readers
+            const isOpen = navMenu.classList.contains("open");
+            menuButton.setAttribute("aria-label", isOpen ? "Close Navigation Menu" : "Open Navigation Menu");
+        });
+    }
+});av.classList.toggle("open");
 });
+
+
 
 
 
