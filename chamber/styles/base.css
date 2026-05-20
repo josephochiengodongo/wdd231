@@ -224,7 +224,7 @@ navv {
         background-color: black;
         color: white;
         margin: -15px -10px 10px -10px;
-        padding: 10px;
+        padding: 10px 20px 10px 20px;
         border-radius: 8px 8px 0 0;
     }
     #members.list h3 {
