@@ -130,6 +130,9 @@ navv {
       padding: 10px 30px 10px 10px;
       border-radius: 8px 8px 0 0;
     }
+    .member-grid {
+      margin: -10px -15px 10px -15px;
+    }
 
      .view-buttons {
       display: flex;
@@ -223,7 +226,7 @@ navv {
     #members.grid h3 {
         background-color: black;
         color: white;
-        margin: -15px -10px 10px -10px;
+        margin: -15px -15px 10px -15px;
         padding: 10px 20px 10px 20px;
         border-radius: 8px 8px 0 0;
     }
