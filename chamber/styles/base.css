@@ -7,10 +7,15 @@ img {
 header {
     background-color: darkblue;
     color: white;
-    padding-left: 50px;
-    margin-left: 6px;
     font-size: x-large;
+    padding: 0.75rem 1rem;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Essential for relative positioning of mobile menu drop-down */
 }
+
 
 body {
     font-family: 'Roboto', sans-serif;
