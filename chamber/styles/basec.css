@@ -1,0 +1,178 @@
+/* 1. Reset and Anti-Horizontal Drift Constraints */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Stops content from spilling out horizontally */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+/* 2. Responsive Header Layout */
+header.containercontent {
+    background-color: #0f172a; /* Slate 900 */
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Anchor for absolute mobile navigation drawer */
+    width: 100%;
+}
+
+header img.logo {
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+header span.logo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+    margin-right: auto; /* Shoves the hamburger menu button to the far right */
+    white-space: normal; /* Permits text wrapping on extra-narrow 320px displays */
+}
+
+/* 3. Mobile Hamburger Component */
+.toggle-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+}
+
+.toggle-menu .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* 4. Mobile Navigation State Matrix */
+nav[aria-label="Main Navigation"] {
+    display: none; /* Collapsed out of sight on baseline load */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Sits exactly flush under header banner */
+    left: 0;
+    width: 100%;
+    background-color: #1e293b; /* Slate 800 */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+nav[aria-label="Main Navigation"].open {
+    display: flex; /* Triggered asynchronously through JS class toggling */
+}
+
+nav[aria-label="Main Navigation"] a {
+    color: #f1f5f9;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    border-bottom: 1px solid #334155;
+}
+
+nav[aria-label="Main Navigation"] a:last-child {
+    border-bottom: none;
+}
+
+nav[aria-label="Main Navigation"] a:hover,
+nav[aria-label="Main Navigation"] a.active {
+    background-color: #0284c7; /* Sky 600 Accent Color */
+    color: #ffffff;
+}
+
+/* 5. Main Framework & Discover Cards */
+main {
+    padding: 1.25rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.visit-message, .intro {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.visit-message h1 {
+    font-size: 1.5rem;
+    color: #0f172a;
+}
+
+/* Single-column fallbacks for standard mobile viewports */
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Generated Target Card Base Formatting */
+.grid-container card, 
+.grid-container .card-item { 
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* 6. Mobile Footer Stack */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 2rem 1.25rem;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.chamber-information p {
+    margin-bottom: 0.25rem;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); /* Forces social graphics to clear contrast standards */
+    transition: transform 0.2s ease;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
+}
+
+.p-div {
+    border-top: 1px solid #334155;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+}
