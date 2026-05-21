@@ -17,7 +17,7 @@ header {
     color: white;padding: 1rem;
     margin-left: 3px;
     font-size: x-large;
-    width: 960px;
+  
 
     
 }
@@ -29,7 +29,7 @@ body {
     background-color: white;
     color: black;
     overflow-x: hidden;
-    width: 960px;
+    
 }
 
 
@@ -350,7 +350,7 @@ footer {
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
-    width: 960px;
+    width: 100%;
 
 }
 
