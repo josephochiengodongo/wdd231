@@ -1,13 +1,17 @@
 /* General mobile styles */
 img {
-    max-width: 100%;
     height: auto;
     display: block;
+    
 }
 * {
   box-sizing: border-box;
 }
-
+.hero img {
+    width: auto;
+    height: auto;
+    display: block;
+}
 
 
  

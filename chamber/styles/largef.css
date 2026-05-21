@@ -1,0 +1,73 @@
+@media (min-width: 768px) {
+    /* Layout Wrapper Width Lock */
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    /* Header & Navigation Restructure */
+    .toggle-menu {
+        display: none; /* Remove hamburger on wide viewports */
+    }
+
+    nav {
+        display: flex; /* Force navigation bar layout visible inline */
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        background: none;
+    }
+
+    nav a {
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    /* Transform Main Page Content Into Multi-Column Grids */
+    .top-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr; /* Exact Wireframe Design balance */
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .cta {
+        width: 45%;
+        bottom: 30px;
+    }
+
+    /* Multi-Column Layout Grid Cards for Members */
+    #members.grid, #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Structured Row Output for Selection Toggle List Layouts */
+    #members.list .member-card {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Split Footer into 3 Equal Structural Quadrants */
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: left;
+    }
+
+    .socialmedia {
+        justify-content: center;
+    }
+
+    .p-div {
+        text-align: right;
+    }
+}

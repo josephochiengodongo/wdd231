@@ -1,0 +1,225 @@
+/* ===== GLOBAL RESETS & VARIABLES ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    padding: 1rem;
+}
+
+h2 {
+    color: darkblue;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* ===== HEADER & MOBILE NAVIGATION ===== */
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.containercontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+span.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+/* Hamburger Button */
+.toggle-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.toggle-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/* Mobile Navigation Drawer Links */
+nav {
+    display: none; /* Hidden by default on mobile */
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: #000066;
+    border-radius: 4px;
+}
+
+nav.open {
+    display: flex; /* Toggled via JS */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #111188;
+    text-align: center;
+}
+
+nav a:hover, nav a.active {
+    background-color: blue;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    background: #f4f4f4;
+}
+
+.cta {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 139, 0.9);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 85%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.cta h2 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: azure;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* ===== HOME INFO BLOCKS ===== */
+.top-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#events, .weather-box, .forecast-display {
+    background: azure;
+    border: 1px solid blue;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* ===== MEMBER CARDS (DIRECTORY/SPOTLIGHTS) ===== */
+#spotlight-container, #members.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.member-card {
+    background-color: #555555;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.member-card h3 {
+    background-color: black;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 0.5rem;
+    border-radius: 8px 8px 0 0;
+}
+
+.member-logo {
+    margin: 0 auto 1rem auto;
+    max-height: 75px;
+}
+
+/* List View Baseline Toggle */
+#members.list .member-card {
+    background-color: #eaeaea;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0.5rem;
+}
+#members.list .member-card h3 {
+    margin: 0 0 0.5rem 0;
+    background: none;
+    color: black;
+    padding: 0;
+}
+#members.list .member-logo { display: none; }
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
