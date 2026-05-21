@@ -7,11 +7,7 @@ img {
 * {
   box-sizing: border-box;
 }
-.hero img {
-    width: auto;
-    height: auto;
-    display: block;
-}
+
 
 
  
