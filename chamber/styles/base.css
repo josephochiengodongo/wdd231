@@ -448,8 +448,12 @@ footer {
   gap: 20px;
   
 }
-
-
+#spotlight-container img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 
 
@@ -571,9 +575,7 @@ label {
   flex-direction: column;
   
 }
-.grid-containerr .ccard {
-  background-color: white;
-}
+
 
 
 /* Hover effect */
