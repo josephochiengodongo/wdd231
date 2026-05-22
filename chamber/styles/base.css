@@ -662,8 +662,11 @@ h2{
 .visit-message {
   background: white;
   padding: 1rem;
+  text-align: center;
+  border: 1px solid blue;
   margin-bottom: 1rem;
-  border-left: 5px solid blue;
+  color: darkblue
+
 }
 
 /* ===== INTRO ===== */
@@ -674,6 +677,8 @@ h2{
 .intro h2 {
   color: blue;
   margin-bottom: 0.5rem;
+  text-align: center;
+  
 }
 
 /* ===== GRID (MOBILE FIRST) ===== */
