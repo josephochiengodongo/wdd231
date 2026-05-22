@@ -79,16 +79,6 @@ nav a {
 } 
 
 
-
-
-
-
-navv {
-    display: none; /* Show/hide this using your 'toggle-menu' button */
-    flex-direction: column;
-
-}
-
 /* Home Grid: Stacked for mobile */
 .home-grid {
     display: grid;
