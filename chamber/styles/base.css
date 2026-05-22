@@ -514,21 +514,18 @@ footer {
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 250px;
-  height: 100px;
-}
+  gap: 5px;
+  width: 300px;
+  height: 150px;
 
-label {
-  display: flex;
-  flex-direction: column;
+
 }
 
 /* CARDS */
 .cards {
   display: grid;
-  gap: 1rem;
   width: 450px;
+  gap: 0.5rem;
   
 }
 
@@ -588,15 +585,6 @@ label {
 
 }
 
-
-
-.form input[type="submit"] {
-  background:darkblue;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-}
-
 /* MEMBERSHIP CARDS SECTION */
 .join-cards {
   display: flex;
@@ -625,19 +613,21 @@ label {
 /* join */
 .card-level {
 background-color:white;
+
 }
 .card-level h3 {
   border-radius: 1px 30px 1px 30px;
-  background-color:blue;
-  padding-bottom: 25px;
+  background-color: blue;
+  padding-bottom: 50px;
   margin-top: 45px;
+  text-align: center;
 }
 .card-level a {
   background: white;
   position: relative;
   left:180px;
-  bottom:90px;
-  color: black;
+  bottom:50px;
+  color: red;
 
 }
 
@@ -800,8 +790,41 @@ h2{
 }
 
 
+/* Styling all text inputs, selects, and textareas */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 250px;
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box; /* Ensures padding doesn't break layout width */
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Custom height and resize safety for description */
+textarea {
+    min-height: 50px;
+    resize: vertical; 
+}
 
 
 
-
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #0066cc;
+    color: white;
+    padding: 0.65rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 0.5rem;
+}
 
