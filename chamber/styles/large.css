@@ -97,7 +97,7 @@
     }
 }
 @media (min-width: 1025px) {
-  .grid-container {
+  #grid-container {
     grid-template-areas:
       "c1 c1 c2 c3"
       "c4 c5 c6 c6"
