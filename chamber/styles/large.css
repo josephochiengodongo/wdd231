@@ -1,6 +1,6 @@
  @media (max-width:1300px) {
     header, body, main {
-        max-width: 880px;
+        max-width: 960px;
         margin: 0 auto;
         
     }
