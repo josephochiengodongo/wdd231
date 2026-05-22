@@ -96,7 +96,7 @@ nav a {
 }
 .member-card {
     color:white;
-    background-color: grey;
+    background-color: black;
     gap: 50px;
     padding: 10px;
     border: 1px solid black;
@@ -132,7 +132,7 @@ nav a {
     
     }
     .member-grid h3 {
-      background-color: black;
+      background-color: darkblue;
       color: white;
       margin: -15px -20px 10px -20px;
       padding: 10px 23px 10px 23px;
@@ -140,7 +140,7 @@ nav a {
       align-items: center;
     }
     .member-card h3{
-      background-color: black;
+      background-color: darkblue;
       color: white;
       margin: -15px -14px 10px -14px;
       padding: 10px;
@@ -237,18 +237,18 @@ nav a {
     }
     #members.grid .member-card {
         border-radius: 10px;
-        background-color: grey;
+        background-color: black;
         color: white;
     }
     #members.grid h3 {
-        background-color: black;
+        background-color: darkblue;
         color: white;
         margin: -15px -15px 10px -15px;
         padding: 10px 20px 10px 20px;
         border-radius: 8px 8px 0 0;
     }
     #members.list h3 {
-        background-color: black;
+        background-color: darkblue;
         color: white;
         margin: -10px -10px 10px -10px;
         padding: 10px;
@@ -750,7 +750,7 @@ h2{
     padding: 1rem;
     color: white;
     text-align: center;
-    background-color: grey;
+    background-color: black;
 }
 
 /* LIST VIEW */
