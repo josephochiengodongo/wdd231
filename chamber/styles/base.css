@@ -407,7 +407,7 @@ header {
   text-align: center;
 }
 
-nav ul {
+#nav ul {
   display: flex;
   flex-direction: column; /* Stack vertically on mobile */
   gap: 10px;
