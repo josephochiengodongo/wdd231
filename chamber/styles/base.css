@@ -697,7 +697,7 @@ h2{
   margin: 0.5rem 1rem;
 }
 
-.card p {
+.cardd p {
   font-size: 0.95rem;
   margin: 0.5rem 1rem 1rem;
   flex-grow: 1;
@@ -836,137 +836,6 @@ input[type="submit"] {
     margin-top: 0.5rem;
 }
 
-/* ==========================================================================
-   MOBILE FIRST BASE STYLES (Default layout for phone screens)
-   ========================================================================== */
-
-/* Main Container Layout */
-.join-container {
-    display: flex;
-    flex-direction: column; /* Stack form and cards vertically on mobile */
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 1.5rem auto;
-    padding: 0 1rem;
-    box-sizing: border-box;
-}
-
-/* Form Section Styling */
-.form {
-    background-color: #f4fafb; /* Light tint for distinction */
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.form h1 {
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    color: #333;
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
-label {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #222;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    font-size: 1rem;
-    box-sizing: border-box;
-}
-
-input[type="submit"] {
-    background-color: #002b80;
-    color: white;
-    padding: 0.85rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-input[type="submit"]:hover {
-    background-color: #001f5c;
-}
-
-/* Membership Section & Cards Styling */
-.join-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.join-cards h2 {
-    font-size: 1.5rem;
-    color: #002b80;
-    margin-top: 0;
-}
-
-.cards {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-/* Accessible card redesign fixing contrast and sharp corners */
-.card-level {
-    background-color: #002b80; /* Blue background matching the header */
-    color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.card-level h3 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-/* Changing "Learn More" to white text for clear contrast and readability */
-.card-level a {
-    display: inline-block;
-    color: white; 
-    text-decoration: underline;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border: 1px solid white;
-    border-radius: 4px;
-    transition: background-color 0.2s, color 0.2s;
-}
-
-.card-level a:hover {
-    background-color: white;
-    color: #002b80;
-}
-
-/* Hide Modals by default */
-.modal {
-    display: none;
-}
 
 
 /* ==========================================================================
