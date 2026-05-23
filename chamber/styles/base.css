@@ -559,14 +559,6 @@ footer {
 
 
 
-/* MEMBERSHIP CARDS SECTION */
-.join-cards {
-  display: flex;
-  flex-direction: column;
-}
-
-
-
 
 
 
@@ -762,11 +754,6 @@ h2{
 
 .view-buttons button:active {
     transform: scale(0.98);
-}
-
-.view-buttons button:focus {
-    outline: 2px solid orange;
-    outline-offset: 3px;
 }
 
 
