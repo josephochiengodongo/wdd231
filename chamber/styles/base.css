@@ -505,7 +505,7 @@ footer {
 /* CARDS */
 .cards {
   display: grid;
-  width: 450px;
+  width: 400px;
   gap: 0.5rem;
   
 }
@@ -578,10 +578,7 @@ footer {
   .top-grid {
     flex-direction: column;
   }
-  .join-container {
-    display: flex;
-    flex-direction: column;
-  }
+  
 
   
 
