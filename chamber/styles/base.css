@@ -413,11 +413,12 @@ footer {
     .top-grid  {
         flex-direction: column;
     }
+    .cards {
+        width: 350px;
+    }
 
   }
-  .cards {
-    width: 400px;
-  }
+
     
 
 
