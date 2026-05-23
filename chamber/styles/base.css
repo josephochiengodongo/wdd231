@@ -390,6 +390,9 @@ footer {
         flex-direction: column;
         gap: 1rem;
     }
+    .top-grid {
+        flex-direction: column;
+    }
     
 }
 
@@ -549,18 +552,6 @@ footer {
 
 
 
-
-/* RESPONSIVE (mobile) */
-@media (max-width: 768px) {
-  .top-grid {
-    flex-direction: column;
-  }
-  
-
-  
-
-
-}
 
 
 
