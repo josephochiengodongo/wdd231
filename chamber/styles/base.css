@@ -557,21 +557,6 @@ footer {
 
 
 /* RESPONSIVE (mobile) */
-@media (max-width: 768px) {
-  .top-grid {
-    flex-direction: column;
-  }
-  .cards {
-    width: 250px;
-  }
-  
-
-  
-
-
-}
-
-
 
 /* join */
 .card-level {
