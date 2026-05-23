@@ -508,6 +508,7 @@ footer {
   width: 400px;
   gap: 0.5rem;
   
+  
 }
 
 
@@ -594,17 +595,19 @@ background-color:white;
 }
 .card-level h3 {
   border-radius: 1px 30px 1px 30px;
-  background-color: blue;
+  background-color: darkblue;
   padding-bottom: 50px;
   margin-top: 45px;
   text-align: center;
+  color: white;
+
 }
 .card-level a {
   background: white;
   position: relative;
   left:180px;
   bottom:50px;
-  color: red;
+  color: darkblue;
 
 }
 
@@ -614,7 +617,7 @@ main {
 }
 
 h2{
-    color: blue;
+    color: black;
     padding-left: 10px;
     font-size: x-large;
     height: 40px;
@@ -853,5 +856,6 @@ input[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    border: .5px solid black;
 }
 
