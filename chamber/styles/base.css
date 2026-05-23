@@ -409,6 +409,16 @@ footer {
   
   
 }
+@media (width: 768) {
+    .top-grid  {
+        flex-direction: column;
+    }
+
+  }
+  .cards {
+    width: 400px;
+  }
+    
 
 
 
