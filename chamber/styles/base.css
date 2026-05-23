@@ -581,7 +581,8 @@ footer {
     flex-direction: column;
   }
   .join-container {
-
+    display: flex;
+    flex-direction: column;
   }
 
   
@@ -697,7 +698,7 @@ h2{
   margin: 0.5rem 1rem;
 }
 
-.cardd p {
+.card p {
   font-size: 0.95rem;
   margin: 0.5rem 1rem 1rem;
   flex-grow: 1;
@@ -836,28 +837,5 @@ input[type="submit"] {
     margin-top: 0.5rem;
 }
 
-
-
-/* ==========================================================================
-   DESKTOP MEDIA QUERY (Applies when screens are wider than 768px)
-   ========================================================================== */
-@media screen and (min-width: 768px) {
-    .join-container {
-        flex-direction: row; /* Puts the form and cards side-by-side */
-        align-items: flex-start;
-    }
-
-    .form {
-        flex: 3; /* Allows the form to take up more horizontal space */
-        padding: 2.5rem;
-    }
-
-    .join-cards {
-        flex: 2; /* Gives the sidebar cards a balanced proportional width */
-        position: sticky;
-        top: 20px; /* Keeps the cards fixed on screen as the user scrolls down long forms */
-    }
-}
-/*current*/
 
 
