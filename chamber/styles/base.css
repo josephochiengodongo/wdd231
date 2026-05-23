@@ -271,15 +271,8 @@ nav a {
         text-align: center;
     }
 
-    .socialmedia {
-        gap: 15px;
-        padding: 1rem 0;
-    }
-
-    .socialmedia img {
-        width: 30px;
-        height: 30px;
-    }
+    
+    
 
      /* FOOTER */
 
@@ -348,9 +341,7 @@ footer {
     gap: 2rem;
     text-align: center;
 }
-.p-div pp {
-    margin: 0.5rem 0;
-}
+
 /* SOCIAL MEDIA */
 
 .socialmedia {
@@ -564,10 +555,6 @@ footer {
 
 /* RESPONSIVE (mobile) */
 @media (max-width: 768px) {
-  .jjoin-cards {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
   .top-grid {
     flex-direction: column;
   }
