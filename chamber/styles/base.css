@@ -105,6 +105,12 @@ nav a {
 }
 
 @media (max-width: 768px) {
+    .top-grid {
+    flex-direction: column;
+  }
+  .cards {
+    width: 400px;
+  }
     .home-grid {
       grid-template-columns: 1fr;
       align-items: center;
