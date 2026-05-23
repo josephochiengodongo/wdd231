@@ -271,10 +271,6 @@ nav a {
         text-align: center;
     }
 
-    .socialmedia {
-        gap: 15px;
-        padding: 1rem 0;
-    }
 
     
 
@@ -555,10 +551,6 @@ footer {
 
 /* RESPONSIVE (mobile) */
 @media (max-width: 768px) {
-  .jjoin-cards {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
   .top-grid {
     flex-direction: column;
   }
