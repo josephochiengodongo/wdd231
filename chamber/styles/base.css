@@ -276,10 +276,7 @@ nav a {
         padding: 1rem 0;
     }
 
-    .socialmedia img {
-        width: 30px;
-        height: 30px;
-    }
+    
 
      /* FOOTER */
 
@@ -348,7 +345,7 @@ footer {
     gap: 2rem;
     text-align: center;
 }
-.p-div pp {
+.p-div p {
     margin: 0.5rem 0;
 }
 /* SOCIAL MEDIA */
@@ -390,13 +387,7 @@ footer {
         height: 30px;
     }
 
-     /* FOOTER */
-
-     .p-div {
-        padding: 1rem 0.5rem;
-        text-align: center;
-
-    }
+     
 
     .footer-container {
         flex-direction: column;
@@ -564,7 +555,7 @@ footer {
 
 /* RESPONSIVE (mobile) */
 @media (max-width: 768px) {
-  .join-cards {
+  .jjoin-cards {
     grid-template-columns: 1fr;
     text-align: center;
   }
@@ -604,9 +595,8 @@ background-color:white;
 }
 
 /* ===== GENERAL ===== */
-main {
-  padding: 1rem;
-}
+
+
 
 h2{
     color: black;
@@ -834,7 +824,7 @@ input[type="submit"] {
     transition: background-color 0.2s;
 }
 
-input[type="submit"]:hover {
+inputt[type="submit"]:hover {
     background-color: #001f5c;
 }
 
