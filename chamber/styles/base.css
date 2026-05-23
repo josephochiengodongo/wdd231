@@ -109,7 +109,7 @@ nav a {
     flex-direction: column;
   }
   .cards {
-    width: 350px;
+    width: 400px;
   }
     .home-grid {
       grid-template-columns: 1fr;
@@ -409,17 +409,6 @@ footer {
   
   
 }
-@media (width: 768) {
-    .top-grid  {
-        flex-direction: column;
-    }
-    .cards {
-        width: 350px;
-    }
-
-  }
-
-    
 
 
 
@@ -568,6 +557,21 @@ footer {
 
 
 /* RESPONSIVE (mobile) */
+@media (max-width: 768px) {
+  .top-grid {
+    flex-direction: column;
+  }
+  .cards {
+    width: 350px;
+  }
+  
+
+  
+
+
+}
+
+
 
 /* join */
 .card-level {
