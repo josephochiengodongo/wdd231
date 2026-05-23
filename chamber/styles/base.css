@@ -556,9 +556,9 @@ footer {
     flex-direction: column;
   }
   .cards {
-    display: grid;
-    width: 400px;
-    gap: 0.5rem
+    flex-direction: column;
+    
+    
   }
 
   
