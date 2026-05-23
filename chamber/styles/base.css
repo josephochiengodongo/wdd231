@@ -109,7 +109,7 @@ nav a {
     flex-direction: column;
   }
   .cards {
-    width: 400px;
+    width: 350px;
   }
     .home-grid {
       grid-template-columns: 1fr;
