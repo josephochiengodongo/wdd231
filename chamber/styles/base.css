@@ -511,7 +511,7 @@ footer {
 
 
 /* FORM */
-form {
+formm {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -578,7 +578,7 @@ form {
 
 /* FORM SECTION */
 
-.form form {
+.fform fform {
   display: flex;
   flex-direction: column;
   width: 250px;
@@ -790,14 +790,56 @@ h2{
 }
 
 
+
+/* join */
+
+
+.jjoin-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.form {
+    background-color: azure;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form h1 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    color: black;
+    text-align: center;
+}
+
+/* Form layouts and labels */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem; /* Even spacing between form groups */
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem; /* Spacing between label text and input */
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
 /* Styling all text inputs, selects, and textareas */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 select,
 textarea {
-    width: 250px;
-    padding: 0.3rem;
+    width: 100%;
+    padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
@@ -808,17 +850,26 @@ textarea {
 
 /* Custom height and resize safety for description */
 textarea {
-    min-height: 50px;
-    resize: vertical; 
+    min-height: 100px;
+    resize: vertical;
+    outline: none;
+    border-color: blue; 
 }
 
-
+/* Interactive focus states */
+oinput:focus,
+fselect:focus,
+ttextarea:focus {
+    outline: none;
+    border-color: #0066cc; /* Clean professional blue */
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+}
 
 /* Submit button styling */
 input[type="submit"] {
     background-color: #0066cc;
     color: white;
-    padding: 0.65rem;
+    padding: 0.85rem;
     border: none;
     border-radius: 4px;
     font-size: 1rem;
@@ -828,3 +879,10 @@ input[type="submit"] {
     margin-top: 0.5rem;
 }
 
+iinput[type="submit"]:hover {
+    background-color: #0052a3;
+}
+
+tinput[type="submit"]:active {
+    background-color: #004080;
+}
