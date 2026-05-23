@@ -179,9 +179,7 @@ nav a {
 .list img {
   display: none;
 }
-.join-container {
-  display: flex;
-  flex-direction: row;
+
 
   
 }
@@ -194,7 +192,7 @@ nav a {
     outline-offset: 3px;
 }    
     
-}
+
 
 /* styles/large.css or inside a Media Query */
 @media (min-width: 768px) {
@@ -776,30 +774,54 @@ h2{
 /* join */
 
 
+/* ==========================================================================
+   MOBILE FIRST BASE STYLES (Default layout for phone screens)
+   ========================================================================== */
+
+/* Main Container Layout */
+@media (max-width: 768px){
+.join-container {
+    display: flex;
+    flex-direction: column; /* Stack form and cards vertically on mobile */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+}
+
+/* Form Section Styling */
 .form {
-    background-color: azure;
-    padding: 2.5rem;
+    background-color: #f4fafb; /* Light tint for distinction */
+    padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .form h1 {
+    font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 1.5rem;
-    font-size: 1.75rem;
-    color: black;
+    color: #333;
     text-align: center;
 }
 
-/* Form layouts and labels */
 form {
     display: flex;
     flex-direction: column;
-    gap: .7rem; /* Even spacing between form groups */
+    gap: 1.25rem;
 }
 
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #222;
+}
 
-/* Styling all text inputs, selects, and textareas */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -807,35 +829,83 @@ select,
 textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid whitesmoke;
+    border: 1px solid #aaa;
     border-radius: 4px;
     font-size: 1rem;
-    color: black;
-    box-sizing: border-box; /* Ensures padding doesn't break layout width */
-    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
 }
 
-/* Custom height and resize safety for description */
-textarea {
-    min-height: 100px;
-    resize: vertical;
-    outline: none;
-    border-color: blue; 
-}
-
-/* Submit button styling */
 input[type="submit"] {
-    background-color: blue;
+    background-color: #002b80;
     color: white;
     padding: 0.85rem;
     border: none;
     border-radius: 4px;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     transition: background-color 0.2s;
-    margin-top: 0.5rem;
 }
 
+input[type="submit"]:hover {
+    background-color: #001f5c;
+}
 
+/* Membership Section & Cards Styling */
+.join-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
+.join-cards h2 {
+    font-size: 1.5rem;
+    color: #002b80;
+    margin-top: 0;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Accessible card redesign fixing contrast and sharp corners */
+.card-level {
+    background-color: #002b80; /* Blue background matching the header */
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card-level h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Changing "Learn More" to white text for clear contrast and readability */
+.card-level a {
+    display: inline-block;
+    color: white; 
+    text-decoration: underline;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.card-level a:hover {
+    background-color: white;
+    color: #002b80;
+}
+
+/* Hide Modals by default */
+.modal {
+    display: none;
+}
+
+    
