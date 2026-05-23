@@ -575,9 +575,15 @@ footer {
 @media (max-width: 768px) {
   .join-cards {
     grid-template-columns: 1fr;
+    text-align: center;
   }
   .top-grid {
     flex-direction: column;
+  }
+  .form {
+    grid-template-columns: 1fr;
+    text-align: center;
+
   }
 
 
