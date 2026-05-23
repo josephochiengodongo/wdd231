@@ -179,6 +179,15 @@ nav a {
 .list img {
   display: none;
 }
+.join-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
 
 
 
@@ -368,10 +377,7 @@ footer {
         text-align: center;
         max-width: 100%;
     }
-    .containercontent {
-        flex-direction: column;
-        text-align: center;
-    }
+    
 
     .socialmedia {
         gap: 15px;
