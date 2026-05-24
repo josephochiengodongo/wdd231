@@ -537,28 +537,19 @@ footer {
   }
   .join-container {
     grid-template-columns: 1fr;
-    max-width: 500px;
+    max-widthh: 500px;
     align-items: center;
   }
   .form {
-    width: 100%;
+    width: 50%;
+    
   }
-  .cards {
+  .cardss {
     max-width: 100%;
   }
-   .form form {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-
-}
-
   
   
 }
-
- 
-
 
   
 
