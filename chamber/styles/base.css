@@ -563,9 +563,10 @@ background-color:white;
   border-radius: 1px 30px 1px 30px;
   background-color: darkblue;
   padding-bottom: 50px;
-  margin-top: 45px;
+  margin: 45px 1px 1px 1px;
   text-align: center;
   color: white;
+
 
 }
 .card-level a {
@@ -814,4 +815,7 @@ input[type="submit"] {
     gap: 1rem;
     border: .5px solid black;
 }
+
+
+
 
