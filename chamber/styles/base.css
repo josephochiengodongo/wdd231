@@ -739,7 +739,7 @@ h2{
 
 
 .form {
-    background-color: #ffffff;
+    background-color: white;
     padding: 2.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -749,7 +749,7 @@ h2{
     margin-top: 0;
     margin-bottom: 1.5rem;
     font-size: 1.75rem;
-    color: #333333;
+    color: black;
     text-align: center;
 }
 
@@ -766,7 +766,7 @@ label {
     gap: 0.4rem; /* Spacing between label text and input */
     font-size: 0.9rem;
     font-weight: 600;
-    color: #4a4a4a;
+    color: grey
 }
 
 /* Styling all text inputs, selects, and textareas */
@@ -791,14 +791,6 @@ textarea {
     resize: vertical; 
 }
 
-/* Interactive focus states */
-inputt:focus,
-selectt:focus,
-textareaa:focus {
-    outline: none;
-    border-color: #0066cc; /* Clean professional blue */
-    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
-}
 
 /* Submit button styling */
 input[type="submit"] {
@@ -812,13 +804,5 @@ input[type="submit"] {
     cursor: pointer;
     transition: background-color 0.2s;
     margin-top: 0.5rem;
-}
-
-inputt[type="submit"]:hover {
-    background-color: #0052a3;
-}
-
-inputt[type="submit"]:active {
-    background-color: #004080;
 }
 
