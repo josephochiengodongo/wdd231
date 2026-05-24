@@ -542,8 +542,9 @@ footer {
     align-items: center;
 
   }
-   .cards {
+   .cards-level h3 {
     margin: 0 -20px 0 -20px;
+    border: chartreuse;
    }
 
 
