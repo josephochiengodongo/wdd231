@@ -261,30 +261,6 @@ nav a {
         color: white;
     }
 }
-@media (max-width: 768px) {
-    .chamber-information {
-        text-align: center;
-        max-width: 100%;
-    }
-    .containercontent {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    
-    
-
-     /* FOOTER */
-
-     .p-div {
-        padding: 1rem 0.5rem;
-        text-align: center;
-
-    }
-
-    
-    
-}
 
 @media (min-width: 768px) {
     .home-grid {
@@ -360,6 +336,10 @@ footer {
     .chamber-information {
         text-align: center;
         max-width: 100%;
+    }
+    .containercontent {
+        flex-direction: column;
+        text-align: center;
     }
     
 
