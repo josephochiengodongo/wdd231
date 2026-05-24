@@ -735,7 +735,7 @@ h2{
 
 /* Main Container Layout */
 @media (max-width: 768px){
-.jjoin-container {
+.join-container {
     display: flex;
     flex-direction: column; /* Stack form and cards vertically on mobile */
     gap: 2rem;
