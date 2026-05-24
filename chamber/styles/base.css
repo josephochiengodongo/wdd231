@@ -539,6 +539,9 @@ footer {
     grid-template-columns: 1fr;
     max-width: 500px;
   }
+  form {
+    max-width: 250px;
+  }
 
 
   
