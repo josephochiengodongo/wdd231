@@ -766,7 +766,7 @@ label {
     gap: 0.4rem; /* Spacing between label text and input */
     font-size: 0.9rem;
     font-weight: 600;
-    color: grey
+    color: black;
 }
 
 /* Styling all text inputs, selects, and textareas */
@@ -777,7 +777,7 @@ select,
 textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 4px;
     font-size: 1rem;
     color: black;
