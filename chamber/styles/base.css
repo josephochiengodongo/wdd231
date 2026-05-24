@@ -537,14 +537,14 @@ footer {
   }
   .join-container {
     grid-template-columns: 1fr;
-    max-widthh: 500px;
+    max-width: 500px;
     align-items: center;
   }
   .form {
-    width: 50%;
+    width: 400px;
     
   }
-  .cardss {
+  .cards {
     max-width: 100%;
   }
   
