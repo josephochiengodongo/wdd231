@@ -536,15 +536,15 @@ footer {
     flex-direction: column;
   }
   .join-container {
-    grid-template-columns: 1fr;
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
-  .form {
+  .formm {
     width: 100%;
     
   }
-  .cards {
+  .cardss {
     max-width: 100%;
   }
   
