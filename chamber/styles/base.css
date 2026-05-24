@@ -537,16 +537,21 @@ footer {
   }
   .join-container {
     grid-template-columns: 1fr;
-    max-width: 450px;
-    align-items: flex-start;
+    max-width: 500px;
+    align-items: center;
   }
   .form {
-    max-width: 300px;
+    width: 100%;
   }
   .cards {
-    max-width: 300px;
+    max-width: 100%;
   }
+   .form form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
 
+}
 
   
   
@@ -824,3 +829,4 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
     background-color: #004080;
 }
+
