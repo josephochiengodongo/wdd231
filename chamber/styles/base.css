@@ -537,7 +537,7 @@ footer {
   }
   .join-container {
     grid-template-columns: 1fr;
-    max-width: 450px;
+    max-width: 500px;
   }
 
 
