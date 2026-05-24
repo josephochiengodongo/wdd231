@@ -537,8 +537,8 @@ footer {
   }
   .join-container {
     grid-template-columns: 1fr;
-    max-width: 250px;
-    align-items: center;
+    max-width: 450px;
+    text-align: center;
   }
   .formm {
     max-width: 250px;
