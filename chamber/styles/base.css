@@ -540,14 +540,13 @@ footer {
     flex-direction: column;
     max-width: 500px;
     align-items: center;
+
   }
-  .formm {
-    width: 100%;
-    
-  }
-  .cards {
-    padding: 0 -10px 0 -10px;
-  }
+   .cards {
+    margin: 1px -10px 1px -10px;
+   }
+
+
   
   
 }
