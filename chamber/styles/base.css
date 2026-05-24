@@ -546,7 +546,7 @@ footer {
     
   }
   .cards {
-    max-width: 100%;
+    max-width: auto;
   }
   
   
