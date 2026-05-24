@@ -543,8 +543,9 @@ footer {
 
   }
    .cards {
-    width: 300px;
-    border: chartreuse;
+    width: 330px;
+    text-align: center;
+    
    }
 
 
