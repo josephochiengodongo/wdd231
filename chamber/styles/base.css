@@ -668,11 +668,7 @@ h2{
   margin: 0.5rem 1rem;
 }
 
-.card p {
-  font-size: 0.95rem;
-  margin: 0.5rem 1rem 1rem;
-  flex-grow: 1;
-}
+
 
 .card button {
   margin: 0 1rem 1rem;
@@ -796,9 +792,9 @@ textarea {
 }
 
 /* Interactive focus states */
-input:focus,
-select:focus,
-textarea:focus {
+inputt:focus,
+selectt:focus,
+textareaa:focus {
     outline: none;
     border-color: #0066cc; /* Clean professional blue */
     box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
@@ -818,11 +814,11 @@ input[type="submit"] {
     margin-top: 0.5rem;
 }
 
-input[type="submit"]:hover {
+inputt[type="submit"]:hover {
     background-color: #0052a3;
 }
 
-input[type="submit"]:active {
+inputt[type="submit"]:active {
     background-color: #004080;
 }
 
