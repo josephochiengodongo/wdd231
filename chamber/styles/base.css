@@ -13,8 +13,9 @@ img {
  
 
 header {
-    background-color: darkblue;
-    color: white;padding: 1rem;
+    background-color: black;
+    color: white;
+    padding: 1rem;
     margin-left: 3px;
     font-size: x-large;
     
@@ -273,7 +274,7 @@ nav a {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
-        background-color:darkblue;
+        background-color:black;
         align-items: center;
         color: white;
     }
@@ -330,7 +331,7 @@ nav a {
     }
 }
 footer {
-    background-color: darkblue;
+    background-color: black;
     color: white;
     display: flex;
     justify-content: center;
