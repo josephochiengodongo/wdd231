@@ -134,10 +134,13 @@ nav a {
     .top-grid h2 {
         background-color: darkblue;
         color: white;
-        margin-top: -10px;
-        gap: 50px;
-        padding: 10px 40px 10px 40px;
+        margin: -10px -2px 0 -2px;
+        gap: 30px;
+        padding: 10px 80px 10px 80px;
         align-items: center;
+    }
+    .hero {
+        margin-bottom: 50px;
     }
     .member-grid h3 {
       background-color: darkblue;
