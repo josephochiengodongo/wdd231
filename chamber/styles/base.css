@@ -132,11 +132,10 @@ nav a {
     
     }
     .top-grid h2 {
-        background-color: darkblue;
+        background-color: black;
         color: white;
         margin: -10px -2px 0 -2px;
         gap: 30px;
-        padding: 10px 80px 10px 80px;
         align-items: center;
     }
     .hero {
@@ -459,11 +458,10 @@ footer {
 /* GRID */
 
 #events,.weather-box,.forecast-display {
-  background: azure;
-  border: 1px solid blue;
-  border-radius: 8px;
+  background: darkblue;
+  border: 1px solid black;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  color: black;
+  color: white;
   margin-left: 4px;
   width: 290px;
   height: 350px;
