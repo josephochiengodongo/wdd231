@@ -549,6 +549,7 @@ footer {
    }
    form {
     width: 75%;
+    align-content: center;
    }
    .form {
     width: 100%;
