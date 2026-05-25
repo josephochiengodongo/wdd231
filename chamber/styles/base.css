@@ -288,6 +288,22 @@ nav a {
         align-items: stretch;
         padding: 20px;
     }
+    .top-grid h2 {
+        background-color: black;
+        color: white;
+        font-size: x-large;
+        margin-top: -10px;
+    }
+    #spotlights h3 {
+        background-color: black;
+        color: white;
+        align-content: start;
+        margin: -12px -20px 10px -20px;
+        font-size: x-large;
+    }
+    .hero {
+        margin-bottom: 30px;
+    }
 
     /* Styling the headers to look like the wireframe */
     .home-grid h2 {
