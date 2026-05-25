@@ -548,14 +548,16 @@ footer {
     
    }
    form {
-    width: 75%;
+    width: 100%;
     align-content: center;
+    
     
 
    }
    .form {
     width: 450px;
-    text-align: end;
+
+    
     
    }
 
