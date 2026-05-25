@@ -723,7 +723,7 @@ h2{
   padding: 0.5rem;
   border: none;
   background:white;
-  color: blue;
+  color: black;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -732,7 +732,9 @@ h2{
   background-color: black;
   color: white;
   border-radius: 6px;
-  margin-bottom: 1px;
+  margin: -8px -6px 2px -6px;
+  
+
 }
 
 /* GRID VIEW */
