@@ -197,7 +197,7 @@ nav a {
 .list img {
   display: none;
 }
-.grid-container img {
+#grid-container img {
     object-fit: cover;
     margin-top: 1px;
     border-radius: 8px 8px 8px 8px;
