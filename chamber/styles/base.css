@@ -131,6 +131,13 @@ nav a {
       height: 300px;
     
     }
+    .top-grid h2 {
+        background-color: darkblue;
+        color: white;
+        margin-top: -10px;
+        padding-top: 1px;
+        align-items: center;
+    }
     .member-grid h3 {
       background-color: darkblue;
       color: white;
