@@ -709,12 +709,6 @@ h2{
   
 }
 
-.card address {
-  font-style: normal;
-  font-size: 0.9rem;
-  color: black;
-  margin: 0.5rem 1rem;
-}
 
 
 
@@ -785,9 +779,6 @@ h2{
     transform: scale(1.05);
 }
 
-.view-buttons button:active {
-    transform: scale(0.98);
-}
 
 
 
