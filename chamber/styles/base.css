@@ -547,10 +547,8 @@ footer {
     align-content: center;
     
    }
-   formm {
-    width: 250px;
-    align-content: center;
-    
+   .form h1 {
+    text-align: left;
     
 
    }
