@@ -476,10 +476,10 @@ footer {
 /* GRID */
 
 #events,.weather-box,.forecast-display {
-  background: darkblue;
+  background: white;
   border: 1px solid black;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  color: white;
+  color:blue;
   margin-left: 4px;
   width: 290px;
   height: 350px;
