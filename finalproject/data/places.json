@@ -1,0 +1,106 @@
+{
+  "places": [
+  {
+    "name": "Maasai Mara National Reserve",
+    "type": "National Park",
+    "address": "Maasai Mara, Narok County, Kenya",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Maasai_Mara_Lion_Pride.jpg"
+  },
+  {
+    "name": "Nairobi National Park",
+    "type":"National Park",
+    "address": "Along Lang'ata Road, Nairobi, Kenya",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Nairobi_National_Park_lions.jpg"
+  },
+  
+  {
+    "name": "Tsavo National Park",
+    "type": "National Park",
+    "address": "Tsavo East & West National Parks, Kenya",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Tsavo_Elephants.jpg"
+  },
+  {
+    "name": "Ruma National Park",
+    "type": "National Reserve",
+    "address": "Lambwe Valley, Homa Bay, Kenya",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Ruma_National_Park.jpg"
+  },
+  {
+    "name": "Fort Jesus Museum",
+    "type": "Historic Town",
+    "address": "P.O. BOX 82412 - 80100 Nkrumah Rd, Mombasa, Kenya",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Fort_Jesus_Mombasa.jpg"
+  },
+  {
+    "name": "Hell's Gate National Park",
+    "type": "National Park",
+    "address": "Naivasha County, Kenya",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Hells_Gate_National_Park_Kenya.jpg"
+  },
+  {
+    "name": "Amboseli National Park",
+    "type": "National Park",
+    "address": "Kajiado",
+    "url": "https://www.kws.go.ke/amboseli-national-park"
+  },
+  {
+    "name": "Tsavo East National Park",
+    "type": "National Park",
+    "address": "Taita-Taveta",
+    "url": "https://www.kws.go.ke/tsavo-east-national-park"
+  },
+  {
+    "name": "Tsavo West National Park",
+    "type": "National Park",
+    "address": "Taita-Taveta",
+    "url": "https://www.kws.go.ke/tsavo-west-national-park"
+  },
+  {
+    "name": "Lake Nakuru National Park",
+    "type": "National Park",
+    "address": "Nakuru",
+    "url": "https://www.kws.go.ke/lake-nakuru-national-park"
+  },
+  {
+    "name": "Mount Kenya National Park",
+    "type": "National Park",
+    "address": "Kirinyaga",
+    "url": "https://www.kws.go.ke/mount-kenya-national-park"
+  },
+  {
+    "name": "Diani Beach",
+    "type": "Beach",
+    "address": "Diani,Kenya",
+    "url": "https://www.magicalkenya.com/destinations/diani/"
+  },
+  
+  {
+    "name": "Samburu National Reserve",
+    "type": "National Reserve",
+    "address": "Samburu",
+    "url": "https://www.samburu.go.ke/tourism/"
+  },
+  {
+    "name": "Lake Naivasha",
+    "type": "Freshwater Lake",
+    "address": "Naivasha County, Kenya",
+    "url": "https://www.magicalkenya.com/destinations/lake-naivasha/,"
+  },
+  {
+    "name": "Watamu Marine National Park",
+    "type": "Marine National Park",
+    "address": "Kilifi",
+    "url": "https://www.kws.go.ke/watamu-marine-national-park"
+  },
+  {
+    "name": "Aberdare National Park",
+    "type": "National Park",
+    "address": "Nyeri",
+    "url": "https://www.kws.go.ke/aberdare-national-park"
+  }
+  
+ 
+  
+
+]
+}

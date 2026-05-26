@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adventures Tourism of Kenya</title>
+
+    <meta name="description"
+        content="Explore Kenya's amazing tourism destinations including parks, museums, beaches, and reserves.">
+    <meta name="author" content="Joseph Odongo">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/real.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/main3.js" defer></script>
+
+    <!-- Main JS -->
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="hamburger-menu">
+
+            <img
+                src="images/logoo.webp"
+                alt="Adventures Tourism of Kenya logo"
+                width="40"
+                height="38"
+                class="logo">
+
+            <span class="site-name">
+                Adventures Tourism of Kenya
+            </span>
+
+            <button class="toggle-menu" aria-label="Open Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- HERO IMAGE -->
+        <section class="hero">
+            <h1>Kakamega Crying Stone</h1>
+
+            <img
+                src="images/kakamega.webp"
+                alt="The famous crying stone in Kakamega Kenya"
+                width="800"
+                height="321">
+
+        </section>
+
+        <!-- INTRO -->
+        <section class="hero-text">
+            <h2>Explore Kenya's Amazing Destinations</h2>
+
+            <p>
+                Discover parks, beaches, museums, wildlife reserves,
+                and beautiful cultural attractions across Kenya.
+            </p>
+        </section>
+
+        <!-- CARDS SECTION -->
+        <section id="places" class="cards"></section>
+
+        <!-- MODAL -->
+        <dialog id="placeModal">
+
+            <div class="modal-content">
+
+                <h3 id="modalTitle"></h3>
+
+                <p id="modalType"></p>
+
+                <p id="modalAddress"></p>
+
+                <a id="modalLink" target="_blank">
+                    Visit Website
+                </a>
+
+                <br><br>
+
+                <button id="closeModal">
+                    Close
+                </button>
+
+            </div>
+
+        </dialog>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- CONTACT -->
+            <div class="tourism-information">
+
+                <p><strong>Adventures Tourism of Kenya</strong></p>
+
+                <p>Phone: +254 723 4123</p>
+
+                <p>Email: adven6@gmail.com</p>
+
+                <p>Website: advtourism.org</p>
+
+            </div>
+
+            <!-- SOCIAL MEDIA -->
+            <div class="social-media">
+
+                <nav class="socialmedia">
+
+                    <a href="https://facebook.com" target="_blank">
+                        <img
+                            src="images/facebook.webp"
+                            alt="Facebook icon">
+                    </a>
+
+                    <a
+                        href="https://github.com/josephochiengodongo/wdd231"
+                        target="_blank">
+
+                        <img
+                            src="images/github.webp"
+                            alt="GitHub icon">
+                    </a>
+
+                    <a
+                        href="https://linkedin.com/in/joseph-odongo-oa37691"
+                        target="_blank">
+
+                        <img
+                            src="images/linkedin.webp"
+                            alt="LinkedIn icon">
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div class="footer-details">
+
+                <p>
+                    &copy;
+                    <span id="currentyear"></span>
+                    Adventures Tourism of Kenya
+                </p>
+
+                <p>
+                    Last Modified:
+                    <span id="lastModified"></span>
+                </p>
+
+                <p>Back so soon! Awesome!</p>
+
+            </div>
+
+        </div>
+
+        <p>
+            <a href="https://your-video-link.com" target="_blank">
+                Project Video
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+</html>

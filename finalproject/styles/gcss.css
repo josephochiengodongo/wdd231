@@ -1,0 +1,188 @@
+/* ==========================================================================
+   1. DESIGN SYSTEM VARIABLES & ROOT
+   ========================================================================== */
+:root {
+    --primary: #0056b3;        /* Professional Kenyan Horizon Blue */
+    --secondary: #f4f9ff;      /* Soft Azure Background Tint */
+    --accent: #E36414;         /* Terracotta Accent for Highlights */
+    --text-dark: #222222;      /* High Contrast Text */
+    --text-light: #ffffff;     /* White text for blocks */
+    --card-bg: #ffffff;        /* Crisp white card structures */
+    --max-width: 1100px;       /* Wide screen boundary cap */
+}
+
+/* ==========================================================================
+   2. BASE STYLES & RESET (Ensures No Horizontal Scrolling)
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary);
+    color: var(--text-dark);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========================================================================
+   3. LAYOUT & SEMANTIC STRUCTURES 
+   ========================================================================== */
+header {
+    background-color: var(--primary);
+    color: var(--text-light);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    flex: 1; /* Pushes footer down on short pages */
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: auto;
+}
+
+footer a {
+    color: var(--text-light);
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   4. DYNAMIC DESTINATIONS GRID (Rubric: Responsive Layouts)
+   ========================================================================== */
+.grid-container {
+    display: grid;
+    /* Automatically calculates rows/columns based on device size */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+/* ==========================================================================
+   5. CARD DESIGN COMPONENTS (Rubric: Alignment & Contrast)
+   ========================================================================== */
+.destination-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid var(--accent); /* Consistent Branding Repetition */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Intrinsic Aspect Ratio Protection for Web Performance images */
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-grow: 1; /* Keeps buttons cleanly aligned at bottom */
+}
+
+.card-body h3 {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+}
+
+.info-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   6. BUTTONS & ACCESSIBLE MODAL INTERACTION INTERFACES
+   ========================================================================== */
+.view-details-btn {
+    background-color: var(--accent);
+    color: var(--text-light);
+    border: none;
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: auto; /* Forces execution to baseline floor alignment */
+    transition: background-color 0.15s ease;
+}
+
+.view-details-btn:hover {
+    background-color: #c2510f; /* Slightly darker shade on cursor hover */
+}
+
+/* Modern Accessible HTML5 Dialog Styling */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%; /* Responsive layout safe boundaries on mobile */
+    margin: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6); /* Blurs out the main screen background view */
+}
+
+#modal-title {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+#modal-content {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.close-modal-btn {
+    background-color: var(--primary);
+    color: var(--text-light);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.close-modal-btn:hover {
+    background-color: #003d80;
+}
