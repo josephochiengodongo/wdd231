@@ -642,7 +642,7 @@ main {
 }
 
 h2{
-    color: white;
+    color:white;
     padding-left: 10px;
     font-size: x-large;
     height: 40px;
@@ -674,7 +674,7 @@ h2{
 }
 
 .intro h2 {
-  color: darkblue;
+  color: white;
   margin-bottom: 0.5rem;
   text-align: center;
   
