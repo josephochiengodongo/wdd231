@@ -808,7 +808,7 @@ h2{
 form {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem; /* Even spacing between form groups */
+    gap: .4rem; /* Even spacing between form groups */
 }
 
 label {
