@@ -613,6 +613,9 @@ footer {
 
 
 /* join */
+.card-level {
+background-color:white;
+}
 .card-level h3 {
   border-radius: 1px 30px 1px 30px;
   background-color: darkblue;
@@ -638,7 +641,7 @@ main {
 }
 
 h2{
-    color:black;
+    color:white;
     padding-left: 10px;
     font-size: x-large;
     height: 40px;
