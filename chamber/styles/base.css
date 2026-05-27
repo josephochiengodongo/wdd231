@@ -73,9 +73,12 @@ nav a {
     color: white;
     text-decoration: none;
 }
+nav a.active {
+    background-color: darkblue;
+}
 
  nav a:hover {
-    background-color: blue;
+    background-color: blue
 
 } 
 
