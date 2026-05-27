@@ -135,7 +135,7 @@ nav a.active {
       height: 300px;
     
     }
-    #top-grid h2 {
+    .top-grid h2 {
         background-color: black;
         color: white;
         margin: -10px -2px 0 -2px;
