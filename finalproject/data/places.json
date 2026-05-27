@@ -23,13 +23,13 @@
     "name": "Ruma National Park",
     "type": "National Reserve",
     "address": "Lambwe Valley, Homa Bay, Kenya",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Ruma_National_Park.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Ruma_National_Park.jpg"
   },
   {
     "name": "Fort Jesus Museum",
     "type": "Historic Town",
     "address": "P.O. BOX 82412 - 80100 Nkrumah Rd, Mombasa, Kenya",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Fort_Jesus_Mombasa.jpg"
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Fort_Jesus_Mombasa.jpg"
   },
   {
     "name": "Hell's Gate National Park",
