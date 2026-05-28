@@ -273,7 +273,7 @@ footer {
         gap: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         padding: 1rem 0;
     }
 
@@ -293,8 +293,8 @@ footer {
     }
 
     .footer-container {
-        flex-direction: column;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
     }
     
 }
