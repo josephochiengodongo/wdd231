@@ -1,68 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventures Tourism of Kenya</title>
-    <meta name="description" content="This website is for WDD231 Web Frontend Development and showcases projects and coursework completed by Joseph Odongo.">
-    <meta name="author" content="Joseph Odongo">
-    <link rel="stylesheet" href="styles/gcss.css">
-    <link rel="stylesheet" href="styles/project-large.css">
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/storage.js" defer></script>
-    <script src="scripts/main1.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tourist Destination Guide</title>
+	<meta name="description" content="Explore Nairobi Chamber of Commerce member businesses and directory listings and contact information.">
+	<meta name="author" content="joseph odongo">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/large.css">
+	<script src="scripts/getdates.js" defer></script>
+	<script src="scripts/disco.js" defer></script>
+	<meta property="og:title" content="Nairobi Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore Nairobi Chamber business listings and contact information.">
+	<meta property="og:url" content="https://www.github.com/josephochieng.github.io/wdd231/chamber/directory.html">
+	<meta property="og:image" content="https://josephochiengodongo.github.io/wdd231/chamber/images/og-image.jpg">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth@0,75..100;1,75..100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="hamburger-menu">
-            <img src="images/logo.webp" alt="nairobi chamber of commerce logo" width="40" height="38.2" class="logo">
-		    <span class="logo">Adventures Tourism of Kenya</span>
-            <button class="toggle-menu" aria-label="Open Navigation Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </div>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-			<h1>Kakamega,Kenya Crying Stone</h1>
-			<img src="images/kakamega.webp" alt="crying stone in kakamega" width="800" height="321">
-        </section><section class="hero">
-    <h2>Explore Kenya's Amazing Destinations</h2>
-    <p>Discover parks, beaches, museums, and reserves across Kenya.</p>
-  </section>
+	<header class="containercontent">
+		<img src="images/logo.webp" alt="mount kenya" width="40" height="38.2">
+        <span class="logo">Tourist Destination Guide</span>
+		<button class="toggle-menu" aria-label="Open Navigation Menu">
+			<span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+		</button>
+		<nav aria-label="Main Navigation">
+			<a href="index.html" class="active">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="contact.html">Directory</a>
+		</nav>
+        
+	
+	</header>
+	<main>
+		<div class="information">Beautiful Places To Visit in Kenya</div>
+        <div id="app" class="places-container"></div>
+    </main>
+    
 
-  <section id="places" class="cards"></section>
+		
+	
+	<footer>
 
-  <dialog id="placeModal">
-    <div class="modal-content">
-      <h3 id="modalTitle"></h3>
-      <p id="modalType"></p>
-      <p id="modalAddress"></p>
-      <a id="modalLink" target="-blank">Visit Website</a>
-      <br><br>
-      <button id="closeModal">Close</button>
-    </div>
-  </dialog>
+        <script type="module" src="scripts/main.js"></script>
 
-</main>
-<footer>
+    </footer>
 		<div class="footer-container">
 			<div class="chamber-information">
-				<p>Adventures Tourism of Kenya</p>
-				<p>Phone: +254 7234123</p>
-			    <p> Email: adven6@gmail.com</p>
-				<p> Website: advtoursm.org</p>
+				<p>Tourist Destination Guide</p>
+				<p>Phone: +7254 234123</p>
+			    <p> Email: tour@nairobi.com</p>
+				<p> Website: myTours.com</p>
 	        </div>
 		    <div class="social-media">
 				<nav class="socialmedia">
@@ -77,16 +71,13 @@
 			        </a>
                 </nav>
             </div>
-		    <div class="p-div">
+		    <div class="footer-span">
 				<p><span id="currentyear">&copy;</span></p>
                 <p>lastModified:<span id="lastModified"></span></p>
                 <p>Back so soon! Awesome!</p>
 		    </div>
-		</div><p>&copy; 2026 Adventures Tourism of Kenya</p>
-        <a href="https://your-video-link.com" target="_blank">Project Video</a>
-</footer>
-<script type="module" src="js/main1.js"></script>
+		</div>
+    </footer>
 </body>
 </html>
 	
-
