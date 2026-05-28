@@ -261,7 +261,7 @@ footer {
 @media (max-width: 768px) {
     .chamber-information {
         text-align: center;
-        max-width: 50%;
+        max-width: 100%;
     }
     .containercontentt {
         flex-direction: column;
@@ -296,7 +296,7 @@ footer {
         flex-direction:column ;
     }
 
-    .footer {
+    .footer-container {
         display: grid;
         grid-template-columns: 1fr;
         flex-direction: column;
