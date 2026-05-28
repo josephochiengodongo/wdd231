@@ -293,7 +293,7 @@ footer {
     }
 
     .footer-container {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
     }
     
