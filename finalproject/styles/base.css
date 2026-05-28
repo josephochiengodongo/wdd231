@@ -293,7 +293,7 @@ footer {
     }
     footer {
         display: flex;
-        flex-direction: ;
+        flex-direction:column ;
     }
 
     .footer-container {
