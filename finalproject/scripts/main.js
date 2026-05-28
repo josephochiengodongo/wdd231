@@ -12,7 +12,7 @@ places.forEach(place => {
   // Insert content
   card.innerHTML = `
   
-    <img src="${place.url}" alt="${place.name}">
+    <img src="${place.image}" alt="${place.name}">
 
     <div class="card-content">
 
