@@ -292,8 +292,8 @@ footer {
 
     }
     footer {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: ;
     }
 
     .footer-container {
