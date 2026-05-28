@@ -291,6 +291,10 @@ footer {
         text-align: center;
 
     }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
     .footer-container {
         display: flex;
