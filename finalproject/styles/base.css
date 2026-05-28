@@ -296,7 +296,7 @@ footer {
         flex-direction:column ;
     }
 
-    .footer-container {
+    .footer {
         display: grid;
         grid-template-columns: 1fr;
         flex-direction: column;
