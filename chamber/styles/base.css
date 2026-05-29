@@ -69,18 +69,22 @@ nav li {
     padding: 1rem;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-}
-nav a.active {
-    background-color: darkblue;
-}
 
  nav a:hover {
     background-color: blue
 
-} 
+} nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav a.active {
+    background-color: white;
+    color: darkblue;
+    border-radius: 5px;
+}
+
 
 
 /* Home Grid: Stacked for mobile */
@@ -861,7 +865,7 @@ input[type="submit"] {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background-color: #003366;
+    background-color: black;
     color: white;
     position: relative;
 }
@@ -877,17 +881,6 @@ nav {
     gap: 1rem;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem;
-}
-
-nav a.active {
-    background-color: #ffffff;
-    color: #003366;
-    border-radius: 5px;
-}
 
 /* HAMBURGER BUTTON */
 .toggle-menu {
