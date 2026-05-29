@@ -6,4 +6,4 @@ const today = new Date();
 
 currentYear.innerHTML = `&copy;${today.getFullYear()} 🌳Joseph Odongo🌳 Kenya`;
 
-lastModified.textContent = document.lastModified;
+lastModified.textContent = document.lastModified;/* HEADER */

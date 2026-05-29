@@ -855,5 +855,84 @@ input[type="submit"] {
     cursor: pointer;
     transition: background-color 0.2s;
     margin-top: 0.5rem;
+}/* HEADER */
+.containercontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #003366;
+    color: white;
+    position: relative;
 }
+
+.logo {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav a.active {
+    background-color: #ffffff;
+    color: #003366;
+    border-radius: 5px;
+}
+
+/* HAMBURGER BUTTON */
+.toggle-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 768px) {
+
+    .toggle-menu {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #003366;
+        padding: 1rem 0;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        padding: 1rem;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+}
+
 
