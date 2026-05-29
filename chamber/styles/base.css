@@ -872,7 +872,7 @@ input[type="submit"] {
 }
 
 /* NAVIGATION */
-nav {
+navv {
     display: flex;
     gap: 1rem;
 }
@@ -883,7 +883,7 @@ nav a {
     padding: 0.5rem;
 }
 
-nav a.active {
+navv a.active {
     background-color: #ffffff;
     color: #003366;
     border-radius: 5px;
