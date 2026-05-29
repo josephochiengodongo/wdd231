@@ -907,7 +907,7 @@ nav {
         display: flex;
     }
 
-    head nav {
+    head.nav {
         display: none;
         flex-direction: column;
         position: absolute;
