@@ -305,10 +305,7 @@ footer {
     }
 
     .footer-containerr {
-        display: grid;
-        grid-template-columns: 1fr;
-        flex-direction: column;
-        gap:30px;
+        display: flex;
     }
     
 }
