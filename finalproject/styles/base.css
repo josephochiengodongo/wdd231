@@ -175,6 +175,8 @@ footer {
 
 .footer-container {
     display: flex;
+    background-color: black;
+    color: white;
     flex-direction: row;
     gap: 2rem;
     text-align: center;
