@@ -193,7 +193,7 @@ footer {
 @media (min-width: 768px) {
     
     /* Header layout */
-    .containercontent {
+    .containercontentt {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -348,7 +348,7 @@ footer {
         text-align: center;
         max-width: 100%;
     }
-    .containercontent {
+    .containercontentt {
         flex-direction: column;
         text-align: center;
     }
