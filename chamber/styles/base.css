@@ -856,7 +856,7 @@ input[type="submit"] {
     transition: background-color 0.2s;
     margin-top: 0.5rem;
 }/* HEADER */
-.containercontent {
+.containercontentt {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -866,13 +866,13 @@ input[type="submit"] {
     position: relative;
 }
 
-.logo {
+.logoo {
     font-size: 1rem;
     font-weight: bold;
 }
 
 /* NAVIGATION */
-nav {
+navv {
     display: flex;
     gap: 1rem;
 }
