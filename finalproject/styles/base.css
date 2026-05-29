@@ -185,12 +185,6 @@ footer {
 
 
 
-.view-buttons button:focus {
-    outline: 2px solid orangered;
-    outline-offset: 3px;
-}    
-    
-
 /* styles/large.css or inside a Media Query */
 @media (min-width: 768px) {
     
@@ -216,37 +210,7 @@ footer {
         display: none; /* Hide burger menu on desktop */
     }
 
-    /* Home Grid: 3-column layout from wireframe */
-    .home-grid {
-        grid-template-columns: 2fr 1fr 1fr;
-        align-items: start;
-        justify-content: center;
-    }
 
-    /* Member Cards: Grid view for desktop directory */
-    #members.grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    #members.grid .member-card {
-        border-radius: 10px;
-        background-color: black;
-        color: white;
-    }
-    #members.grid h3 {
-        background-color: darkblue;
-        color: white;
-        margin: -15px -15px 10px -15px;
-        padding: 10px 20px 10px 20px;
-        border-radius: 8px 8px 0 0;
-    }
-    #members.list h3 {
-        background-color: darkblue;
-        color: white;
-        margin: -10px -10px 10px -10px;
-        padding: 10px;
-        border-radius: 8px 8px 0 0;
-
-    }
 
     /* Footer layout */
     .footer-container {
@@ -259,56 +223,7 @@ footer {
     }
 }
 
-@media (min-width: 768px) {
-    .home-grid {
-        display: grid;
-        /* This creates 4 equal fractions total: 2 + 1 + 1 */
-        grid-template-columns: 2fr 1fr 1fr; 
-        gap: 20px; /* Space between the sections */
-        align-items: stretch;
-        padding: 20px;
-    }
-    .top-grid h2 {
-        background-color: black;
-        color: white;
-        font-size: x-large;
-        margin-top: -10px;
-    }
-    #spotlights h3 {
-        background-color: black;
-        color: white;
-        align-content: start;
-        margin: -12px -20px 10px -20px;
-        font-size: x-large;
-    }
-    .hero {
-        margin-bottom: 30px;
-    }
 
-    /* Styling the headers to look like the wireframe */
-    .home-grid h2 {
-        grid-column: 1 / -1; /* Makes the "Home" title span all columns */
-        margin-bottom: 10px;
-    }
-
-    .events-section, 
-    .current-weather-section, 
-    .weather-forecast-section {
-        background-color:darkblue; 
-        padding: 15px;
-        border-radius: 5px;
-        color: white;
-    }
-
-    /* Optional: Header styling within the boxes */
-    .home-grid h3 {
-        background-color:black; /* Dark header bar */
-        color: white;
-        margin: -15px -15px 15px -15px; /* Pulls header to the edges of the box */
-        padding: 10px;
-        text-align: center;
-    }
-}
 footer {
     background-color: black;
     color: white;
