@@ -190,7 +190,7 @@ footer {
 @media (min-width: 768px) {
     
     /* Header layout */
-    .containercontentt {
+    .containercontent {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -266,7 +266,7 @@ footer {
         text-align: center;
         max-width: 100%;
     }
-    .containercontentt {
+    .containercontent {
         flex-direction: column;
         text-align: center;
     }
@@ -329,7 +329,7 @@ footer {
 
 
 
-mainn {
+main {
   padding: 1rem;
 }
 
