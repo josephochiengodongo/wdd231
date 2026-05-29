@@ -304,7 +304,7 @@ footer {
         flex-direction:column ;
     }
 
-    .footer-container {
+    .footer-containerr {
         display: grid;
         grid-template-columns: 1fr;
         flex-direction: column;
