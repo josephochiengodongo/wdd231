@@ -189,12 +189,15 @@ footer {
 }    
     
 
-
 /* styles/large.css or inside a Media Query */
 @media (min-width: 768px) {
     
-  
-    
+    /* Header layout */
+    .containercontent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     nav {
         display: flex; /* Show nav on desktop */
@@ -207,17 +210,46 @@ footer {
         background-color:blue;
     }
 
-    
+    .toggle-menu {
+        display: none; /* Hide burger menu on desktop */
+    }
 
-    
+    /* Home Grid: 3-column layout from wireframe */
+    .home-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: start;
+        justify-content: center;
+    }
 
-    
+    /* Member Cards: Grid view for desktop directory */
+    #members.grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    #members.grid .member-card {
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+    }
+    #members.grid h3 {
+        background-color: darkblue;
+        color: white;
+        margin: -15px -15px 10px -15px;
+        padding: 10px 20px 10px 20px;
+        border-radius: 8px 8px 0 0;
+    }
+    #members.list h3 {
+        background-color: darkblue;
+        color: white;
+        margin: -10px -10px 10px -10px;
+        padding: 10px;
+        border-radius: 8px 8px 0 0;
+
+    }
 
     /* Footer layout */
     .footer-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        justify-content: space-around;
         text-align: center;
         background-color:black;
         align-items: center;
@@ -226,10 +258,55 @@ footer {
 }
 
 @media (min-width: 768px) {
-    
+    .home-grid {
+        display: grid;
+        /* This creates 4 equal fractions total: 2 + 1 + 1 */
+        grid-template-columns: 2fr 1fr 1fr; 
+        gap: 20px; /* Space between the sections */
+        align-items: stretch;
+        padding: 20px;
+    }
+    .top-grid h2 {
+        background-color: black;
+        color: white;
+        font-size: x-large;
+        margin-top: -10px;
+    }
+    #spotlights h3 {
+        background-color: black;
+        color: white;
+        align-content: start;
+        margin: -12px -20px 10px -20px;
+        font-size: x-large;
+    }
+    .hero {
+        margin-bottom: 30px;
+    }
 
     /* Styling the headers to look like the wireframe */
-    
+    .home-grid h2 {
+        grid-column: 1 / -1; /* Makes the "Home" title span all columns */
+        margin-bottom: 10px;
+    }
+
+    .events-section, 
+    .current-weather-section, 
+    .weather-forecast-section {
+        background-color:darkblue; 
+        padding: 15px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    /* Optional: Header styling within the boxes */
+    .home-grid h3 {
+        background-color:black; /* Dark header bar */
+        color: white;
+        margin: -15px -15px 15px -15px; /* Pulls header to the edges of the box */
+        padding: 10px;
+        text-align: center;
+    }
+}
 footer {
     background-color: black;
     color: white;
@@ -271,7 +348,7 @@ footer {
         text-align: center;
         max-width: 100%;
     }
-    .containercontentt {
+    .containercontent {
         flex-direction: column;
         text-align: center;
     }
@@ -299,19 +376,24 @@ footer {
         text-align: center;
 
     }
-    footer {
-        display: flex;
-        flex-direction:column ;
-    }
 
     .footer-container {
-        display: flex;
         flex-direction: column;
+        gap: 1rem;
     }
     
 }
 
     
+.cta-button {
+    background: azure;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+  
+  
+}
 
 
 
@@ -322,6 +404,360 @@ footer {
 /* Mobile First - Stacks sections by default */
 
 
+.top-grid {
+  display: flex;
+  justify-items: stretch;
+  flex-direction: row;
+  gap: 20px;
+  
 }
+#spotlight-container img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    background-color:white;
+    
+}
+
+
+/* HAMBURGER */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+.cta h2 {
+  color:white;
+  background-color: blue;
+  
+
+}
+
+
+
+/* GRID */
+
+#events,.weather-box,.forecast-display {
+  background: blue;
+  border: 1px solid black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  color:white;
+  margin-left: 4px;
+  width: 290px;
+  height: 350px;
+  margin-top: 10px;
+  text-align: center;
+  
+}
+
+
+
+
+
+
+/* join*/
+.join-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+
+/* CARDS */
+.cards {
+  display: grid;
+  width: 400px;
+  gap: 0.5rem;
+  
+  
+}
+
+
+
+
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  background: white;
+  padding: 20px;
+  border: 2px solid black;
+  
+}
+
+/* DESKTOP */
+.card a:hover {
+  background:azure;
+}
+
+/* Card Style */
+.card {
+  background: blue;
+  color: white;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0.75rem;
+  margin-left: 4px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s forwards;
+  flex-direction: column;
+  
+}
+
+
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  
+}
+
+
+
+
+
+
+
+/* RESPONSIVE (mobile) */
+@media (max-width: 768px) {
+  .top-grid {
+    flex-direction: column;
+  }
+  .join-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: center;
+
+  }
+   .cards {
+    width: 330px;
+    align-content: center;
+    
+   }
+   .form h1 {
+    text-align: left;
+    
+
+   }
+   .form {
+    width: 360px;
+    align-content: center;
+
+    
+    
+   }
+
+
+  
+  
+}
+
+  
+
+  
+
+
+
+
+
+
+/* join */
+
+
+.card-level h3 {
+  border-radius: 1px 30px 1px 30px;
+  background-color: darkblue;
+  padding-bottom: 50px;
+  margin: 45px 10px 1px 10px;
+  text-align: center;
+  color: white;
+
+
+}
+.card-level a {
+  background: white;
+  position: relative;
+  left:180px;
+  bottom:50px;
+  color: darkblue;
+
+}
+
+/* ===== GENERAL ===== */
+main {
+  padding: 1rem;
+}
+
+h2{
+    color:black;
+    padding-left: 10px;
+    font-size: x-large;
+    height: 40px;
+}
+
+
+
+
+
+
+/* ===== VISIT MESSAGE ===== */
+.visit-message {
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid blue;
+  margin-bottom: 1rem;
+  color: darkblue;
+
+}
+
+/* ===== INTRO ===== */
+.intro {
+  margin: 1px 1px 10px 1px;
+  background-color: blue;
+  color:white;
+  border-radius: 8px;
+  border:1px solid black;
+  text-align: center;
+}
+
+.intro h2 {
+  color: white;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  
+}
+
+/* ===== GRID (MOBILE FIRST) ===== */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "c1"
+    "c2"
+    "c3"
+    "c4"
+    "c5"
+    "c6"
+    "c7"
+    "c8";
+  gap: 1rem;
+}
+
+/* Map cards to grid areas */
+
+
+
+
+.card figure {
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 1px;
+  border-radius: 6px;
+  
+}
+
+
+
+
+.card button {
+  margin: 0 1rem 1rem;
+  padding: 0.5rem;
+  border: none;
+  background:white;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.card h2 {
+  font-size: 1.2rem;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  margin: -8px -6px 2px -6px;
+  
+
+}
+
+/* GRID VIEW */
+
+
+.grid section {
+    border: 1px solid black;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+/* LIST VIEW */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  
+}
+.list img {
+  display: none;
+}
+
+
+
+.view-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.view-buttons button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: darkblue;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-buttons button:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+}
+
+
+
+
+/* join *//* Base container styling */
 
 
