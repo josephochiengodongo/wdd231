@@ -872,12 +872,12 @@ input[type="submit"] {
 }
 
 /* NAVIGATION */
-navv {
+nav {
     display: flex;
     gap: 1rem;
 }
 
-nav a {
+navv a {
     color: white;
     text-decoration: none;
     padding: 0.5rem;
