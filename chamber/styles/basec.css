@@ -284,6 +284,7 @@ nav a.active {
   display: flex;
   justify-items: stretch;
   flex-direction: row;
+  margin-left: 20px;
   text-align: center;
   gap: 20px;
   
