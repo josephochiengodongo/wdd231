@@ -520,6 +520,7 @@ footer {
     color: white;
     padding-left: 8px;
     border-radius: 5px;
+    margin-left: 10px;
     align-items: center;
     height: 300px;
   }
