@@ -360,6 +360,46 @@ footer {
         background: darkblue;
         padding: 1rem 0;
     }
+    footer nav {
+        display: none;
+        flex-direction: row;
+    }
+
+     .containercontent {
+        flex-direction: column;
+        text-align: center;
+    }
+
+     .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+     #members.grid {
+        grid-template-columns: 1fr;
+    }
+
+     .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+     .top-grid {
+        flex-direction: column;
+    }
+
+     .join-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+     .cards {
+        width: 330px;
+    }
+
+     .form {
+        width: 360px;
+    }
 
     nav.open {
         display: flex;
