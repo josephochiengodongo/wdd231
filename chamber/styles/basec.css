@@ -165,7 +165,7 @@ nav a.active {
     border-radius: 5px;
 }
 
-.home-grid h3 {
+.home-grid h3,.top-grid h2 {
     background: black;
     color: white;
     text-align: center;
