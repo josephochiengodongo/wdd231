@@ -82,7 +82,23 @@ nav a.active {
     border-radius: 5px;
 }
 
-/* ===== HAMBURGER ===== */
+
+.card {
+  background:white;
+  color: black;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0.75rem;
+  margin-left: 4px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s forwards;
+  flex-direction: column;
+  
+}
+/*===== HAMBURGER ===== */
 .toggle-menu {
     display: none;
     flex-direction: column;
@@ -149,17 +165,12 @@ nav a.active {
     border-radius: 5px;
 }
 
-.home-gridd h3,
-.top-gridd h2,
-#spotlightss h3 {
+.home-grid h3 {
     background: black;
     color: white;
     text-align: center;
 }
-.card {
-    background: white;
-    width: auto;
-}
+
 
 
 
@@ -273,6 +284,7 @@ nav a.active {
   display: flex;
   justify-items: stretch;
   flex-direction: row;
+  text-align: center;
   gap: 20px;
   
 }

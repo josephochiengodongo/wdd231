@@ -602,6 +602,13 @@ footer {
     max-width: 500px;
     align-items: center;
   }
+  footer nav {
+        display: none;
+        flex-direction: row;
+        background-color: black;
+
+
+  }
 
   .cards {
     width: 330px;
@@ -710,11 +717,7 @@ footer {
     padding: 10px;
     border-radius: 8px 8px 0 0;
   }
-  footer nav {
-        display: none;
-        flex-direction: row;
-        background-color: black;
-  }
+  
 
   .footer-container {
     display: grid;
