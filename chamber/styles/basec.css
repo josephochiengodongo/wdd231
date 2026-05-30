@@ -165,7 +165,7 @@ nav a.active {
     border-radius: 5px;
 }
 
-.home-grid h3,.top-grid h2 {
+.home-grid h3 {
     background: black;
     color: white;
     text-align: center;
@@ -422,6 +422,13 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+    .top-grid h2 {
+        background-color: black;
+        color: white;
+        font-size: x-large;
+        margin-top: -10px;
+    }
+
 
      .home-grid {
         grid-template-columns: 1fr;
@@ -436,9 +443,7 @@ footer {
         text-align: center;
     }
 
-     .top-grid {
-        flex-direction: column;
-    }
+    
 
      .join-container {
         display: flex;
