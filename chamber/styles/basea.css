@@ -710,6 +710,11 @@ footer {
     padding: 10px;
     border-radius: 8px 8px 0 0;
   }
+  footer nav {
+        display: none;
+        flex-direction: row;
+        background-color: black;
+  }
 
   .footer-container {
     display: grid;
