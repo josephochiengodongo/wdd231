@@ -77,8 +77,8 @@ nav a:hover {
 }
 
 nav a.active {
-    background: var(--light);
-    color: var(--primary);
+    background: white;
+    color: darkblue;
     border-radius: 5px;
 }
 
@@ -96,7 +96,7 @@ nav a.active {
 .toggle-menu .bar {
     width: 25px;
     height: 3px;
-    background: var(--light);
+    background: white;
     border-radius: 5px;
 }
 
@@ -308,8 +308,8 @@ textarea {
 }
 
 input[type="submit"] {
-    background: var(--primary);
-    color: var(--light);
+    background: darkblue;
+    color: white;
     border: none;
     border-radius: 4px;
     padding: .85rem;
