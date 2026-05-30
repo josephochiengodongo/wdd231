@@ -318,8 +318,8 @@ input[type="submit"] {
 
 /* ===== FOOTER ===== */
 footer {
-    background: var(--dark);
-    color: var(--light);
+    background: black;
+    color: white;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -357,7 +357,7 @@ footer {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: var(--primary);
+        background: darkblue;
         padding: 1rem 0;
     }
 
