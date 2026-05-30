@@ -1,4 +1,4 @@
-/* General mobile styles */
+/*mobile styles */
 img {
     height: auto;
     display: block;
@@ -7,10 +7,6 @@ img {
 * {
   box-sizing: border-box;
 }
-
-
-
- 
 
 header {
     background-color: black;
@@ -425,14 +421,7 @@ footer {
   
   
 }
-
-
-
-
-  
-
-
-/* Mobile First - Stacks sections by default */
+/* mobile*/
 
 
 .top-grid {
@@ -448,10 +437,6 @@ footer {
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-
-
-
 
 #spotlight-container {
     display: grid;
@@ -543,8 +528,8 @@ footer {
 
 /* Card Style */
 .card {
-  background: blue;
-  color: white;
+  background:white;
+  color: black;
   display: flex;
   border: 1px solid black;
   border-radius: 12px;
