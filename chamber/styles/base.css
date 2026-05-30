@@ -907,10 +907,10 @@ nav {
         display: flex;
     }
 
-    nav {
+    #head nav {
         display: none;
         flex-direction: column;
-        positionn: absolute;
+        position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
