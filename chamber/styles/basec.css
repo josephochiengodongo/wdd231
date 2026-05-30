@@ -59,7 +59,7 @@ nav ul {
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
-    background: var(--dark);
+    background: black;
 }
 
 nav li {
@@ -67,7 +67,7 @@ nav li {
 }
 
 nav a {
-    color: var(--light);
+    color: white;
     text-decoration: none;
     padding: .5rem;
 }
@@ -168,7 +168,7 @@ nav a.active {
 .grid section {
     background: black;
     color: white;
-    border: 1px solid black;
+    border: 1px solid darkblue;
     border-radius: 10px;
     text-align: center;
     padding: 10px;
