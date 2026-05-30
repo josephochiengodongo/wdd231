@@ -301,8 +301,8 @@ nav a.active {
     }
     #spotlights h3 {
         background-color: black;
+        align-items: center;
         color: white;
-        align-content: start;
         margin: -12px -20px 10px -20px;
         font-size: x-large;
     }

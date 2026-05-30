@@ -149,13 +149,20 @@ nav a.active {
     border-radius: 5px;
 }
 
-.home-grid h3,
-.top-grid h2,
-#spotlights h3 {
+.home-gridd h3,
+.top-gridd h2,
+#spotlightss h3 {
     background: black;
     color: white;
     text-align: center;
 }
+.card {
+    background: white;
+    width: auto;
+}
+
+
+
 
 /* ===== DIRECTORY ===== */
 #members.grid {
@@ -174,6 +181,7 @@ nav a.active {
     padding: 10px;
 }
 
+
 .member-card h3,
 .member-grid h3,
 #members.grid h3,
@@ -183,6 +191,21 @@ nav a.active {
     padding: 10px;
     border-radius: 8px 8px 0 0;
 }
+#events,.weather-box,.forecast-display {
+  background: blue;
+  border: 1px solid black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  color:white;
+  margin-left: 4px;
+  width: 290px;
+  height: 350px;
+  margin-top: 10px;
+  
+
+  
+}
+
+
 
 .list {
     display: flex;
@@ -227,15 +250,31 @@ nav a.active {
 }
 
 /* ===== SPOTLIGHTS ===== */
+
+#spotlight-container img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 #spotlight-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
+    width: 95%;
+    background-color:white;
+    
 }
 
-#spotlight-container img {
-    width: 50%;
-    border-radius: 8px;
+
+
+.top-grid {
+  display: flex;
+  justify-items: stretch;
+  flex-direction: row;
+  gap: 20px;
+  
 }
 
 /* ===== JOIN ===== */
@@ -393,6 +432,14 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    #spotlights h3 {
+        background-color: black;
+        color: white;
+        align-content: start;
+        margin: -20px -20px 10px -20px;
+        font-size: x-large;
+    }
+
 
      .cards {
         width: 330px;
@@ -451,6 +498,19 @@ footer {
     nav {
         display: flex;
         flex-direction: row;
+    }
+    .top-grid h2 {
+        background-color: black;
+        color: white;
+        font-size: x-large;
+        margin-top: -10px;
+    }
+    #spotlights h3 {
+        background-color: black;
+        color: white;
+        align-content: start;
+        margin: -12px -20px 10px -20px;
+        font-size: x-large;
     }
 
     .home-grid {
