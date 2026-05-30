@@ -363,6 +363,7 @@ footer {
     footer nav {
         display: none;
         flex-direction: row;
+        background-color: black;
     }
 
      .containercontent {
