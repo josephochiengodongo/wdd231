@@ -203,7 +203,7 @@ footer {
     .toggle-menu {
         display: none; /* Hide burger menu on desktop */
     }
-    .card {
+    #card {
         margin-left: -20px;
         margin-right: 20px;
         min-width: 160px;
