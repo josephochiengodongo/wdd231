@@ -286,7 +286,7 @@ footer {
     
     }
     .card-content {
-        align-items: center;
+        align-content: center;
     }
 
     .footer-container {
