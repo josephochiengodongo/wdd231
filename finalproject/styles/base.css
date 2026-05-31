@@ -25,6 +25,8 @@ header {
     background-color: black;
     color: white;
     padding: 1rem;
+    margin-left: 3px;
+    margin-right: 3px;
     font-size: x-large;
     
   
@@ -200,6 +202,9 @@ footer {
 
     .toggle-menu {
         display: none; /* Hide burger menu on desktop */
+    }
+    .card {
+        margin-left:-10px
     }
 
 
