@@ -204,7 +204,8 @@ footer {
         display: none; /* Hide burger menu on desktop */
     }
     .card {
-        margin-left:-10px;
+        margin-left: -20px;
+        margin-right: 20px;
         min-width: 160px;
     }
 
