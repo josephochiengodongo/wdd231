@@ -407,7 +407,7 @@ nav a.active {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: darkblue;
+        background: black;
         padding: 1rem 0;
     }
     footer nav {
