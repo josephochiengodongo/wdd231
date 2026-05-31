@@ -12,6 +12,7 @@
 	<script src="scripts/getdates.js" defer></script>
 	<script src="scripts/main.js" defer></script>
 	<script src="scripts/navigation.js" defer></script>
+	<script src="scripts/now.js" defer></script>
 	<meta property="og:title" content="Tourist Destination Guide">
     <meta property="og:description" content="Tourist Destination Guide is your ultimate resource for discovering the best tourist destinations in Kenya. Explore our comprehensive directory of attractions, accommodations, and travel tips to plan your unforgettable Kenyan adventure.">
 	<meta property="og:url" content="https://www.github.com/josephochieng.github.io/wdd231/chamber/directory.html">
@@ -23,8 +24,10 @@
 </head>
 <body>
 	<header class="containercontent">
-		<img src="images/logo.webp" alt="mount kenya" width="40" height="38.2">
-        <span class="logo">Tourist Destination Guide</span>
+		<div class="site-branding">
+			<img src="images/logo.webp" alt="mount kenya" width="40" height="38.2">
+			<span class="logo">Tourist Destination Guide</span>
+	    </div>
 		<button class="toggle-menu" aria-label="Open Navigation Menu">
 			<span class="bar"></span>
             <span class="bar"></span>
@@ -47,10 +50,6 @@
 		
 	
 	<footer>
-
-        <script type="module" src="scripts/main.js"></script>
-
-    </footer>
 		<div class="footer-container">
 			<div class="chamber-information">
 				<p>Tourist Destination Guide</p>
@@ -77,6 +76,7 @@
                 <p>Back so soon! Awesome!</p>
 		    </div>
 		</div>
+		<script type="module" src="scripts/main.js"></script>
     </footer>
 </body>
 </html>

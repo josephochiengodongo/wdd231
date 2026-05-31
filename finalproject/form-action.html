@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submission Results</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Submission Results</h1>
+</header>
+
+<main>
+  <h2>Thank You!</h2>
+
+  <p><strong>Full Name:</strong> <span id="fullname"></span></p>
+
+  <p><strong>Email:</strong> <span id="email"></span></p>
+
+  <p><strong>Favorite Destination:</strong> <span id="destination"></span></p>
+</main>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+document.querySelector("#fullname").textContent =
+  params.get("fullname") || "Not provided";
+
+document.querySelector("#email").textContent =
+  params.get("email") || "Not provided";
+
+document.querySelector("#destination").textContent =
+  params.get("destination") || "Not provided";
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"], textarea, select { width: 100%; padding: 8px; max-width: 400px; }
+        button { padding: 10px 15px; background-color: #007BFF; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>

@@ -516,6 +516,138 @@ nav a.active {
 }
 
 
+/* Base styles to reset margins and set a clean font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
 
+/* 1. Main Layout: Arranges the sections into a 2-column grid */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr; /* Stack on mobile */
+    gap: 20px;
+}
 
+/* Desktop Layout (screens wider than 768px) */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+    }
+}
 
+/* 2. Generic Section Styling (Card design) */
+main > section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 3. Form Styling */
+.form-action form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-action label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.form-action input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-action input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.form-action button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-action button:hover {
+    background-color: #0056b3;
+}
+
+/* 4. Contact Info Styling */
+.contact-info h1 {
+    margin-top: 0;
+    color: #222;
+}
+
+.contact-info address {
+    font-style: normal;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.contact-info a {
+    display: block; /* Puts links on separate lines */
+    color: #007BFF;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* 5. Table Styling */
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.trip-table th, .trip-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.trip-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+/* Highlights the group header row */
+.trip-table tr:first-child th {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+}
+
+.trip-table tr:hover {
+    background-color: #f1f3f5;
+}
+
+/* 6. Info (Map) Styling */
+.info iframe {
+    width: 100%; /* Makes the map responsive to the card width */
+    border-radius: 4px;
+}
