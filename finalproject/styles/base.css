@@ -261,6 +261,11 @@ footer {
         max-width: 100%;
     }
     
+     footer nav {
+        display: none;
+        flex-direction: row;
+        background-color: black;
+    }
     
 
     .socialmedia {
