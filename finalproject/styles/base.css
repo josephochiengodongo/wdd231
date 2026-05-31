@@ -25,7 +25,7 @@ header {
     background-color: black;
     color: white;
     padding: 1rem;
-    margin-left: 3px;
+    margin-left: -3px;
     margin-right: 3px;
     font-size: x-large;
     
@@ -285,9 +285,7 @@ footer {
 
     
     }
-    .card-content {
-        align-content: center;
-    }
+    
 
     .footer-container {
         flex-direction: column;
@@ -444,8 +442,8 @@ nav a.active {
         text-align: center;
     }
 
-    .top-grid {
-        flex-direction: column;
+    
+    
     }
 
     .join-container {
@@ -466,7 +464,7 @@ nav a.active {
         width: 30px;
         height: 30px;
     }
-}
+
 
 /* ===== DESKTOP ===== */
 @media (min-width: 768px) {
