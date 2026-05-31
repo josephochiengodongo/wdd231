@@ -410,11 +410,8 @@ nav a.active {
         background: black;
         padding: 1rem 0;
     }
-    footer nav {
-        display: none;
-        flex-direction: row;
-        background-color: black;
-    }
+    
+    
 
      .containercontent {
         flex-direction: column;
@@ -453,9 +450,9 @@ nav a.active {
         text-align: center;
     }
 
+}    
     
     
-    }
 
     .join-container {
         display: flex;
