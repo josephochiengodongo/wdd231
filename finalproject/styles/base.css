@@ -440,6 +440,52 @@ footer {
         gap: 1rem;
     }
     
+}/* Mobile Menu */
+
+.toggle-menu {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navigation {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    background: black;
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+    }
+
+    .navigation a {
+        padding: 0.5rem 1rem;
+    }
 }
 
 
