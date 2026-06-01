@@ -17,10 +17,19 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    background-color: #ffffff;
+    background-color: black;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     position: relative;
     z-index: 100;
+}
+headerr {
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 .site-branding {
@@ -84,7 +93,7 @@ nav[aria-label="Main Navigation"] {
     top: 100%; /* Sits cleanly directly beneath the header */
     left: 0;
     width: 100%;
-    background-color: #ffffff;
+    background-color: blue;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     
     /* Smooth slide-down and fade animation toggle */
@@ -132,8 +141,8 @@ nav[aria-label="Main Navigation"] a.active {
         position: static;
         width: auto;
         box-shadow: none;
-        max-height: none !important;
-        opacity: 1 !important;
+        max-height: none ;
+        opacity: 1 ;
         overflow: visible;
         gap: 10px;
     }
@@ -150,7 +159,9 @@ nav[aria-label="Main Navigation"] a.active {
         background-color: #f0f7ff;
         color: #007BFF;
     }
-}img {
+}
+
+img {
     height: auto;
     display: block;
     
@@ -237,7 +248,7 @@ nav a.active {
   box-sizing: border-box;
 }
 
-body {
+bodyy {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   color: #222;
@@ -246,7 +257,7 @@ body {
 header {
   text-align: center;
   padding: 30px 20px;
-  background: #0f766e;
+  background: black;
   color: white;
 }
 
