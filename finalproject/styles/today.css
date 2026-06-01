@@ -675,8 +675,8 @@ main > section {
 }
 
 /* 5. Table Styling */
-.trip-table table {
-    width: 100%;
+.trip-table {
+    width: 700px;
     border-collapse: collapse;
     margin-top: 10px;
 }
@@ -705,9 +705,42 @@ main > section {
 
 /* 6. Info (Map) Styling */
 .info iframe {
-    width: 100%; /* Makes the map responsive to the card width */
+    width: 50%; /* Makes the map responsive to the card width */
     border-radius: 4px;
 }
+th {
+    background-color:orange;
+    color:white
+ }       
+  td:nth-child(3n+1){
+    background-color:green;
+    color:white
+  }
+ td:nth-child(3n+3) {
+    background-color: green;
+    color:white
+ } 
+
+td:nth-child(3n+2){
+    background-color: green;
+    color:white;
+}
+
+ .trip-table h2 {
+    min-width: 720px;
+    font-size: x-large;
+    background-color:green;
+    color: white;
+
+
+}
+
+
+
+
+
+
+
 
 
 
