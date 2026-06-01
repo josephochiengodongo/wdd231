@@ -156,7 +156,8 @@ header p {
 .address {
   color: #555;
   line-height: 1.5;
-}footer {
+}
+footer {
     background-color: black;
     color: white;
     display: flex;
