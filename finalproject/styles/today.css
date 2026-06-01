@@ -183,7 +183,7 @@ nav a.active {
 
 
 
-headerr {
+header {
   text-align: center;
   padding: 30px 20px;
   background: #0f766e;
@@ -583,7 +583,7 @@ body {
 }
 
 /* 1. Main Layout: Arranges the sections into a 2-column grid */
-main {
+mainn {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;

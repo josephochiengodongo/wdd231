@@ -1,210 +1,270 @@
-/* ---------- RESET ---------- */
-
+/* ==========================================================================
+   1. Core Layout Resets (Prevents Horizontal Page Scrolling)
+   ========================================================================== */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-    line-height: 1.6;
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Hard block against unintended horizontal shifts */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fa;
+    color: #333;
 }
 
-/* ---------- HEADER ---------- */
-
-header {
-    background: #000;
-    color: white;
-    padding: 1rem;
-
+/* ==========================================================================
+   2. Header & Responsive Navigation Area
+   ========================================================================== */
+.containercontent {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    position: relative; /* Anchor layout frame for the mobile nav position dropdown */
+    width: 100%;
 }
 
 .site-branding {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 10px;
 }
 
 .logo {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #111;
 }
 
-/* ---------- HAMBURGER ---------- */
-
+/* Three-Bar Hamburger Control Style */
 .toggle-menu {
-    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 18px;
+    background: transparent;
     border: none;
-    color: white;
-    font-size: 2rem;
     cursor: pointer;
+    padding: 0;
 }
 
-/* ---------- NAVIGATION ---------- */
+.toggle-menu .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
-.navigation {
-    display: none;
+/* Animated Hamburger Interaction Transformation Rules */
+.toggle-menu.open .bar:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+}
+.toggle-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+.toggle-menu.open .bar:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+}
+
+/* Mobile Dropdown Overlay Panel Setup */
+nav[aria-label="Main Navigation"] {
+    display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+    
+    /* Animation visibility transitions */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+/* Activated Open State via JavaScript Class Trigger */
+nav[aria-label="Main Navigation"].open {
+    max-height: 250px;
+    opacity: 1;
+}
+
+nav[aria-label="Main Navigation"] a {
+    padding: 15px 24px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    border-top: 1px solid #f1f3f4;
+}
+
+nav[aria-label="Main Navigation"] a:hover,
+nav[aria-label="Main Navigation"] a.active {
+    background-color: #f4f8ff;
+    color: #007BFF;
+}
+
+/* ==========================================================================
+   3. Base Content Container Layouts
+   ========================================================================== */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
 }
 
-.navigation.open {
-    display: flex;
+mainn > section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-.navigation a {
-    color: white;
-    text-decoration: none;
-    padding: 1rem;
-    border-top: 1px solid #444;
-}
-
-.navigation a:hover {
-    background: #333;
-}
-
-.navigation .active {
-    background: #555;
-    color: gold;
-}
-
-/* ---------- MAIN ---------- */
-
-main {
-    padding: 1rem;
-}
-
-/* ---------- HOME PAGE ---------- */
-
-.information {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.places-container {
-    display: grid;
-    gap: 1rem;
-}
-
-/* ---------- ABOUT PAGE ---------- */
-
-.about-info {
-    max-width: 1000px;
-    margin: auto;
-}
-
-.about-info p {
-    margin-bottom: 1rem;
+/* Responsive Table Wrapper Control (Halts Content Bleed Over Mobile Viewports) */
+.charge-summary, .trip-table {
+    width: 100%;
+    overflow-x: auto; /* Dynamic swipe tracking window */
+    -webkit-overflow-scrolling: touch;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1rem;
+    min-width: 500px; /* Protects legible data tracking matrix profiles */
 }
 
-th,
-td {
-    border: 1px solid #ddd;
-    padding: .75rem;
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
 }
 
-th {
-    background: #000;
-    color: white;
+/* Responsive Embed Content Fixes */
+iframe {
+    width: 100% !important;
+    max-width: 100%;
+    height: 320px;
+    border-radius: 6px;
 }
 
-.info iframe {
-    width: 100%;
-    height: 350px;
-    margin-top: 1rem;
-}
-
-/* ---------- CONTACT PAGE ---------- */
-
+/* Form Fluid Controls */
 form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 15px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 500;
 }
 
 input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     width: 100%;
-    padding: .75rem;
 }
 
 button[type="submit"] {
-    padding: .75rem;
-    background: black;
+    background-color: #007BFF;
     color: white;
     border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.contact-info {
-    margin-top: 2rem;
-}
-
-/* ---------- FOOTER ---------- */
-
-footer {
-    background: #000;
-    color: white;
-    margin-top: 2rem;
-    padding: 1rem;
-}
-
+/* Footer Grid Structural Context */
 .footer-container {
-    display: grid;
-    gap: 1rem;
-    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .socialmedia {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    gap: 15px;
 }
 
 .socialmedia img {
-    width: 40px;
-    height: auto;
+    width: 24px;
+    height: 24px;
 }
-
-/* ---------- DESKTOP ---------- */
-
-@media screen and (min-width: 768px) {
-
+@media (min-width: 768px) {
+    /* Clear Mobile Menu Interactive Action Button */
     .toggle-menu {
         display: none;
     }
 
-    .navigation {
-        display: flex;
+    /* Transform Dropdown Array cleanly back to Horizontal Desktop Navbar Rows */
+    nav[aria-label="Main Navigation"] {
+        display: flex !important;
         flex-direction: row;
+        position: static;
         width: auto;
-        gap: 1rem;
+        box-shadow: none;
+        max-height: none !important;
+        opacity: 1 !important;
+        overflow: visible;
+        gap: 5px;
     }
 
-    .navigation a {
-        border: none;
+    nav[aria-label="Main Navigation"] a {
+        border-top: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+    }
+
+    /* Desktop View Main Content Matrix Layout Panels */
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .form-action, .about-info {
+        grid-column: 1;
+    }
+
+    .contact-info, .charge-summary {
+        grid-column: 2;
+    }
+
+    .info {
+        grid-column: 1 / span 2;
+    }
+
+    iframe {
+        height: 400px;
     }
 
     .footer-container {
-        grid-template-columns: repeat(3, 1fr);
-        text-align: left;
-    }
-
-    /* Contact Page Layout */
-    .form-action,
-    .contact-info {
-        max-width: 1000px;
-        margin: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }img {
     height: auto;
@@ -440,52 +500,244 @@ footer {
         gap: 1rem;
     }
     
-}/* Mobile Menu */
-
-.toggle-menu {
+}
+img {
+    height: auto;
     display: block;
-    background: none;
-    border: none;
+    
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+ 
+
+header {
+    background-color: black;
     color: white;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.navigation {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-}
-
-.navigation.open {
-    display: flex;
-}
-
-.navigation a {
-    display: block;
     padding: 1rem;
+    margin-left: 3px;
+    font-size: x-large;
+    
+  
+
+    
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+  
+    
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    
+}
+.cta {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: darkblue;
+    color: white;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: black;
+    flex-wrap: wrap;
+}
+
+nav li {
+    padding: 1rem;
+}
+
+nav a {
     color: white;
     text-decoration: none;
-    background: black;
+}
+nav a.active {
+    background-color: darkblue;
 }
 
-/* Desktop */
+ nav a:hover {
+    background-color: blue
 
-@media (min-width: 768px) {
+} * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .toggle-menu {
-        display: none;
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #0f766e;
+  color: white;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+}
+
+header p {
+  font-size: 1rem;
+}
+
+.places-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 18px;
+}
+
+.card-content h2 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.type {
+  color: #0f766e;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.address {
+  color: #555;
+  line-height: 1.5;
+}
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    width: 100%;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    text-align: center;
+}
+
+/* SOCIAL MEDIA */
+
+.socialmedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    .chamber-information {
+        text-align: center;
+        max-width: 100%;
     }
+    .containercontent {
+        flex-direction: column;
+        text-align: center;
+    }
+    
 
-    .navigation {
-        display: flex !important;
+    .socialmedia {
+        gap: 15px;
+        display: flex;
         flex-direction: row;
-        width: auto;
+        justify-content: center;
+        padding: 1rem 0;
     }
 
-    .navigation a {
-        padding: 0.5rem 1rem;
+
+
+    .socialmedia img {
+        width: 30px;
+        height: 30px;
     }
+
+     /* FOOTER */
+
+     .p-div {
+        padding: 1rem 0.5rem;
+        text-align: center;
+
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
 }
+
+
+
 
 
