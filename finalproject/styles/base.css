@@ -1,20 +1,218 @@
-/* General mobile styles */
-img {
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+    background: #000;
+    color: white;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* ---------- HAMBURGER ---------- */
+
+.toggle-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    border-top: 1px solid #444;
+}
+
+.navigation a:hover {
+    background: #333;
+}
+
+.navigation .active {
+    background: #555;
+    color: gold;
+}
+
+/* ---------- MAIN ---------- */
+
+main {
+    padding: 1rem;
+}
+
+/* ---------- HOME PAGE ---------- */
+
+.information {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.places-container {
+    display: grid;
+    gap: 1rem;
+}
+
+/* ---------- ABOUT PAGE ---------- */
+
+.about-info {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-info p {
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: .75rem;
+}
+
+th {
+    background: #000;
+    color: white;
+}
+
+.info iframe {
+    width: 100%;
+    height: 350px;
+    margin-top: 1rem;
+}
+
+/* ---------- CONTACT PAGE ---------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: .75rem;
+}
+
+button[type="submit"] {
+    padding: .75rem;
+    background: black;
+    color: white;
+    border: none;
+}
+
+.contact-info {
+    margin-top: 2rem;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background: #000;
+    color: white;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.footer-container {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
+}
+
+/* ---------- DESKTOP ---------- */
+
+@media screen and (min-width: 768px) {
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+    }
+
+    /* Contact Page Layout */
+    .form-action,
+    .contact-info {
+        max-width: 1000px;
+        margin: auto;
+    }
+}img {
     height: auto;
     display: block;
     
 }
 * {
   box-sizing: border-box;
-}
-header span {
-    font-size: xx-large;
-}
-
-.information {
-    font-size: x-large;
-    text-align: center;
-
 }
 
 
@@ -26,7 +224,6 @@ header {
     color: white;
     padding: 1rem;
     margin-left: 3px;
-    margin-right: 3px;
     font-size: x-large;
     
   
@@ -35,12 +232,13 @@ header {
 }
 
 
-body{
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6;
-  background-color: white;
-  overflow-x: hidden;
-  color: black;
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+  
     
 }
 
@@ -89,13 +287,24 @@ nav a.active {
  nav a:hover {
     background-color: blue
 
-}
-* {
+} * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #0f766e;
+  color: white;
+}
 
 header h1 {
   margin-bottom: 10px;
@@ -106,14 +315,6 @@ header p {
   font-size: 1rem;
 }
 
-.places-containerr {
-  width: 90%;
-  max-width: 1300px;
-  margin: 30px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
-}
 .places-container {
   width: 90%;
   max-width: 1300px;
@@ -125,32 +326,25 @@ header p {
   gap: 20px;
 }
 
-
 .card {
-  background: antiquewhite;
-  width: 320px;
-  align-content: center;
+  background: white;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: 0.3s ease;
 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  transition: 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-6px);
 }
 
-
-
 .card img {
-  width: 320px;
-  height: auto;
+  width: 100%;
+  height: 220px;
   object-fit: cover;
-  border-radius: 8px;
-  display: block;
 }
-
 
 .card-content {
   padding: 18px;
@@ -162,74 +356,15 @@ header p {
 }
 
 .type {
-  color: black;
+  color: #0f766e;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
 .address {
-  color: black;
+  color: #555;
   line-height: 1.5;
 }
-
-footer {
-    display: flex;
-    background-color: black;
-    color: white;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem 1rem;
-    margin-top: 2rem;
-    width: 100%;
-}
-
-.footer-container {
-    display: flex;
-    background-color: black;
-    color: white;
-    flex-direction: row;
-    gap: 2rem;
-    text-align: center;
-}
-
-
-
-
-/* styles/large.css or inside a Media Query */
-@media (min-width: 768px) {
-    
-
-    nav {
-        display: flex; /* Show nav on desktop */
-        flex-direction: row;
-        gap: 20px;
-        color: white;
-     
-    }
-    nav a:hover {
-        background-color:blue;
-    }
-
-    .toggle-menu {
-        display: none; /* Hide burger menu on desktop */
-    }
-    
-
-
-
-    /* Footer layout */
-    .footer-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        text-align: center;
-        background-color:black;
-        align-items: center;
-        color: white;
-    }
-}
-
-
 footer {
     background-color: black;
     color: white;
@@ -271,11 +406,9 @@ footer {
         text-align: center;
         max-width: 100%;
     }
-    
-     footer nav {
-        display: none;
-        flex-direction: row;
-        background-color: black;
+    .containercontent {
+        flex-direction: column;
+        text-align: center;
     }
     
 
@@ -285,11 +418,6 @@ footer {
         flex-direction: row;
         justify-content: center;
         padding: 1rem 0;
-    }
-    .card {
-        width: 100%;
-        max-width: 330px;
-        margin: 0 auto;
     }
 
 
@@ -305,9 +433,7 @@ footer {
         padding: 1rem 0.5rem;
         text-align: center;
 
-    
     }
-    
 
     .footer-container {
         flex-direction: column;
@@ -316,349 +442,4 @@ footer {
     
 }
 
-    
 
-main {
-  padding: 1rem;
-}
-
-h2 {
-    color: black;
-    padding-left: 10px;
-    font-size: x-large;
-    min-height: 40px;
-}
-/* HEADER */
-.containercontent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: #003366;
-    color: white;
-    position: relative;
-}
-
-.logo {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-/* NAVIGATION */
-nav {
-    display: flex;
-    gap: 1rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem;
-}
-
-nav a.active {
-    background-color: #ffffff;
-    color: #003366;
-    border-radius: 5px;
-}
-
-/* HAMBURGER BUTTON */
-.toggle-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.toggle-menu .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    border-radius: 5px;
-}
-
-
-/* MOBILE VIEW */
-@media screen and (max-width: 768px) {
-
-    .toggle-menu {
-        display: flex;
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #003366;
-        padding: 1rem 0;
-    }
-
-    nav.open {
-        display: flex;
-    }
-
-    nav a {
-        padding: 1rem;
-        border-top: 1px solid rgba(255,255,255,0.2);
-    }
-}
-
-
-
-
-@media (max-width: 768px) {
-
-    .toggle-menu {
-        display: flex;
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: black;
-        padding: 1rem 0;
-    }
-    
-    
-
-     .containercontent {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    
-
-     
-     .cards {
-        width: 330px;
-    }
-
-     .form {
-        width: 360px;
-    }
-
-    nav.open {
-        display: flex;
-    }
-
-    nav a {
-        padding: 1rem;
-        border-top: 1px solid rgba(255,255,255,.2);
-    }
-
-    .containercontent,
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-}    
-    
-    
-
-    .join-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cards {
-        width: 330px;
-    }
-
-    .form {
-        width: 360px;
-    }
-
-    .socialmedia img {
-        width: 30px;
-        height: 30px;
-    }
-
-
-/* ===== DESKTOP ===== */
-@media (min-width: 768px) {
-
-    .toggle-menu {
-        display: none;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-    }
-    .top-grid h2 {
-        background-color: black;
-        color: white;
-        font-size: x-large;
-        margin-top: -10px;
-    }
-    #spotlights h3 {
-        background-color: black;
-        color: white;
-        align-content: start;
-        margin: -12px -20px 10px -20px;
-        font-size: x-large;
-    }
-
-    .home-grid {
-        grid-template-columns: 2fr 1fr 1fr;
-    }
-
-    #members.grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .footer-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        text-align: center;
-    }
-}
-
-
-/* Base styles to reset margins and set a clean font */
-body {
-    font-family: 'Roboto',  sans-serif;
-    background-color: #f4f7f6;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-}
-
-/* 1. Main Layout: Arranges the sections into a 2-column grid */
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr; /* Stack on mobile */
-    gap: 20px;
-}
-
-/* Desktop Layout (screens wider than 768px) */
-@media (min-width: 768px) {
-    main {
-        grid-template-columns: 1fr 1fr; /* Two equal columns */
-    }
-}
-
-/* 2. Generic Section Styling (Card design) */
-main > section {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-/* 3. Form Styling */
-.form-action form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.form-action label {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    font-weight: 600;
-    font-size: 0.95rem;
-}
-
-.form-action input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-}
-
-.form-action input:focus {
-    border-color: #007BFF;
-    outline: none;
-}
-
-.form-action button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 12px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.form-action button:hover {
-    background-color: #0056b3;
-}
-
-/* 4. Contact Info Styling */
-.contact-info h1 {
-    margin-top: 0;
-    color: #222;
-}
-
-.contact-info address {
-    font-style: normal;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #666;
-}
-
-.contact-info a {
-    display: block; /* Puts links on separate lines */
-    color: #007BFF;
-    text-decoration: none;
-    margin-bottom: 8px;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* 5. Table Styling */
-.trip-table table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-.trip-table th, .trip-table td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.trip-table th {
-    background-color: #f8f9fa;
-    font-weight: bold;
-}
-
-/* Highlights the group header row */
-.trip-table tr:first-child th {
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
-}
-
-.trip-table tr:hover {
-    background-color: #f1f3f5;
-}
-
-/* 6. Info (Map) Styling */
-.info iframe {
-    width: 100%; /* Makes the map responsive to the card width */
-    border-radius: 4px;
-}

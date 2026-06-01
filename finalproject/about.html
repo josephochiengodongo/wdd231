@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tourist Destination Guide</title>
+	<title>Tourist Destination Guide About Us Page</title>
 	<meta name="description" content="Explore Nairobi Chamber of Commerce member businesses and directory listings and contact information.">
 	<meta name="author" content="joseph odongo">
-	<link rel="stylesheet" href="styles/inmin.css">
+	<link rel="stylesheet" href="styles/base.css      ">
 	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="styles/large.css">
 	<script src="scripts/getdates.js" defer></script>
@@ -20,39 +20,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
-	<header class="containercontent">
-		<img src="images/logo.webp" alt="mount kenya" width="40" height="38.2">
+<header class="containercontent">
+    <div class="site-branding">
+        <img src="images/logo.webp" alt="mount kenya" width="40" height="38.2">
         <span class="logo">Tourist Destination Guide</span>
-		<button class="toggle-menu" aria-label="Open Navigation Menu">
-			<span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-		</button>
-		<nav aria-label="Main Navigation">
-			<a href="index.html">Home</a>
-			<a href="about.html" class="active">About Us</a>
-			<a href="contact.html">Contact Us</a>
-		</nav>
-        
-	
-	</header>
-	<main>
-		<div class="information">Beautiful Places To Visit in Kenya</div>
-        <div id="app" class="places-container"></div>
-    </main>
-    
-
-		
-	
-	<footer>
-
-        <script type="module" src="scripts/main.js"></script>
-
-    </footer>
+	</div>
+    <button class="toggle-menu" aria-label="Open Navigation Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+	</button>
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+		<a href="about.html" class="active">About Us</a>
+		<a href="contact.html">Contact Us</a>
+	</nav>
+    <main>
+        <section class="about-info">
+            <h1>About Us</h1>
+            <p>Welcome to Tourist Destination Guide, your ultimate resource for discovering the best tourist destinations in Kenya. We are passionate about showcasing the rich culture, stunning landscapes, and vibrant communities that make Kenya a top travel destination. Our mission is to provide travelers with comprehensive information, insider tips, and personalized recommendations to help them plan unforgettable adventures across Kenya. Whether you're seeking wildlife safaris, cultural experiences, or hidden gems off the beaten path, Tourist Destination Guide is here to inspire and guide you on your journey through this incredible country.</p>
+        </section>
+        <section class="charge-summery"></section>
+           <h2>Tourist Destination Guide Summary</h2>
+            <table>
+                <tr>
+                    <th colspan="3" scope="colgroup">Tour Cost Summary</th>
+                </tr>
+                <tr>
+                    <th scope="col">Tour Name</th>
+                    <th scope="col">Tour  Price</th>
+                    <th scope="col">Tour Location</th>
+                </tr>
+                <tr>
+                    <td>1/2 day class 1</td>
+                    <td>$300</td>
+                    <td>Maasai Mara</td>
+                </tr>
+                <tr>
+                    <td>1/2 day class 2</td>
+                    <td>$500</td>
+                    <td>Tsavo National Parck</td>
+                </tr>
+                <tr>
+                    <td>1 day class 1</td>
+                    <td>$600</td>
+                    <td>Nyali Beach</td>
+                </tr>
+                <tr>
+                    <td>1 day class 2</td>
+                    <td>$700</td>
+                    <td>Hell's Gate</td>
+                </tr>
+                <tr>
+                    <td>2 day class 3</td>
+                    <td>$1200</td>
+                    <td>Amboseli National Park</td>
+                </tr>
+            </table>
+    </section>
+    <section class="info">
+      <h2>map</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.783279243308!2d36.858445073585955!3d-1.382486935735941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0fbbde36bc45%3A0x6f9671d1966870ec!2sNairobi%20National%20Park!5e1!3m2!1sen!2ske!4v1765047718229!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+  <footer>
 		<div class="footer-container">
 			<div class="chamber-information">
 				<p>Tourist Destination Guide</p>
@@ -79,7 +112,10 @@
                 <p>Back so soon! Awesome!</p>
 		    </div>
 		</div>
+		<script type="module" src="scripts/main.js"></script>
     </footer>
 </body>
 </html>
 	
+
+        
