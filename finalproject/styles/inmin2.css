@@ -3,15 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.information-main {
-    text-align: center;
-    position: absolute;
-    top: 112px;
-    left: 50%;
-    font-size:xx-large;;
-    transform: translateX(-50%);
-    
+
 }
 
 body {
@@ -198,9 +190,7 @@ header {
   background: #0f766e;
   color: white;
   
-}
-h1 {
-    align-items: center;
+
 }
 
 headerr h1 {
@@ -338,6 +328,16 @@ footer {
     }
     
 }
+/* Base styles to reset margins and set a clean font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 1. Main Layout: Arranges the sections into a 2-column grid */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -463,11 +463,3 @@ main > section {
     width: 100%; /* Makes the map responsive to the card width */
     border-radius: 4px;
 }
-
-
-
-
-
-
-
-
