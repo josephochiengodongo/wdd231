@@ -518,7 +518,7 @@ nav a.active {
 
 /* Base styles to reset margins and set a clean font */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto',  sans-serif;
     background-color: #f4f7f6;
     color: #333;
     margin: 0;
