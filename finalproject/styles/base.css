@@ -106,7 +106,7 @@ header p {
   font-size: 1rem;
 }
 
-.places-container {
+.places-containerr {
   width: 90%;
   max-width: 1300px;
   margin: 30px auto;
@@ -114,6 +114,17 @@ header p {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
 }
+.places-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 20px;
+}
+
 
 .card {
   background: antiquewhite;
