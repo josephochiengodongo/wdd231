@@ -117,11 +117,7 @@ nav ul {
 
 nav li {
     padding: 1rem;
-}
 
-nav a {
-    color: white;
-    text-decoration: none;
 }
 nav a.active {
     background-color: darkblue;
@@ -268,23 +264,14 @@ footer {
         gap: 1rem;
     }
     
-}
 
-
-nav {
-  display: none;
-  flex-direction: column;
 }
 
 nav.show {
   display: flex;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0.5rem 0;
-}
+
 
 #menuBtn {
   background: white;
@@ -293,10 +280,7 @@ nav a {
   cursor: pointer;
 }
 
-.hero {
-  text-align: center;
-  padding: 2rem;
-}
+
 
 .cards {
   display: grid;
@@ -305,19 +289,6 @@ nav a {
   padding: 1rem;
 }
 
-.card {
-  background: white;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-}
 
 button {
   background: #004d40;
@@ -350,13 +321,6 @@ input {
 
 .p-div p {
   margin: 0.5rem 0;
-}
-
-.socialmedia {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  flex-wrap: wrap;
 }
 
 .socialmedia a img {
@@ -417,65 +381,6 @@ dialog {
   #menuBtn {
     display: none;
   }
-}
-
-
-header h1 {
-  margin-bottom: 10px;
-  font-size: 2.2rem;
-}
-
-header p {
-  font-size: 1rem;
-}
-
-.places-container {
-  width: 90%;
-  max-width: 1300px;
-  margin: 30px auto;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-}
-
-.card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 18px;
-}
-
-.card-content h2 {
-  margin-bottom: 10px;
-  font-size: 1.3rem;
-}
-
-.type {
-  color: #0f766e;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.address {
-  color: #555;
-  line-height: 1.5;
 }
 
 
