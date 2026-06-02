@@ -97,9 +97,7 @@ img {
     display: block;
     
 }
-* {
-  box-sizing: border-box;
-}
+
 
 
 
@@ -118,15 +116,7 @@ header {
 }
 
 
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: white;
-    color: black;
-    overflow-x: hidden;
-  
-    
-}
+
 
 
 .hero {
@@ -174,13 +164,6 @@ nav a.active {
     background-color: blue
 
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 
 
 header {
@@ -324,16 +307,9 @@ footer {
         gap: 1rem;
     }
     
-}* {
-  box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f4f4f4;
-}
+
 
 header {
   background: #004d40;
@@ -497,17 +473,8 @@ dialog {
   #menuBtn {
     display: none;
   }
-}* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #222;
-}
 
 header {
   text-align: center;
