@@ -1,57 +1,80 @@
-img {
-    height: auto;
-    display: block;
-    
-}
+/* General Styles */
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-header {
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    margin-left: 3px;
-    font-size: x-large;
-    
-  
-
-    
-}
-
 
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: white;
-    color: black;
-    overflow-x: hidden;
-  
-    
 }
 
-
-.hero {
-    position: relative;
-    text-align: center;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    
-}
-.cta {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: darkblue;
+header {
+    background: black;
     color: white;
-    padding: 0.8rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Hamburger Button */
+.toggle-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+/* Mobile Navigation */
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: black;
+}
+
+nav.open, nav.show {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    border-top: 1px solid darkslategray;
+}
+
+nav a:hover {
+    background-color: blue;
+    color: gold;
+}
+
+nav a.active {
+    background-color: darkblue;
+    color: gold;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -64,296 +87,109 @@ nav li {
     padding: 1rem;
 }
 
-
- nav a:hover {
-    background-color: blue
-
-} nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem;
-}
-
-nav a.active {
-    background-color: white;
-    color: darkblue;
-    border-radius: 5px;
-}
-
-
-
-/* Home Grid: Stacked for mobile */
-.home-grid {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column */
-    gap: 1rem;
-    padding: 1rem;
-  
-}
-
-/* Member Cards in Directory */
-#members.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-}
-.member-card {
-    color:white;
-    background-color: black;
-    gap: 50px;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 10px 10px 10px 10px;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .home-grid {
-      grid-template-columns: 1fr;
-      align-items: center;
-      
-    }
-    .home-grid h3 {
-      background-color: black;
-      color: white;
-      margin: -10px 0 10px -8px;
-      padding: 10px 0 10px 9px;
-      text-align: center;;
-    
-
-    
-    
-      
-    }
-    .events-section,.current-weather-section,.weather-forecast-section {
-      background-color: darkblue;
-      color: white;
-      padding-left: 8px;
-      border-radius: 5px;
-      align-items: center;
-      height: 300px;
-    
-    }
-    .top-grid h2 {
-        background-color: black;
-        color: white;
-        margin: -10px -2px 0 -2px;
-        gap: 30px;
-        align-items: center;
-    }
-    .hero {
-        margin-bottom: 50px;
-    }
-    #spotlights h3 {
-        background-color: black;
-        color: white;
-        align-content: start;
-        margin: -20px -20px 10px -20px;
-        font-size: x-large;
-    }
-    .member-grid h3 {
-      background-color: darkblue;
-      color: white;
-      margin: -15px -20px 10px -20px;
-      padding: 10px 23px 10px 23px;
-      border-radius: 8px 8px 0 0;
-      align-items: center;
-    }
-    .member-cardd h3{
-      background-color: darkblue;
-      color: white;
-      margin: -15px -14px 10px -14px;
-      padding: 10px;
-      border-radius: 8px 8px 0 0;
-      text-align: center;
-    }
-
-     .view-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin: 1.5rem 0;
-     }
-
-
-.view-buttons button {
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    background-color: darkblue;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.view-buttons button:hover {
-    background-color: darkblue;
-    transform: scale(1.05);
-}
-
-.view-buttons button:active {
-    transform: scale(0.98);
-}
-.list img {
-  display: none;
-}
-
-
-
-  
-}
-
-
-
-
-.view-buttons button:focus {
-    outline: 2px solid orangered;
-    outline-offset: 3px;
-}    
-    
-
-
-/* styles/large.css or inside a Media Query */
-@media (min-width: 768px) {
-    
-    /* Header layout */
-    .containercontent {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+/* Desktop View */
+@media screen and (min-width: 768px) {
+    .toggle-menu, #menuBtn {
+        display: none;
     }
 
     nav {
-        display: flex; /* Show nav on desktop */
+        display: flex;
         flex-direction: row;
-        gap: 20px;
-        color: white;
-     
-    }
-    nav a:hover {
-        background-color:blue;
+        position: static;
+        width: auto;
+        gap: 1rem;
+        background: none;
     }
 
-    .toggle-menu {
-        display: none; /* Hide burger menu on desktop */
-    }
-
-    /* Home Grid: 3-column layout from wireframe */
-    .home-grid {
-        grid-template-columns: 2fr 1fr 1fr;
-        align-items: start;
-        justify-content: center;
-    }
-
-    /* Member Cards: Grid view for desktop directory */
-    #members.grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    #members.grid .member-card {
-        border-radius: 10px;
-        background-color: black;
-        color: white;
-    }
-    #members.grid h3 {
-        background-color: darkblue;
-        color: white;
-        margin: -15px -15px 10px -15px;
-        padding: 10px 20px 10px 20px;
-        border-radius: 8px 8px 0 0;
-    }
-    #members.list h3 {
-        background-color: darkblue;
-        color: white;
-        margin: -10px -10px 10px -10px;
-        padding: 10px;
-        border-radius: 8px 8px 0 0;
-
-    }
-
-    /* Footer layout */
-    .footer-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        text-align: center;
-        background-color:black;
-        align-items: center;
-        color: white;
+    nav a {
+        border: none;
+        padding: .5rem 1rem;
     }
 }
 
-@media (min-width: 768px) {
-    .home-grid {
-        display: grid;
-        /* This creates 4 equal fractions total: 2 + 1 + 1 */
-        grid-template-columns: 2fr 1fr 1fr; 
-        gap: 20px; /* Space between the sections */
-        align-items: stretch;
-        padding: 20px;
-    }
-    .top-grid h2 {
-        background-color: black;
-        color: white;
-        font-size: x-large;
-        margin-top: -10px;
-    }
-    #spotlights h3 {
-        background-color: black;
-        align-items: center;
-        color: white;
-        margin: -12px -20px 10px -20px;
-        font-size: x-large;
-    }
-    .hero {
-        margin-bottom: 30px;
-    }
-
-    /* Styling the headers to look like the wireframe */
-    .home-grid h2 {
-        grid-column: 1 / -1; /* Makes the "Home" title span all columns */
-        margin-bottom: 10px;
-    }
-
-    .events-section, 
-    .current-weather-section, 
-    .weather-forecast-section {
-        background-color:darkblue; 
-        padding: 15px;
-        border-radius: 5px;
-        color: white;
-    }
-
-    /* Optional: Header styling within the boxes */
-    .home-grid h3 {
-        background-color:black; /* Dark header bar */
-        color: white;
-        margin: -15px -15px 15px -15px; /* Pulls header to the edges of the box */
-        padding: 10px;
-        text-align: center;
-    }
+img {
+    height: auto;
+    display: block;
 }
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+/* Grid places container */
+.places-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 18px;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.type {
+    color: teal;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.address {
+    color: dimgray;
+    line-height: 1.5;
+}
+
+/* Footer layout */
 footer {
     background-color: black;
     color: white;
     display: flex;
-    justify-content: center;
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
     width: 100%;
-
 }
 
 .footer-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 2rem;
     text-align: center;
 }
 
-/* SOCIAL MEDIA */
-
+/* Social Media Icons */
 .socialmedia {
     display: flex;
     align-items: center;
@@ -362,551 +198,125 @@ footer {
     flex-wrap: wrap;
 }
 
-.socialmedia img {
+.socialmedia img, .socialmedia a img {
     width: 40px;
     height: 40px;
     object-fit: cover;
     transition: transform 0.3s ease;
     border-radius: 5px;
 }
-@media (max-width: 768px) {
-    .chamber-information {
-        text-align: center;
-        max-width: 100%;
-    }
-    .containercontent {
-        flex-direction: column;
-        text-align: center;
-    }
-    
 
-    .socialmedia {
-        gap: 15px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 1rem 0;
-    }
-
-
-
-    .socialmedia img {
-        width: 30px;
-        height: 30px;
-    }
-
-     /* FOOTER */
-
-     .p-div {
-        padding: 1rem 0.5rem;
-        text-align: center;
-
-    }
-
-    .footer-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
+.socialmedia a img:hover {
+    transform: scale(1.1);
 }
 
-    
-.cta-button {
-    background: azure;
-    padding: 10px;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-  
-  
-}
-/* mobile*/
-
-
-.top-grid {
-  display: flex;
-  justify-items: stretch;
-  flex-direction: row;
-  gap: 20px;
-  
-}
-#spotlight-container img {
-    width: 50%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+#menuBtn {
+    background: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
 }
 
-#spotlight-container {
+.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    background-color:white;
-    
-}
-
-
-/* HAMBURGER */
-.menu-toggle {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: white;
-}
-
-
-.cta h2 {
-  color:white;
-  background-color: blue;
-  
-
-}
-
-
-
-/* GRID */
-
-#events,.weather-box,.forecast-display {
-  background: blue;
-  border: 1px solid black;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  color:white;
-  margin-left: 4px;
-  width: 290px;
-  height: 350px;
-  margin-top: 10px;
-  text-align: center;
-  
-}
-
-
-
-
-
-
-/* join*/
-.join-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-
-/* CARDS */
-.cards {
-  display: grid;
-  width: 400px;
-  gap: 0.5rem;
-  
-  
-}
-
-
-
-
-
-/* MODAL */
-.modal {
-  display: none;
-  position: fixed;
-  top: 30%;
-  left: 30%;
-  background: white;
-  padding: 20px;
-  border: 2px solid black;
-  
-}
-
-/* DESKTOP */
-.card a:hover {
-  background:azure;
-}
-
-/* Card Style */
-.card {
-  background:white;
-  color: black;
-  display: flex;
-  border: 1px solid black;
-  border-radius: 12px;
-  overflow: hidden;
-  padding: 0.75rem;
-  margin-left: 4px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeIn 1s forwards;
-  flex-direction: column;
-  
-}
-
-
-
-/* Hover effect */
-.card:hover {
-  transform: translateY(-5px);
-  
-}
-
-
-
-
-
-
-
-/* RESPONSIVE (mobile) */
-@media (max-width: 768px) {
-  .top-grid {
-    flex-direction: column;
-  }
-  .join-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    align-items: center;
-
-  }
-   .cards {
-    width: 330px;
-    align-content: center;
-    
-   }
-   .form h1 {
-    text-align: left;
-    
-
-   }
-   .form {
-    width: 360px;
-    align-content: center;
-
-    
-    
-   }
-
-
-  
-  
-}
-
-  
-
-  
-
-
-
-
-
-
-/* join */
-
-
-.card-level h3 {
-  border-radius: 1px 30px 1px 30px;
-  background-color: darkblue;
-  padding-bottom: 50px;
-  margin: 45px 10px 1px 10px;
-  text-align: center;
-  color: white;
-
-
-}
-.card-level a {
-  background: white;
-  position: relative;
-  left:180px;
-  bottom:50px;
-  color: darkblue;
-
-}
-
-/* ===== GENERAL ===== */
-main {
-  padding: 1rem;
-}
-
-h2{
-    color:black;
-    padding-left: 10px;
-    font-size: x-large;
-    height: 40px;
-}
-
-
-
-
-
-
-/* ===== VISIT MESSAGE ===== */
-.visit-message {
-  background: white;
-  padding: 1rem;
-  text-align: center;
-  border: 1px solid blue;
-  margin-bottom: 1rem;
-  color: darkblue;
-
-}
-
-/* ===== INTRO ===== */
-.intro {
-  margin: 1px 1px 10px 1px;
-  background-color: blue;
-  color:white;
-  border-radius: 8px;
-  border:1px solid black;
-  text-align: center;
-}
-
-.intro h2 {
-  color: white;
-  margin-bottom: 0.5rem;
-  text-align: center;
-  
-}
-
-/* ===== GRID (MOBILE FIRST) ===== */
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "c1"
-    "c2"
-    "c3"
-    "c4"
-    "c5"
-    "c6"
-    "c7"
-    "c8";
-  gap: 1rem;
-}
-
-/* Map cards to grid areas */
-
-
-
-
-.card figure {
-  margin: 0;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin-top: 1px;
-  border-radius: 6px;
-  
-}
-
-
-
-
-.card button {
-  margin: 0 1rem 1rem;
-  padding: 0.5rem;
-  border: none;
-  background:white;
-  color: black;
-  border-radius: 6px;
-  cursor: pointer;
-}
-.card h2 {
-  font-size: 1.2rem;
-  background-color: white;
-  color: black;
-  border-radius: 6px;
-  margin: -8px -6px 2px -6px;
-  
-
-}
-
-/* GRID VIEW */
-
-
-.grid section {
-    border: 1px solid black;
-    padding: 1rem;
-    color: white;
-    text-align: center;
-    background-color: black;
-}
-
-/* LIST VIEW */
-.list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  
-}
-.list img {
-  display: none;
-}
-
-
-
-.view-buttons {
-    display: flex;
-    justify-content: center;
     gap: 1rem;
-    margin: 1.5rem 0;
+    padding: 1rem;
 }
 
-.view-buttons button {
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    background-color: darkblue;
+button {
+    background: darkslategray;
     color: white;
-    font-size: 1rem;
-    font-weight: bold;
+    border: none;
+    padding: 0.7rem;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.view-buttons button:hover {
-    background-color: darkblue;
-    transform: scale(1.05);
-}
-
-
-
-
-/* join *//* Base container styling */
-
-
-
-.form {
-    background-color: white;
-    padding: 2.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.form h1 {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    font-size: 1.75rem;
-    color: black;
-    text-align: center;
-}
-
-/* Form layouts and labels */
 form {
     display: flex;
     flex-direction: column;
-    gap: .4rem; /* Even spacing between form groups */
-}
-
-label {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem; /* Spacing between label text and input */
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: black;
-}
-
-/* Styling all text inputs, selects, and textareas */
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid black;
-    border-radius: 4px;
-    font-size: 1rem;
-    color: black;
-    box-sizing: border-box; /* Ensures padding doesn't break layout width */
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-/* Custom height and resize safety for description */
-textarea {
-    min-height: 100px;
-    resize: vertical; 
-}
-
-
-/* Submit button styling */
-input[type="submit"] {
-    background-color: darkblue;
-    color: white;
-    padding: 0.85rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    margin-top: 0.5rem;
-}/* HEADER */
-.containercontent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: black;
-    color: white;
-    position: relative;
-}
-
-.logo {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-/* NAVIGATION */
-nav {
-    display: flex;
     gap: 1rem;
+    padding: 1rem;
+    max-width: 500px;
+    margin: auto;
 }
 
+input {
+    width: 100%;
+    padding: 0.5rem;
+}
 
-/* HAMBURGER BUTTON */
-.toggle-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    background: none;
+.p-div {
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.p-div p {
+    margin: 0.5rem 0;
+}
+
+dialog {
     border: none;
-    cursor: pointer;
+    border-radius: 8px;
+    padding: 1rem;
 }
 
-.toggle-menu .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    border-radius: 5px;
+/* Layout Core styles */
+main > section {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* MOBILE VIEW */
-@media screen and (max-width: 768px) {
-
-    .toggle-menu {
-        display: flex;
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: darkblue;
-        padding: 1rem 0;
-    }
-
-    nav.open {
-        display: flex;
-    }
-
-    nav a {
-        padding: 1rem;
-        border-top: 1px solid rgba(255,255,255,0.2);
-    }
+/* Form Actions */
+.form-action input {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
 }
 
+.form-action input:focus {
+    border-color: dodgerblue;
+    outline: none;
+}
 
+.form-action button {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.form-action button:hover {
+    background-color: royalblue;
+}
+
+/* Contact Details */
+.contact-info h1 {
+    color: black;
+}
+
+.contact-info address {
+    color: dimgray;
+}
+
+.contact-info a {
+    color: dodgerblue;
+}
+
+/* Table Design */
+.trip-table th,
+.trip-table td {
+    border-bottom: 1px solid gainsboro;
+}
+
+.trip-table tr:first-child th {
+    background-color: darkslategray;
+    color: white;
+}
+
+.trip-table tr:hover {
+    background-color: whitesmoke;
+}

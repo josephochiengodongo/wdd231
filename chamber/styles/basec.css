@@ -554,4 +554,51 @@ footer {
   padding: 20px;
   border: 2px solid black;
   
+}.membership-card {
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
+
+dialog {
+    padding: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,0.5);
+}
+.join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.form-section {
+    flex: 2;
+}
+
+.membership-cards {
+    flex: 1;
+    display: grid;
+    gap: 1rem;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+    .join-container {
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .membership-cards {
+        width: 320px;
+    }
+}
+
+
+

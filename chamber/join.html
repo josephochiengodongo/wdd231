@@ -55,8 +55,8 @@
                 <label for="phone">Phone:</label>
                 <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your phone number">
     
-                <label for="organization">Organization Name:</label>
-                <input type="text" id="organization" name="organization" required autocomplete="organization" title="Enter your organization name">
+                <label for="organization">Business/Organization Name:</label>
+                <input type="text" id="organization" name="organization" required autocomplete="Organization" title="Enter your organization name">
             
 
                 <label for="membership">Organization  Level:
@@ -78,39 +78,90 @@
 
                 <input type="submit" value="Join Now">
             </form>
-        </section> 
-        <section class="join-cards">
-            <h2>Membership Levels</h2>
-            <div class="cards">
-                <div class="card-level">
-                    <h3>Non Profit Membership Level</h3>
-                    <a href="#" data-modal="npModal">Learn More</a>
-                </div>
+        </section><main class="join-container">
 
-                <div class="card-level">
-                    <h3>Bronze Membership Level</h3>
-                    <a href="#" data-modal="bronzeModal">Learn More</a>
-                </div>
-
-                <div class="card-level">
-                    <h3>Silver Membership Level</h3>
-                    <a href="#" data-modal="silverModal">Learn More</a>
-                </div>
-
-                <div class="card-level">
-                    <h3>Gold Membership Level</h3>
-                    <a href="#" data-modal="goldModal">learn More</a>
-                </div>
-            </div>
-        </section>
+    <!-- Form Section -->
     
 
-         <!-- MODALS -->
-        <div id="npModal" class="modal"><p>Free membership for nonprofits<br>Networking opportunity<br>Event access<br>Business directory listing<br>x Premium advertising<br>x Priority Placement</p></div>
-        <div id="bronzeModal" class="modal"><p>Free membership for nonprofit<br>Basic advertising<br>Networking opportunities<br>Event access<br>Business directory listing<br>x Priority placement</p></div>
-        <div id="silverModal" class="modal"><p>Event discounts + promotions<br>Networking opportunities<br>Event access<br>Premium advertising<br>Business directory listing<br>Top priority placement</p></div>
-        <div id="goldModal" class="modal"><p>Top spotlight + premium ads<br>Networking opportunities<br>Event access<br>Business directory listing<br>Premium advertising<br>Standard priority</p></div> 
+    <!-- Membership Cards -->
+    <section class="membership-cards">
+        <h2>Membership Level</h2>
 
+        <section class="membership-card card1">
+            <h3>NP Membership</h3>
+            <button onclick="npModal.showModal()">Learn More</button>
+        </section>
+
+        <section class="membership-card card2">
+            <h3>Bronze Membership</h3>
+            <button onclick="bronzeModal.showModal()">Learn More</button>
+        </section>
+
+        <section class="membership-card card3">
+            <h3>Silver Membership</h3>
+            <button onclick="silverModal.showModal()">Learn More</button>
+        </section>
+
+        <section class="membership-card card4">
+            <h3>Gold Membership</h3>
+            <button onclick="goldModal.showModal()">Learn More</button>
+        </section>
+
+    </aside>
+
+</main>
+
+<!-- NP Modal -->
+<dialog id="npModal">
+    <h2>NP Membership</h2>
+    <ul>
+        <li>No membership fee</li>
+        <li>Directory listing</li>
+        <li>Networking events</li>
+    </ul>
+    <button onclick="npModal.close()">Close</button>
+</dialog>
+
+<!-- Bronze Modal -->
+<dialog id="bronzeModal">
+    <h2>Bronze Membership</h2>
+    <ul>
+        <li>Business directory listing</li>
+        <li>Monthly networking events</li>
+        <li>Training workshops</li>
+    </ul>
+    <button onclick="bronzeModal.close()">Close</button>
+</dialog>
+
+<!-- Silver Modal -->
+<dialog id="silverModal">
+    <h2>Silver Membership</h2>
+    <ul>
+        <li>All Bronze benefits</li>
+        <li>Advertising discounts</li>
+        <li>Event discounts</li>
+        <li>Homepage spotlight opportunities</li>
+        
+    </ul>
+    <button onclick="silverModal.close()">Close</button>
+</dialog>
+
+<!-- Gold Modal -->
+<dialog id="goldModal">
+    <h2>Gold Membership</h2>
+    <ul>
+        <li>All Silver benefits</li>
+        <li>Featured homepage placement</li>
+        <li>Premium advertising</li>
+        <li>VIP event invitations</li>
+        <li>Sponsorship opportunities</li>
+    </ul>
+    <button onclick="goldModal.close()">Close</button>
+</dialog>
+
+        
+
+                
     </main>
     <footer>
 		<div class="footer-container">
