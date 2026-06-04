@@ -18,8 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/joinb.js" type="module"></script>
-    <script src="scripts/join1.js" defer></script>
     <script src="scripts/navigation.js" type="module"></script>
+    <script src="scripts/join2.js" defer></script>
 
 </head>
 <body>
@@ -85,36 +85,30 @@
     
 
     <!-- Membership Cards -->
+    
     <section class="membership-cards">
-        <h2>Membership Level</h2>
-        
-
-        <section class="membership-card card1">
-            <h3>NP Membership</h3>
-            <button id="openNP">Learn More</button>
-        </section>
-
-        <section class="membership-card card2">
-            <h3>Bronze Membership</h3>
-            <button id="openBronze">Learn More</button>
-        </section>
-
-        <section class="membership-card card3">
-            <h3>Silver Membership</h3>
-            <button id="openSilver">Learn More</button>
-        </section>
-
-        <section class="membership-card card4">
-            <h3>Gold Membership</h3>
-            <button id="openGold">Learn More</button>
-        </section>
-
+    <h2>Membership Level</h2>
+    
+    <section class="membership-card card1">
+        <h3>NP Membership</h3>
+        <button type="button" class="open-btn" data-target="npModal">Learn More</button>
     </section>
 
-</main>
+    <section class="membership-card card2">
+        <h3>Bronze Membership</h3>
+        <button type="button" class="open-btn" data-target="bronzeModal">Learn More</button>
+    </section>
 
-<!-- NP Modal -->
+    <section class="membership-card card3">
+        <h3>Silver Membership</h3>
+        <button type="button" class="open-btn" data-target="silverModal">Learn More</button>
+    </section>
 
+    <section class="membership-card card4">
+        <h3>Gold Membership</h3>
+        <button type="button" class="open-btn" data-target="goldModal">Learn More</button>
+    </section>
+</section>
 
 <dialog id="npModal">
     <h2>NP Membership</h2>
@@ -122,10 +116,9 @@
         <li>No membership fee</li>
         <li>Networking opportunities</li>
     </ul>
-    <button id="closeNP">Close</button>
+    <button type="button" class="close-btn">Close</button>
 </dialog>
 
-<!-- Bronze Modal -->
 <dialog id="bronzeModal">
     <h2>Bronze Membership</h2>
     <ul>
@@ -133,10 +126,9 @@
         <li>Monthly networking events</li>
         <li>Training workshops</li>
     </ul>
-    <button id="closeBronze">Close</button>
+    <button type="button" class="close-btn">Close</button>
 </dialog>
 
-<!-- Silver Modal -->
 <dialog id="silverModal">
     <h2>Silver Membership</h2>
     <ul>
@@ -144,12 +136,10 @@
         <li>Advertising discounts</li>
         <li>Event discounts</li>
         <li>Homepage spotlight opportunities</li>
-        
     </ul>
-    <button id="closeSilver">Close</button>
+    <button type="button" class="close-btn">Close</button>
 </dialog>
 
-<!-- Gold Modal -->
 <dialog id="goldModal">
     <h2>Gold Membership</h2>
     <ul>
@@ -159,12 +149,9 @@
         <li>VIP event invitations</li>
         <li>Sponsorship opportunities</li>
     </ul>
-    <button id="closeGold">Close</button>
+    <button type="button" class="close-btn">Close</button>
 </dialog>
-
         
-
-                
     </main>
     <footer>
 		<div class="footer-container">
