@@ -293,11 +293,7 @@ nav a.active {
 /* ===== JOIN ===== */
 
 
-.membership-cards {
-    display: grid;
-    max-width: 550px;
-    gap: .5rem;
-}
+
 
 section h3 {
     background: darkblue;
@@ -582,7 +578,7 @@ dialog::backdrop {
 }
 
 .membership-cards {
-    flex: 2;
+    flex: 1;
     display: grid;
     gap: 1rem;
 }
