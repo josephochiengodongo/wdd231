@@ -597,10 +597,7 @@ dialog::backdrop {
     }
 }
 
-.card1 { animation-delay: 0.2s; }
-.card2 { animation-delay: 0.4s; }
-.card3 { animation-delay: 0.6s; }
-.card4 { animation-delay: 0.8s; }
+
 
 .membership-card button {
     margin-top: 1rem;
