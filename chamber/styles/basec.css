@@ -291,15 +291,7 @@ nav a.active {
 }
 
 /* ===== JOIN ===== */
-.join-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 1100px;
-    min-width: 320px;
-    margin: 40px auto;
-    padding: 20px;
-}
+
 
 .membership-cards {
     display: grid;
@@ -328,6 +320,7 @@ section h3 {
 .form {
     background: white;
     padding: 2.5rem;
+    max-width: 450px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,.1);
 }
@@ -577,16 +570,19 @@ dialog::backdrop {
 .join-container {
     display: flex;
     flex-direction: column;
+    max-width: 1100px;
+    min-width: 320px;
     gap: 2rem;
     padding: 1rem;
 }
 
 .form-section {
     flex: 1;
+
 }
 
 .membership-cards {
-    flex: 1;
+    flex: 2;
     display: grid;
     gap: 1rem;
 }
