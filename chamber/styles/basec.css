@@ -549,11 +549,6 @@ footer {
   border: 2px solid black;
   
 }
-.membership-card {
-    text-align: center;
-    animation: fadeInUp 0.5s ease forwards;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
 dialog {
     padding: 1.5rem;
@@ -630,6 +625,7 @@ dialog::backdrop {
 .membership-card {
     opacity: 0; /* Start invisible so they can fade in */
     animation: card-entrance 0.8s ease-out forwards;
+    text-align: center;
 }
 
 /* 3. Stagger the cards (Animation Delay) 
