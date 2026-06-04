@@ -9,6 +9,9 @@
 * {
     box-sizing: border-box;
 }
+span.logo{
+    font-size: 1.8rem;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
