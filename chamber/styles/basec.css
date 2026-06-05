@@ -3,7 +3,30 @@
     --primary: darkblue;
     --dark: black;
     --light: white;
+}/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 /* ===== RESET ===== */
 * {
@@ -426,9 +449,8 @@ footer {
     margin-left: 10px;
     margin-bottom: 10px;
 }
-body {
-    margin: 0 10px 0 10px;
-}
+
+
 
 .card img {
     width: 100%;
