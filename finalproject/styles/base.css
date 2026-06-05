@@ -398,6 +398,7 @@ td:nth-child(3n+3) {
 @media (max-width: 768px) {
     .chamber-information, .containercontent, .p-div, .footer-container {
         text-align: center;
+        margin: 0 auto;
     }
     
     .containercontent, .footer-container {
