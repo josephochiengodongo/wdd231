@@ -100,15 +100,6 @@
 @media screen and (min-width: 1025px) {
 
 
-.grid-container {
-    display: grid;
-    gap: 1rem;
-
-    gridd-template-areas:
-      "card1 card1 card2 card3"
-      "card4 card5 card5 card6"
-      "card7 card8 card8 card6";
-}
 
 .card img:hover {
     filter: brightness(110%);

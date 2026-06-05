@@ -428,7 +428,22 @@ footer {
         font-size: x-large;
         margin-top: -10px;
     }
-
+    .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 20px;
+    padding: 10px;
+}
+    
 
      .home-grid {
         grid-template-columns: 1fr;
