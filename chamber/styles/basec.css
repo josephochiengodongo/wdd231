@@ -535,6 +535,9 @@ footer {
         width: 100%;
         height: auto;
     }
+    .grid-container {
+        margin: 0 auto;;
+    }
 
      .socialmedia {
         display: flex;
