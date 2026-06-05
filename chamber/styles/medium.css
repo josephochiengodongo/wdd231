@@ -1,4 +1,4 @@
-@media screen and (min-widthh: 641px) {
+@media screen and (min-width: 641px) {
 
 .grid-container {
     display: grid;
@@ -22,7 +22,7 @@
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(0,0,0,.4);
 }
-}@media (min-width: 641px) {
+}@media (min-widthf: 641px) {
     .toggle-menu {
         display: none; /* Hide hamburger menu on tablet/desktop */
     }
