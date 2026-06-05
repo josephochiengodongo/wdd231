@@ -22,43 +22,5 @@
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(0,0,0,.4);
 }
-}@media (min-widthf: 641px) {
-    .toggle-menu {
-        display: none; /* Hide hamburger menu on tablet/desktop */
-    }
-
-    header nav {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        width: auto;
-        background: transparent;
-    }
-
-    header nav a {
-        border-bottom: none;
-        padding: 10px 15px;
-    }
-
-    /* Named Grid Layout 2: Balanced Alternating Rows */
-    .grid-container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "card1 card2"
-            "card3 card4"
-            "card5 card6"
-            "card7 card8";
-    }
-
-    /* Hover effect rules on desktop & tablet images */
-    .attraction-card img {
-        transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
-        filter: grayscale(20%);
-    }
-
-    .attraction-card img:hover {
-        transform: scale(1.04);
-        filter: grayscale(0%) contrast(110%);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    }
 }
+
