@@ -636,37 +636,84 @@ dialog::backdrop {
     text-align: center;
 }
 
-/* 3. Stagger the cards (Animation Delay) 
-   This ensures they don't all pop in at the exact same time */
-.card1 { animation-delay: 0.2s; }
-.card2 { animation-delay: 0.4s; }
-.card3 { animation-delay: 0.6s; }
-.card4 { animation-delay: 0.8s; }
-/* basec.css - Naming each of the 8 dynamic cards */
-.grid-container > :nth-child(1) { grid-area: card1; }
-.grid-container > :nth-child(2) { grid-area: card2; }
-.grid-container > :nth-child(3) { grid-area: card3; }
-.grid-container > :nth-child(4) { grid-area: card4; }
-.grid-container > :nth-child(5) { grid-area: card5; }
-.grid-container > :nth-child(6) { grid-area: card6; }
-.grid-container > :nth-child(7) { grid-area: card7; }
-.grid-container > :nth-child(8) { grid-area: card8; }
+/* Mobile Navigation Drawer styles */
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+}
 
-/* basec.css - Mobile Layout (1 Column) */
-@media screen and (max-width: 768px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "card1"
-            "card2"
-            "card3"
-            "card4"
-            "card5"
-            "card6"
-            "card7"
-            "card8";
-        gap: 20px;
-        padding: 10px;
-    }
+header nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    z-index: 100;
+}
+
+header nav.show {
+    display: flex;
+}
+
+header nav a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+/* Named Grid Areas Structure for Mobile */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 25px;
+    padding: 15px;
+}
+
+/* Card Styling base blueprints */
+.attraction-card {
+    background: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.attraction-card figure img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.attraction-card address {
+    font-style: italic;
+    color: #555;
+    margin: 8px 0;
+}
+
+.learn-more-btn {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
 }

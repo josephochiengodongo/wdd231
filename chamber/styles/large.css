@@ -95,33 +95,17 @@
         grid-template-columns:1fr 1fr 1fr;
 
     }
+}@media (min-width: 1025px) {
+    /* Named Grid Layout 3: Magazine Dashboard Focus Areas */
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "card1 card1 card2"
+            "card3 card4 card5"
+            "card6 card7 card7"
+            "card8 card8 card8";
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
-
-@media screen and (min-width: 1025px) {
-
-
-
-.card img:hover {
-    filter: brightness(110%);
-    transform: scale(1.08);
-}
-.card img {
-  width: 100%;
-  height: auto;
-    transition: transform .3s ease,
-                filter .3s ease;
-}
-/* large.css - Desktop Layout (3 Columns with feature areas) */
-.grid-container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "card1 card1 card2"
-        "card3 card4 card5"
-        "card6 card7 card7"
-        "card8 card8 card8";
-}
-}
-
-
-    /* RESET */
 
