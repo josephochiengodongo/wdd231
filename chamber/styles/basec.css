@@ -423,6 +423,8 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
     padding: 1rem;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .card img {
