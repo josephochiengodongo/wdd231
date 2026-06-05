@@ -95,7 +95,6 @@ nav a.active {
 .card {
   background:white;
   width: 280px;
-  align-items:center;
   height: auto;
   color: black;
   display: flex;
@@ -104,6 +103,7 @@ nav a.active {
   overflow: hidden;
   padding: 0.75rem;
   margin-left: 4px;
+  margin-right: 4px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeIn 1s forwards;
