@@ -426,6 +426,9 @@ footer {
     margin-left: 10px;
     margin-bottom: 10px;
 }
+body {
+    margin: 0 10px 0 10px;
+}
 
 .card img {
     width: 100%;
