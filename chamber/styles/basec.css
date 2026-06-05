@@ -94,6 +94,7 @@ nav a.active {
 
 .card {
   background:white;
+  width: 100%;
   color: black;
   display: flex;
   border: 1px solid black;
@@ -403,6 +404,7 @@ footer {
     .grid-container {
     display: grid;
     gap: 1rem;
+    
 
     grid-template-areas:
         "card1"
@@ -413,6 +415,7 @@ footer {
         "card6"
         "card7"
         "card8";
+    
 }
 
 .card {
@@ -526,6 +529,23 @@ footer {
 
     .form {
         max-width: 320px;
+    }
+    .grid-container img {
+        width: 100%;
+        height: auto;
+    }
+
+     .socialmedia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+     .socialmedia img {
+        width: 30px;
+        height: 30px;
     }
 
     .socialmedia img {
