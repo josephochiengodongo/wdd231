@@ -96,23 +96,9 @@
 
     }
 }
-@media (min-width: 1025px) {
-  #grid-container {
-    grid-template-areas:
-      "c1 c1 c2 c3"
-      "c4 c5 c6 c6"
-      "c7 c8 c8 c8";
-  }
 
-  .card:hover {
-    transform: translateY(-5px);
-    transition: 0.3s ease;
-  }
+@media screen and (min-width: 1025px) {
 
-  .card button:hover {
-    background: blue;
-  }
-}@media screen and (min-width: 1025px) {
 
 .grid-container {
     display: grid;
@@ -127,6 +113,12 @@
 .card img:hover {
     filter: brightness(110%);
     transform: scale(1.08);
+}
+.card img {
+  width: 200%;
+  height: auto;
+    transition: transform .3s ease,
+                filter .3s ease;
 }
 }
 

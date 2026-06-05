@@ -26,6 +26,12 @@ img {
     height: auto;
     max-width: 100%;
 }
+.card img{
+    width: 200%;
+    height: auto;
+        transition: transform .3s ease,
+                    filter .3s ease;
+}
 
 /* ===== HEADER ===== */
 header {
@@ -634,12 +640,11 @@ dialog::backdrop {
 .card2 { animation-delay: 0.4s; }
 .card3 { animation-delay: 0.6s; }
 .card4 { animation-delay: 0.8s; }
-
-.grid-container {
-    display: grid;
-    gap: 1rem;
-
-    grid-template-areas:
+@media (min-width: 320px) {
+    .grid-container {
+        display: grid;
+        gap: 1rem;
+        grid-template-areas:
         "card1"
         "card2"
         "card3"
@@ -648,19 +653,11 @@ dialog::backdrop {
         "card6"
         "card7"
         "card8";
+    }
+    .card img {
+         width: 200%;
+         height: auto;
+
+    }
+
 }
-
-.card {
-    background: white;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 1rem;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-
-

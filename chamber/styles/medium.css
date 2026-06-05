@@ -1,32 +1,4 @@
-@media screen and (min-width: 768px) {
-
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }@media (min-width: 641px) {
-  .grid-container {
-    grid-template-areas:
-      "c1 c2"
-      "c3 c4"
-      "c5 c6"
-      "c7 c8";
-  }
-
-  /* Hover effect (ONLY tablet & up) */
-  .card img:hover {
-    transform: scale(1.05);
-    filter: brightness(1.1);
-    transition: 0.3s ease;
-  }
-}/* GRID VIEW */
-
-
-
-    .footer-container {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-    }
-}@media screen and (min-width: 641px) {
+@media screen and (min-width: 641px) {
 
 .grid-container {
     display: grid;
@@ -40,6 +12,8 @@
 }
 
 .card img {
+  width: 200%;
+  height: auto;
     transition: transform .3s ease,
                 box-shadow .3s ease;
 }
