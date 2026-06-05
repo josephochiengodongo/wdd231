@@ -94,7 +94,8 @@ nav a.active {
 
 .card {
   background:white;
-  width: 100%;
+  width: 250px;
+  height: auto;
   color: black;
   display: flex;
   border: 1px solid black;
@@ -422,8 +423,6 @@ footer {
     background: white;
     border: 1px solid black;
     border-radius: 10px;
-    max-width: 180px;
-    margin: 0 auto;
     
 
 }
