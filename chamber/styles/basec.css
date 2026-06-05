@@ -94,7 +94,6 @@ nav a.active {
 
 .card {
   background:white;
-  height: auto;
   color: black;
   display: flex;
   border: 1px solid black;
