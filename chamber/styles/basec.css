@@ -640,11 +640,21 @@ dialog::backdrop {
 .card2 { animation-delay: 0.4s; }
 .card3 { animation-delay: 0.6s; }
 .card4 { animation-delay: 0.8s; }
-@media (min-width: 320px) {
-    .grid-container {
-        display: grid;
-        gap: 1rem;
-        grid-template-areas:
+/* basec.css - Naming each of the 8 dynamic cards */
+.grid-container > :nth-child(1) { grid-area: card1; }
+.grid-container > :nth-child(2) { grid-area: card2; }
+.grid-container > :nth-child(3) { grid-area: card3; }
+.grid-container > :nth-child(4) { grid-area: card4; }
+.grid-container > :nth-child(5) { grid-area: card5; }
+.grid-container > :nth-child(6) { grid-area: card6; }
+.grid-container > :nth-child(7) { grid-area: card7; }
+.grid-container > :nth-child(8) { grid-area: card8; }
+
+/* basec.css - Mobile Layout (1 Column) */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
         "card1"
         "card2"
         "card3"
@@ -653,11 +663,6 @@ dialog::backdrop {
         "card6"
         "card7"
         "card8";
-    }
-    .card img {
-         width: 100%;
-         height: auto;
-
-    }
-
+    gap: 20px;
+    padding: 10px;
 }
