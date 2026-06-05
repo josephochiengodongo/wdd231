@@ -635,7 +635,32 @@ dialog::backdrop {
 .card3 { animation-delay: 0.6s; }
 .card4 { animation-delay: 0.8s; }
 
+.grid-container {
+    display: grid;
+    gap: 1rem;
 
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
 
 
 
