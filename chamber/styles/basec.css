@@ -27,7 +27,7 @@ img {
     max-width: 100%;
 }
 .card img{
-    width: 200%;
+    width: 100%;
     height: auto;
         transition: transform .3s ease,
                     filter .3s ease;
@@ -655,7 +655,7 @@ dialog::backdrop {
         "card8";
     }
     .card img {
-         width: 200%;
+         width: 100%;
          height: auto;
 
     }
