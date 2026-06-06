@@ -378,19 +378,12 @@ main > section {
 }
 
 /* Table Design and Updated Structural Names */
-.trip-tablee {
-    width: 700px;
+.trip-table {
+    width: 450px;
     align-items: center;
     margin: 0 auto;
     border-collapse: collapse;
 
-}table {
-    width: 450px;
-    border-collapse: collapse;
-    margin: 1rem 0 2rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden; /* Ensures borders round properly */
 }
 
 .trip-table th, .trip-table td {
