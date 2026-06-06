@@ -417,15 +417,7 @@ td:nth-child(3n+3) {
     color: white;
 }
 
-.trip-table h2 {
-    max-width: 450px;
-    margin: 0 auto;
-    align-items: center;
-    padding: 10px;
-    font-size: x-large;
-    background-color: green;
-    color: white;
-}
+
 .p {
     max-width: 300px;
     text-align: justify;
@@ -475,31 +467,8 @@ td:nth-child(3n+3) {
     }
 }
 
-/* Desktop Grid Layout Adjustment */
-@media (min-width: 768px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Two equal columns */
-        gap: 20px;
-    }
-}/* Desktop / Base styles (Keep your existing grid/flex properties here) */
-.parent-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
 
-.summary-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-top: 2rem;
-}
 
-.table-container {
-    width: 100%;
-    overflow-x: auto; /* Crucial for mobile tables */
-}
 
 /* ==========================================================
    MOBILE RESPONSIVE STYLES (Screens 768px wide and smaller)
