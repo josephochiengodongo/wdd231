@@ -419,6 +419,7 @@ td:nth-child(3n+3) {
 
 .trip-table h2 {
     max-width: 450px;
+    margin: 0 auto;
     align-items: center;
     padding: 10px;
     font-size: x-large;
