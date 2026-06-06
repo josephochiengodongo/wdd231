@@ -506,13 +506,13 @@ td:nth-child(3n+3) {
 @media screen and (max-width: 768px) {
     
     /* Force text blocks to stack on top of each other */
-    .parent-container {
+    .about-info, .we-do {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
     /* Force the heading and the table to stack vertically */
-    .summary-section {
+    main > h2, .trip-table {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
