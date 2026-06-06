@@ -380,6 +380,7 @@ main > section {
 /* Table Design and Updated Structural Names */
 .trip-table {
     width: 700px;
+    margin: 0 auto;
     align-items: center;
     border-collapse: collapse;
     margin-top: 10px;
