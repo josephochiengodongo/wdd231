@@ -12,6 +12,14 @@ body {
     text-align: center;
     margin-bottom: 20px;
 }
+.about-info {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid darkgrey;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
 
 header {
     background: #000;
@@ -389,6 +397,8 @@ td:nth-child(3n+3) {
 
 .trip-table h2 {
     min-width: 720px;
+    margin: 20px auto;
+    padding: 10px;
     font-size: x-large;
     background-color: green;
     color: white;
