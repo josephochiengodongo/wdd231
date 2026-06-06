@@ -481,4 +481,57 @@ td:nth-child(3n+3) {
         grid-template-columns: 1fr 1fr; /* Two equal columns */
         gap: 20px;
     }
+}/* Desktop / Base styles (Keep your existing grid/flex properties here) */
+.parent-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.summary-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Crucial for mobile tables */
+}
+
+/* ==========================================================
+   MOBILE RESPONSIVE STYLES (Screens 768px wide and smaller)
+   ========================================================== */
+@media screen and (max-width: 768px) {
+    
+    /* Force text blocks to stack on top of each other */
+    .parent-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Force the heading and the table to stack vertically */
+    .summary-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Paragraph adjustments for mobile readability */
+    p {
+        max-width: 100%; /* Let text use the full width of the mobile screen */
+        font-size: 0.95rem; /* Slightly smaller text for better scanning */
+        line-height: 1.5;
+    }
+
+    /* Table adjustments so users can swipe to read data */
+    table {
+        width: 100%;
+        min-width: 500px; /* Prevents the data columns from collapsing into tiny squished lines */
+    }
+
+    th, td {
+        padding: 8px 10px; /* Slightly tighter padding for smaller screens */
+        font-size: 0.9rem;
+    }
 }
