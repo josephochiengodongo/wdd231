@@ -455,6 +455,9 @@ td:nth-child(3n+3) {
         width: 30px;
         height: 30px;
     }
+    .trip-table, .about-info,.info,.we-do{
+        margin: 0 auto;
+    }
 
     .p-div {
         padding: 1rem 0.5rem;
