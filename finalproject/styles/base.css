@@ -12,10 +12,11 @@ body {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .about-info {
-    max-width: 700px;
     margin: 0 auto;
-    border: 1px solid darkgrey;
+    display: flex;
+    flex-direction: row;
     padding: 20px;
     line-height: 1.6;
     color: #333;
@@ -253,6 +254,17 @@ form {
     max-width: 500px;
     margin: auto;
 }
+.form-action h1 {
+    text-align: center;
+    border:#004d40
+
+
+}
+.contact-info h2 {
+    align-items: center;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
 
 input {
     width: 100%;
@@ -276,7 +288,7 @@ dialog {
 }
 
 /* Layout Core styles */
-mainn > section {
+main > section {
     background: #ffffff;
     padding: 25px;
     border-radius: 8px;
@@ -328,13 +340,11 @@ mainn > section {
 }
 
 /* Contact Details */
-.contact-info h1 {
-    margin-top: 0;
-    color: #222;
-}
+
 
 .contact-info address {
     font-style: normal;
+    align-content:center;
     line-height: 1.6;
     margin-bottom: 15px;
     color: #666;
@@ -360,6 +370,7 @@ mainn > section {
 /* Table Design and Updated Structural Names */
 .trip-table {
     width: 700px;
+    align-items: center;
     border-collapse: collapse;
     margin-top: 10px;
 }
@@ -397,7 +408,8 @@ td:nth-child(3n+3) {
 
 .trip-table h2 {
     min-width: 720px;
-    margin: 20px auto;
+    align-items: center;
+    margin: 0 auto;
     padding: 10px;
     font-size: x-large;
     background-color: green;
