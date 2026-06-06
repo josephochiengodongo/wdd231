@@ -378,9 +378,10 @@ main > section {
 }
 
 /* Table Design and Updated Structural Names */
-.trip-table {
+.trip-tablee {
     width: 700px;
     align-items: center;
+    margin: 0 auto;
     border-collapse: collapse;
 
 }
