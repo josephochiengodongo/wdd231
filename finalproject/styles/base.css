@@ -377,45 +377,44 @@ main > section {
     border-radius: 4px;
 }
 
-/* Table Design and Updated Structural Names */
 .trip-table {
-    width: 450px;
-    align-items: center;
-    margin: 0 auto;
-    border-collapse: collapse;
-
-}
-
-.trip-table th, .trip-table td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Table Header (th) Styles */
-th {
-    background-color: orange;
+    width: 650px;
+    font-size: x-large;
+    background-color:green;
     color: white;
-    font-weight: bold;
+
+
 }
 
-.trip-table tr:first-child th {
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
-}
 
-.trip-table tr:hover {
-    background-color: #f1f3f5;
-}
-
-/* Table Column Cell Striping */
-td:nth-child(3n+1), 
-td:nth-child(3n+2), 
-td:nth-child(3n+3) {
+ th {
     background-color: green;
-    color: white;
+    color:white
+ }       
+  td:nth-child(3n+1){
+    background-color:green;
+    color:white
+  }
+ td:nth-child(3n+3) {
+    background-color: green;
+    color:white
+ } 
+
+td:nth-child(3n+2){
+    background-color: green;
+    color:white;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 .p {
@@ -470,38 +469,3 @@ td:nth-child(3n+3) {
 
 
 
-/* ==========================================================
-   MOBILE RESPONSIVE STYLES (Screens 768px wide and smaller)
-   ========================================================== */
-@media screen and (max-width: 768px) {
-    
-    /* Force text blocks to stack on top of each other */
-    .about-info, .we-do {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    /* Force the heading and the table to stack vertically */
-    main > h2, .trip-table {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    /* Paragraph adjustments for mobile readability */
-    p {
-        max-width: 100%; /* Let text use the full width of the mobile screen */
-        font-size: 0.95rem; /* Slightly smaller text for better scanning */
-        line-height: 1.5;
-    }
-
-    /* Table adjustments so users can swipe to read data */
-    table {
-        width: 100%;
-        min-width: 500px; /* Prevents the data columns from collapsing into tiny squished lines */
-    }
-
-    th, td {
-        padding: 8px 10px; /* Slightly tighter padding for smaller screens */
-        font-size: 0.9rem;
-    }
-}
