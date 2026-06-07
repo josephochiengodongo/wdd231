@@ -122,7 +122,9 @@ nav li {
         width: auto;
         gap: 1rem;
         background: none;
-    
+    }
+    table {
+     min-width: 900px;
     }
 
     nav a {
@@ -452,11 +454,13 @@ th,
 td {
     border: 1px solid #ccc;
     padding: .75rem;
+    width: 100%;
     text-align: left;
 }
 
 th {
     background: gold;
+    width: 100%;
     color: white;
 }
 
