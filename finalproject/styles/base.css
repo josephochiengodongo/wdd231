@@ -377,43 +377,6 @@ main > section {
     border-radius: 4px;
 }
 
-.trip-table {
-    width: 450px;
-    margin: 0 auto;
-    font-size: x-large;
-    background-color:green;
-    color: white;
-
-
-}
-
-
- th {
-    background-color: green;
-    color:white
- }       
-  td:nth-child(3n+1){
-    background-color:green;
-    color:white
-  }
- td:nth-child(3n+3) {
-    background-color: green;
-    color:white
- } 
-
-td:nth-child(3n+2){
-    background-color: green;
-    color:white;
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -466,7 +429,50 @@ td:nth-child(3n+2){
         height: 160.5px;
     }
 }
+/* ---------- MAIN ---------- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
 
+.about-info,
+.trip-table,
+.info,
+.we-do {
+    margin-bottom: 2rem;
+}
 
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
 
+/* ---------- TABLE ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+}
 
+th,
+td {
+    border: 1px solid #ccc;
+    padding: .75rem;
+    text-align: left;
+}
+
+th {
+    background: #333;
+    color: white;
+}
+
+/* ---------- MAP ---------- */
+.info iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+}
+
+/* ---------- FOOTER ---------- */
