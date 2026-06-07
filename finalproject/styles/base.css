@@ -378,7 +378,8 @@ main > section {
 }
 
 .trip-table {
-    width: 650px;
+    width: 450px;
+    margin: 0 auto;
     font-size: x-large;
     background-color:green;
     color: white;
