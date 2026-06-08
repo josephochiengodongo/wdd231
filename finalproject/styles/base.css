@@ -549,13 +549,7 @@ td {
     color: #333;
 }
 
-/* Responsive Video/Map Wrapper */
-.info iframe {
-    width: 100%;
-    max-width: 800px; /* Restricts map from getting too wide on desktop */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
 
 /* ==========================================================================
    Responsive Design (Desktop Layout Split)
