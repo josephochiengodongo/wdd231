@@ -273,9 +273,10 @@ form {
 
 }
 .contact-info h2 {
-    align-items: center;
+    text-align: center;
     font-size: x-large;
     margin-bottom: 20px;
+
 }
 
 input {
@@ -357,6 +358,8 @@ main > section {
 
 .contact-info address {
     font-style: normal;
+    align-items: center;
+    text-align: center;
     align-content:center;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -368,10 +371,12 @@ main > section {
     color: #007BFF;
     text-decoration: none;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .contact-info a:hover {
     text-decoration: underline;
+
 }
 
 
@@ -440,27 +445,18 @@ h2 {
 }
 
 /* ---------- TABLE ---------- */
-table {
-    width: 650px;
-    border-collapse: collapse;
-    background-color: darkblue;
-    color: #000;
-    overflow-x: auto;
-    display: block;
-}
+
 
 
 th,
 td {
     border: 1px solid #ccc;
     padding: .75rem;
-    width: 100%;
     text-align: left;
 }
 
 th {
     background: gold;
-    width: 100%;
     color: white;
 }
 
@@ -470,4 +466,124 @@ th {
     max-width: 100%;
     height: 400px;
 }
+
+/* --- Section 1: About Info --- */
+.about-info {
+    line-height: 1.6;
+}
+
+.about-info h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #ff9900; /* Subtle accent line */
+    padding-bottom: 0.5rem;
+}
+
+.about-info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.we-do {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-left: 5px solid #0066cc; /* Section branding */
+    border-radius: 4px;
+}
+
+.we-do h2 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    color: #222;
+}
+
+/* --- Section 2: Table Section Fixes & Styling --- */
+/* Fixes the HTML nesting structure visually */
+main > h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Ensures borders round properly */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+/* Table Header Styles */
+th[colspan="3"] {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(2) th {
+    background-color: #0066cc;
+    color: white;
+    font-weight: 600;
+}
+
+/* Table Body Styles */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e9f5ff; /* Subtle row hover effect */
+    transition: background-color 0.2s ease;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    color: #444;
+}
+
+/* --- Section 3: Map / Info Section --- */
+.info {
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Responsive Video/Map Wrapper */
+.info iframe {
+    width: 100%;
+    max-width: 800px; /* Restricts map from getting too wide on desktop */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   Responsive Design (Desktop Layout Split)
+   ========================================================================== */
+
+@media (min-width: 768px) {
+    /* Optional: Side-by-side display for table and map on larger screens */
+    .table-map-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
  
