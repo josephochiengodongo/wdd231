@@ -398,7 +398,7 @@ main > section {
         margin: 0 auto;
     }
     .questions,.contact-info,.working-hours,.form-action {
-    max-width: 400px;
+    min-width: 250px;
     border: black;
     background-color:blanchedalmond;
     margin: 0 auto;
