@@ -410,7 +410,7 @@ main > section {
     
     
     .questions,.contact-info,.working-hours,.form-action {
-        width: 200px;
+        width: 400px;
         border: black;
         background-color:blanchedalmond;
         align-items: center;
