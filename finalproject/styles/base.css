@@ -381,18 +381,6 @@ main > section {
         flex-direction: column;
         gap: 1rem;
     }
-    
-    .questions,.contact-info,.working-hours,.form-action {
-    min-width: 250px;
-    border: black;
-    background-color:blanchedalmond;
-    margin: 0 30px 0 30px;
-    }
-    
-    
-    
-
-
 
     .socialmedia {
         gap: 15px;
