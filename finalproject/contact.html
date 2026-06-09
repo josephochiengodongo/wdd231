@@ -38,24 +38,34 @@
 		</nav>
 	</header>
   <main>
-    <section class="form-action">
-		<h1>Contact Form</h1>
-      <form action="form-action.html" method="get">
-        <label>
-          Full Name
-          <input type="text" name="fullname" required>
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required>
-        </label>
-        <label>
-          Favorite Destination
-          <input type="text" name="destination">
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+	<section class="form-action">
+	<h1>Contact Form</h1>
+	<form method="get" action="thankyou.html">
+    
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" required>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="destination">Destination:</label>
+    <select id="destination" name="destination" required>
+        <option value="">Select a Destination</option>
+        <option value="Maasai Mara">Maasai Mara</option>
+        <option value="Amboseli">Amboseli</option>
+        <option value="Tsavo">Tsavo</option>
+    </select>
+
+    <label for="message">Comments:</label>
+    <textarea id="message" name="message"></textarea>
+
+    <input type="submit" value="Submit">
+</form>
+</section>
+    
     <section class="contact-info">
         <h2>Our Contact</h2>
         <address>
@@ -66,6 +76,23 @@
           <a href="tel:+25499999999">2549 999 9999</a>
           <a href="mailto:info@tourstride.com">info@tourstride.company</a>
     </section>
+	<section>
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>How do I book a tour?</h3>
+    <p>Use our contact form or call our office.</p>
+
+    <h3>Do you offer customized tours?</h3>
+    <p>Yes, we can create a tour package based on your preferences.</p>
+</section>
+<section>
+    <h2>Business Hours</h2>
+    <ul>
+        <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+        <li>Saturday: 9:00 AM - 4:00 PM</li>
+        <li>Sunday: Closed</li>
+    </ul>
+</section>
     
     </main>
   <footer>
