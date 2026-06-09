@@ -100,7 +100,7 @@ nav li {
     }
     
     .questions,.contact-info,.working-hours,.form-action {
-    min-width: 400px;
+    width: 400px;
     border: black;
     background-color:blanchedalmond;
     }
