@@ -409,7 +409,7 @@ main > section {
     }
     
     .questions,.contact-info,.working-hours,.form-action {
-    min-width: 250px;
+    width: 250px;
     border: black;
     background-color:blanchedalmond;
     }
