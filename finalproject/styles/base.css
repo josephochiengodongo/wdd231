@@ -153,7 +153,7 @@ header p {
 .places-container {
     width: 90%;
     max-width: 1300px;
-    margin: 30px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -425,21 +425,6 @@ main>section {
     .info {
         margin: 0 auto;
     }
-
-
-    .questions,
-    .contact-info,
-    .working-hours,
-    .form-action {
-        min-width: 200px;
-        max-width: 400px;
-        border: black;
-        background-color: blanchedalmond;
-        margin: 0 30px o 30px;
-
-    }
-
-
 
 
     .p-div {
