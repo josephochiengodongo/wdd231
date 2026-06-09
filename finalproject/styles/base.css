@@ -397,12 +397,7 @@ main > section {
     .trip-table, .about-info,.info{
         margin: 0 auto;
     }
-    .questions,.contact-info,.working-hours,.form-action {
-    min-width: 250px;
-    border: black;
-    background-color:blanchedalmond;
-    margin-left: 30px auto;
-    }
+    
 
     .p-div {
         padding: 1rem 0.5rem;
