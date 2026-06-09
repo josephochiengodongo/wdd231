@@ -98,6 +98,16 @@ nav li {
     .toggle-menu, #menuBtn {
         display: none;
     }
+    
+    .questions,.contact-info,.working-hours,.form-action {
+    min-width: 400px;
+    border: black;
+    background-color:blanchedalmond;
+    }
+   
+    
+
+
 
     nav {
         display: flex;
@@ -398,6 +408,14 @@ main > section {
         margin: 0 auto;
     }
     
+    .questions,.contact-info,.working-hours,.form-action {
+    min-width: 250px;
+    border: black;
+    background-color:blanchedalmond;
+    }
+   
+
+    
 
     .p-div {
         padding: 1rem 0.5rem;
@@ -499,13 +517,7 @@ main.sections {
     gap: 1rem;
     
 }
-.questions,.contact-info,.working-hours,.form-action {
-    min-width: 400px;
-    border: black;
-    background-color:blanchedalmond;
-   
-    
-}
+
 
 table {
     width: 100%;
