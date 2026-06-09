@@ -398,7 +398,7 @@ main > section {
         margin: 0 auto;
     }
     .questions,.contact-info,.working-hours,.form-action {
-    width: 400px;
+    max-width: 400px;
     border: black;
     background-color:blanchedalmond;
     }
