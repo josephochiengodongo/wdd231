@@ -500,8 +500,7 @@ main.sections {
     
 }
 .questions,.contact-info,.working-hours,.form-action {
-    max-width: 400px;
-    min-width: 250px;
+    min-width: 400px;
     border: black;
     background-color:blanchedalmond;
     margin: 0 auto;
