@@ -188,6 +188,7 @@ header p {
     border: black;
     background-color: blanchedalmond;
     margin: 30px auto;
+    overflow: hidden;
 }
 
 
