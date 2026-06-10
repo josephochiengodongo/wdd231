@@ -187,8 +187,8 @@ header p {
     min-width: 300px;
     border: black;
     background-color: blanchedalmond;
-    margin: 30px auto;
-    overflow: hidden;
+    margin: 0 auto;
+
 }
 
 
