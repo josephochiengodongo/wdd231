@@ -182,9 +182,10 @@ header p {
     padding: 18px;
 }
 .questions,.contact-info,.working-hours,.form-action {
-    width: 200px;
+    min-width: 200px;
     border: black;
     background-color: blanchedalmond;
+    margin: 0 auto;
 }
     
 
