@@ -129,6 +129,16 @@ nav li {
     table {
         min-width: 900px;
     }
+    .places-container {
+        width: 90%;
+        max-width: 1300px;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+
 
     nav a {
         border: none;
@@ -151,14 +161,6 @@ header p {
 }
 
 /* Grid places container */
-.places-container {
-    width: 90%;
-    max-width: 1300px;
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
 
 .card {
     background: white;
