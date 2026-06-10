@@ -408,6 +408,15 @@ main>section {
         text-align: center;
         margin: 0 auto;
     }
+    .card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+
 
     .containercontent,
     .footer-container {
