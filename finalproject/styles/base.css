@@ -186,7 +186,7 @@ header p {
 .questions,.contact-info,.working-hours,.form-action {
     border: black;
     background-color: blanchedalmond;
-    margin: 0 30px 0 -30px;
+    margin: 0 auto;
     overflow: hidden;
     width: 300px;
 
