@@ -184,7 +184,7 @@ header p {
     padding: 18px;
 }
 .questions,.contact-info,.working-hours,.form-action {
-    min-width: 400px;
+    width: 250px;
     border: black;
     background-color: blanchedalmond;
     margin: 30px auto;
@@ -415,15 +415,6 @@ main>section {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease;
 }
-main.sections {
-    border: black;
-    background-color: blanchedalmond;
-    margin: 30px auto;
-    overflow: hidden;
-    transition: 0.3s ease;
-}
-
-
 
     .containercontent,
     .footer-container {
@@ -559,6 +550,7 @@ main.sections {
 
 
 }
+
 
 
 table {
