@@ -154,7 +154,7 @@ header p {
 .places-container {
     width: 90%;
     max-width: 1300px;
-    margin: 30px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
