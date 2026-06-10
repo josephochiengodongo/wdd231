@@ -188,7 +188,7 @@ header p {
     border: black;
     background-color: blanchedalmond;
     margin: auto;
-    margin-right: 30px;
+
 
 
 }
@@ -417,7 +417,8 @@ main>section {
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease;
-}
+    }
+
 
     .containercontent,
     .footer-container {
