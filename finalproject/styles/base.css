@@ -183,11 +183,7 @@ header p {
 .card-content {
     padding: 18px;
 }
-.questions,.contact-info,.working-hours,.form-action {
-    border: black;
-    background-color: blanchedalmond;
-    
-}
+
     
 
 
@@ -544,6 +540,7 @@ main.sections {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1rem;
     margin: 0 auto;
+    background-color: blanchedalmond;
 
 
 }
