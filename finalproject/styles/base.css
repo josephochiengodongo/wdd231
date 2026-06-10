@@ -415,6 +415,13 @@ main>section {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease;
 }
+.questions,.contact-info,.working-hours,.form-action {
+    border: black;
+    background-color: blanchedalmond;
+    margin: 30px auto;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
 
 
 
