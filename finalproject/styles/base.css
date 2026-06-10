@@ -184,7 +184,7 @@ header p {
     padding: 18px;
 }
 .questions,.contact-info,.working-hours,.form-action {
-    min-width: 300px;
+    max-width: 300px;
     border: black;
     background-color: blanchedalmond;
     margin: auto;
