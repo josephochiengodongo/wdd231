@@ -184,7 +184,7 @@ header p {
     padding: 18px;
 }
 .questions,.contact-info,.working-hours,.form-action {
-    width: 300px;
+
     border: black;
     background-color: blanchedalmond;
     margin: 0 30px 0 -30px;
@@ -455,6 +455,18 @@ main>section {
     .p-div p {
         margin: 0.3rem 0;
     }
+    main.sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    margin: 0 auto;
+    }
+
+
+
+
+
+
 
 
 }
