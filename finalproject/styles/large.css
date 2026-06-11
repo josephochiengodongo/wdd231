@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+
+    /* Optional: Side-by-side display for table and map on larger screens */
+    .table-map-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
