@@ -581,11 +581,7 @@ table {
     /* Ensures borders round properly */
 }
 
-th,
-td {
-    padding: 12px 15px;
-    text-align: left;
-}
+
 
 /* Table Header Styles */
 th[colspan="3"] {
