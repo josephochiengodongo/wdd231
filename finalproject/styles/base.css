@@ -113,10 +113,6 @@ nav li {
         background-color: blanchedalmond;
     }
 
-
-
-
-
     nav {
         display: flex;
         flex-direction: row;
@@ -192,12 +188,6 @@ header p {
 
 
 }
-
-
-
-    
-
-
 .card-content h2 {
     margin-bottom: 10px;
     font-size: 1.3rem;
@@ -578,9 +568,8 @@ table {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
-    /* Ensures borders round properly */
+    
 }
-
 
 
 /* Table Header Styles */
@@ -626,12 +615,6 @@ td {
     margin-bottom: 1rem;
     color: #333;
 }
-
-
-
-/* ==========================================================================
-   Responsive Design (Desktop Layout Split)
-   ========================================================================== */
 
 @media (min-width: 768px) {
 
