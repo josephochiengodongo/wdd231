@@ -38,17 +38,18 @@
 	</header>
   <main class="sections">
 	<section class="form-action">
-	<h1>Contact Form</h1>
-	<form method="get" action="thankyou.html">
+	<h1>Contact Form
+
+  </h1><form method="get" action="thankyou.html" autocomplete="on">
     
     <label for="fname">First Name:</label>
-    <input type="text" id="fname" name="fname" required>
+    <input type="text" id="fname" name="fname" autocomplete="given-name" required>
 
     <label for="lname">Last Name:</label>
-    <input type="text" id="lname" name="lname" required>
+    <input type="text" id="lname" name="lname" autocomplete="family-name" required>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" autocomplete="email" required>
 
     <label for="destination">Destination:</label>
     <select id="destination" name="destination" required>
@@ -121,7 +122,6 @@
                 <p>Back so soon! Awesome!</p>
 		    </div>
 		</div>
-		<script type="module" src="scripts/main.js"></script>
     </footer>
 </body>
 </html>
