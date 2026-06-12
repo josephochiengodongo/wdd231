@@ -109,6 +109,10 @@ nav li {
         border: 1px solid #000000;
         background-color: #ffebcd;
     }
+    .about-info p {
+        border: #000000;
+    }
+
 
     nav {
         display: flex;
@@ -171,6 +175,9 @@ header p {
     object-fit: cover;
 }
 
+a:focus {
+    outline: 3px solid orange;
+}
 .card-content {
     padding: 18px;
 }
@@ -200,6 +207,26 @@ header p {
 .address {
     color: #555555;
     line-height: 1.5;
+}footer {
+    background: white;
+}
+
+footer a {
+    color: #003366;
+}
+footer {
+    background-color: #000;
+    color: #ffffff;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #ffffff;
 }
 
 /* Footer layout */
