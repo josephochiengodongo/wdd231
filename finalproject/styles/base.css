@@ -207,17 +207,9 @@ a:focus {
 .address {
     color: #555555;
     line-height: 1.5;
-}footer {
-    background: white;
 }
 
-footer a {
-    color: #003366;
-}
-footer {
-    background-color: #000;
-    color: #ffffff;
-}
+
 
 footer a {
     color: #FFD700;
