@@ -418,6 +418,7 @@ main>section {
         border-radius: 14px;
         overflow: hidden;
         gap: 10px;
+        margin-bottom: 5px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transition: 0.3s ease;
     }
