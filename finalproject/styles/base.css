@@ -176,7 +176,7 @@ header p {
 }
 
 a:focus {
-    outline: 3px solid orange;
+    outline: 3px solid #ffa500;
 }
 .card-content {
     padding: 18px;
