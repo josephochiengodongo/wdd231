@@ -1,15 +1,17 @@
-@media screen and (min-width: 641px) {
+@media (min-width: 641px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        /* Custom layout arrangement: mixing the sequence intentionally */
+        grid-template-areas: 
+            "ca1 c3"
+            "c2 c3"  /* card3 spans two rows vertically */
+            "c4 c5"
+            "c7 c6"  /* switched positions */
+            "c8 c8"; /* card8 spans full width */
+    }
 
-.grid-container {
-    display: grid;
-    gap: 1rem;
 
-    grid-template-areas:
-      "card1 card2"
-      "card3 card4"
-      "card5 card6"
-      "card7 card8";
-}
+
 
 .card img {
   width: 100%;
@@ -18,7 +20,7 @@
                 box-shadow .3s ease;
 }
 
-.card img:hover {
+.cad img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(0,0,0,.4);
 }

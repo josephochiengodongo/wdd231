@@ -96,22 +96,28 @@
 
     }
 
-}@media screen and (min-width: 1025px) {
+} 
 
-.grid-container {
-    display: grid;
-    gap: 1rem;
+@media (min-width: 1025px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
+        gap: 20px;
+        /* Completely different structural flow */
+        grid-template-areas: 
+            "ca1 c1 c2 c3"
+            "c4 c5 c2 c6"
+            "c7 c8 c8 c6"; 
+            
+        /* Note: card1 spans 2 cols wide. card2 spans 2 rows high. 
+           card6 spans 2 rows high. card8 spans 2 cols wide. */
+    }
 
-    grid-template-areas:
-      "card1 card1 card2 card3"
-      "card4 card5 card5 card6"
-      "card7 card8 card8 card6";
-}
+
 
 .card img:hover {
     filter: brightness(110%);
     transform: scale(1.08);
 }
-}
 
+}
 

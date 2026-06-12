@@ -669,18 +669,34 @@ h2{
 }
 
 /* ===== GRID (MOBILE FIRST) ===== */
+@media (max-width: 640px) {
+/* Assign grid-area names to the dynamically generated cards */
+.grid-container > :nth-child(1) { grid-area: c1; }
+.grid-container > :nth-child(2) { grid-area: c2; }
+.grid-container > :nth-child(3) { grid-area: c3; }
+.grid-container > :nth-child(4) { grid-area: c4; }
+.grid-container > :nth-child(5) { grid-area: c5; }
+.grid-container > :nth-child(6) { grid-area: c6; }
+.grid-container > :nth-child(7) { grid-area: c7; }
+.grid-container > :nth-child(8) { grid-area: c8; }
+
+/* Mobile Layout Setup */
 .grid-container {
-  display: grid;
-  grid-template-areas:
-    "c1"
-    "c2"
-    "c3"
-    "c4"
-    "c5"
-    "c6"
-    "c7"
-    "c8";
-  gap: 1rem;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    /* Stacking them sequentially on small screens */
+    grid-template-areas: 
+        "c1"
+        "c2"
+        "c3"
+        "c4"
+        "c5"
+        "c6"
+        "c7"
+        "c8";
+        
+}
 }
 
 /* Map cards to grid areas */
