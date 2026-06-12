@@ -417,7 +417,7 @@ main>section {
         background: #ffffff;
         border-radius: 14px;
         gap: 10px;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transition: 0.3s ease;
     }
@@ -535,11 +535,7 @@ th {
     border-radius: 4px;
 }
 
-.we-do h2 {
-    font-size: 1.8rem;
-    margin-top: 0;
-    color: #222222;
-}
+
 
 /* --- Section 2: Table Section Fixes & Styling --- */
 main>h2 {
