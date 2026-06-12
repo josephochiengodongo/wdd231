@@ -188,7 +188,7 @@ a:focus {
 .form-action {
     border: 1px solid #000000;
     background-color: #ffebcd;
-    margin: 0 -15px 0 50px;
+    margin: 0;
     overflow: hidden;
     width: 300px;
 }
