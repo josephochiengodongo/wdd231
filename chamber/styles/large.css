@@ -100,24 +100,17 @@
 
 @media (min-width: 1025px) {
     .grid-container {
-        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
-        gap: 20px;
-        /* Completely different structural flow */
-        grid-template-areas: 
-            "ca1 c1 c2 c3"
-            "c4 c5 c2 c6"
-            "c7 c8 c8 c6"; 
-            
-        /* Note: card1 spans 2 cols wide. card2 spans 2 rows high. 
-           card6 spans 2 rows high. card8 spans 2 cols wide. */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "place1 place1 place2 place3"
+            "place4 place5 place2 place6"
+            "place7 place8 place8 place6";
     }
-
-
-
-.card img:hover {
-    filter: brightness(110%);
-    transform: scale(1.08);
+    
+    /* Give some visual hierarchy to expanded grid items on large viewports */
+    .card[style*="grid-area: place1;"],
+    .card[style*="grid-area: place8;"] {
+        background-color: #f4f9ff;
+        border-left: 4px solid #0066cc;
+    }
 }
-
-}
-
